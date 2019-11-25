@@ -1,0 +1,102 @@
+		
+
+	Nation_of_prospertiy = {
+		enable = {
+			AND = {
+				original_tag = EQS
+				date > 1010.1.1
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = yes
+				date > 1014.1.1								
+				}
+				}
+		
+		ai_strategy = {
+			type = building_target
+			id = industrial_complex
+			value = 75
+		}
+		}	
+
+
+	The_Great_Landwar_EQS = {
+	enable = {
+			AND = {
+				original_tag = EQS
+				has_war = yes
+				date > 1010.1.1
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				has_war_With = WNG
+				has_war_With = GRI
+				}
+				}
+		ai_strategy = {
+			type = unit_ratio
+			id = capital_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = submarine
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = screen_ship
+			value = -100
+			}
+
+		ai_strategy = {
+			type = unit_ratio
+			id = convoy
+			value = -100
+			}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = -95	
+		}
+		
+		ai_strategy = {
+		type = equipment_variant_production_factor
+		id = cv_fighter_equipment
+		value -1000 
+		}	
+		}
+		
+		
+	The_Great_landwar_factories_EQS = {
+		enable = {
+			AND = {
+				original_tag = EQS
+				date > 1010.1.1
+				num_of_civilian_factories > 74
+				}
+				}
+			Or = {
+				has_war = yes
+				}
+		Abort = {
+			OR = {
+				has_war = no
+				EQS = { arms_factory > 199 }
+				}
+				}
+		
+		ai_strategy = {
+			type = building_target
+			id = arms_factory
+			value = 200
+		}
+		}
+		
+		
+		

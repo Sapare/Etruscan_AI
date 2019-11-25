@@ -1,0 +1,934 @@
+@989 = 0
+@1007 = 0
+@1009 = 2
+@1010 = 4
+@1011 = 6
+@1012 = 8
+@1013 = 10
+@1014 = 12
+@1015 = 14
+@1016 = 16
+@1017 = 18
+@1018 = 20
+@1019 = 22
+@1020 = 24
+@1021 = 26
+@1022 = 28
+@1023 = 30
+@1024 = 32
+@1025 = 34
+@1026 = 36
+
+technologies = {
+
+	generic_race = {
+
+		research_cost = 0.01
+
+		allow = {
+			is_generic_race = yes
+		}
+
+		ai_will_do = {
+			factor = 20000000
+		}
+
+	}
+
+	tech_generic_misc = {
+
+		dependencies = {
+			generic_race = 1
+			infantry_weapons = 1
+		}
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		path = {
+			leads_to_tech = tech_generic_misc2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1007 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		modifier = {
+			factor = 1.5
+			arms_factory > 15
+		}
+		modifier = {
+			factor = 1.5
+			arms_factory > 30
+		}
+		modifier = {
+			factor = 1.5
+			arms_factory > 45
+		}
+		modifier = {
+			factor = 1.5
+			arms_factory > 65
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 45
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 65
+		}
+		}
+		}
+
+	tech_generic_misc2 = {
+
+		local_resources_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_generic_misc3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1010 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2.5
+		modifier = {
+			factor = 2.5
+			OR = {
+					oil > 15
+					aluminium > 15
+					rubber > 15
+					tungsten > 15
+					steel > 15
+					chromium > 15
+			} 
+			}
+			
+		modifier = {
+			factor = 2.5
+			OR = {
+					oil > 30
+					aluminium > 30
+					rubber > 30
+					tungsten > 30
+					steel > 30
+					chromium > 30
+			}
+			}
+		modifier = {
+			factor = 2.5
+			OR = {
+					oil > 45
+					aluminium > 45
+					rubber > 45
+					tungsten > 45
+					steel > 45
+					chromium > 45
+			} 
+			}
+			
+		modifier = {
+			factor = 2.5
+			OR = {
+					oil > 75
+					aluminium > 75
+					rubber > 75
+					tungsten > 75
+					steel > 75
+					chromium > 75
+			} 
+			} 
+			}
+			}
+
+	tech_generic_misc3 = {
+
+		supply_consumption_factor = -0.10
+
+		path = {
+			leads_to_tech = tech_generic_misc_a
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1013 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_misc_a = {
+
+		production_speed_buildings_factor = 0.07
+		industry_repair_factor = 0.07
+
+		path = {
+			leads_to_tech = tech_generic_misc_b
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1016 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		
+		modifier = {
+			factor = 1.5
+			industrial_complex > 15
+		}
+		modifier = {
+			factor = 1.5
+			industrial_complex > 30
+		}
+		modifier = {
+			factor = 1.5
+			industrial_complex > 45
+		}
+		modifier = {
+			factor = 1.5
+			industrial_complex > 65
+		}
+		}
+		}
+
+	tech_generic_misc_b = {
+
+		research_speed_factor = 0.02
+
+		path = {
+			leads_to_tech = tech_generic_misc_c
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1020 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				amount_research_slots > 3	
+				}
+				modifier = {
+				factor = 5
+				amount_research_slots > 4	
+				}
+				}
+				}
+
+	tech_generic_misc_c = {
+
+		encryption_factor = 0.1
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0 y = @1024 }
+		}
+
+		categories = {
+			race_tech
+			magical_tech
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	tech_generic_l = {
+
+		dependencies = {
+			generic_race = 1
+			infantry_weapons = 1
+		}
+		category_front_line = {
+			breakthrough = 0.04
+			defense = 0.04
+			reliability_factor = -0.01
+		}
+
+		path = {
+			leads_to_tech = tech_generic_l2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0  y = @1010 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_l2 = {
+
+		category_all_artillery = {
+			soft_attack = 0.05
+		}
+
+		category_all_at = {
+			hard_attack = 0.05
+		}
+
+		category_all_aa = {
+			air_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech_generic_l3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_r2
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0  y = @1011 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_l3 = {
+
+		category_mechanical = {
+			maximum_speed = 0.06
+			supply_consumption = 0.01
+		}
+
+		path = {
+			leads_to_tech = tech_generic_l4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_r3
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0  y = @1013 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_l4 = {
+
+		category_all_infantry = {
+			fort = {
+				defence = 0.07
+			}
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = tech_generic_l4_tp
+		}
+
+		path = {
+			leads_to_tech = tech_generic_l5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_r4
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0  y = @1016 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_l5 = {
+
+		category_all_infantry = {
+			max_organisation = 5
+		}
+		category_tanks = {
+			max_organisation = 1
+		}
+
+		path = {
+			leads_to_tech = tech_generic_r5
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 0  y = @1019 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+
+	tech_generic_r = {
+
+		dependencies = {
+			generic_race = 1
+			infantry_weapons = 1
+		}
+		special_forces_attack_factor = 0.05
+		special_forces_defence_factor = 0.05
+
+		magical_infantry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = tech_generic_r2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 2  y = @1010 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 0.5
+			NOT = {
+				has_tech = magical_weapons
+		}
+		}
+			modifier = {
+				factor = 2
+			NOT = {
+				has_tech = tech_mountaineers
+		}
+		}
+			modifier = {
+				factor = 2
+			NOT = {
+				has_tech = paratroopers
+		}
+		} 
+			modifier = {
+				factor = 2
+			NOT = {
+				has_tech = marines
+		}
+		}
+		}
+		}
+
+	tech_generic_r2 = {
+
+		navy_anti_air_attack_factor = 0.05
+		naval_hit_chance = 0.05
+
+		path = {
+			leads_to_tech = tech_generic_r3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_l2
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 2  y = @1011 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 30
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 45
+		}
+		modifier = {
+			factor = 1.5
+			num_of_naval_factories > 65
+		}
+		}
+		}
+
+	tech_generic_r3 = {
+
+		category_all_planes = {
+			air_agility = 0.06
+			reliability = -0.01
+		}
+
+		path = {
+			leads_to_tech = tech_generic_r4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_l3
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 2  y = @1013 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 30
+			type = fighter
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 50
+			type = fighter
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 70
+			type = fighter
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 100
+			type = fighter
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 30
+			type = CAS
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 50
+			type = CAS
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			has_deployed_air_force_size = {
+			size > 70
+			type = CAS
+			}
+			}
+			}
+			}
+
+	tech_generic_r4 = {
+
+		category_all_infantry = {
+			fort = {
+				attack = 0.07
+			}
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = tech_generic_r4_tp
+		}
+
+		path = {
+			leads_to_tech = tech_generic_r5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_generic_l4
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 2  y = @1016 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 1.5
+			
+		modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+	}
+
+	tech_generic_r5 = {
+
+		land_reinforce_rate = 0.05
+
+		path = {
+			leads_to_tech = tech_generic_l5
+			research_cost_coeff = 0.75
+		}
+
+		research_cost = 1.5
+		start_year = 1007
+		folder = {
+			name = generic_folder
+			position = { x = 2  y = @1019 }
+		}
+
+		categories = {
+			magical_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.5
+				num_units > 15
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 25
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 45
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 60
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 75
+		}
+			modifier = {
+				factor = 1.5
+				num_units > 100
+		}
+		}
+		}
+		}
+
+#####-----------------------------------------------------------> End

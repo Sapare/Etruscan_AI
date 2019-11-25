@@ -1,0 +1,1254 @@
+	#Controls the stockpile for all countries:
+	
+	
+	
+	Infantry_Eq_Limit_minor = {
+		enable =  { 
+			OR = { 
+				has_equipment = { infantry_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = {
+				has_equipment = { infantry_equipment < 1500}				
+				has_equipment = { infantry_equipment > 10000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -15 }
+			}
+ 
+ 
+ 
+ 	Sup_Eq_Limit_minor = {
+ 		enable =  { 
+			OR = { 
+				has_equipment = { support_equipment > 750}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { support_equipment < 100 }
+				has_equipment = { support_equipment > 1000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -15 }
+			}
+ 	
+ 	
+ 	
+ 	Magic_Eq_Limit_minor = {
+ 		enable = { 
+			OR = { 
+				has_equipment = { magical_equipment > 750}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { magical_equipment < 100 }
+				has_equipment = { magical_equipment > 1000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = magical_equipment
+			value = -15 }
+			}
+ 	
+ 	
+ 	
+ 	Motor_Eq_Limit_minor = {
+ 		enable = { 
+			OR = { 
+				has_equipment = { motorized_equipment > 400}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { motorized_equipment < 75 }
+				has_equipment = { motorized_equipment > 500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	Mech_Eq_Limit_minor = {
+ 		enable =  { 
+			OR = { 
+				has_equipment = { mechanized_equipment > 400}
+				} 
+				}
+
+ 		abort = {
+			OR = {
+				has_equipment = { mechanized_equipment < 50 }
+				has_equipment = { mechanized_equipment > 500}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = mechanized_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	LightT_Eq_Limit_minor = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { light_tank_equipment > 350}} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { light_tank_equipment < 100 }
+				has_equipment = { light_tank_equipment > 500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	 MediumT_Eq_Limit_minor = {
+ 		enable = { 
+			OR = { 
+				has_equipment = { medium_tank_equipment > 350}} 
+				}
+		abort = {
+			OR = { 
+				has_equipment = { medium_tank_equipment < 100}
+				has_equipment = { medium_tank_equipment > 500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	HeavyT_Eq_Limit_minor = {
+		enable = {
+			OR = {
+				has_equipment = { heavy_tank_equipment > 150}}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {heavy_tank_equipment < 50}
+				has_equipment = {heavy_tank_equipment > 200}
+				}
+				}
+		
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	 	ModernT_Eq_Limit_minor = {
+ 	enable = {
+		OR = {
+			has_equipment = { modern_tank_equipment > 500}
+			}
+			}
+		abort = {
+			OR = {
+				has_equipment = {modern_tank_equipment < 100}
+				has_equipment = {modern_tank_equipment > 500}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = modern_tank_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	Arti_Eq_Limit_minor = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { artillery_equipment > 250}
+				} 
+				}
+ 		abort = {
+				OR = {
+					has_equipment = { artillery_equipment < 100 }
+					has_equipment = { artillery_equipment > 1000}
+					}
+					}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	AntiT_Eq_Limit_minor = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { anti_tank_equipment > 250}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_tank_equipment < 100 }
+				has_equipment = { anti_tank_equipment > 1000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -15}
+			}
+ 	
+ 	
+ 	
+ 	AntiA_Eq_Limit_minor = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { anti_air_equipment > 250}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_air_equipment < 100 }
+				has_equipment = { anti_air_equipment > 1000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_air_equipment
+			value = -15}
+			}
+
+
+
+	Infantry_Eq_Limit_light = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { infantry_equipment > 15000}
+				}
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { infantry_equipment < 5000}
+			    has_equipment = { infantry_equipment > 25000}
+			    }
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -25}
+			}
+ 
+ 
+ 
+ 	Sup_Eq_Limit_light = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { support_equipment > 1000}
+				}
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { support_equipment < 100}
+			    has_equipment = { support_equipment > 2500}
+			    }
+			    }
+ 	
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	Magic_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { magical_equipment > 1000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { magical_equipment < 200 }
+				has_equipment = { magical_equipment > 2500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = magical_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	Motor_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { motorized_equipment > 500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { motorized_equipment < 100 }
+				has_equipment = { motorized_equipment > 1000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	Mech_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { mechanized_equipment > 500}} 
+				}		
+ 		abort = {
+			OR = { 
+				has_equipment = { mechanized_equipment < 50 }
+				has_equipment = { mechanized_equipment > 1000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = mechanized_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	LightT_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { light_tank_equipment > 500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { light_tank_equipment < 100 }
+				has_equipment = { light_tank_equipment > 1500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	 MediumT_Eq_Limit_light = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { medium_tank_equipment > 500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { medium_tank_equipment < 100 }
+				has_equipment = { medium_tank_equipment > 1500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	HeavyT_Eq_Limit_light = {
+		enable = {
+			OR = {
+				has_equipment = { heavy_tank_equipment > 200}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {heavy_tank_equipment < 50}
+				has_equipment = { heavy_tank_equipment > 500}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	 	ModernT_Eq_Limit_light = {
+		enable = {
+			OR = {
+				has_equipment = { modern_tank_equipment > 500}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {modern_tank_equipment < 100}
+				has_equipment = { modern_tank_equipment > 1500}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = modern_tank_equipment
+			value = -25
+			}
+			}
+ 	
+ 	
+ 	
+ 	Arti_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { artillery_equipment > 1000}} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { artillery_equipment < 100 }
+				has_equipment = { artillery_equipment > 2000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -25}
+			}
+ 	
+ 	
+ 	
+ 	AntiT_Eq_Limit_light = { 
+ 		enable =  { 
+			OR = { 			
+				has_equipment = { anti_tank_equipment > 1000}
+				} 
+				}
+		abort = {
+			OR = { 
+				has_equipment = { anti_tank_equipment < 100 }
+				has_equipment = { anti_tank_equipment > 2000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -25}
+			}
+ 	
+ 	
+ 	
+ 	AntiA_Eq_Limit_light = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { anti_air_equipment > 1000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_air_equipment < 100 }
+				has_equipment = { anti_air_equipment > 1500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_air_equipment
+			value = -25}
+			}
+ 	
+
+ 	
+ 	Infantry_Eq_Limit_med = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { infantry_equipment > 25000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { infantry_equipment < 10000}				 
+				has_equipment = { infantry_equipment > 50000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -40}
+			}
+ 
+ 
+ 
+ 	Sup_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = {support_equipment > 2500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { support_equipment < 500 }
+				has_equipment = { support_equipment > 7500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	Magic_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { magical_equipment > 2500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { magical_equipment < 1500 }
+				has_equipment = { magical_equipment > 10000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = magical_equipment
+			value = -80}
+			}
+ 	
+ 	
+ 	
+ 	Motor_Eq_Limit_med = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { motorized_equipment > 1000}
+				} 
+				}
+		abort = {
+			OR = { 
+				has_equipment = { motorized_equipment < 250 }
+				has_equipment = { motorized_equipment > 2000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	Mech_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { mechanized_equipment > 1000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { mechanized_equipment < 250 }				 
+				has_equipment = { mechanized_equipment > 2000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = mechanized_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	LightT_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { light_tank_equipment > 1500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { light_tank_equipment < 500 }
+				has_equipment = { light_tank_equipment > 3000}
+				}
+				}
+ 			
+ 			
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	MediumT_Eq_Limit_med = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { medium_tank_equipment > 1500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { medium_tank_equipment < 500 }
+				has_equipment = { medium_tank_equipment > 3500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	HeavyT_Eq_Limit_med = {
+		enable = {
+			OR = {
+				has_equipment = { heavy_tank_equipment > 500}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {heavy_tank_equipment < 150}
+				has_equipment = { heavy_tank_equipment > 1000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	 ModernT_Eq_Limit_med = {
+		enable = {
+			OR = {
+				has_equipment = { modern_tank_equipment > 1500}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {modern_tank_equipment < 500}
+				has_equipment = { modern_tank_equipment > 3500}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = modern_tank_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	Arti_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { artillery_equipment > 2000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { artillery_equipment < 1000}
+				has_equipment = { artillery_equipment > 5000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	AntiT_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { anti_tank_equipment > 2000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_tank_equipment < 1000}
+				has_equipment = { anti_tank_equipment > 3000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	AntiA_Eq_Limit_med = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { anti_air_equipment > 1500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_air_equipment < 1000}
+				has_equipment = { anti_air_equipment > 2500}
+				}
+		}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_air_equipment
+			value = -40}
+			}
+ 	
+ 	
+ 	
+ 	
+ 	Infantry_Eq_Limit_full = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { infantry_equipment > 100000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { infantry_equipment < 25000 }
+				has_equipment = { infantry_equipment > 1000000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -75}
+			}
+ 
+ 
+ 
+ 	Sup_Eq_Limit_full = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { support_equipment > 7500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { support_equipment < 2500 }
+				has_equipment = { support_equipment > 50000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	Magic_Eq_Limit_full = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { magical_equipment > 10000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { magical_equipment < 5000 }
+				has_equipment = { magical_equipment > 50000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = magical_equipment
+			value = -150}
+			}
+ 	
+ 	
+ 	
+ 	Motor_Eq_Limit_full = { 
+ 		enable =  { 
+			OR = { 
+			has_equipment = { motorized_equipment > 2000}
+			} 
+			}
+ 		abort = {
+			OR = { 
+				has_equipment = { motorized_equipment < 1000}
+				has_equipment = { motorized_equipment > 5000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	Mech_Eq_Limit_full = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { mechanized_equipment > 2000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { mechanized_equipment < 500 }
+				has_equipment = { mechanized_equipment > 3000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = mechanized_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	
+ 	LightT_Eq_Limit_full = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { light_tank_equipment > 3000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { light_tank_equipment < 750 }
+			    has_equipment = { light_tank_equipment > 5000}
+			    }
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	MediumT_Eq_Limit_full = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { medium_tank_equipment > 3500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { medium_tank_equipment < 1000 }
+				has_equipment = { medium_tank_equipment > 5000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	HeavyT_Eq_Limit_full = {
+		enable = {
+			OR = {
+				has_equipment = { heavy_tank_equipment > 1000}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {heavy_tank_equipment < 350}
+				has_equipment = { heavy_tank_equipment > 1000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	 ModernT_Eq_Limit_full = {
+		enable = {
+			OR = {
+				has_equipment = { modern_tank_equipment > 3500}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {modern_tank_equipment < 1500}
+				has_equipment = { modern_tank_equipment > 5000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = modern_tank_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	Arti_Eq_Limit_full = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { artillery_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { artillery_equipment < 2000 }
+				has_equipment = { artillery_equipment > 10000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	AntiT_Eq_Limit_full = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { anti_tank_equipment > 3000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_tank_equipment < 2000 }
+				has_equipment = { anti_air_equipment > 10000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+ 	AntiA_Eq_Limit_full = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { anti_air_equipment > 2500}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_air_equipment < 500}
+				has_equipment = { anti_air_equipment > 5000}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_air_equipment
+			value = -75}
+			}
+ 	
+ 	
+ 	
+   Infantry_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { infantry_equipment > 250000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { infantry_equipment < 100000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = infantry_equipment
+			value = -1000}
+			}
+ 
+ 
+ 
+ 	Sup_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { support_equipment > 50000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+			has_equipment = { support_equipment < 10000 }
+			}
+			}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = support_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	Magic_Eq_Limit_Ult = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { magical_equipment > 50000}
+				} 
+				}
+ 		abort = {
+			OR = { has_equipment = { magical_equipment < 10000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = magical_equipment
+			value = -2000}
+			}
+ 	
+ 	
+ 	
+ 	Motor_Eq_Limit_Ult = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { motorized_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { motorized_equipment < 1000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = motorized_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	Mech_Eq_Limit_Ult = { 
+ 		enable =  { 
+			OR = { 
+				has_equipment = { mechanized_equipment > 3000}
+				} 
+				}
+ 		abort = {
+			OR =  { has_equipment = { mechanized_equipment < 500 }
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = mechanized_equipment
+			value = -1000}
+			}
+ 	
+ 	LightT_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { light_tank_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { light_tank_equipment < 1000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = light_tank_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	MediumT_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { medium_tank_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { medium_tank_equipment < 1000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = medium_tank_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	HeavyT_Eq_Limit_Ult = {
+		enable = {
+			OR = {
+				has_equipment = { heavy_tank_equipment > 1000}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {heavy_tank_equipment < 500}
+				}
+				}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = heavy_tank_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	 Modern_Eq_Limit_Ult = {
+		enable = {
+			OR = {
+				has_equipment = { modern_tank_equipment > 5000}
+				}
+				}
+		abort = {
+			OR = { 
+				has_equipment = {modern_tank_equipment < 1000}
+				}
+				}
+				
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = modern_tank_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	Arti_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { artillery_equipment > 10000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { artillery_equipment < 5000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = artillery_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	AntiT_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { anti_tank_equipment > 10000}} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = { anti_tank_equipment < 5000 }
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_tank_equipment
+			value = -1000}
+			}
+ 	
+ 	
+ 	
+ 	AntiA_Eq_Limit_Ult = { 
+ 		enable = { 
+			OR = { 
+				has_equipment = { anti_air_equipment > 5000}
+				} 
+				}
+ 		abort = {
+			OR = { 
+				has_equipment = {anti_air_equipment < 2500}
+				}
+				}
+ 			
+ 		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = anti_air_equipment
+			value = -1000}
+			}
+	
+	
