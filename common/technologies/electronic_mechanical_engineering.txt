@@ -33,15 +33,11 @@ technologies = {
 		ai_will_do = {
 			factor = 30
 
-			modifier = {
-				factor = 3
-				date > "1007.1.6"
-			}
-
-			modifier = {
-				factor = 3
-				date > "1008.1.1"
-			}
+		modifier = {
+		value = 10
+		amount_research_slots > 2		
+		}
+		
 		}
 
 		categories = {
@@ -342,11 +338,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 7
-		modifier = {
-		value = 5
-		date > 1009.1.1		
-		}
+			factor = 15
+
 		modifier = {
 		value = 5
 		amount_research_slots > 3		

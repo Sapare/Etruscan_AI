@@ -219,10 +219,12 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
-			modifier = {
+				modifier = {
 				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 	
 			modifier = {
 					factor = 1.5
@@ -279,8 +281,10 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}	
 	
 			modifier = {
 					factor = 1.5
@@ -354,9 +358,11 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 	
 			modifier = {
 					factor = 1.5
@@ -799,9 +805,11 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}	
 	
 			modifier = {
 					factor = 1.5
@@ -859,9 +867,11 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 	
 			modifier = {
 					factor = 1.5
@@ -924,10 +934,12 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+		modifier = {
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}
 	
 			modifier = {
 					factor = 1.5

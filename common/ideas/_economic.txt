@@ -249,14 +249,75 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 2
+				factor = 5
 
 				modifier = {
-					factor = 20
-
-					is_major = yes
+					factor = 2
+					num_of_factories > 15
+					}
+					
+				modifier = {
+					factor = 2
+					num_of_factories > 30
+					}
+					
+				modifier = {
+					factor = 2
+					threat > 0.1
+					}
+					
+				modifier = { 
+					factor = 5
+					any_neighbor_country = {
+					has_added_tension_amount = 1
+					}
+					}
+					
+				modifier = {
+					factor = 0
+					num_of_factories < 5
+					}
+					
+				modifier = {
+				factor = 0.5
+				NOT = {
+				has_tech = basic_machine_tools
 				}
+				}
+				
+			modifier = {
+				factor = 0.5
+				NOT = {
+				has_tech = construction1
+				}
+				}
+				
+			modifier = {
+				factor = 0.5
+				NOT = {
+				has_tech = construction2
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+				}
+				
+			modifier = {
+				factor = 0.5
+				NOT = {
+				has_tech = mechanical_computing
+				}
+				}
+				
+				modifier = {
+					factor = 0.5
+				check_variable = { resource_imported@steel > 0 }
 			}
+		}
 		}
 
 		partial_economic_mobilisation = {
@@ -318,16 +379,62 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 2
+				factor = 5
 
 				modifier = {
-					factor = 20
-
-					is_major = yes
-				}
-			}
-		}
-
+					factor = 2.5
+					industrial_complex > 15
+					}
+					
+				modifier = {
+					factor = 2.5
+					industrial_complex > 30
+					}
+				
+				modifier = {
+					factor = 2.5
+					num_of_factories > 65
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex < 10
+					}
+					
+				modifier = {
+					factor = 10
+					threat > 0.25
+					}
+					
+				modifier = { 
+					factor = 10
+					any_neighbor_country = {
+					has_added_tension_amount = 5
+					}
+					
+					}
+								
+				modifier = {
+					factor = 0.5
+					NOT = {
+					has_tech = improved_machine_tools
+					}
+					}
+								
+				modifier = {
+					factor = 0.5
+					NOT = {
+					has_tech = construction2
+					}
+					}
+				
+				modifier = {
+					factor = 0.3
+					check_variable = { resource_imported@steel > 0 }
+					}			
+					}
+					}
+	
 		war_economy = {
 
 
@@ -383,9 +490,64 @@ ideas = {
 
 				modifier = {
 					#High prio on production
-					factor = 20
+					factor = 5
 					manpower_per_military_factory >  1000
 				}
+								
+				modifier = {
+					factor = 2
+					industrial_complex > 30
+					}
+					
+				modifier = {
+					factor = 2
+					industrial_complex > 45
+					}
+				
+				modifier = {
+					factor = 2
+					num_of_factories > 65
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex > 10
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex < 20
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex < 30
+					}
+				
+				modifier = {
+					factor = 0
+					enemies_strength_ratio > 0.5
+					}
+				
+				modifier = {
+					factor = 2
+					enemies_strength_ratio > 0.8
+					}
+					
+				modifier = {
+					factor = 5
+					enemies_strength_ratio > 1.0
+					}
+					
+				modifier = {
+					factor = 0
+					manpower < 10000
+					}
+
+				modifier = {
+					factor = 0.2
+					check_variable = { resource_imported@steel > 0 }
+					}					
 			}
 		}
 
@@ -437,15 +599,83 @@ ideas = {
 				}
 			}
 
-			ai_will_do = {
-				factor = 1
+			cost = 150
+			removal_cost = -1
 
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription = -0.03
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				political_power_gain = -0.25
+			}
+
+			cancel_if_invalid = no
+			
+						ai_will_do = {
+				factor = 10
+					
 				modifier = {
-					factor = 25
-					#Prio this if nation has a lot of manpower compared to MIC
-					manpower_per_military_factory > 15000
-				}
-
+					factor = 0.5
+					industrial_complex > 10
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex < 20
+					}
+					
+				modifier = {
+					factor = 0.5
+					industrial_complex < 30
+					}
+				
+				modifier = {
+					factor = 0
+					enemies_strength_ratio > 0.5
+					}
+				
+				modifier = {
+					factor = 0
+					enemies_strength_ratio > 0.8
+					}
+					
+				modifier = {
+					factor = 0.5
+					enemies_strength_ratio > 1.0
+					}
+				
+				modifier = {
+					factor = 5
+					enemies_strength_ratio > 1.25
+					}
+				
+				modifier = {
+					factor = 5
+					enemies_strength_ratio > 1.5
+					}
+					
+				modifier = {
+					factor = 5
+					enemies_strength_ratio > 2.0
+					}
+					
+				modifier = {
+					factor = 0
+					check_variable = { resource_imported@steel > 0 }
+					}	
+					
+				modifier = {
+					factor = 100
+					has_equipment = { infantry_equipment < 100 }
+					}
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment > 1000 }
+					}
+					
 				modifier = {
 					#Block  unless nation has a lot of manpower
 					factor = 0
@@ -462,20 +692,6 @@ ideas = {
 					}
 				}
 			}
-
-			cost = 150
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.10
-				conscription = -0.03
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				political_power_gain = -0.25
-			}
-
-			cancel_if_invalid = no
 		}
 	}
 
@@ -518,6 +734,77 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
+			
+		ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@steel > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@crystals > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@rubber > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@tungsten > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@chromium > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@aluminium > 0 }
+				}
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 0.25 }
+				}
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 0.25 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 0.25 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 0.25 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 0.25 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 0.25 }
+				}						
+			}
 		}
 
 		export_focus = {
@@ -560,6 +847,77 @@ ideas = {
 			default = yes
 
 			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 5
+
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@steel > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@crystals > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@rubber > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@tungsten > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@chromium > 0 }
+				}
+				modifier = {
+					factor = 0
+				check_variable = { resource_imported@aluminium > 0 }
+				}
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 0.4 }
+				}
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 0.4 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 0.4 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 0.4 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 0.4 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 0.4 }
+				}						
+			}
 		}
 
 		limited_exports = {
@@ -608,17 +966,100 @@ ideas = {
 			cancel_if_invalid = no
 
 			ai_will_do = {
-				factor = 1
-
+				factor = 5
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 1.0 }
+				}
+				
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 1.0 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 1.0 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 1.0 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 1.0 }
+				}
+								
+				modifier = {
+					factor = 10
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 1.0 }
+				}	
+				
+				
+			modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 1.2 }
+				}
+				
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 1.2 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 1.2 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 1.2 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 1.2 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 1.2 }
+				}
+				
 				modifier = {
 					factor = 0
-
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
+					has_idea = closed_economy
+					}
 			}
-		}
+			}
+		
 
 		closed_economy = {
 
@@ -658,11 +1099,130 @@ ideas = {
 				factor = 1
 
 				modifier = {
-					factor = 0
-
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 1.3 }
+				}
+				
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 1.3 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 1.3 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 1.3}
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 1.3 }
+				}
+								
+				modifier = {
+					factor = 20
+				set_temp_variable = { type_percentage =  resource@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 1.3 }
+				}	
+				
+				
+			modifier = {
+					factor = 40
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 1.5 }
+				}
+				
+				modifier = {
+					factor = 40
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 1.5 }
+				}
+								
+				modifier = {
+					factor = 40
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 1.5 }
+				}
+								
+				modifier = {
+					factor = 40
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 1.5 }
+				}
+								
+				modifier = {
+					factor = 40
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 1.5 }
+				}
+								
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 2}
+				}
+				
+							modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage > 2 }
+				}
+				
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@rystals }
+				divide_temp_variable = { type_percentage = resource_produced@rystals}
+				check_variable = { type_percentage > 2}
+				}
+								
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@rubber }
+				divide_temp_variable = { type_percentage = resource_produced@rubber}
+				check_variable = { type_percentage > 2 }
+				}
+								
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
+				divide_temp_variable = { type_percentage = resource_produced@aluminium}
+				check_variable = { type_percentage > 2 }
+				}
+								
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
+				divide_temp_variable = { type_percentage = resource_produced@tungsten}
+				check_variable = { type_percentage > 2 }
+				}
+								
+				modifier = {
+					factor = 100
+				set_temp_variable = { type_percentage =  resource_consumed@chromium }
+				divide_temp_variable = { type_percentage = resource_produced@chromium}
+				check_variable = { type_percentage > 2 }
 				}
 			}
 		}

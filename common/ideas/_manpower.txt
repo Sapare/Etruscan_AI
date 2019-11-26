@@ -145,7 +145,19 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 1
+				factor = 2
+				
+				modifier = {
+					#Prio if low on manpower
+					add = 100
+					NOT = {
+						has_idea = extensive_conscription
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 2500
+				}
 				modifier = {
 					#Prio if low on manpower
 					factor = 100
@@ -160,7 +172,7 @@ ideas = {
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 25
+					factor = 20
 				NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -172,7 +184,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 10
+					factor = 20
 					NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -184,7 +196,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 10
+					factor = 20
 					NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -193,22 +205,27 @@ ideas = {
 					}				
 					manpower_per_military_factory < 3000
 				}
-								
+				
 				modifier = {
 					#Prio if low on manpower
-					add = 100
+					factor = 20
 					NOT = {
-						has_idea = extensive_conscription
-						has_idea = service_by_requirement
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-					has_manpower < 2500
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 4000
+				}	
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 500 }
+					}											
 				}
-			}
 
 			cancel_if_invalid = no
-		}
+				}
 
 		extensive_conscription = {
 
@@ -272,10 +289,23 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 1
+				factor = 1.75
+				
 				modifier = {
 					#Prio if low on manpower
-					factor = 200
+					factor = 100
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 2500
+					has_war = yes
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 100
 					NOT = {
 						has_idea = service_by_requirement
 						has_idea = all_adults_serve
@@ -286,7 +316,7 @@ ideas = {
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 25
+					factor = 20
 				NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -297,7 +327,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 10
+					factor = 20
 					NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -308,7 +338,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 10
+					factor = 20
 					NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -316,7 +346,22 @@ ideas = {
 					}				
 					manpower_per_military_factory < 3000
 				}
-								
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 4000
+				}
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 700 }
+					}											
 			}
 
 			cost = 150
@@ -396,42 +441,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 1
-				modifier = {
-					#Prio if low on manpower
-					factor = 200
-					NOT = {
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-					has_manpower < 5000
-				}
-				modifier = {
-					#Prio if low on manpower
-					factor = 20
-					manpower_per_military_factory <  700
-					NOT = {
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-				}
-				modifier = {
-					#Lower chance if has decent amount
-					factor = 0.5
-					manpower_per_military_factory >  1000
-				}
-				modifier = {
-					#Block has plenty manpower
-					factor = 0
-					manpower_per_military_factory >  3000
-					NOT = { tag = DED }
-				}
-				modifier = {
-					#no need to
-					factor = 0.2
-					enemies_strength_ratio < 1.2
-					NOT = { tag = DED }
-				}
+				factor = 1.50
 				modifier = {
 					#Prio if low on manpower
 					add = 2000
@@ -442,6 +452,69 @@ ideas = {
 					has_war = yes
 					has_manpower < 5000
 				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					NOT = {
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 5000
+				}
+			
+			modifier = {
+					#Prio if low on manpower
+					factor = 20
+				NOT = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}
+					manpower_per_military_factory < 1000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}
+					manpower_per_military_factory < 2000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 3000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 4000
+				}
+				
+				modifier = {
+					#no need to
+					factor = 0
+					enemies_strength_ratio < 0.8
+					NOT = { tag = DED }
+				}
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 1000 }
+					}
+				
 			}
 
 			cost = 150
@@ -517,7 +590,7 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 1
+				factor = 1.25
 				modifier = {
 					#Prio if low on manpower
 					factor = 200
@@ -529,16 +602,44 @@ ideas = {
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
-					manpower_per_military_factory <  1000
+				NOT = {
+					has_idea = scraping_the_barrel
+					}
+					manpower_per_military_factory < 1000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
 					NOT = {
 					has_idea = scraping_the_barrel
 					}
+					manpower_per_military_factory < 2000
 				}
+				
 				modifier = {
-					#Lower chance if has decent amount
-					factor = 0.5
-					manpower_per_military_factory >  1000
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 3000
 				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					NOT = {
+					has_idea = scraping_the_barrel
+					}				
+					manpower_per_military_factory < 4000
+				}
+				
+		#		modifier = {
+		#			#Lower chance if has decent amount
+		#			factor = 0.5
+		#			manpower_per_military_factory >  1000
+		#		}
 				modifier = {
 					#Block has plenty manpower
 					factor = 0
@@ -548,7 +649,7 @@ ideas = {
 				modifier = {
 					#no need to
 					factor = 0
-					enemies_strength_ratio < 1.2
+					enemies_strength_ratio < 0.8
 					NOT = { tag = DED }
 				}
 				modifier = {
@@ -560,6 +661,11 @@ ideas = {
 					has_war = yes
 					has_manpower < 2500
 				}
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 1200 }
+					}
 			}
 
 			cost = 150
@@ -645,11 +751,31 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory <  500
 				}
+				
 				modifier = {
-					#Lower chance if has decent amount
-					factor = 0.5
-					manpower_per_military_factory >  1000
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 1000
 				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 2000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20			
+					manpower_per_military_factory < 3000
+				}
+				
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 4000
+				}
+				
 				modifier = {
 					#Block has plenty manpower
 					factor = 0
@@ -659,7 +785,7 @@ ideas = {
 				modifier = {
 					#no need to
 					factor = 0
-					enemies_strength_ratio < 1.2
+					enemies_strength_ratio < 1.0
 					NOT = { tag = DED }
 				}
 				modifier = {
@@ -668,6 +794,11 @@ ideas = {
 					has_war = yes
 					has_manpower < 2500
 				}
+				
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 1500 }
+					}
 			}
 
 			cost = 150

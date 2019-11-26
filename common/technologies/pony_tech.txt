@@ -106,9 +106,11 @@ technologies = {
 			factor = 5
 			
 			modifier = {
-				factor = 2
-				has_template_majority_unit = infantry 
-				}	
+					factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.5 }
+					}	
 				
 				
 			modifier = {
@@ -664,9 +666,11 @@ technologies = {
 				tag = NIM
 			}
 			modifier = {
-				factor = 2
-				has_template_majority_unit = pegasi
-				}	
+					factor = 4
+					set_temp_variable = { type_percentage = num_armies_with_type@pegasi }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.3 }
+					}	
 		
 		}
 	}
@@ -710,9 +714,11 @@ technologies = {
 				tag = NIM
 			}
 			modifier = {
-				factor = 2
-				has_template_majority_unit = pegasi
-				}
+					factor = 4
+					set_temp_variable = { type_percentage = num_armies_with_type@pegasi }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.3 }
+					}
 		}
 	}
 
@@ -754,9 +760,11 @@ technologies = {
 				tag = NIM
 			}
 			modifier = {
-					factor = 2
-					has_template_majority_unit = pegasi
-					}									
+					factor = 4
+					set_temp_variable = { type_percentage = num_armies_with_type@pegasi }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.3 }
+					}								
 		}
 	}
 	
@@ -794,9 +802,11 @@ technologies = {
 				tag = NIM
 			}
 			modifier = {
-					factor = 2
-					has_template_majority_unit = pegasi
-					}	
+					factor = 4
+					set_temp_variable = { type_percentage = num_armies_with_type@pegasi }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.3 }
+					}
 		}
 		}
 		
