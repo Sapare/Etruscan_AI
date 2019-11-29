@@ -851,13 +851,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 5
-			
 			modifier = {
 				add = 15
 				has_war = yes
 				has_manpower < 10000
 			}
-			
 			modifier = {
 				add = 15
 				has_war = yes
@@ -866,35 +864,29 @@ technologies = {
 					has_idea = scraping_the_barrel
 				}
 			}
-			
 			modifier = {
 				add = 10
 				has_war = yes
 				enemies_strength_ratio > 0.6
 			}
-			
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
 			}
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.5
 			}
-			
 			modifier = {
 				tag = CHN
 				factor = 3
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist
@@ -934,22 +926,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
 			}
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.5
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist
 			}
-			
 		}
 		
 		ai_research_weights = {
@@ -983,7 +971,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
@@ -996,7 +983,6 @@ technologies = {
 			factor = 3
 			has_trait = military_theorist
 			}
-			
 		}
 		
 		ai_research_weights = {
@@ -1043,29 +1029,24 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
 			modifier = {
 				factor = 10
 				has_tech_bonus = { category = cat_superior_firepower }
 			}
-			
 			modifier = {
 				factor = 4
 				tag = STG
 			}
-			
 			modifier = {
 				factor = 0
 				tag = VED
 			}
-			
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist
@@ -1107,14 +1088,12 @@ technologies = {
 		
 		ai_will_do = {
 		factor = 20
-		
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist
@@ -1391,14 +1370,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-		factor = 20
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			
+			factor = 20
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.5
@@ -1978,15 +1956,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
-			
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-
+			factor = 20
 			modifier = {
 				factor = 10
 				has_tech_bonus = { category = cat_grand_battle_plan }
@@ -2040,7 +2016,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
-			
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2926,8 +2901,7 @@ technologies = {
 					tag = GRI
 					tag = LAK
 				}
-				}
-			
+			}
 		modifier = {
 			factor = 3
 			has_trait = military_theorist
@@ -3257,17 +3231,14 @@ technologies = {
 				}
 				factor = 0.8
 			}
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.35
 			}
-			
 			modifier = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.65
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist
@@ -3522,7 +3493,6 @@ technologies = {
 				num_of_factories > 70
 				factor = 0.5
 			}
-			
 			modifier = {
 			factor = 3
 			has_trait = military_theorist

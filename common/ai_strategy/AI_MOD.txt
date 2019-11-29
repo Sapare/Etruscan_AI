@@ -1,7 +1,25 @@
 
 	
 	#Adjust military focus of countries based on their military industrial scale.:		
-
+	
+	Long_term_industry = {
+		enable = {
+			AND = {
+				always = yes
+				}
+				}
+		Abort = {
+			OR = {
+				has_war = yes							
+				}
+				}
+		
+		ai_strategy = {
+			type = added_military_to_civilian_factory_ratio
+			value = -35
+		}
+		}
+		
 	High_industry_country = {
 			enable = {
 				OR = {
@@ -747,38 +765,38 @@ In_with_new_MT = {
 	
 	Less_Ships_for_all = {
 		enable = {
-			OR = {
-				always = yes
+			not = {
+			has_dlc = "Man the Guns"
 				}
 				}
 		Abort = {
 			OR = {
-				always = no 
+				has_dlc = "Man the Guns"
 				}
 				}
 			
 		ai_strategy = {
 			type = unit_ratio
 			id = capital_ship
-			value = -50
+			value = -10
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = submarine
-			value = -50
+			value = -20
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = screen_ship
-			value = -30
+			value = -10
 			}
 
 		ai_strategy = {
 			type = unit_ratio
 			id = convoy
-			value = -50
+			value = -20
 			}
 		ai_strategy = {
 		type = dockyard_to_military_factory_ratio

@@ -128,6 +128,10 @@ technologies = {
 				num_divisions > 40
 			}
 		}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 	}
 
 	artillery1 = {
@@ -173,7 +177,11 @@ technologies = {
 		modifier = {
 				factor = 2
 				num_divisions > 40
-			}						
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}						
 		}
 	}
 
@@ -233,6 +241,10 @@ technologies = {
 				factor = 2
 				num_divisions > 60
 			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -287,6 +299,10 @@ technologies = {
 				factor = 2
 				num_divisions > 60
 			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -335,6 +351,10 @@ technologies = {
 				factor = 2
 				num_divisions > 100
 			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -391,6 +411,10 @@ technologies = {
 				factor = 2
 				num_divisions > 60
 			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -473,6 +497,7 @@ technologies = {
 				factor = 2
 				arms_factory >65
 			}
+			
 		modifier = { #a test for now
 				factor = 0
 				is_pony_race = no
@@ -1555,16 +1580,28 @@ technologies = {
 		
 
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 60
 			}
 
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 100
 			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 120
+			}
 
-		
+			modifier = {
+				factor = 2
+				arms_factory > 150
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -1590,6 +1627,34 @@ technologies = {
 
 		categories = {
 			artillery
+		}
+				ai_will_do = {
+			factor = 1
+		
+
+			modifier = {
+				factor = 2
+				arms_factory > 60
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 100
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 120
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 150
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -1626,17 +1691,31 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
+
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 60
 			}
 
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 100
 			}
-		
-			}						
+			
+			modifier = {
+				factor = 2
+				arms_factory > 120
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 150
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
+		}						
 			}
 
 	artillery_d = {
@@ -1672,15 +1751,31 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
+
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 60
 			}
 
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 100
 			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 120
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 150
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
+		}
 		
 		}
 	}
@@ -1713,16 +1808,30 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
-		
+
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 60
 			}
 
 			modifier = {
-				factor = 4
+				factor = 2
 				arms_factory > 100
-			}				
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 120
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 150
+			}
+		modifier = {
+			factor = 2
+		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 

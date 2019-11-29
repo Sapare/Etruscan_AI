@@ -1976,7 +1976,15 @@ leader_traits = {
 						
 			modifier = {
 					factor = 2
-					industrial_complex > 10
+					industrial_complex > 5
+			}
+				modifier = {
+					factor = 2 
+					industrial_complex > 8
+			}
+			modifier = {
+					factor = 2 
+					industrial_complex > 13
 			}
 				modifier = {
 					factor = 2 
@@ -1984,16 +1992,18 @@ leader_traits = {
 			}
 			modifier = {
 					factor = 2 
-					industrial_complex > 35
+					industrial_complex > 20
 			}
-				modifier = {
+			
+			modifier = {
 					factor = 2 
-					industrial_complex > 45
+					industrial_complex > 25
 			}
 			modifier = {
 					factor = 2 
-					industrial_complex > 60
+					industrial_complex > 30
 			}
+		
 		
 			modifier = {
 					factor = 0.5
@@ -3886,13 +3896,7 @@ leader_traits = {
 			modifier = {
 				factor = 0.5
 				has_tech = assembly_line_production
-			}
-
-			modifier = {
-				factor = 0.5
-				has_tech = concentrated_industry
-			}
-			
+			}	
 			modifier = {
 				factor = 0.5
 				has_tech = concentrated_industry2
@@ -3905,11 +3909,6 @@ leader_traits = {
 			
 			modifier = {
 				factor = 0.5
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0.5
 				has_tech = dispersed_industry2
 			}
 			
@@ -3917,12 +3916,7 @@ leader_traits = {
 				factor = 0.5
 				has_tech = dispersed_industry3
 			}
-			
-			modifier = {
-				factor = 0.5
-				has_tech = construction1
-			}
-			
+						
 			modifier = {
 				factor = 0.5
 				has_tech = construction2
@@ -4064,6 +4058,10 @@ leader_traits = {
 					has_wargoal_against  = ROOT
 					}
 					}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 					}
 					}
 
@@ -4073,7 +4071,7 @@ leader_traits = {
 		ai_focus_defense_factor = 0.15
 
 			ai_will_do = {
-				factor = 2
+				factor = 1.5
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -4123,6 +4121,10 @@ leader_traits = {
 					has_wargoal_against  = ROOT
 					}
 					}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 					}
 	}
 
@@ -4132,7 +4134,7 @@ leader_traits = {
 		ai_focus_defense_factor = 0.15
 
 		ai_will_do = {
-				factor = 3
+				factor = 2
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -4182,6 +4184,10 @@ leader_traits = {
 					has_wargoal_against  = ROOT
 					}
 					}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 					}
 	}
 
@@ -4192,7 +4198,8 @@ leader_traits = {
 		ai_focus_aggressive_factor = 0.15
 
 ai_will_do = {
-	factor = 1.5
+	factor = 1
+	
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -4221,6 +4228,10 @@ ai_will_do = {
 			modifier = {
 				factor = 2
 				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 			}
@@ -4231,7 +4242,7 @@ ai_will_do = {
 		ai_focus_aggressive_factor = 0.15
 
 ai_will_do = {
-	factor = 3
+	factor =  1.5
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -4260,6 +4271,10 @@ ai_will_do = {
 			modifier = {
 				factor = 2
 				arms_factory > 50
+			}	
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -4270,7 +4285,8 @@ ai_will_do = {
 		ai_focus_aggressive_factor = 0.15
 
 	ai_will_do = {
-	factor = 4
+	factor = 2.5
+	
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -4300,6 +4316,10 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 			}
 
@@ -4309,7 +4329,12 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 1
-		}
+		
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
 	}
 
 	army_chief_drill_1 = { # Decreases training time for ground units
@@ -4318,7 +4343,11 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 1
-		}
+				modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}		
 	}
 
 	army_chief_drill_2 = { # Decreases training time for ground units
@@ -4347,6 +4376,11 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 1
+		
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4357,6 +4391,10 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 2
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4367,6 +4405,10 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 3
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4377,6 +4419,10 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 1
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4386,6 +4432,10 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 2
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4395,6 +4445,14 @@ ai_will_do = {
 
 		ai_will_do = {
 			factor = 3
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
+				modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4403,6 +4461,10 @@ ai_will_do = {
 		
 		ai_will_do = {
 			factor = 1
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 	
@@ -4419,6 +4481,10 @@ ai_will_do = {
 		
 		ai_will_do = {
 			factor = 3
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -4427,7 +4493,50 @@ ai_will_do = {
 		army_morale_factor = 0.04
 
 			ai_will_do = {
-				factor = 0.75
+				factor = 0.5
+				
+			modifier = {
+				factor = 2
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 50
+			}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 50
+			}
+					modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	army_chief_morale_2 = { # Ground units get 8 more Morale
+
+		army_morale_factor = 0.08
+
+			ai_will_do = {
+				factor = 1
 				
 			modifier = {
 				factor = 2
@@ -4459,13 +4568,17 @@ ai_will_do = {
 				arms_factory > 50
 			}
 			}
-	}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
 
-	army_chief_morale_2 = { # Ground units get 8 more Morale
+	army_chief_morale_3 = { # Ground units get 12 more Morale
 
-		army_morale_factor = 0.08
+		army_morale_factor = 0.12
 
-			ai_will_do = {
+		ai_will_do = {
 				factor = 1.5
 				
 			modifier = {
@@ -4497,44 +4610,9 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
-			}
-			}
-
-	army_chief_morale_3 = { # Ground units get 12 more Morale
-
-		army_morale_factor = 0.12
-
-		ai_will_do = {
-				factor = 2
-				
 			modifier = {
 				factor = 2
-				num_divisions > 15
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 30
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2
-				arms_factory > 15
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 50
+				has_war = yes
 			}
 			}
 	}
@@ -4577,12 +4655,60 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
 	army_chief_maneuver_2 = { # Ground units move 10% faster
 
 		army_speed_factor = 0.1
+		ai_focus_aggressive_factor = 0.05
+
+		ai_will_do = {
+			factor = 1.5
+		
+		modifier = {
+				factor = 2
+				has_tech = basic_light_tank
+			}
+			
+		modifier = {
+				factor = 2
+				has_tech = improved_light_tank
+			}
+			
+		modifier = {
+				factor = 2
+				has_tech = basic_medium_tank
+			}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	army_chief_maneuver_3 = { # Ground units move 15% faster
+
+		army_speed_factor = 0.15
 		ai_focus_aggressive_factor = 0.05
 
 		ai_will_do = {
@@ -4617,45 +4743,9 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
-			}
-	}
-
-	army_chief_maneuver_3 = { # Ground units move 15% faster
-
-		army_speed_factor = 0.15
-		ai_focus_aggressive_factor = 0.05
-
-		ai_will_do = {
-			factor = 3
-		
-		modifier = {
-				factor = 2
-				has_tech = basic_light_tank
-			}
-			
-		modifier = {
-				factor = 2
-				has_tech = improved_light_tank
-			}
-			
-		modifier = {
-				factor = 2
-				has_tech = basic_medium_tank
-			}
-					
 			modifier = {
 				factor = 2
-				arms_factory > 20
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 50
+				has_war = yes
 			}
 			}
 	}
@@ -4706,13 +4796,70 @@ ai_will_do = {
 			modifier = {
 				factor = 0
 				aluminium < 2
-					}				
+					}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}				
 					}
 					}
 
 	army_entrenchment_2 = { # Ground units entrench 8% faster
 
 		dig_in_speed_factor = 0.08
+		ai_focus_defense_factor = 0.05
+
+		ai_will_do = {
+			factor = 1.5
+	
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.8 }
+					}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 10
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+					
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = tech_engineers
+				}
+				}
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = tech_engineers
+				}
+				}
+			modifier = {
+				factor = 0
+				aluminium < 2
+					}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}				
+					}
+	}
+
+	army_entrenchment_3 = { # Ground units entrench 12% faster
+
+		dig_in_speed_factor = 0.12
 		ai_focus_defense_factor = 0.05
 
 		ai_will_do = {
@@ -4755,56 +4902,11 @@ ai_will_do = {
 			modifier = {
 				factor = 0
 				aluminium < 2
-					}				
 					}
-	}
-
-	army_entrenchment_3 = { # Ground units entrench 12% faster
-
-		dig_in_speed_factor = 0.12
-		ai_focus_defense_factor = 0.05
-
-		ai_will_do = {
-			factor = 3
-	
 			modifier = {
 				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.8 }
-					}
-					
-			modifier = {
-				factor = 2
-				arms_factory > 10
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 15
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-					
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = tech_engineers
-				}
-				}
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = tech_engineers
-				}
-				}
-			modifier = {
-				factor = 0
-				aluminium < 2
-					}				
+				has_war = yes
+			}				
 					}
 					}
 
@@ -4870,6 +4972,10 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
+					modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 			}
 
@@ -4877,6 +4983,74 @@ ai_will_do = {
 		army_armor_attack_factor = 0.1
 		army_armor_defence_factor = 0.1
 
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+					
+		modifier = {
+				factor = 1.5
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 50
+			}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	army_armored_3 = { # +12 armor efficiency
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		
 		ai_will_do = {
 			factor = 2
 			
@@ -4934,69 +5108,9 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
-			}
-	}
-
-	army_armored_3 = { # +12 armor efficiency
-		army_armor_attack_factor = 0.15
-		army_armor_defence_factor = 0.15
-		
-		ai_will_do = {
-			factor = 3
-			
-			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-					
-		modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			
 			modifier = {
 				factor = 2
-				num_divisions > 30
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2
-				arms_factory > 15
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 50
+				has_war = yes
 			}
 			}
 			}
@@ -5007,7 +5121,7 @@ ai_will_do = {
 		army_artillery_defence_factor = 0.05
 
 		ai_will_do = {
-				factor = 0.75
+				factor = 0.5
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -5049,7 +5163,7 @@ ai_will_do = {
 		army_artillery_defence_factor = 0.1
 
 		ai_will_do = {
-				factor = 1.5
+				factor = 1
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -5083,6 +5197,10 @@ ai_will_do = {
 			factor = 2
 		has_template = "Infantry_default_EQS"
 		}
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
@@ -5091,7 +5209,7 @@ ai_will_do = {
 		army_artillery_defence_factor = 0.15
 
 		ai_will_do = {
-				factor = 2
+				factor = 1.5
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -5125,6 +5243,10 @@ ai_will_do = {
 			factor = 2
 		has_template = "Infantry_default_EQS"
 		}
+		modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}	
 	}
 
@@ -5132,6 +5254,54 @@ ai_will_do = {
 	army_infantry_1 = { # +4 infantry efficiency
 		army_infantry_attack_factor = 0.05
 		army_infantry_defence_factor = 0.1
+
+	ai_will_do = {
+				factor = 1
+		modifier = {
+				factor = 2
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 50
+			}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				NOT= {
+				Has_tech = advanced_light_tank
+			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+			}
+
+	army_infantry_2 = { # +8 infantry efficiency
+		army_infantry_attack_factor = 0.1
+		army_infantry_defence_factor = 0.15
 
 	ai_will_do = {
 				factor = 1.5
@@ -5170,49 +5340,9 @@ ai_will_do = {
 				Has_tech = advanced_light_tank
 			}
 			}
-			}
-			}
-
-	army_infantry_2 = { # +8 infantry efficiency
-		army_infantry_attack_factor = 0.1
-		army_infantry_defence_factor = 0.15
-
-	ai_will_do = {
-				factor = 2.5
-		modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			
 			modifier = {
 				factor = 2
-				num_divisions > 30
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2
-				arms_factory > 15
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 50
-			}
-			modifier = {
-				factor = 2
-				NOT= {
-				Has_tech = advanced_light_tank
-			}
+				has_war = yes
 			}
 			}
 	}
@@ -5222,7 +5352,7 @@ ai_will_do = {
 		army_infantry_defence_factor = 0.2
 
 	ai_will_do = {
-				factor = 3.5
+				factor = 2
 		modifier = {
 				factor = 2
 				num_divisions > 15
@@ -5257,6 +5387,10 @@ ai_will_do = {
 				NOT= {
 				Has_tech = advanced_light_tank
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 			}
@@ -5322,6 +5456,10 @@ ai_will_do = {
 					check_variable = { type_percentage > 0.15 }
 					}		
 					}
+				modifier = {
+				factor = 2
+				has_war = yes
+					}
 					}
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
@@ -5382,9 +5520,13 @@ ai_will_do = {
 					set_temp_variable = { type_percentage = num_armies_with_type@knights }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.15 }
+					}
+			modifier = {
+				factor = 2
+				has_war = yes
 					}		
 					}
-	}
+					}
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 
@@ -5444,6 +5586,10 @@ ai_will_do = {
 					set_temp_variable = { type_percentage = num_armies_with_type@knights }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.15 }
+					}
+			modifier = {
+				factor = 2
+				has_war = yes
 					}		
 					}
 					}
@@ -5488,7 +5634,7 @@ ai_will_do = {
 		army_morale_factor = 0.04
 
 			ai_will_do = {
-				factor = 0.75
+				factor = 0.5
 				
 			modifier = {
 				factor = 2
@@ -5526,12 +5672,66 @@ ai_will_do = {
 				factor = 2
 				num_divisions > 100
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 		}
 	}
 
 	army_regrouping_2 = { # Org regenerates 8% faster
 
 		army_morale_factor = 0.08
+
+			ai_will_do = {
+				factor = 1
+				
+			modifier = {
+				factor = 2
+				has_tech = improved_light_armor
+			}
+						
+			modifier = {
+				factor = 2
+				has_tech = basic_medium_armor
+			}
+		modifier = {
+				factor = 2
+				has_offensive_war = yes
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 50
+			}
+			modifier = {
+				factor = 2
+				num_divisions > 75
+			}		
+			modifier = {
+				factor = 2
+				num_divisions > 100
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	army_regrouping_3 = { # Org regenerates 12% faster
+
+		army_morale_factor = 0.12
 
 			ai_will_do = {
 				factor = 1.5
@@ -5572,51 +5772,9 @@ ai_will_do = {
 				factor = 2
 				num_divisions > 100
 			}
-		}
-	}
-
-	army_regrouping_3 = { # Org regenerates 12% faster
-
-		army_morale_factor = 0.12
-
-			ai_will_do = {
-				factor = 2
-				
-			modifier = {
-				factor = 2
-				has_tech = improved_light_armor
-			}
-						
-			modifier = {
-				factor = 2
-				has_tech = basic_medium_armor
-			}
 		modifier = {
 				factor = 2
-				has_offensive_war = yes
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 30
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 75
-			}		
-			modifier = {
-				factor = 2
-				num_divisions > 100
+				has_war = yes
 			}
 		}
 	}
@@ -5642,9 +5800,13 @@ ai_will_do = {
 				has_tech = antiair1
 			}
 			}
+			modifier = {
+				factor = 0
+				has_war = no
 			}
 			}
 	}
+
 
 	army_concealment_2 = { # Ground units take less damage from air attacks
 
@@ -5665,6 +5827,10 @@ ai_will_do = {
 				NOT = {
 				has_tech = antiair1
 			}
+			}
+			modifier = {
+				factor = 0
+				has_war = no
 			}
 			}
 	}
@@ -5689,6 +5855,10 @@ ai_will_do = {
 				has_tech = antiair1
 			}
 			}
+			modifier = {
+				factor = 0
+				has_war = no
+			}
 			}
 	}
 
@@ -5696,6 +5866,48 @@ ai_will_do = {
 	army_logistics_1 = {  # Ground units suffer 4% less attrition
 
 		attrition = -0.04
+
+		ai_will_do = {
+				factor = 0.5
+			modifier = {
+				factor = 2.5
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2.5
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2.5
+				num_divisions > 50
+			}
+					
+			modifier = {
+				factor = 2.5
+				is_fighting_in_terrain = Desert
+			}
+			
+		modifier = {
+				factor = 2.5
+			is_fighting_in_terrain = mountain
+			}
+			
+			modifier = {
+				factor = 2.5
+				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	army_logistics_2 = {  # Ground units suffer 8% less attrition
+
+		attrition = -0.08
 
 		ai_will_do = {
 				factor = 1
@@ -5728,43 +5940,9 @@ ai_will_do = {
 				factor = 2.5
 				arms_factory > 50
 			}
-		}
-	}
-
-	army_logistics_2 = {  # Ground units suffer 8% less attrition
-
-		attrition = -0.08
-
-		ai_will_do = {
-				factor = 2.5
 			modifier = {
-				factor = 2.5
-				num_divisions > 15
-			}
-			
-			modifier = {
-				factor = 2.5
-				num_divisions > 30
-			}
-			
-			modifier = {
-				factor = 2.5
-				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2.5
-				is_fighting_in_terrain = Desert
-			}
-			
-		modifier = {
-				factor = 2.5
-			is_fighting_in_terrain = mountain
-			}
-			
-			modifier = {
-				factor = 2.5
-				arms_factory > 50
+				factor = 2
+				has_war = yes
 			}
 		}
 	}
@@ -5774,7 +5952,7 @@ ai_will_do = {
 		attrition = -0.12
 
 		ai_will_do = {
-				factor = 5
+				factor = 1.5
 			modifier = {
 				factor = 2.5
 				num_divisions > 15
@@ -5803,6 +5981,10 @@ ai_will_do = {
 			modifier = {
 				factor = 2.5
 				arms_factory > 50
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 		}
 	}
@@ -5814,6 +5996,81 @@ ai_will_do = {
 		ai_focus_aviation_factor = 0.1
 
 		ai_will_do = {
+				factor = 0.5
+				
+			modifier = {
+				factor = 2
+				arms_factory > 10
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+			modifier = {
+				factor = 2
+				arms_factory > 40
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 60
+			}
+			
+			modifier = {
+				factor = 2
+				rubber > 5
+			}
+			modifier = {
+				factor = 2
+				rubber > 10
+			}
+			modifier = {
+				factor = 2
+				rubber > 15
+			}
+			
+			modifier = {
+				factor = 2
+				aluminium > 10
+			}
+			modifier = {
+				factor = 2
+				aluminium > 15
+			}
+			modifier = {
+				factor = 2
+				aluminium > 25
+			}
+			
+			modifier = {
+				factor = 3
+				has_tech = fighter1
+			}
+			
+			modifier = {
+				factor = 0
+				has_tech = fighter3
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = early_fighter
+			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
+
+		experience_gain_air_factor = 0.1
+		ai_focus_aviation_factor = 0.1
+
+		ai_will_do = {
 				factor = 1
 				
 			modifier = {
@@ -5876,76 +6133,9 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
-			}
-	}
-
-	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
-
-		experience_gain_air_factor = 0.1
-		ai_focus_aviation_factor = 0.1
-
-		ai_will_do = {
-				factor = 2
-				
 			modifier = {
 				factor = 2
-				arms_factory > 10
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				arms_factory > 40
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 60
-			}
-			
-			modifier = {
-				factor = 2
-				rubber > 5
-			}
-			modifier = {
-				factor = 2
-				rubber > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 15
-			}
-			
-			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				aluminium > 15
-			}
-			modifier = {
-				factor = 2
-				aluminium > 25
-			}
-			
-			modifier = {
-				factor = 3
-				has_tech = fighter1
-			}
-			
-			modifier = {
-				factor = 0
-				has_tech = fighter3
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = early_fighter
-			}
+				has_war = yes
 			}
 			}
 	}
@@ -5956,7 +6146,7 @@ ai_will_do = {
 		ai_focus_aviation_factor = 0.1
 
 		ai_will_do = {
-				factor = 3
+				factor = 1.5
 				
 			modifier = {
 				factor = 2
@@ -6017,6 +6207,10 @@ ai_will_do = {
 				NOT = {
 				has_tech = early_fighter
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -6055,7 +6249,7 @@ ai_will_do = {
 		political_power_factor = 0.1
 
 		ai_will_do = {
-				factor = 5
+				factor = 1.5
 				
 			modifier = {
 				factor = 2
@@ -6116,6 +6310,10 @@ ai_will_do = {
 				NOT = {
 				has_tech = early_fighter
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -6187,6 +6385,10 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
@@ -6256,6 +6458,10 @@ ai_will_do = {
 				NOT = {
 				has_tech = early_fighter
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -6327,6 +6533,10 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
@@ -6334,218 +6544,6 @@ ai_will_do = {
 	air_chief_ground_support_1 = {  # Air superiority impact on land units improved by 5%
 
 		army_bonus_air_superiority_factor = 0.05
-
-		ai_will_do = {
-				factor = 1.5
-				
-			modifier = {
-				factor = 2
-				arms_factory > 10
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				arms_factory > 40
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 60
-			}
-			
-			modifier = {
-				factor = 2
-				rubber > 5
-			}
-			modifier = {
-				factor = 2
-				rubber > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 15
-			}
-			
-			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				aluminium > 15
-			}
-			modifier = {
-				factor = 2
-				aluminium > 25
-			}
-			
-			modifier = {
-				factor = 5
-				has_tech = fighter1
-			}
-			
-			modifier = {
-				factor = 0
-				has_tech = fighter3
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = early_fighter
-			}
-			}
-			}
-	}
-
-	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
-
-		army_bonus_air_superiority_factor = 0.1
-
-		ai_will_do = {
-				factor = 2.5
-				
-			modifier = {
-				factor = 2
-				arms_factory > 10
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				arms_factory > 40
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 60
-			}
-			
-			modifier = {
-				factor = 2
-				rubber > 5
-			}
-			modifier = {
-				factor = 2
-				rubber > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 15
-			}
-			
-			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				aluminium > 15
-			}
-			modifier = {
-				factor = 2
-				aluminium > 25
-			}
-			
-			modifier = {
-				factor = 5
-				has_tech = fighter1
-			}
-			
-			modifier = {
-				factor = 0
-				has_tech = fighter3
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = early_fighter
-			}
-			}
-			}
-	}
-
-	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
-
-		army_bonus_air_superiority_factor = 0.15
-
-		ai_will_do = {
-				factor = 3.5
-				
-			modifier = {
-				factor = 2
-				arms_factory > 10
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				arms_factory > 40
-			}
-			
-			modifier = {
-				factor = 2
-				arms_factory > 60
-			}
-			
-			modifier = {
-				factor = 2
-				rubber > 5
-			}
-			modifier = {
-				factor = 2
-				rubber > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 15
-			}
-			
-			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				aluminium > 15
-			}
-			modifier = {
-				factor = 2
-				aluminium > 25
-			}
-			
-			modifier = {
-				factor = 5
-				has_tech = fighter1
-			}
-			
-			modifier = {
-				factor = 0
-				has_tech = fighter3
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-				has_tech = early_fighter
-			}
-			}
-			}
-	}
-
-
-	# using factor in stead of values because it is applied in ALL weathers (means bonus in good weather)
-	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
-
-		air_weather_penalty = -0.1
 
 		ai_will_do = {
 				factor = 1
@@ -6610,12 +6608,90 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
-	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
+	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
 
-		air_weather_penalty = -0.2
+		army_bonus_air_superiority_factor = 0.1
+
+		ai_will_do = {
+				factor = 1.5
+				
+			modifier = {
+				factor = 2
+				arms_factory > 10
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+			modifier = {
+				factor = 2
+				arms_factory > 40
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 60
+			}
+			
+			modifier = {
+				factor = 2
+				rubber > 5
+			}
+			modifier = {
+				factor = 2
+				rubber > 10
+			}
+			modifier = {
+				factor = 2
+				rubber > 15
+			}
+			
+			modifier = {
+				factor = 2
+				aluminium > 10
+			}
+			modifier = {
+				factor = 2
+				aluminium > 15
+			}
+			modifier = {
+				factor = 2
+				aluminium > 25
+			}
+			
+			modifier = {
+				factor = 5
+				has_tech = fighter1
+			}
+			
+			modifier = {
+				factor = 0
+				has_tech = fighter3
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = early_fighter
+			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
+
+		army_bonus_air_superiority_factor = 0.15
 
 		ai_will_do = {
 				factor = 2
@@ -6680,15 +6756,21 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
-	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
 
-		air_weather_penalty = -0.3
+	# using factor in stead of values because it is applied in ALL weathers (means bonus in good weather)
+	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
 
-			ai_will_do = {
-				factor = 3
+		air_weather_penalty = -0.1
+
+		ai_will_do = {
+				factor = 0.5
 				
 			modifier = {
 				factor = 2
@@ -6749,6 +6831,158 @@ ai_will_do = {
 				NOT = {
 				has_tech = early_fighter
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
+
+		air_weather_penalty = -0.2
+
+		ai_will_do = {
+				factor = 1
+				
+			modifier = {
+				factor = 2
+				arms_factory > 10
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+			modifier = {
+				factor = 2
+				arms_factory > 40
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 60
+			}
+			
+			modifier = {
+				factor = 2
+				rubber > 5
+			}
+			modifier = {
+				factor = 2
+				rubber > 10
+			}
+			modifier = {
+				factor = 2
+				rubber > 15
+			}
+			
+			modifier = {
+				factor = 2
+				aluminium > 10
+			}
+			modifier = {
+				factor = 2
+				aluminium > 15
+			}
+			modifier = {
+				factor = 2
+				aluminium > 25
+			}
+			
+			modifier = {
+				factor = 5
+				has_tech = fighter1
+			}
+			
+			modifier = {
+				factor = 0
+				has_tech = fighter3
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = early_fighter
+			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			}
+	}
+
+	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
+
+		air_weather_penalty = -0.3
+
+			ai_will_do = {
+				factor = 1.5
+				
+			modifier = {
+				factor = 2
+				arms_factory > 10
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 20
+			}
+			modifier = {
+				factor = 2
+				arms_factory > 40
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 60
+			}
+			
+			modifier = {
+				factor = 2
+				rubber > 5
+			}
+			modifier = {
+				factor = 2
+				rubber > 10
+			}
+			modifier = {
+				factor = 2
+				rubber > 15
+			}
+			
+			modifier = {
+				factor = 2
+				aluminium > 10
+			}
+			modifier = {
+				factor = 2
+				aluminium > 15
+			}
+			modifier = {
+				factor = 2
+				aluminium > 25
+			}
+			
+			modifier = {
+				factor = 5
+				has_tech = fighter1
+			}
+			
+			modifier = {
+				factor = 0
+				has_tech = fighter3
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+				has_tech = early_fighter
+			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -6820,6 +7054,10 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+					modifier = {
+				factor = 2
+				has_war = yes
+			}
 			}
 	}
 
@@ -6827,7 +7065,7 @@ ai_will_do = {
 		air_ace_generation_chance_factor = 0.1
 
 		ai_will_do = {
-				factor = 2
+				factor = 1.5
 				
 			modifier = {
 				factor = 2
@@ -6888,6 +7126,10 @@ ai_will_do = {
 				NOT = {
 				has_tech = early_fighter
 			}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
 			}
 	}
@@ -6896,7 +7138,7 @@ ai_will_do = {
 		air_ace_generation_chance_factor = 0.15
 
 		ai_will_do = {
-				factor = 3
+				factor = 2
 				
 			modifier = {
 				factor = 2
@@ -6958,8 +7200,12 @@ ai_will_do = {
 				has_tech = early_fighter
 			}
 			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}
-	}
+			}
+			}
 
 	# Guesstimation of what % increased efficiency might look like
 	air_naval_strike_1 = { # Naval Strike mission efficiency increased by 4%
@@ -7266,6 +7512,49 @@ ai_will_do = {
 		navy_screen_defence_factor = 0.05
 
 		ai_will_do = {
+				factor = 0.5
+			
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 10
+			}
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 20
+			}
+			
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 30
+			}
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 40
+			}
+						
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 50
+			}
+			modifier = {
+					factor = 2 
+					num_of_naval_factories > 60
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}			
+			}
+	}
+
+	navy_chief_decisive_battle_2 = {
+
+		navy_capital_ship_attack_factor = 0.1
+		navy_capital_ship_defence_factor = 0.1
+		navy_screen_attack_factor = 0.1
+		navy_screen_defence_factor = 0.1
+
+		ai_will_do = {
 				factor = 1
 			
 			modifier = {
@@ -7293,45 +7582,10 @@ ai_will_do = {
 			modifier = {
 					factor = 2 
 					num_of_naval_factories > 60
-			}			
 			}
-	}
-
-	navy_chief_decisive_battle_2 = {
-
-		navy_capital_ship_attack_factor = 0.1
-		navy_capital_ship_defence_factor = 0.1
-		navy_screen_attack_factor = 0.1
-		navy_screen_defence_factor = 0.1
-
-		ai_will_do = {
+			modifier = {
 				factor = 2
-			
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 10
-			}
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 20
-			}
-			
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 30
-			}
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 40
-			}
-						
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 50
-			}
-			modifier = {
-					factor = 2 
-					num_of_naval_factories > 60
+				has_war = yes
 			}			
 			}
 	}
@@ -7344,7 +7598,7 @@ ai_will_do = {
 		navy_screen_defence_factor = 0.15
 
 		ai_will_do = {
-				factor = 3
+				factor = 1.5
 			
 			modifier = {
 					factor = 2 
@@ -7371,6 +7625,10 @@ ai_will_do = {
 			modifier = {
 					factor = 2 
 					num_of_naval_factories > 60
+			}
+			modifier = {
+				factor = 2
+				has_war = yes
 			}			
 			}
 	}
@@ -7803,6 +8061,7 @@ ai_will_do = {
 			}
 			}
 	}
+	
 	air_combat_academy = {  # Chance of ace generating is increased by 15%
 		air_ace_generation_chance_factor = 0.15
 
@@ -7834,7 +8093,7 @@ ai_will_do = {
 	royal_magician = {
 		political_power_factor = 0.04
 		ai_will_do = {
-			factor = 5
+			factor = 20
 		}
 	}
 	local_magician = {

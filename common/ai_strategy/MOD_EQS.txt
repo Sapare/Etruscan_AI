@@ -4,13 +4,12 @@
 		enable = {
 			AND = {
 				original_tag = EQS
-				date > 1010.1.1
 				}
 				}
 		Abort = {
-			OR = {
-				has_war = yes
-				date > 1014.1.1								
+			NOT = {
+				has_war = No
+				has_idea = friendly_harmony						
 				}
 				}
 		

@@ -1,7 +1,6 @@
 															
 	#Construction scripts:
-	#Ai refueses to take commands to build civ factories, so going to nudge it for now.
-		
+	
 	Prep_for_great_war = {
 		enable = {
 			AND = {

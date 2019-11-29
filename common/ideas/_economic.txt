@@ -736,7 +736,7 @@ ideas = {
 			cancel_if_invalid = no
 			
 		ai_will_do = {
-				factor = 10
+				factor = 1
 
 				modifier = {
 					factor = 0
@@ -764,45 +764,52 @@ ideas = {
 				}
 				
 				modifier = {
-					factor = 10
+					factor = 0
 				set_temp_variable = { type_percentage =  resource_consumed@steel }
 				divide_temp_variable = { type_percentage = resource_produced@steel}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage > 0.50 }
 				}
 				
 				modifier = {
-					factor = 10
+					factor = 15
+				set_temp_variable = { type_percentage =  resource_consumed@steel }
+				divide_temp_variable = { type_percentage = resource_produced@steel}
+				check_variable = { type_percentage < 0.25 }
+				}
+				
+				modifier = {
+					factor = 15
 				set_temp_variable = { type_percentage =  resource_consumed@rystals }
 				divide_temp_variable = { type_percentage = resource_produced@rystals}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage < 0.25 }
 				}
 								
 				modifier = {
-					factor = 10
+					factor = 15
 				set_temp_variable = { type_percentage =  resource_consumed@rubber }
 				divide_temp_variable = { type_percentage = resource_produced@rubber}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage < 0.25 }
 				}
 								
 				modifier = {
-					factor = 10
+					factor = 15
 				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
 				divide_temp_variable = { type_percentage = resource_produced@aluminium}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage < 0.25 }
 				}
 								
 				modifier = {
-					factor = 10
+					factor = 15
 				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
 				divide_temp_variable = { type_percentage = resource_produced@tungsten}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage < 0.25 }
 				}
 								
 				modifier = {
-					factor = 10
+					factor = 15
 				set_temp_variable = { type_percentage =  resource_consumed@chromium }
 				divide_temp_variable = { type_percentage = resource_produced@chromium}
-				check_variable = { type_percentage > 0.25 }
+				check_variable = { type_percentage < 0.25 }
 				}						
 			}
 		}
@@ -880,42 +887,42 @@ ideas = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@steel }
 				divide_temp_variable = { type_percentage = resource_produced@steel}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}
 				
 				modifier = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@rystals }
 				divide_temp_variable = { type_percentage = resource_produced@rystals}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}
 								
 				modifier = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@rubber }
 				divide_temp_variable = { type_percentage = resource_produced@rubber}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}
 								
 				modifier = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@aluminium }
 				divide_temp_variable = { type_percentage = resource_produced@aluminium}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}
 								
 				modifier = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@tungsten }
 				divide_temp_variable = { type_percentage = resource_produced@tungsten}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}
 								
 				modifier = {
 					factor = 10
 				set_temp_variable = { type_percentage =  resource_consumed@chromium }
 				divide_temp_variable = { type_percentage = resource_produced@chromium}
-				check_variable = { type_percentage > 0.4 }
+				check_variable = { type_percentage < 0.4 }
 				}						
 			}
 		}

@@ -304,6 +304,39 @@ ideas = {
 				}
 				
 				modifier = {
+					#delay date because AI tends to double tap
+					factor = 0.5
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					date > 1008.1.1
+				}
+				
+				modifier = {
+					#delay date because AI tends to double tap
+					factor = 0.5
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					date > 1009.1.1
+				}
+				
+				modifier = {
+					#delay date because AI tends to double tap
+					factor = 0.5
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					date > 1010.1.1
+				}
+				
+				modifier = {
 					#Prio if low on manpower
 					factor = 100
 					NOT = {

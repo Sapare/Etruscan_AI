@@ -1,0 +1,1053 @@
+foreign_politics = {
+	#CHN_idea_test = {
+	#	visible = {
+	#		original_tag = CHN
+	#	}
+	#	complete_effect = {
+	#		add_ideas = continous_war_plan_CHN
+	#	}
+	#}
+	CHN_demand_remilitarization = {
+		icon = rifles
+		visible = {
+			is_subject = yes
+			overlord = {
+				original_tag = EQS
+				has_government = democratic
+			}
+			OR = {
+				has_autonomy_state = autonomy_demilitarized_puppet
+				has_autonomy_state = autonomy_demilitarized_integrated_puppet
+				has_autonomy_state = autonomy_demilitarized_colony
+			}
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		cost = 250
+
+		days_re_enable = 180
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				overlord = {
+					has_war = yes
+					OR = {
+						surrender_progress > 0.2
+						enemies_strength_ratio > 0.7
+					}
+				}
+				add = 100
+			}
+			modifier = {
+				surrender_progress > 0.05
+				add = 200
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_demand_remilitarization"
+			overlord = {
+				country_event = { id = changelings.40 days = 5 }
+			}
+		}
+	}
+}
+CHN_form_changelingia = {
+	CHN_form_changelingia_decision = {
+		icon = changeling_icon
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			CRY = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+		}
+		visible = {
+			has_global_flag = the_war
+			has_government = fascism
+		}
+		cost = 50
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CHN_changelingia
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power > 150
+				factor = 1
+			}
+		}
+		fire_only_once = yes
+	}
+}
+CHN_queens_tower = {
+	CHN_queens_tower_effort = {
+		icon = generic_construction
+		available = {
+			has_government = fascism
+		}
+		cost = 35
+
+		days_remove = 70
+		#is_good = yes
+		visible = {
+			has_government = fascism
+			NOT = {
+				has_country_flag = {
+					flag = queens_tower_flag
+					value > 6
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		cancel_trigger = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision STG_palace_construction_effort"
+			modify_country_flag = { flag = queens_tower_flag value = 2 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power > 160
+				factor = 10
+			}
+		}
+	}
+	CHN_queens_tower_finish = {
+		icon = changeling_icon
+		available = {
+			has_government = fascism
+			custom_trigger_tooltip = {
+				tooltip = queens_tower_finish_trigger_tt
+				has_country_flag = {
+					flag = queens_tower_flag
+					value > 6
+				}
+			}
+			hidden_trigger = {
+				has_country_flag = {
+					flag = queens_tower_flag
+					value > 6
+				}
+			}
+		}
+		cost = 35
+
+		days_remove = 70
+
+		fire_only_once = yes
+		visible = {
+			has_government = fascism
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		cancel_trigger = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_queens_tower_finish"
+			add_ideas = CHN_queens_tower_idea
+			add_political_power = 170
+			251 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+CHN_domestic_affairs = {
+	CHN_extra_pay = {
+		icon = eng_trade_unions_support
+		cost = 75
+		days_remove = 70
+		#is_good = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_completed_focus = CHN_support_workers
+		}
+		modifier = {
+			industrial_capacity_factory = 0.05
+		}
+	}
+	CHN_extra_pay_construction = {
+		icon = generic_construction
+		cost = 75
+		days_remove = 70
+		#is_good = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_completed_focus = CHN_support_workers
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+	}
+	CHN_maternal_program = {
+		icon = ger_mefo_bills
+		cost = 75
+		days_remove = 300
+		#is_good = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = CHN_support_workers
+		}
+		modifier = {
+			monthly_population = 0.15
+		}
+	}
+}
+
+CHN_Attache = {
+	CHN_Cancel_Attache = {
+
+		available = {
+			has_idea = CHN_GRI_Attache_For_CHN
+			NOT = { has_war_with = EQS }
+		}
+
+		cost = 5
+
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_idea = CHN_GRI_Attache_For_CHN
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_Cancel_Attache"
+			remove_ideas = CHN_GRI_Attache_For_CHN
+			GRI = { remove_ideas = CHN_GRI_Attache_For_GRI }
+			GRI = { country_event = changelingattache.1 }
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_Cancel_Attache"
+		}
+	}
+}
+
+CHN_war_time_actions = {
+	CHN_stop_war_plan = {
+
+		available = {
+			has_idea = continous_war_plan_CHN
+		}
+
+		cost = 20
+
+		days_remove = 25
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				OR = {
+					has_war = no
+					EQS = {
+						is_subject_of = ROOT
+						has_capitulated = yes
+						exists = no
+					}
+					has_stability < 0.6
+					has_war_support < 0.6
+				}
+				add = 100
+			}
+		}
+
+		visible = {
+			has_idea = continous_war_plan_CHN
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_stop_war_plan"
+			remove_ideas = continous_war_plan_CHN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_stop_war_plan"
+
+		}
+	}
+
+}
+CHN_protectorates = {
+	CHN_manehattan_protectorate = {
+		icon = manehattan
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_manehattan_region_tt
+				OR = {
+					227 = { is_owned_and_controlled_by = ROOT }
+					232 = { is_owned_and_controlled_by = ROOT }
+					159 = { is_owned_and_controlled_by = ROOT }
+					158 = { is_owned_and_controlled_by = ROOT }
+					12 = { is_owned_and_controlled_by = ROOT }
+					any_owned_state = {
+						OR = {
+							region = 45
+							region = 46
+							region = 47
+							region = 62
+						}
+						is_fully_controlled_by = ROOT
+					}
+				}
+				NOT = {
+					has_country_flag = released_manehattan_puppet
+				}
+			}
+			NOT = {
+				MAN = { exists = yes }
+			}
+		}
+
+		cost = 15
+
+		days_remove = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			NOT = {
+				has_country_flag = released_manehattan_puppet
+			}
+			NOT = {
+				MAN = { exists = yes }
+			}
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_manehattan_protectorate"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_manehattan_protectorate"
+			add_cores_MAN = yes
+			release_puppet = MAN
+			set_country_flag = released_manehattan_puppet
+			MAN = {
+				hidden_effect = {
+					set_country_flag = is_changeling_puppet
+					set_cosmetic_tag = MAN_CHN
+					create_country_leader = {
+						name = "Protector Tasian"
+						desc = ""
+						picture = "GovernorBrew.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				CHN = {
+					MAN = { transfer_technology = yes }
+				}
+			}
+		}
+	}
+	CHN_baltimare_protectorate = {
+		icon = statue
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_baltimare_region_tt
+				OR = {
+					13 = { is_owned_and_controlled_by = ROOT }
+					28 = { is_owned_and_controlled_by = ROOT }
+					27 = { is_owned_and_controlled_by = ROOT }
+					82 = { is_owned_and_controlled_by = ROOT }
+					90 = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+			BAL = { exists = no }
+		}
+
+		cost = 15
+
+		days_remove = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			NOT = {
+				BAL = { exists = yes }
+			}
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_baltimare_protectorate"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_baltimare_protectorate"
+			hidden_effect = {
+				add_cores_BAL = yes
+				release_puppet = BAL
+			}
+			custom_effect_tooltip = release_baltimare_protectorate
+			BAL = {
+				hidden_effect = {
+					set_country_flag = is_changeling_puppet
+					set_cosmetic_tag = BAL_CHN
+					create_country_leader = {
+						name = "Protector Kobert"
+						desc = ""
+						picture = "GovernorBrew.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				CHN = {
+					BAL = { transfer_technology = yes }
+				}
+				BAL = {
+					load_focus_tree = generic_focus
+				}
+			}
+		}
+	}
+	CHN_stableside_protectorate = {
+		icon = baltimare
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_stableside_region_tt
+				OR = {
+					50 = { is_owned_and_controlled_by = ROOT }
+					88 = { is_owned_and_controlled_by = ROOT }
+					86 = { is_owned_and_controlled_by = ROOT }
+					33 = { is_owned_and_controlled_by = ROOT }
+					25 = { is_owned_and_controlled_by = ROOT }
+					15 = { is_owned_and_controlled_by = ROOT }
+					26 = { is_owned_and_controlled_by = ROOT }
+					34 = { is_owned_and_controlled_by = ROOT }
+					35 = { is_owned_and_controlled_by = ROOT }
+					352 = { is_owned_and_controlled_by = ROOT }
+					31 = { is_owned_and_controlled_by = ROOT }
+					37 = { is_owned_and_controlled_by = ROOT }
+					17 = { is_owned_and_controlled_by = ROOT }
+					36 = { is_owned_and_controlled_by = ROOT }
+					24 = { is_owned_and_controlled_by = ROOT }
+					81 = { is_owned_and_controlled_by = ROOT }
+					30 = { is_owned_and_controlled_by = ROOT }
+					350 = { is_owned_and_controlled_by = ROOT }
+					351 = { is_owned_and_controlled_by = ROOT }
+					353 = { is_owned_and_controlled_by = ROOT }
+					79 = { is_owned_and_controlled_by = ROOT }
+					52 = { is_owned_and_controlled_by = ROOT }
+					32 = { is_owned_and_controlled_by = ROOT }
+					81 = { is_owned_and_controlled_by = ROOT }
+					16 = { is_owned_and_controlled_by = ROOT }
+					83 = { is_owned_and_controlled_by = ROOT }
+					348 = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+			CES = { exists = no }
+		}
+
+		cost = 15
+
+		days_remove = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			NOT = {
+				CES = { exists = yes }
+			}
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_stableside_protectorate"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_stableside_protectorate"
+			custom_effect_tooltip = release_stableside_protectorate
+			hidden_effect = {
+				add_cores_CES = yes
+				13 = { remove_core_of = CES }
+				28 = { remove_core_of = CES }
+				27 = { remove_core_of = CES }
+				82 = { remove_core_of = CES }
+				90 = { remove_core_of = CES }
+				release_puppet = CES
+			}
+			hidden_effect = {
+				CES = {
+
+					set_country_flag = is_changeling_puppet
+					set_cosmetic_tag = CES_CHN
+					create_country_leader = {
+						name = "Protector Holard"
+						desc = ""
+						picture = "GovernorBrew.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+
+						}
+					}
+				}
+				hidden_effect = {
+					CHN = {
+						CES = { transfer_technology = yes }
+					}
+					CES = {
+						load_focus_tree = generic_focus
+					}
+				}
+			}
+		}
+	}
+	CHN_southern_protectorate = {
+		icon = baltimare
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_jungles_region_tt
+				OR = {
+					50 = { is_owned_and_controlled_by = ROOT }
+					88 = { is_owned_and_controlled_by = ROOT }
+					86 = { is_owned_and_controlled_by = ROOT }
+					33 = { is_owned_and_controlled_by = ROOT }
+					25 = { is_owned_and_controlled_by = ROOT }
+					15 = { is_owned_and_controlled_by = ROOT }
+					26 = { is_owned_and_controlled_by = ROOT }
+					34 = { is_owned_and_controlled_by = ROOT }
+					35 = { is_owned_and_controlled_by = ROOT }
+					352 = { is_owned_and_controlled_by = ROOT }
+					31 = { is_owned_and_controlled_by = ROOT }
+					37 = { is_owned_and_controlled_by = ROOT }
+					17 = { is_owned_and_controlled_by = ROOT }
+					36 = { is_owned_and_controlled_by = ROOT }
+					24 = { is_owned_and_controlled_by = ROOT }
+					81 = { is_owned_and_controlled_by = ROOT }
+					30 = { is_owned_and_controlled_by = ROOT }
+					350 = { is_owned_and_controlled_by = ROOT }
+					351 = { is_owned_and_controlled_by = ROOT }
+					353 = { is_owned_and_controlled_by = ROOT }
+					79 = { is_owned_and_controlled_by = ROOT }
+					52 = { is_owned_and_controlled_by = ROOT }
+					32 = { is_owned_and_controlled_by = ROOT }
+					13 = { is_owned_and_controlled_by = ROOT }
+					28 = { is_owned_and_controlled_by = ROOT }
+					27 = { is_owned_and_controlled_by = ROOT }
+					82 = { is_owned_and_controlled_by = ROOT }
+					90 = { is_owned_and_controlled_by = ROOT }
+					81 = { is_owned_and_controlled_by = ROOT }
+					16 = { is_owned_and_controlled_by = ROOT }
+					83 = { is_owned_and_controlled_by = ROOT }
+					348 = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+			CES = { exists = no }
+			BAL = { exists = no }
+		}
+
+		cost = 15
+
+		days_remove = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			CES = { exists = no }
+			BAL = { exists = no }
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_southern_protectorate"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_southern_protectorate"
+			hidden_effect = {
+				add_cores_CES = yes
+				release_puppet = CES
+			}
+			custom_effect_tooltip = release_southern_protectorate
+
+			CES = {
+				hidden_effect = {
+					set_country_flag = is_changeling_puppet
+					set_cosmetic_tag = CES_CHNsouth
+					create_country_leader = {
+						name = "Protector Holard"
+						desc = ""
+						picture = "GovernorBrew.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				CHN = {
+					CES = { transfer_technology = yes }
+				}
+				CES = {
+					load_focus_tree = generic_focus
+				}
+			}
+		}
+	}
+	CHN_desert_protectorate = {
+		available = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = controls_confederates_tt
+				OR = {
+					19 = { is_owned_and_controlled_by = ROOT }
+					20 = { is_owned_and_controlled_by = ROOT }
+					21 = { is_owned_and_controlled_by = ROOT }
+					22 = { is_owned_and_controlled_by = ROOT }
+					23 = { is_owned_and_controlled_by = ROOT }
+					85 = { is_owned_and_controlled_by = ROOT }
+					42 = { is_owned_and_controlled_by = ROOT }
+					71 = { is_owned_and_controlled_by = ROOT }
+					44 = { is_owned_and_controlled_by = ROOT }
+					47 = { is_owned_and_controlled_by = ROOT }
+					51 = { is_owned_and_controlled_by = ROOT }
+					92 = { is_owned_and_controlled_by = ROOT }
+					43 = { is_owned_and_controlled_by = ROOT }
+					91 = { is_owned_and_controlled_by = ROOT }
+					49 = { is_owned_and_controlled_by = ROOT }
+					89 = { is_owned_and_controlled_by = ROOT }
+					78 = { is_owned_and_controlled_by = ROOT }
+					93 = { is_owned_and_controlled_by = ROOT }
+					80 = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+			SCS = { exists = no }
+		}
+
+		cost = 15
+
+		days_remove = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_government = fascism
+			controls_canterlot = yes
+			EQS = {
+				OR = {
+					is_subject_of = ROOT
+					has_capitulated = yes
+					exists = no
+				}
+			}
+			SCS = { exists = no }
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_desert_protectorate"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_desert_protectorate"
+			hidden_effect = {
+				add_cores_SCS = yes
+				release_puppet = SCS
+			}
+			custom_effect_tooltip = release_confederate_protectorate
+
+			SCS = {
+				hidden_effect = {
+					set_country_flag = is_changeling_puppet
+					set_cosmetic_tag = SCS_CHN
+					create_country_leader = {
+						name = "Governor-Protector"
+						desc = ""
+						picture = "GovernorBrew.tga"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				CHN = {
+					SCS = { transfer_technology = yes }
+				}
+				SCS = {
+					load_focus_tree = generic_focus
+				}
+			}
+		}
+	}
+	CHN_one_jak_protectorate = {
+		visible = {
+			has_government = fascism
+			JAK = { is_subject_of = ROOT }
+			YAK = { is_subject_of = ROOT }
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			JAK = {
+				annex_country = { target = YAK transfer_troops = yes }
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = YAK_CHN
+			}
+		}
+	}
+	CHN_one_yak_protectorate = {
+		visible = {
+			has_government = fascism
+			JAK = { is_subject_of = ROOT }
+			YAK = { is_subject_of = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		complete_effect = {
+			YAK = { annex_country = { target = JAK transfer_troops = yes } }
+		}
+	}
+}
+operations = {
+	CHN_PLB_border_war = {
+		icon = border_war
+		allowed = {
+			tag = CHN
+		}
+		available = {
+			323 = { is_owned_and_controlled_by = CHN }
+			289 = { is_owned_and_controlled_by = PLB }
+			if = {
+				limit = { is_ai = no }
+				divisions_in_state = {
+					state = 323
+					size > 0
+				}
+			}
+		}
+		visible = {
+			is_subject = no
+			has_government = fascism
+			has_country_flag = flag_CHN_PLB_border_wars
+			PLB = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+			OR = {
+				state = 323
+				state = 289
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_PLB_border_war"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = CHN
+					decision = CHN_PLB_border_war_timeout
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 323
+					num_provinces = 3
+					on_win = changelings.48
+					on_lose = changelings.49
+					on_cancel = changelings.50
+				}
+
+				defender = {
+					state = 289
+					num_provinces = 3
+					on_win = changelings.51
+					on_lose = changelings.52
+					on_cancel = changelings.53
+				}
+			}
+		}
+	}
+	CHN_PLB_border_war_timeout = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			323 = { has_border_war = no }
+			289 = { has_border_war = no }
+		}
+		highlight_states = {
+			OR = {
+				state = 289
+				state = 323
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout CHN_PLB_border_war_timeout"
+			cancel_border_war = {
+				defender = 289
+				attacker = 323
+			}
+		}
+	}
+	CHN_PLB_border_war_2 = {
+		icon = border_war
+		allowed = {
+			tag = CHN
+		}
+		available = {
+			315 = { is_owned_and_controlled_by = CHN }
+			263 = { is_owned_and_controlled_by = PLB }
+			if = {
+				limit = { is_ai = no }
+				divisions_in_state = {
+					state = 315
+					size > 0
+				}
+			}
+		}
+		visible = {
+			is_subject = no
+			has_government = fascism
+			has_country_flag = flag_CHN_PLB_border_wars
+			PLB = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+			OR = {
+				state = 315
+				state = 263
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_PLB_border_war_2"
+			hidden_effect = {
+				activate_targeted_decision = {
+					target = CHN
+					decision = CHN_PLB_border_war_timeout_2
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 315
+					num_provinces = 3
+					on_win = changelings.48
+					on_lose = changelings.49
+					on_cancel = changelings.50
+				}
+
+				defender = {
+					state = 263
+					num_provinces = 3
+					on_win = changelings.51
+					on_lose = changelings.52
+					on_cancel = changelings.53
+				}
+			}
+		}
+	}
+	CHN_PLB_border_war_timeout_2 = {
+		icon = border_war
+		allowed = { always = no }
+		available = {
+			315 = { has_border_war = no }
+			263 = { has_border_war = no }
+		}
+		highlight_states = {
+			OR = {
+				state = 263
+				state = 315
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		days_mission_timeout = 30
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout CHN_PLB_border_war_timeout_2"
+			cancel_border_war = {
+				defender = 263
+				attacker = 315
+			}
+		}
+	}
+}
