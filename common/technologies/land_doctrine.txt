@@ -50,7 +50,7 @@ technologies = {
 			
 		modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -101,7 +101,7 @@ technologies = {
 			}
 		modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -162,7 +162,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -248,7 +248,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -306,7 +306,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -378,7 +378,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -444,7 +444,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -505,7 +505,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -579,7 +579,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -644,7 +644,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -707,7 +707,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -756,7 +756,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -810,7 +810,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -898,7 +898,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -948,7 +948,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 			
 		}
@@ -995,7 +995,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 			
 		}
@@ -1069,7 +1069,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1118,7 +1118,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1173,7 +1173,7 @@ technologies = {
 		
 		modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1234,7 +1234,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1283,7 +1283,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 			
 			modifier = {
@@ -1352,7 +1352,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1410,7 +1410,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1473,7 +1473,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1532,7 +1532,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1591,7 +1591,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1646,7 +1646,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1698,7 +1698,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1757,7 +1757,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1814,7 +1814,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1879,7 +1879,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -1934,7 +1934,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2001,7 +2001,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2050,7 +2050,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2100,7 +2100,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2162,7 +2162,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2231,7 +2231,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2287,7 +2287,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2346,7 +2346,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2404,7 +2404,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2460,7 +2460,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2514,7 +2514,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2575,7 +2575,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2637,7 +2637,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2691,7 +2691,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2748,7 +2748,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2805,7 +2805,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2857,7 +2857,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2931,7 +2931,7 @@ technologies = {
 			
 		modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -2978,7 +2978,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3031,7 +3031,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3096,7 +3096,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3152,7 +3152,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3207,7 +3207,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3271,7 +3271,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3332,7 +3332,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3402,7 +3402,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3453,7 +3453,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3526,7 +3526,7 @@ technologies = {
 			
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 
 		}
@@ -3577,7 +3577,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3627,7 +3627,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3679,7 +3679,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
@@ -3725,7 +3725,7 @@ technologies = {
 			}
 			modifier = {
 			factor = 3
-			has_trait = military_theorist
+			has_idea_with_trait = military_theorist
 			}
 		}
 		
