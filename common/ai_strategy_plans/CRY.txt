@@ -14,15 +14,15 @@ CRY_ideas_plan = {
 	}
 
 	ideas = {
-	spike = 5
-	flurryheart_idea = 15
-	CRY_mistmane = 10
-	the_crystal_factory = 20
+	spike = 10
+	flurryheart_idea = 20
+	CRY_mistmane = 25
+	the_crystal_factory = 25
 	sunburst = 50
-	shining_armour = 15
-	flash_sentry = 10
-	Damiyan = 5
-	CRY_cloudy = 5
+	shining_armour = 20
+	flash_sentry = 15
+	Damiyan = 10
+	CRY_cloudy = 10
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

@@ -592,12 +592,12 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 0.5
+				factor = 0.2
 				has_tech = tactical_bomber1
 			}
 			
 			modifier = {
-				factor = 0.5
+				factor = 0.2
 				is_researching_technology = tactical_bomber1
 			}
 
@@ -1532,13 +1532,13 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 0.5
-				has_tech = CA1
+				factor = 0.2
+				has_tech = CAS1
 			}
 			
 			modifier = {
-				factor = 0.5
-				is_researching_technology = CA1
+				factor = 0.2
+				is_researching_technology = CAS1
 			}
 
 			modifier = {

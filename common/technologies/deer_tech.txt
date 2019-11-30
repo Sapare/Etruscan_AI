@@ -1278,12 +1278,12 @@ modifier = {
 				factor = 2
 				has_government = democratic
 			}
-
+			
 			modifier = {
-				factor = 0.3
-				NOT = { has_country_flag = OLE_CHN_puppet }
-				has_government = fascism
+				factor = 5
+				has_defensive_war = yes
 			}
+
 
 			modifier = {
 					factor = 1.5
@@ -1452,11 +1452,10 @@ modifier = {
 				factor = 2
 				tag = OLE
 			}
-
+			
 			modifier = {
-				factor = 2
-				NOT = { has_country_flag = OLE_CHN_puppet }
-				has_government = fascism
+				factor = 5
+				has_offensive_war = yes
 			}
 
 			modifier = {

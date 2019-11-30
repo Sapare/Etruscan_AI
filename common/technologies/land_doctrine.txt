@@ -50,6 +50,10 @@ technologies = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
+		modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 
 		}
 		
 		ai_research_weights = {
@@ -64,7 +68,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 10
 		}
 		
 		
@@ -90,7 +94,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -100,6 +104,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -151,7 +159,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -161,6 +169,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -223,8 +235,8 @@ technologies = {
 			position = { x = -2 y = 6 }
 		}
 		
-		ai_will_do = {
-			factor = 20
+		ai_will_do = {#AI doesnt use motor/mecha well atm
+			factor = 0
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -287,7 +299,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -359,7 +371,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -425,7 +437,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -443,6 +455,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -486,7 +502,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -504,6 +520,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -560,7 +580,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -578,6 +598,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -625,7 +649,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -643,6 +667,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -688,7 +716,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -706,6 +734,14 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}
+			modifier = {
+				add = 10
+				enemies_strength_ratio < 1.0
 			}
 		}
 		
@@ -742,7 +778,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
@@ -754,6 +790,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -790,7 +830,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -808,6 +848,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -881,13 +925,14 @@ technologies = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.5
 			}
-			modifier = {
-				tag = CHN
-				factor = 3
-			}
+			
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -923,7 +968,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
@@ -935,6 +980,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -968,7 +1017,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.15
@@ -980,6 +1029,10 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
+			}
+			modifier = {
+			factor = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 		}
 		
@@ -1061,7 +1114,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		category_light_infantry = {
-			max_organisation = 10
+			max_organisation = 15
 		}
 		
 		enable_tactic = tactic_delay
@@ -1091,7 +1144,7 @@ technologies = {
 				}
 				factor = 0.8
 			}
-			factor = 20
+			factor = 10
 		modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
@@ -1145,7 +1198,7 @@ technologies = {
 				}
 				factor = 0.8
 			}
-			factor = 20
+			factor = 10
 		modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
@@ -1206,7 +1259,7 @@ technologies = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.75
 			}
-			factor = 20
+			factor = 10
 			
 			modifier = {
 			factor = 3
@@ -1250,13 +1303,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
+		factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			factor = 20
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.5
@@ -1309,13 +1362,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			factor = 20
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.5
@@ -1366,13 +1419,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
+		factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			factor = 20
 			modifier = {
 				not = { ai_air_doctrine_tier_1_trigger = yes }
 				factor = 0.5
@@ -1429,7 +1482,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1488,7 +1541,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1547,7 +1600,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1602,7 +1655,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1654,7 +1707,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1713,7 +1766,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1770,7 +1823,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1835,7 +1888,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -1890,7 +1943,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2011,7 +2064,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2062,7 +2115,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2116,7 +2169,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2185,7 +2238,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2241,7 +2294,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2300,7 +2353,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2358,7 +2411,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2414,7 +2467,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2468,7 +2521,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2529,7 +2582,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2591,7 +2644,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2645,7 +2698,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2702,7 +2755,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2759,7 +2812,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2811,7 +2864,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2939,7 +2992,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2992,7 +3045,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3044,7 +3097,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3105,7 +3158,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3160,7 +3213,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3221,7 +3274,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3282,7 +3335,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3352,7 +3405,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3403,7 +3456,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3467,7 +3520,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3534,7 +3587,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3584,7 +3637,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3636,7 +3689,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -3682,19 +3735,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
+		factor = 10
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
 			}
-			factor = 20
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-		}
-		
+		}		
 		ai_research_weights = {
 			industry = 2.0
 		}

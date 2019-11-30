@@ -2992,16 +2992,36 @@ leader_traits = {
 		experience_gain_army = 0.05
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+			
 			modifier = {
-				add = 600
-				has_army_size = {
-					size > 8
-					type = armor
-				}
-			}
-		}
-	}
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.05 }
+					}
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.05 }
+					}
+					}
+					}
 
 	light_aircraft_manufacturer = {
 		random = no
@@ -4867,9 +4887,29 @@ ai_will_do = {
 	
 			modifier = {
 				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
+					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
 					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.8 }
+					check_variable = { type_percentage > 0.1 }
+					}
+					
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+					
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
 					}
 					
 			modifier = {
@@ -4919,26 +4959,28 @@ ai_will_do = {
 			factor = 1
 			
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
@@ -4987,26 +5029,28 @@ ai_will_do = {
 			factor = 2
 			
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
@@ -5055,26 +5099,28 @@ ai_will_do = {
 			factor = 2
 			
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.1 }
-					}
-			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
+					
 			modifier = {
-				factor = 3
+				factor = 2
 					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
+					divide_temp_variable = { type_percentage = num_armies}
+					check_variable = { type_percentage > 0.1 }
+					}
+			modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.1 }
 					}
@@ -8327,9 +8373,59 @@ ai_will_do = {
 		random = no
 		army_infantry_defence_factor = 0.1
 		production_speed_bunker_factor = 0.05
-		ai_will_do = {
-			factor = 1
-		}
+	ai_will_do = {
+				factor = 1
+		modifier = {
+				factor = 2
+				num_divisions > 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 30
+			}
+			
+			modifier = {
+				factor = 2
+				num_divisions > 50
+			}
+					
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				factor = 2
+				arms_factory > 50
+			}
+			
+			modifier = { 
+					factor = 2
+					any_neighbor_country = {
+					has_added_tension_amount = 1
+					}
+					}
+					
+				modifier = { 
+					factor = 2
+					any_neighbor_country = {
+					is_justifying_wargoal_against = ROOT
+					}
+					}
+					
+				modifier = { 
+					factor = 2
+					any_neighbor_country = {
+					has_wargoal_against  = ROOT
+					}
+					}
+			}
 	}
 
 	good_king = {
