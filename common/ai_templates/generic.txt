@@ -666,7 +666,7 @@ Light_armor_infantry_GEN = {
 			0.80 #-- defense
 			3.00 #-- breakthrough
 			0.60 #-- hardness
-			1.25 #-- soft_attack
+			2.00 #-- soft_attack
 			1.00 #-- hard_attack
 			0.10 #-- recon
 			0.01 #-- entrenchment
@@ -682,10 +682,10 @@ Light_armor_infantry_GEN = {
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
-			5.00 #-- max_organisation
+			3.00 #-- max_organisation
 			0.80 #-- max_strength
 			0.00 #-- maximum_speed
-			0.10 #-- armor_value
+			0.20 #-- armor_value
 			0.10 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
@@ -765,10 +765,10 @@ Light_armor_POOR_GEN = {
 		stat_weights = {
 			0.00 #-- default_morale
 			1.00 #-- defense
-			2.50 #-- breakthrough
+			3.00 #-- breakthrough
 			0.60 #-- hardness
-			1.50 #-- soft_attack
-			0.70 #-- hard_attack
+			2.00 #-- soft_attack
+			1.00 #-- hard_attack
 			0.10 #-- recon
 			0.01 #-- entrenchment
 			0.10 #-- initiative
@@ -783,10 +783,10 @@ Light_armor_POOR_GEN = {
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
-			5.00 #-- max_organisation
+			2.50 #-- max_organisation
 			0.80 #-- max_strength
 			0.00 #-- maximum_speed
-			0.10 #-- armor_value
+			0.20 #-- armor_value
 			0.10 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
@@ -872,9 +872,9 @@ Light_armor_POOR_GEN = {
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
-			5.00 #-- max_organisation
+			3.00 #-- max_organisation
 			0.80 #-- max_strength
-			2.0 #-- maximum_speed
+			4.00 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability

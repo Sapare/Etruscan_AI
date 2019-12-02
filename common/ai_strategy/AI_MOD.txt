@@ -868,7 +868,7 @@ In_with_new_MT = {
  	Dont_light_tanks = {
  		Enable = {
  			Or = {
- 				has_equipment = {light_tank_equipment < 200}
+ 				has_equipment = {light_tank_equipment < 100}
  				has_manpower < 10000 
 				}
  			AND = {
@@ -877,7 +877,7 @@ In_with_new_MT = {
  				}
  		abort = {
  			AND = {
- 				has_equipment = {light_tank_equipment > 500}
+ 				has_equipment = {light_tank_equipment > 150}
  				has_manpower > 25000
  				}
  				}
@@ -885,14 +885,14 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = light_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_med_tanks = {
  		Enable = {
  			Or = {
- 				has_equipment = {medium_tank_equipment < 200}
+ 				has_equipment = {medium_tank_equipment < 100}
  				has_manpower < 10000 
  				}
   		AND = {
@@ -901,7 +901,7 @@ In_with_new_MT = {
  				}
  		abort = {
  			AND = {
- 				has_equipment = {medium_tank_equipment > 500}
+ 				has_equipment = {medium_tank_equipment > 150}
  				has_manpower > 25000
  				}
  				}
@@ -909,14 +909,14 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = medium_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_heavy_tanks = {
  		Enable = {
  			Or = {
-				has_equipment = {heavy_tank_equipment < 200}
+				has_equipment = {heavy_tank_equipment < 100}
 				has_manpower < 10000 
 				}
 			AND = {
@@ -925,7 +925,7 @@ In_with_new_MT = {
 				}
  		abort = {
  			AND = {
-				has_equipment = {heavy_tank_equipment > 500}
+				has_equipment = {heavy_tank_equipment > 150}
 				has_manpower > 25000
 				}
 				}
@@ -933,14 +933,14 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = heavy_tank_equipment
- 			value = 500 
+ 			value = 100 
  			}
  			}
  	
  	Dont_modern_tanks = {
  		Enable = {
 				Or = {
-					has_equipment = {modern_tank_equipment < 200}
+					has_equipment = {modern_tank_equipment < 100}
 					has_manpower < 10000 
 					}
  			AND = {
@@ -949,7 +949,7 @@ In_with_new_MT = {
 					}
  		abort = {
  			AND = {
-					has_equipment = {modern_tank_equipment > 500}
+					has_equipment = {modern_tank_equipment > 150}
 					has_manpower > 25000
 					}
 					}
@@ -957,7 +957,7 @@ In_with_new_MT = {
  		ai_strategy = {
  			type = save_equipment
  			id = modern_tank_equipment
- 			value = 500 
+ 			value = 100 
 				}
 				}
 				
