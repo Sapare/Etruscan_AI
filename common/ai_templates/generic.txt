@@ -50,10 +50,6 @@ Infantry_GEN = {
 
 	upgrade_prio = {
 			factor = 2									
-			modifier = {
-				factor = 0
-				aluminium < 1 					
-				}
 				}
 		
 		
@@ -138,7 +134,7 @@ Tungsten_Infantry_GEN = {
 				
 		modifier = {
 				factor = 3
-				tungsten < 1 
+				check_variable = {resource_produced@tungsten < 1 }	
 		}								
 		}
 		
@@ -147,7 +143,7 @@ Tungsten_Infantry_GEN = {
 			
 		modifier = {
 				factor = 3
-				tungsten < 1 
+				check_variable = {resource_produced@tungsten < 1 }	
 		}
 		}
 
@@ -227,7 +223,7 @@ Aluminium_Infantry_GEN = {
 				
 		modifier = {
 				factor = 3
-				aluminium < 1 
+				check_variable = {resource_produced@aluminium < 1 }		
 		}								
 		}
 		
@@ -236,7 +232,7 @@ Aluminium_Infantry_GEN = {
 			
 		modifier = {
 				factor = 3
-				aluminium < 1 
+				check_variable = {resource_produced@aluminium < 1 }		 
 		}
 		}
 
@@ -311,8 +307,8 @@ PFI_GEN = {
 		modifier = {
 				factor = 20
 			AND = {				
-				tungsten < 1
-				aluminium < 1 
+				check_variable = {resource_produced@tungsten < 1 }		
+				check_variable = {resource_produced@aluminium < 1 }		
 				}								
 				}
 				}
@@ -323,8 +319,8 @@ PFI_GEN = {
 		modifier = {
 				factor = 20
 			AND = {				
-				tungsten < 1
-				aluminium < 1 
+				check_variable = {resource_produced@tungsten < 1 }	
+				check_variable = {resource_produced@aluminium < 1 }		
 				}								
 				}
 				}
@@ -618,33 +614,21 @@ Light_armor_GEN = {
 	}
 
 	upgrade_prio = {
-		factor = 1
+		factor = 3
+}
 
-		modifier = {
-			factor = 3
-			AND = {
-			 steel > 15
-			 arms_factory > 10
-		}
-		}
-		}
-		modifier = {
-			factor = 0
-			AND = {
-			rubber < 2 
-			has_tech = basic_medium_tank
-	}
-	}
+	match_to_count = 0.50
+		
 
-	match_to_count = 0.7
-
-Light_armor_infantry_GEN = {
+light_armor_infantry_GEN = {
 
 		upgrade_prio = {
 			factor = 1
 		modifier = {
 			factor = 3
-			rubber < 2 
+			NOT = {
+			has_tech = motorised_infantry
+			} 
 		}
 		}
 		
@@ -653,7 +637,9 @@ Light_armor_infantry_GEN = {
 			factor = 1
 		modifier = {
 			factor = 3
-			rubber < 2 
+			NOT = {
+			has_tech = motorised_infantry
+			} 
 		}
 		}
 
@@ -664,7 +650,7 @@ Light_armor_infantry_GEN = {
 		stat_weights = {
 			0.00 #-- default_morale
 			0.80 #-- defense
-			3.00 #-- breakthrough
+			5.00 #-- breakthrough
 			0.60 #-- hardness
 			2.00 #-- soft_attack
 			1.00 #-- hard_attack
@@ -682,11 +668,11 @@ Light_armor_infantry_GEN = {
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
-			3.00 #-- max_organisation
+			2.50 #-- max_organisation
 			0.80 #-- max_strength
 			0.00 #-- maximum_speed
-			0.20 #-- armor_value
-			0.10 #-- ap_attack
+			0.30 #-- armor_value
+			0.20 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
@@ -730,122 +716,16 @@ Light_armor_infantry_GEN = {
 			signal_company
 		}
 		}
-
-Light_armor_POOR_GEN = {
-
-		upgrade_prio = {
-			factor = 1
-		modifier = {
-			factor = 2
-			 rubber < 2 
-		}
-		modifier = {
-			factor = 2
-			aluminium < 2 
-		}
-		}
-		
-
-		production_prio = {
-			factor = 1
-		modifier = {
-			factor = 2
-			rubber < 2 
-		}
-		modifier = {
-			factor = 2
-			aluminium < 2 
-		}
-		}
-
-		target_width = 20.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
-
-		stat_weights = {
-			0.00 #-- default_morale
-			1.00 #-- defense
-			3.00 #-- breakthrough
-			0.60 #-- hardness
-			2.00 #-- soft_attack
-			1.00 #-- hard_attack
-			0.10 #-- recon
-			0.01 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			2.50 #-- max_organisation
-			0.80 #-- max_strength
-			0.00 #-- maximum_speed
-			0.20 #-- armor_value
-			0.10 #-- ap_attack
-			0.10 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			-0.10 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-			}
-
-		target_template = {
-			weight = 0.9
-			match_value = 4000.0
-
-			support = {
-				artillery = 1
-				}
-
-			regiments = {
-				light_armor = 5
-				infantry = 5
-			}
-			}
-
-		allowed_types = {
-			infantry
-			light_armor
-			light_sp_artillery_brigade
-			light_tank_destroyer_brigade
-			light_sp_anti_air_brigade
-			mot_artillery_brigade
-			engineer
-			recon
-			artillery
-			anti_tank
-			signal_company
-		}
-		}
 		
 	Light_armor_Motor_GEN = {
 
 		upgrade_prio = {
 			factor = 2
-		modifier = {
-			factor = 0
-			rubber < 1 
-		}
-		}
+			}
 
 		production_prio = {
 			factor = 2
-			modifier = {
-			factor = 0
-			rubber < 2 
-		}
-		}
+			}
 
 		target_width = 20.0
 		width_weight = 3.0
@@ -854,7 +734,7 @@ Light_armor_POOR_GEN = {
 		stat_weights = {
 			0.00 #-- default_morale
 			1.00 #-- defense
-			3.00 #-- breakthrough
+			5.00 #-- breakthrough
 			0.60 #-- hardness
 			1.00 #-- soft_attack
 			0.50 #-- hard_attack
@@ -874,7 +754,7 @@ Light_armor_POOR_GEN = {
 			#-- Common Values
 			3.00 #-- max_organisation
 			0.80 #-- max_strength
-			4.00 #-- maximum_speed
+			5.00 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
@@ -921,6 +801,8 @@ Light_armor_POOR_GEN = {
 		}				
 		}
 
+		
+
 Main_armor_GEN = {
 
 
@@ -957,10 +839,11 @@ Main_armor_GEN = {
 	}
 
 	upgrade_prio = {
-		factor = 5
+		factor = 2
 
 		modifier = {
-			factor = 1
+			factor = 5			
+			has_tech = mechanised_infantry	
 		}
 	}
 
@@ -971,8 +854,8 @@ Medium_armor_infantry_GEN = {
 		upgrade_prio = {
 			factor = 2
 		modifier = {
-			factor = 2
-			rubber < 2
+			factor = 3
+			 check_variable = {resource_produced@rubber < 2 }	
 		}
 		}
 		
@@ -980,8 +863,8 @@ Medium_armor_infantry_GEN = {
 		production_prio = {
 			factor = 2
 		modifier = {
-			factor = 2
-			rubber < 2
+			factor = 3
+		 check_variable = {resource_produced@rubber < 2 }	
 		}
 		}
 
@@ -1157,7 +1040,7 @@ Medium_armor_infantry_GEN = {
 	Modern_Armor_GEN = {
 
 		upgrade_prio = {
-			factor = 5
+			factor = 10
 			
 			modifier = {
 				factor = 0
@@ -1165,11 +1048,6 @@ Medium_armor_infantry_GEN = {
 					has_tech = main_battle_tank
 				}
 				}
-				}
-			modifier = {
-				factor = 0
-				NOT = {
-					rubber < 2
 				}
 				
 				modifier = {
@@ -1182,18 +1060,12 @@ Medium_armor_infantry_GEN = {
 				}
 
 		production_prio = {
-			factor = 5
+			factor = 10
 			
 			modifier = {
 				factor = 0
 				NOT = {
 					has_tech = main_battle_tank
-				}
-				}
-			modifier = {
-				factor = 0
-				NOT = {
-					rubber < 2
 				}
 				}
 				modifier = {

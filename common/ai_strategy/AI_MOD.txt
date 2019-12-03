@@ -107,17 +107,11 @@
 				num_of_military_factories > 15
 				}
 				}
-			
-		ai_strategy = {
-			type = equipment_variant_production_factor
-			id = infantry_equipment
-			value = 45 
-			}
 		
 		ai_strategy = {
 			type = role_ratio
 			id = infantry
-			value = 50 
+			value = 25 
 			}
 		
 	
@@ -149,12 +143,6 @@
 			type = equipment_production_factor
 			id = strategic_bomber
 			value = -200
-			}
-		
-		ai_strategy = {
-			type = equipment_variant_production_factor
-			id = mechanized_equipment
-			value = -50 
 			}		
 		
 		ai_strategy = {
@@ -194,13 +182,13 @@
 		ai_strategy = {
 			type = equipment_variant_production_factor
 			id = infantry_equipment
-			value = 75 
+			value = 50
 			}
 			
 		ai_strategy = {
 			type = role_ratio
 			id = infantry
-			value = 80 
+			value = 30 
 			}
 			
 		ai_strategy = {
@@ -301,7 +289,7 @@
 			Abort = {
 				OR = {
 				aluminium > 2 
-				has_equipment = { support_equipment < 0 }
+				has_equipment = { support_equipment < 1 }
 				}
 				}
 		
@@ -317,12 +305,14 @@
 			AND = {
 				rubber < 1 
 				has_equipment = { motorized_equipment > 20 }
+				arms_factories < 20
 				}
 				}
 			Abort = {
 				OR = {
 				rubber > 2 
-				has_equipment = { motorized_equipment < 0 }
+				has_equipment = { motorized_equipment < 1 }
+				arms_factories > 20
 				}
 				}
 		
@@ -332,7 +322,7 @@
 			value = -1000
 			}
 			}
-			
+
 	CHF_Artillery = {
 		Enable = {
 			AND = {
@@ -343,7 +333,7 @@
 			Abort = {
 				OR = {
 				tungsten > 2 
-				has_equipment = { artillery_equipment < 0 }
+				has_equipment = { artillery_equipment < 1 }
 				}
 				}
 		
@@ -391,7 +381,7 @@
 			Abort = {
 				OR = {
 				rubber > 3 
-				check_variable = { resource_consumed@rubber > 0 }
+				check_variable = { resource_consumed@rubber > 1 }
 				}
 				}
 		
