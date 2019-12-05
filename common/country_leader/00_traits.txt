@@ -2504,10 +2504,15 @@ leader_traits = {
 			ai_will_do = {
 				factor = 1.75
 			
-			#I dont get why EQS STILL wants to hire flim flam at start, but this reduced it.	
+		
 			modifier = {
 					factor = 0
 					has_idea = friendly_harmony
+			}
+			
+			modifier = {
+					factor = 100
+					has_war = yes
 			}
 				
 			modifier = {

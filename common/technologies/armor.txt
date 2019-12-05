@@ -72,14 +72,9 @@ technologies = {
 				factor = 0
 				steel < 10
 		}
-		
-		modifier = {
-				factor = 0
-				arms_factory < 10
-		}
 		modifier = {
 				factor = 0.5
-				arms_factory < 10
+				arms_factory < 5
 		}
 		
 		modifier = {
@@ -799,6 +794,13 @@ technologies = {
 				has_tech = 		has_tech = mass_assault
 				}
 
+			modifier = {
+				factor = 0
+				OR = {
+					is_researching_technology = improved_heavy_tank
+					has_tech = improved_heavy_tank
+				}
+			}
 
 		modifier = {
 			factor = 1.5
@@ -993,7 +995,14 @@ technologies = {
 				factor = 0.5
 				has_tech = 		has_tech = mass_assault
 				}
-
+				
+			modifier = {
+				factor = 0
+				OR = {
+					is_researching_technology = advanced_heavy_tank
+					has_tech = advanced_heavy_tank
+				}
+			}
 
 		modifier = {
 			factor = 1.5
@@ -1186,7 +1195,7 @@ technologies = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 
 				modifier = {
 				factor = 0.5
@@ -1204,6 +1213,14 @@ technologies = {
 			factor = 1.5
 			arms_factory > 75		
 			}
+	modifier = {
+			factor = 1.5
+			arms_factory > 100	
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150	
+			}
 		modifier = {
 			factor = 0.5
 			tungsten < 10
@@ -1216,6 +1233,24 @@ technologies = {
 			factor = 0
 			tungsten < 10
 			}
+		
+		modifier = {
+			factor = 1.5
+			tungsten > 30
+			}
+		modifier = {
+			factor = 1.5
+			tungsten > 40
+			}
+			
+		modifier = {
+				factor = 0
+				OR = {
+					is_researching_technology = main_battle_tank
+					has_tech = main_battle_tank
+				}
+			}
+
 		}
 
 		categories = {
@@ -1384,7 +1419,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 3.5
 
 
 		modifier = {
@@ -1402,6 +1437,10 @@ technologies = {
 		modifier = {
 			factor = 1.5
 			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
 			}
 		modifier = {
 			factor = 0.5
@@ -1586,7 +1625,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 2
 
 			modifier = {
 				factor = 0
@@ -1596,22 +1635,61 @@ technologies = {
 					has_tech = improved_heavy_tank
 				}
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1008.1.1"
+		modifier = {
+				factor = 0
+				OR = {
+					is_researching_technology = basic_medium_tank
+					has_tech = basic_medium_tank
+				}
 			}
+			
 
-			modifier = {
-				factor = 1.2
-				date > "1009.1.1"
+		modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}			
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1010.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
 			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 10
+			}
+		modifier = {
+			factor = 0
+			chromium < 5
+			}
+		modifier = {
+			factor = 2
+			tungsten < 5
+			}
+		modifier = {
+			factor = 2
+			rubber < 5
+			}
+		modifier = {
+			factor = 0.5
+			rubber > 5
+			}			
 		}
+		
 
 		categories = {
 			armor
@@ -1736,7 +1814,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 2
 
 			modifier = {
 				factor = 0
@@ -1746,20 +1824,57 @@ technologies = {
 					is_researching_technology = advanced_heavy_tank
 				}
 			}
-
 			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
+				factor = 0
+				OR = {
+					is_researching_technology = advanced_medium_tank
+					has_tech = advanced_medium_tank
+				}
 			}
 
 			modifier = {
-				factor = 1.2
-				date > "1014.1.1"
+			factor = 0.5
+			has_tech = 	has_tech = mass_assault
+				}			
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 10
+			}
+		modifier = {
+			factor = 0
+			chromium < 5
+			}
+		modifier = {
+			factor = 2
+			tungsten < 5
+			}
+		modifier = {
+			factor = 2
+			rubber < 5
+			}
+		modifier = {
+			factor = 0.5
+			rubber > 5
 			}
 		}
 
@@ -1881,26 +1996,60 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 2
 
 			modifier = {
 				factor = 0
-				has_tech = main_battle_tank
+				OR = {
+					can_research = main_battle_tank
+					is_researching_technology = main_battle_tank
+					has_tech = main_battle_tank
+				}
 			}
 
 			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
+			factor = 0.5
+			has_tech = 	has_tech = mass_assault
+				}			
+		modifier = {
+			factor = 1.5
+			arms_factory > 50 
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1016.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
 			}
-
-			modifier = {
-				factor = 1.2
-				date > "1017.1.1"
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 15
+			}
+		modifier = {
+			factor = 0.5
+			chromium < 10
+			}
+		modifier = {
+			factor = 0
+			chromium < 5
+			}
+		modifier = {
+			factor = 2
+			tungsten < 5
+			}
+		modifier = {
+			factor = 2
+			rubber < 5
+			}
+		modifier = {
+			factor = 0.5
+			rubber > 5
 			}
 		}
 
@@ -2553,9 +2702,10 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			
-				modifier = {
+			factor = 3.5
+
+
+		modifier = {
 			factor = 0.5
 			has_tech = 		has_tech = mass_assault
 				}
@@ -2570,6 +2720,15 @@ technologies = {
 		modifier = {
 			factor = 1.5
 			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+			
+		modifier = {
+			factor = 1.5
+			chromium < 30
 			}
 		modifier = {
 			factor = 0.5
@@ -2678,9 +2837,10 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			
-				modifier = {
+			factor = 3.5
+
+
+		modifier = {
 			factor = 0.5
 			has_tech = 		has_tech = mass_assault
 				}
@@ -2695,6 +2855,15 @@ technologies = {
 		modifier = {
 			factor = 1.5
 			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+			
+		modifier = {
+			factor = 1.5
+			chromium < 30
 			}
 		modifier = {
 			factor = 0.5
@@ -2801,9 +2970,10 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			
-				modifier = {
+			factor = 3.5
+
+
+		modifier = {
 			factor = 0.5
 			has_tech = 		has_tech = mass_assault
 				}
@@ -2818,6 +2988,15 @@ technologies = {
 		modifier = {
 			factor = 1.5
 			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+			
+		modifier = {
+			factor = 1.5
+			chromium < 30
 			}
 		modifier = {
 			factor = 0.5
@@ -2922,8 +3101,35 @@ technologies = {
 			main_battle_tank_spaa_d
 		}
 
-		ai_will_do = {
+	ai_will_do = {
+			factor = 3.5
+
+
+		modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
 			factor = 1.5
+			arms_factory > 50 
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+			
+		modifier = {
+			factor = 1.5
+			chromium < 30
+			}
 		}
 
 		categories = {
@@ -2944,38 +3150,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		
-			modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
-		modifier = {
-			factor = 1.5
-			arms_factory > 100
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 125
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 200		
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 50
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 30
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 25
-			}
-		modifier = {
-			factor = 0
-			chromium < 15
-			}
 		
 		
 		}
@@ -3042,8 +3216,35 @@ technologies = {
 		}
 
 		ai_will_do = {
+			factor = 3.5
+
+
+		modifier = {
+			factor = 0.5
+			has_tech = 		has_tech = mass_assault
+				}
+		modifier = {
 			factor = 1.5
-		}
+			arms_factory > 50 
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 75
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 100		
+			}
+		modifier = {
+			factor = 1.5
+			arms_factory > 150		
+			}
+			
+		modifier = {
+			factor = 1.5
+			chromium < 30
+			}
+			}
 
 		categories = {
 			armor

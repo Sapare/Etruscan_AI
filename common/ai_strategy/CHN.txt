@@ -149,6 +149,12 @@ CHN_unit_production = {
 		id = main_armor
 		value = 25
 	}	
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 5
+	}
 			
 	ai_strategy = {
 		type = role_ratio

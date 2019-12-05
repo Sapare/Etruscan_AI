@@ -565,7 +565,7 @@ magical_infantry_EQS = {
 
 			regiments = {
 				magical_infantry = 8
-				rocket_artillery = 2
+				rocket_artillery_brigade = 2
 			}
 			}
 
@@ -578,7 +578,7 @@ magical_infantry_EQS = {
 			anti_tank
 			artillery
 			anti_air
-			rocket_artillery
+			rocket_artillery_brigade
 			maintenance_company
 		}
 		}
@@ -698,6 +698,7 @@ light_armor_EQS = {
 			}
 
 		allowed_types = {
+			infantry
 			light_armor
 			motorized
 			light_sp_artillery_brigade
@@ -858,13 +859,14 @@ Main_armor_EQS = {
 Modern_armor_EQS = {
 
 		upgrade_prio = {
-			factor = 4
+			factor = 10
 			modifier = {
 				factor = 0
 				NOT = {
 					has_tech = main_battle_tank
 				}
-			}
+				}
+				
 			modifier = {
 				factor = 0
 				NOT = { 
@@ -874,13 +876,14 @@ Modern_armor_EQS = {
 				}
 
 		production_prio = {
-			factor = 4
+			factor = 10
 			modifier = {
 				factor = 0
 				NOT = {
 					has_tech = main_battle_tank
 				}
-			}
+				}
+				
 			modifier = {
 				factor = 0
 				NOT = { 
@@ -916,7 +919,7 @@ Modern_armor_EQS = {
 			#-- Common Values
 			5.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.25 #-- maximum_speed
+			3.00 #-- maximum_speed
 			11.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
@@ -959,6 +962,230 @@ Modern_armor_EQS = {
 			unicorn_company
 
 			motorized_rocket_brigade
+
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			logistics_company
+
+			anti_tank
+			military_police
+			artillery
+			anti_air
+			rocket_artillery
+		}
+		}
+		}
+		
+					
+heavy_armor_EQS = {
+
+
+	roles = {
+		heavy_armor
+	}
+
+	upgrade_prio = {
+		factor = 0.01
+	}
+
+	match_to_count = 0.8
+
+		upgrade_prio = {
+			factor = 3
+			
+			modifier = {
+			factor = 0
+			NOT = { has_tech = basic_heavy_tank }
+			}
+		}
+		
+	heavy_armor_basic_EQS = {
+
+		upgrade_prio = {
+			factor = 2
+			
+		modifier = {
+			factor = 0
+			NOT = { has_tech = improved_heavy_tank }
+			}
+			}
+
+		production_prio = {
+			factor = 2
+			modifier = {
+			factor = 0
+			NOT = { has_tech = improved_heavy_tank }
+			}
+			}
+
+		target_width = 18.0
+		width_weight = 3.0
+		column_swap_factor = 0.1
+
+		stat_weights = {
+			0.00 #-- default_morale
+			2.00 #-- defense
+			1.00 #-- breakthrough
+			0.60 #-- hardness
+			1.00 #-- soft_attack
+			1.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			4.00 #-- max_organisation
+			1.20 #-- max_strength
+			0.5 #-- maximum_speed
+			7.0 #-- armor_value
+			1.00 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 8000.0
+
+			support = {
+				engineer = 1
+				recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+				signal_company = 1
+			}
+
+			regiments = {
+				heavy_armor = 2
+				infantry = 8
+			}
+			}
+
+		allowed_types = {
+			heavy_armor
+			heavy_sp_artillery_brigade
+			heavy_tank_destroyer_brigade
+			heavy_sp_anti_air_brigade
+			infantry
+
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			logistics_company
+
+			anti_tank
+			military_police
+			artillery
+			anti_air
+			rocket_artillery
+		}
+		}
+		
+heavy_armor_improved_EQS = {
+
+		upgrade_prio = {
+			factor = 2
+			
+		modifier = {
+			factor = 0
+			NOT = { has_tech = improved_heavy_tank }
+			}
+			}
+
+		production_prio = {
+			factor = 2
+			modifier = {
+			factor = 0
+			NOT = { has_tech = improved_heavy_tank }
+			}
+			}
+
+		target_width = 18.0
+		width_weight = 3.0
+		column_swap_factor = 0.1
+
+		stat_weights = {
+			0.00 #-- default_morale
+			1.25 #-- defense
+			2.00 #-- breakthrough
+			1.25 #-- hardness
+			1.00 #-- soft_attack
+			1.50 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			4.00 #-- max_organisation
+			1.20 #-- max_strength
+			0.5 #-- maximum_speed
+			10.0 #-- armor_value
+			3.00 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 8000.0
+
+			support = {
+				engineer = 1
+				recon = 1
+				maintenance_company = 1
+				logistics_company = 1
+				signal_company = 1
+			}
+
+			regiments = {
+				heavy_armor = 4
+				infantry = 6
+			}
+			}
+
+		allowed_types = {
+			heavy_armor
+			heavy_sp_artillery_brigade
+			heavy_tank_destroyer_brigade
+			heavy_sp_anti_air_brigade
+			infantry
 
 			engineer
 			recon

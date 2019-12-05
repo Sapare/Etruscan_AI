@@ -3094,12 +3094,26 @@ technologies = {
 			
 			
 		modifier = {
-			factor = 2
+			factor = 5
 			has_tech = advanced_infantry_weapons_a
 			}
 		modifier = {
 			factor = 2
 			num_divisions > 50
+		}
+		modifier = {
+			factor = 2
+			num_divisions > 75
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 100
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 120
 		}
 	}
 	}
@@ -3176,7 +3190,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 4
+			
+		modifier = {
+			factor = 5
+			has_tech = advanced_infantry_weapons_b
+			}
+			
+		modifier = {
+			factor = 2
+			num_divisions > 50
+		}
+		modifier = {
+			factor = 2
+			num_divisions > 75
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 100
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 120
+		}
 		}
 	}
 
@@ -3212,8 +3250,32 @@ technologies = {
 			infantry_weapons
 		}
 
-		ai_will_do = {
-			factor = 1
+	ai_will_do = {
+			factor = 4
+			
+		modifier = {
+			factor = 5
+			has_tech = advanced_infantry_weapons_b
+			}
+			
+		modifier = {
+			factor = 2
+			num_divisions > 50
+		}
+		modifier = {
+			factor = 2
+			num_divisions > 75
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 100
+		}
+		
+		modifier = {
+			factor = 2
+			num_divisions > 120
+		}
 		}
 	}
 

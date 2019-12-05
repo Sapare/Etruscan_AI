@@ -41,6 +41,12 @@
 		type = role_ratio
 		id = light_armor
 		value = 8
+		
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3
+		}
 		}
 		}
 		}
@@ -67,6 +73,12 @@
 		id = light_armor
 		value = 12
 		}
+		
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3
+		}
 		}
 		}
 		
@@ -90,6 +102,12 @@
 		type = role_ratio
 		id = light_armor
 		value = 20
+		
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 20
+		}
 		}
 		}
 		}
@@ -1026,3 +1044,5 @@ In_with_new_MT = {
  			value = -10000
 				}
 				}
+				
+

@@ -1250,5 +1250,214 @@
 			id = anti_air_equipment
 			value = -1000}
 			}
+			
+			
+#Scripts to limit air production.		
 	
+Fighter_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size  = {
+			size > 1000
+			type = fighter
+			}
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size  = {
+			size < 500
+			type = fighter
+			}
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = -100
+		}
+		}
+		
+CAS_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size  = {
+			size > 1000
+			type = CAS
+			}
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size  = {
+			size < 500
+			type = CAS
+			} 
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = CAS
+		value = -100
+		}
+		}
 	
+TACT_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size  = {
+			size > 1000
+			type = tactical_bomber
+			} 
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size  = {
+			size < 500
+			type = tactical_bomber
+			} 
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -100
+		}
+		}
+		
+STRAT_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size  = {
+			size > 1000
+			type = strategic_bomber
+			} 
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size  = {
+			size < 500
+			type = strategic_bomber
+			} 
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -100
+		}
+		}
+		
+NAVAL_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size  = {
+			size > 1000
+			type = naval_bomber
+			} 
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size  = {
+			size < 500
+			type = naval_bomber
+			} 
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -100
+		}
+		}
+		
+		
+INT_limit = {
+		enable = {
+			OR = {
+			has_deployed_air_force_size = {
+			size > 1000
+			type = interceptor 
+			}
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size = {
+			size < 500
+			type = interceptor 
+			}
+				}
+				}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = interceptor
+		value = -100
+		}
+		}
+		
+AIR_LIMIT = {
+		enable = {
+			AND = {
+			has_deployed_air_force_size = {
+			size > 800
+			type = interceptor 
+			}
+			has_deployed_air_force_size  = {
+			size > 800
+			type = CAS
+			}
+			has_deployed_air_force_size = {
+			size > 800
+			type = naval_bomber 
+			}
+			has_deployed_air_force_size  = {
+			size > 800
+			type = strategic_bomber
+			} 
+			has_deployed_air_force_size  = {
+			size > 800
+			type = fighter
+			}
+			has_deployed_air_force_size  = {
+			size > 800
+			type = tactical_bomber
+			}
+			}
+			}
+		abort = {
+			or = {
+			has_deployed_air_force_size = {
+			size < 500
+			type = interceptor 
+			}
+			has_deployed_air_force_size  = {
+			size < 500
+			type = CAS
+			}
+			has_deployed_air_force_size = {
+			size < 500
+			type = naval_bomber 
+			}
+			has_deployed_air_force_size  = {
+			size < 500
+			type = strategic_bomber
+			} 
+			has_deployed_air_force_size  = {
+			size < 500
+			type = fighter
+			}
+			has_deployed_air_force_size  = {
+			size < 500
+			type = tactical_bomber
+				}
+				}
+				}
+	ai_strategy = {
+		type = air_factory_balance
+		value = -100
+		}
+		}

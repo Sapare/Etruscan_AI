@@ -60,6 +60,12 @@ EQS_template_design_1 = {
 		id = main_armor
 		value = 10
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 5
+	}
 
 	ai_strategy = {
 		type = template_prio
