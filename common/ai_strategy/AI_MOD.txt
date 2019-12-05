@@ -36,18 +36,16 @@
 		type = role_ratio
 		id = main_armor
 		value = 10
-		
+		}
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 8
-		
+		}
 	ai_strategy = {
 		type = role_ratio
 		id = heavy_armor
 		value = 3
-		}
-		}
 		}
 		}
 		
@@ -67,7 +65,7 @@
 		type = role_ratio
 		id = main_armor
 		value = 20
-		
+		}
 		ai_strategy = {
 		type = role_ratio
 		id = light_armor
@@ -78,7 +76,6 @@
 		type = role_ratio
 		id = heavy_armor
 		value = 3
-		}
 		}
 		}
 		
@@ -97,18 +94,16 @@
 		type = role_ratio
 		id = main_armor
 		value = 40
-	
+	}
 		ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 20
-		
+		}
 	ai_strategy = {
 		type = role_ratio
 		id = heavy_armor
 		value = 20
-		}
-		}
 		}
 		}
 		
@@ -322,7 +317,7 @@
 		Enable = {
 			AND = {
 				rubber < 1 
-				has_equipment = { motorized_equipment > 20 }
+				has_equipment = { motorized_equipment > 50 }
 				arms_factories < 20
 				}
 				}
