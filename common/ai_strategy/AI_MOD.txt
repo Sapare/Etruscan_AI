@@ -16,7 +16,7 @@
 		
 		ai_strategy = {
 			type = added_military_to_civilian_factory_ratio
-			value = -35
+			value = -20
 		}
 		}
 		
@@ -309,7 +309,7 @@
 		ai_strategy = {
 			type = equipment_variant_production_factor
 			id = support_equipment
-			value = -1000 
+			value = -10000 
 			}
 			}
 	
@@ -841,12 +841,14 @@ In_with_new_MT = {
 	
  	Dont_infantry = {
  		Enable = { 
+			AND = {
  			OR = {
  				has_manpower < 10000
  				has_equipment = {infantry_equipment < 250}
  				}
- 			AND = {
+ 			OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
@@ -870,12 +872,14 @@ In_with_new_MT = {
  		
  	Dont_light_tanks = {
  		Enable = {
+ 		AND = {
  			Or = {
  				has_equipment = {light_tank_equipment < 100}
  				has_manpower < 10000 
 				}
- 			AND = {
+ 			OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
@@ -894,12 +898,14 @@ In_with_new_MT = {
  	
  	Dont_med_tanks = {
  		Enable = {
+			AND = {
  			Or = {
  				has_equipment = {medium_tank_equipment < 100}
  				has_manpower < 10000 
  				}
-  		AND = {
+  		OR = {
  				has_war = yes 
+ 				}
  				}
  				}
  		abort = {
@@ -918,12 +924,14 @@ In_with_new_MT = {
  	
  	Dont_heavy_tanks = {
  		Enable = {
+			AND = {
  			Or = {
 				has_equipment = {heavy_tank_equipment < 100}
 				has_manpower < 10000 
 				}
-			AND = {
+			OR = {
 				has_war = yes 
+				}
 				}
 				}
  		abort = {
@@ -942,12 +950,14 @@ In_with_new_MT = {
  	
  	Dont_modern_tanks = {
  		Enable = {
+			AND = {
 				Or = {
 					has_equipment = {modern_tank_equipment < 100}
 					has_manpower < 10000 
 					}
- 			AND = {
+ 			OR = {
 					has_war = yes 
+					}
 					}
 					}
  		abort = {
