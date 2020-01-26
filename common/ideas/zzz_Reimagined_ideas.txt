@@ -1,0 +1,328 @@
+
+ideas = {
+
+	country = {	
+	AID_1 = {
+			name = AID_1
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.10
+			economy_cost_factor = -0.10
+			trade_laws_cost_factor = -0.10
+			}
+		}
+	
+	AID_2 = {
+			name = AID_2
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.15
+			economy_cost_factor = -0.15
+			trade_laws_cost_factor = -0.15
+			}
+		}
+		
+	AID_3 = {
+			name = AID_3
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.30
+			economy_cost_factor = -0.30
+			trade_laws_cost_factor = -0.30
+			}
+		}
+	AID_4 = {
+			name = AID_4
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.40
+			economy_cost_factor = -0.40
+			trade_laws_cost_factor = -0.40
+			}
+		}
+		
+	AID_5 = {
+			name = AID_5
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.50
+			economy_cost_factor = -0.50
+			trade_laws_cost_factor = -0.50
+			}	
+		}
+		
+	AID_6 = {
+			name = AID_6
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.60
+			economy_cost_factor = -0.60
+			trade_laws_cost_factor = -0.60
+			}	
+		}
+		
+	AID_7 = {
+			name = AID_7
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.65
+			economy_cost_factor = -0.65
+			trade_laws_cost_factor = -0.65
+			}
+		}
+		
+	AID_8 = {
+			name = AID_8
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+		modifier = {				
+			mobilization_laws_cost_factor = -0.70
+			economy_cost_factor = -0.70
+			trade_laws_cost_factor = -0.70
+			}
+		}
+		
+	AID_9 = {
+			name = AID_9
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			modifier = {				
+			mobilization_laws_cost_factor = -0.75
+			economy_cost_factor = -0.75
+			trade_laws_cost_factor = -0.75
+			}
+		}
+		
+	AID_10 = {
+			name = AID_10
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			modifier = {				
+			mobilization_laws_cost_factor = -0.80
+			economy_cost_factor = -0.80
+			trade_laws_cost_factor = -0.80
+			}
+		}
+	
+	AID_11 = {
+			name = AID_11
+
+			picture = ROM_king_carol_ii_hedonist
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			removal_cost = -1
+
+			modifier = {				
+			mobilization_laws_cost_factor = -0.85
+			economy_cost_factor = -0.85
+			trade_laws_cost_factor = -0.85
+			}
+		}
+		
+
+	Mil_aid = {
+	
+		picture = ROM_king_carol_ii_hedonist
+	
+		 alowed = {
+		 always = no
+		 }
+		 
+		 alowed_civil_war = {
+		 always = yes
+		 }
+		 removal_cost = -1
+		 
+		 modifier = {
+		mic_to_overlord_factor = 0.5
+		autonomy_gain = 2
+		 }
+	 }
+	 
+	 Civ_aid = {
+		
+		picture = ROM_king_carol_ii_hedonist
+		
+		 alowed = {
+		 always = no
+		 }
+		 
+		 alowed_civil_war = {
+		 always = yes
+		 }
+		 removal_cost = -1
+		 
+		 modifier = {
+		cic_to_overlord_factor = 0.5
+		autonomy_gain = 2
+		 }
+	 }
+	 
+	 Man_aid = {	 			 
+	 			
+	  picture = ROM_king_carol_ii_hedonist
+	 			 
+		 alowed = {
+		 always = no
+		 }
+		 
+		 alowed_civil_war = {
+		 always = yes
+		 }
+		 removal_cost = -1
+		 
+		 modifier = {
+		autonomy_manpower_share = 1.0
+		autonomy_gain = 1
+		 }
+	 }
+	 
+	 Resource_aid = {
+	 	
+	 		picture = ROM_king_carol_ii_hedonist
+	 			 
+		 alowed = {
+		 always = no
+		 }
+		 
+		 alowed_civil_war = {
+		 always = yes
+		 }
+		 removal_cost = -1
+		 
+		 modifier = {
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -1.0
+		autonomy_gain_global_factor = 1.0
+		 }
+	 }	 
+	 	 
+	 }
+	}
+	
+	
+	

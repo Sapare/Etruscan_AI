@@ -31,6 +31,7 @@ just_hate_EQS = {
 		value = 100
 	}
 }
+
 just_hate_NLR = {
 	enable = {
 		tag = CHN
@@ -58,6 +59,7 @@ just_hate_NLR = {
 		value = 100
 	}
 }
+
 war_cooperation = {
 	enable = {
 		tag = CHN
@@ -459,6 +461,7 @@ CHN_naval_role_ratios_ahistorical = {
 		value = 10
 	}
 }
+
 stick_with_SCS = {
 	enable = {
 		original_tag = CHN

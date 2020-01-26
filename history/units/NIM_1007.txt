@@ -12,9 +12,48 @@
 		pegasi = { x = 1 y = 3 }
 	}
 
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
 }
 division_template = {
 	name = "Pezhetairoi"			#Infantry Division - kek
+	division_names_group = NIM_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "New Hoplitēs"
+	division_names_group = NIM_PEG_01
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 0 y = 3 }
+		pegasi = { x = 1 y = 0 }
+		pegasi = { x = 1 y = 1 }
+		pegasi = { x = 1 y = 2 }
+		pegasi = { x = 1 y = 3 }
+	}
+
+}
+division_template = {
+	name = "New Pezhetairoi"			#Infantry Division - kek
 	division_names_group = NIM_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -223,16 +262,3 @@ instant_effect = {
 		efficiency = 50
 	}
 }
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 48
-		producer = NIM
-	}
-		add_equipment_to_stockpile = {
-		type = artillery_equipment
-		amount = 78
-		producer = NIM
-	}
-	}

@@ -1,0 +1,1343 @@
+foreign_politics = {
+
+		GRI_Request_Transition_Rottendedam = {
+		icon = generic_form_nation
+
+		targets = { FEA }
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+				original_tag = FEA
+			}
+		}
+
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			
+		NOT = {
+		has_country_flag = GRI_Diplomatically_Active
+		}
+		}
+		FROM = {
+			owns_state = 433
+			controls_state = 433
+			}
+		}
+
+		cost = 200
+		
+		modifier = {
+			civilian_factory_use = 5		
+		}
+		
+		days_remove = 360
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 50
+			}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}
+								
+			is_subject = no
+			
+			NOT = {
+				has_country_flag = GRI_Diplomatically_Active
+				}
+		
+			FROM = {
+			AND = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			owns_state = 433
+			controls_state = 433			
+	}
+}
+}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Request_Transition_Rottendedam target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.22 days = 1
+			}		
+			}		
+										
+			set_country_flag = GRI_Diplomatically_Active
+			}
+			
+	remove_effect = {	
+		FROM = {
+			country_event = { 
+				id = imperial_reworked.23 days = 1
+			} 
+			}
+			
+			clr_country_flag = GRI_Diplomatically_Active
+		}
+	}
+
+
+	GRI_Pressure_Bronzehill_1 = {
+		icon = generic_form_nation
+
+		targets = { BRZ D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+				original_tag = BRZ
+			}
+		}
+
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			
+		NOT = {
+		has_country_flag = GRI_Diplomatically_Active
+		}
+		}
+		}
+
+		cost = 100
+		
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.15
+		}
+		
+		days_remove = 120
+		
+		ai_will_do = {
+			factor = 20
+			
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+
+			modifier = {
+				factor = 3
+				has_completed_focus = GRI_core_the_north
+			}
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					has_completed_focus = YAL_loyal_dogs
+					}
+								
+			is_subject = no
+			
+			NOT = {
+				has_country_flag = GRI_Diplomatically_Active
+				}
+		
+			FROM = {
+			AND = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+		OR = {
+			has_autonomy_state = autonomy_nominal_vassal 
+		}
+	}
+}
+}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Pressure_Bronzehill_1 target: [From.GetName]"
+				
+			set_country_flag = GRI_Diplomatically_Active
+			}
+			
+			remove_effect = {
+			
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_autonomous_vassal
+				freedom_level = 0.5
+			}
+			clr_country_flag = GRI_Diplomatically_Active
+		}
+	}
+		
+		
+		
+		
+	GRI_Pressure_Bronzehill_2 = {
+		icon = generic_form_nation
+
+		targets = { BRZ D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+				original_tag = BRZ
+			}
+		}
+
+		allowed = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+		}
+
+		cost = 100
+		
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.15
+		}
+		
+		days_remove = 120
+		
+		
+		ai_will_do = {
+			factor = 20
+			
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+
+			modifier = {
+				factor = 3
+				has_completed_focus = GRI_core_the_north
+			}
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+				}
+			}
+			else = {
+				has_completed_focus = YAL_loyal_dogs
+			}
+
+			NOT = {
+				has_country_flag = GRI_Diplomatically_Active
+				}			
+
+			is_subject = no
+
+			FROM = {
+			AND = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			OR = {
+				has_autonomy_state = autonomy_autonomous_vassal 
+				}
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Pressure_Bronzehill_2 target: [From.GetName]"
+				
+			set_country_flag = GRI_Diplomatically_Active
+			}
+			
+			remove_effect = {
+			
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_vassal
+				freedom_level = 0.5
+			}
+			clr_country_flag = GRI_Diplomatically_Active
+		}
+	}
+		
+	GRI_Pressure_Bronzehill_3 = {
+		icon = generic_form_nation
+
+		targets = { BRZ D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+				original_tag = BRZ
+			}
+		}
+
+		allowed = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+		}
+
+		cost = 100
+		
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.15
+		}
+		
+		days_remove = 120
+		
+		ai_will_do = {
+			factor = 20
+			
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+
+			modifier = {
+				factor = 3
+				has_completed_focus = GRI_core_the_north
+			}
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+				}
+			}
+			else = {
+				has_completed_focus = YAL_loyal_dogs
+			}
+
+			NOT = {
+				has_country_flag = GRI_Diplomatically_Active
+				}					
+
+			is_subject = no
+
+			FROM = {
+			AND = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+				OR = {
+				has_autonomy_state = autonomy_vassal 
+			}
+			}
+			}
+		}			
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Pressure_Bronzehill_3 target: [From.GetName]"
+				
+			set_country_flag = GRI_Diplomatically_Active
+			}
+			
+			remove_effect = {
+			
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_subjugated_vassal
+				freedom_level = 0.5
+			}
+			clr_country_flag = GRI_Diplomatically_Active
+		}
+	}
+		
+	GRI_Pressure_Bronzehill_4 = {
+		icon = generic_form_nation
+
+		targets = { BRZ D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_trigger = {
+			FROM = {
+				is_ai = yes
+				original_tag = BRZ
+			}
+		}
+
+		allowed = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+		}
+
+		cost = 100
+		
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			production_speed_buildings_factor = -0.15
+		}
+		
+		days_remove = 120
+		
+		ai_will_do = {
+			factor = 20
+			
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+
+			modifier = {
+				factor = 3
+				has_completed_focus = GRI_core_the_north
+			}
+		}
+
+		target_root_trigger = {
+			is_subject = no
+		}
+
+		visible = {
+			if = {
+				limit = {
+					original_tag = GRI
+				}
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+				}
+			}
+			else = {
+				has_completed_focus = YAL_loyal_dogs
+			}
+			
+			NOT = {
+				has_country_flag = GRI_Diplomatically_Active
+				}		
+
+			is_subject = no
+
+			FROM = {
+			AND = {
+				OR = {
+					is_subject_of = ROOT
+					is_in_faction_with = ROOT
+				}
+			}
+		OR = {
+		has_autonomy_state = autonomy_subjugated_vassal 
+		}
+	}
+}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Pressure_Bronzehill_4 target: [From.GetName]"
+				
+			set_country_flag = GRI_Diplomatically_Active
+			}
+			
+			remove_effect = {
+			
+				FROM = {
+				every_unit_leader = {
+					set_nationality = ROOT
+				}
+			}
+
+			annex_country = { target = FROM transfer_troops = yes }
+
+			every_state = {
+				limit = {
+					is_core_of = FROM
+				}
+				add_core_of = ROOT
+			}
+			
+			clr_country_flag = GRI_Diplomatically_Active
+			}
+		}
+	
+	}
+
+Subject_Interaction = {
+	
+	GRI_Appeasing_the_nobels = {
+		icon = generic_form_nation
+
+
+		allowed = {
+			original_tag = GRI
+			num_subjects > 0
+		NOT = {
+			has_country_flag = GRI_Diplomatically_Active
+			}
+		}
+
+		cost = 150
+		
+		modifier = {
+			consumer_goods_factor = 0.25
+			subjects_autonomy_gain  = -1
+			political_power_gain = -0.5
+		}
+		
+		days_remove = 180
+		
+		ai_will_do = {
+			factor = 2
+			
+		modifier = {
+			factor = 0
+			has_war = yes
+			}
+			
+												
+	modifier = {
+			factor = 10
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 2
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.25
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 5
+					
+		num_subjects > 2			
+		}			
+		}		
+		
+		
+		visible = {
+				num_subjects > 0		
+				is_subject = no
+				
+			NOT = {
+			has_country_flag = GRI_Diplomatically_Active
+			}
+			}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Appeasing_the_nobels target: [From.GetName]"
+				
+			set_country_flag = GRI_Diplomatically_Active
+			
+			}
+			
+			remove_effect = {
+			clr_country_flag = GRI_Diplomatically_Active
+			}
+		}
+		
+		
+		
+
+	
+GRI_Requestion_Administrative_aid = {
+		icon = generic_form_nation
+		
+		allowed = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+		}
+
+		cost = 0
+		
+		modifier = {
+		subjects_autonomy_gain = 1
+		political_power_gain = 0.5
+		}
+		
+		
+		days_remove = 100
+		
+		ai_will_do = {
+			factor = 0			
+	}
+		
+		
+		
+		visible = {
+			OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+				}
+				num_subjects > 0		
+				is_subject = no
+				
+			NOT = {
+			has_country_flag = GRI_Diplomatically_Active
+			}
+			}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Requestion_Administrative_aid"
+				
+			set_country_flag = GRI_Diplomatically_Active			
+			
+		if = {
+			limit = { 
+				ROOT = {
+					num_subjects < 2
+				} 
+				}
+		
+		add_ideas = AID_1
+
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 3
+						}
+					
+					ROOT = {
+						num_subjects > 1
+						}
+						}
+						}
+			
+			
+			add_ideas = AID_2
+			}		
+			
+			
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 4
+						}
+					
+					ROOT = {
+						num_subjects > 2
+						}
+						}
+						}
+						
+			
+			add_ideas = AID_3			
+			}
+				
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 5
+						}
+					
+					ROOT = {
+						num_subjects > 3
+						}
+						}
+						}
+						
+			add_ideas = AID_4
+			}
+				
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 6
+						}
+					
+					ROOT = {
+						num_subjects > 4
+						}
+						}
+						}
+						
+			add_ideas = AID_5			
+			}	
+			
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 7
+						}
+					
+					ROOT = {
+						num_subjects > 5
+						}
+						}
+						}
+						
+			add_ideas = AID_6									
+			}
+				
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 8
+						}
+					
+					ROOT = {
+						num_subjects > 6
+						}
+						}
+						}
+			
+			add_ideas = AID_7				
+			}
+				
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 9
+						}
+					
+					ROOT = {
+						num_subjects > 7
+						}
+						}
+						}
+			add_ideas = AID_8					
+			}
+					
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 10
+						}
+					
+					ROOT = {
+						num_subjects > 8
+						}
+						}
+						}
+						
+		add_ideas = AID_9
+			}	
+			
+		else_if = {
+			limit = {
+				AND = {
+					ROOT = {
+						num_subjects < 11
+						}
+					
+					ROOT = {
+						num_subjects > 9
+						}
+						}						
+						}
+						
+		add_ideas = AID_10			
+			}
+												  
+else = {			
+	add_ideas = AID_11
+			}
+		}
+	}
+															
+	remove_effect = {
+			clr_country_flag = GRI_Diplomatically_Active
+			hidden_effect = {
+			remove_ideas = AID_1
+			remove_ideas = AID_2
+			remove_ideas = AID_3
+			remove_ideas = AID_5
+			remove_ideas = AID_6
+			remove_ideas = AID_7
+			remove_ideas = AID_8
+			remove_ideas = AID_9
+			remove_ideas = AID_10
+			remove_ideas = AID_11
+			}
+			remove_ideas = AID_4
+			}		
+		}
+}
+																			
+Requesting_Military_aid = {
+
+GRI_Requesting_Noble_arms_Industry = {
+		icon = generic_form_nation
+		
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		}
+
+		cost = 0
+		
+		modifier = {
+		}
+		
+		days_remove = 180
+		
+	ai_will_do = {
+			factor = 0.5
+			
+		modifier = {
+			factor = 2
+			has_war = yes
+			}
+			
+		modifier = {
+			factor = 0
+			alliance_strength_ratio > 2
+			}
+			
+		modifier = {
+			factor = 5		
+			alliance_strength_ratio <  0.9
+			}
+			
+		modifier = {
+			factor = 2		
+			alliance_strength_ratio <  1.5
+			}
+			
+		modifier = {
+			factor = 5		
+			alliance_strength_ratio <  0.7
+			}
+				
+		modifier = {
+			factor = 100		
+			alliance_strength_ratio <  0.5
+			}
+				
+		modifier = {
+			factor = 0.5
+			
+		FROM = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+	
+	modifier = {
+			factor = 5
+			AND = {
+			has_war = yes
+			
+		FROM = {
+			
+		NOT = {			
+			compare_autonomy_progress_ratio >  0.50
+			}	
+		}			
+	}
+	}
+	}
+
+		visible = {
+			AND = {
+					original_tag = GRI
+					is_subject = no
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}					
+			FROM = {
+				is_subject_of = ROOT
+			}								
+			}
+	}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Requesting_Military_aid target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.14 days = 1
+			} 
+			}
+			}		
+				
+	remove_effect = {
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.15 days = 1
+			} 
+			}
+		}	
+}
+}
+
+Requesting_Troops = {
+
+GRI_Requesting_Manpower = {
+		icon = generic_form_nation
+		
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		}
+
+		cost = 0
+		
+		modifier = {
+		}
+		
+		days_remove = 180
+		
+	ai_will_do = {
+			factor = 10
+			
+		modifier = {
+			factor = 0
+			has_war = yes
+			}
+
+				
+		modifier = {
+			factor = 0.5
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 10
+			num_of_available_civilian_factories < 5
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_available_civilian_factories < 10
+			}
+			
+		modifier = {
+			factor = 0
+			num_of_available_civilian_factories > 15 
+			}			
+		}
+
+		visible = {
+			AND = {
+					original_tag = GRI
+					is_subject = no
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}
+			FROM = {
+				is_subject_of = ROOT
+			}								
+			}
+	}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Requesting_Manpower target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.18 days = 1
+			} 
+			}
+			}
+			
+		remove_effect = {
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.19 days = 1
+			} 
+			}
+		}	
+}
+}
+
+Requesting_civil_aid = {
+
+GRI_Requesting_Noble_Industry = {
+		icon = generic_form_nation
+		
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		}
+
+		cost = 0
+		
+		modifier = {
+		}
+		
+		days_remove = 180
+		
+	ai_will_do = {
+			factor = 10
+			
+		modifier = {
+			factor = 0
+			has_war = yes
+			}
+
+				
+		modifier = {
+			factor = 0.5
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 10
+			num_of_available_civilian_factories < 5
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_available_civilian_factories < 10
+			}
+			
+		modifier = {
+			factor = 0
+			num_of_available_civilian_factories > 15 
+			}			
+		}
+
+		visible = {
+			AND = {
+					original_tag = GRI
+					is_subject = no
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}
+			FROM = {
+				is_subject_of = ROOT
+			}								
+			}
+	}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Requesting_Noble_Industry target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.16 days = 1
+			} 
+			}
+			}
+			
+		remove_effect = {
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.17 days = 1
+			} 
+			}
+		}	
+}
+}	
+
+Demanding_Resources = {
+
+GRI_Demanding_Resource_access = {
+		icon = generic_form_nation
+		
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+		FROM = {
+				is_subject_of = ROOT
+		NOT = {
+			has_idea = Resource_aid
+			}
+			}							
+		}
+		}
+
+		cost = 0
+		
+		modifier = {
+		}
+		
+		days_remove = 1
+		
+	ai_will_do = {
+			factor = 0
+			
+		modifier = {
+			factor = 0
+			has_war = yes
+			}
+
+				
+		modifier = {
+			factor = 0.5
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 10
+			num_of_available_civilian_factories < 5
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_available_civilian_factories < 10
+			}
+			
+		modifier = {
+			factor = 0
+			num_of_available_civilian_factories > 15 
+			}			
+		}
+
+		visible = {
+			AND = {
+					original_tag = GRI
+					is_subject = no
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}
+		FROM = {
+				is_subject_of = ROOT
+		NOT = {
+			has_idea = Resource_aid
+			}
+			}							
+			}
+	}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRI_Demanding_Resource_access target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.20 days = 1
+			} 
+			}
+			}	
+}
+
+GRI_Ending_Resource_access = {
+		icon = generic_form_nation
+		
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		
+		
+		allowed = {
+		AND = {
+			OR = {
+			has_completed_focus = GRI_Status_Quo
+			has_completed_focus = GRI_Royal_Loyalties
+			}
+			FROM = {
+				is_subject_of = ROOT
+				has_idea = Resource_aid
+			}
+		}
+		}
+
+		cost = 0
+		
+		modifier = {
+		}
+		
+		days_remove = 1
+		
+	ai_will_do = {
+			factor = 0
+			
+		modifier = {
+			factor = 0
+			has_war = yes
+			}
+
+				
+		modifier = {
+			factor = 0.5
+			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.75
+			compare_autonomy_state > autonomy_autonomous_vassal
+			}			
+		}			
+		}
+		
+		modifier = {
+			factor = 10
+			num_of_available_civilian_factories < 5
+			}
+			
+		modifier = {
+			factor = 2
+			num_of_available_civilian_factories < 10
+			}
+			
+		modifier = {
+			factor = 0
+			num_of_available_civilian_factories > 15 
+			}			
+		}
+
+		visible = {
+			AND = {
+					original_tag = GRI
+					is_subject = no
+				OR = {
+					has_completed_focus = GRI_Status_Quo
+					has_completed_focus = GRI_Royal_Loyalties
+					}
+			FROM = {
+				is_subject_of = ROOT
+				has_idea = Resource_aid
+			}								
+			}
+	}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: GRI_Ending_Resource_access target: [From.GetName]"
+				
+			FROM = {
+			country_event = { 
+				id = imperial_reworked.21 days = 1
+			} 
+			}
+			}	
+}
+}	
+

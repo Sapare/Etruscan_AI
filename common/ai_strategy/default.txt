@@ -1,7 +1,6 @@
 # Written by Henrik "Groogy" Hansson
 # Modified by Daniel "Da9L" Sjöberg
 # IF YOU TOUCH THE AI CODE I WILL STAB YOU REPEATLY -PSODY
-# Touched -Sapare
 
 # befriend
 # conquer
@@ -16,6 +15,7 @@
 # influence
 # contain
 # area_priority
+
 
 default_unit_production = {
 	enable = {
@@ -156,38 +156,6 @@ default_unit_production = {
 
 default_role_ratios = {
 	enable = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_carrier
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_sub
-		value = 100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_screen
-		value = 100
-	}
-	}
-
-default_role_ratios = {
-	enable = {
 		has_dlc = "Man the Guns"
 		NOT = {
 			original_tag = EQS
@@ -262,9 +230,7 @@ default_role_ratios = {
 		id = naval_mine_layer
 		value = 20
 	}
-	}
-
-
+}
 
 convoy_voy_voy_voy = {
 	enable = {
@@ -320,22 +286,6 @@ convoy_voy_voy_voy = {
 		type = unit_ratio
 		id = convoy
 		value = 25
-	}
-}
-
-
-stop_making_horsies = {
-	enable = {
-		always = yes
-	}
-	abort = {
-		always = no
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cavalry
-		value = -100 # -100% cav
 	}
 }
 
@@ -643,6 +593,65 @@ default_marines_production = {
 }
 
 
+default_armored_production = {
+	enable = {
+		NOT = { original_tag = CHN original_tag = CCN }
+		ai_wants_divisions > 49
+	}
+	abort = {
+		ai_wants_divisions < 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 0
+	}
+}
+
+highered_armored_production = {
+	enable = {
+		NOT = { original_tag = CHN original_tag = CCN }
+		num_of_military_factories > 59
+	}
+	abort = {
+		num_of_military_factories < 60
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+highered_armored_production_major = {
+	enable = {
+		NOT = { original_tag = CCN } NOT = { original_tag = CHN } NOT = { original_tag = EQS } NOT = { original_tag = NLR }
+		OR = {
+			is_major = yes
+			AND = {
+				num_of_military_factories > 30
+				date > 1016.1.1
+			}
+		}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
 
 slightly_naval_focused_nation = {
 	enable = {
@@ -777,7 +786,20 @@ default_area_priority = {
 
 }
 
+default_stockpile_management = {
+	enable = {
+		num_divisions > 150
+	}
 
+	abort = {
+		num_divisions < 130
+	}
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 35 # double base stockpile #from 25 to 35
+	}
+}
 
 dont_build_capitals_if_on_treaty = {
 	enable = {
@@ -943,6 +965,68 @@ Make_modern_armor_template = {
 	}
 }
 
+super_boost_light_for_med_armor = {
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_template_ai_majority_unit = medium_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = template_xp_reserve
+		value = -125
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 75
+	}
+}
+
+super_boost_light_for_modern_armor = {
+
+	enable = {
+		NOT = { original_tag = CHN original_tag = CCN }
+		has_tech = main_battle_tank
+		NOT = { has_template_ai_majority_unit = modern_armor }
+	}
+
+	abort = {
+		has_template_ai_majority_unit = modern_armor
+	}
+
+	# lets do changes more often during this period too
+	ai_strategy = {
+		type = template_xp_reserve
+		value = -125
+	}
+
+	# this is gateway
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 75
+	}
+}
+
 save_admiral_pp_for_later = {
 	enable = {
 		has_war = no
@@ -967,12 +1051,12 @@ save_admiral_pp_for_later = {
 do_not_waste_pp_if_saving_for_manpower_laws = {
 
 	enable = {
-		manpower_per_military_factory < 1500
+		manpower_per_military_factory < 500
 		has_war = yes
 	}
 	abort = {
 		OR = {
-			manpower_per_military_factory > 1000
+			manpower_per_military_factory > 500
 			has_war = no
 		}
 	}
@@ -1250,7 +1334,7 @@ griffon_continent_ignore = {
 	ai_strategy = {
 		type = ignore
 		id = "GRF"
-		value = 100
+		value = 50
 	}
 	ai_strategy = {
 		type = ignore
@@ -1270,7 +1354,7 @@ griffon_continent_ignore = {
 	ai_strategy = {
 		type = ignore
 		id = "GFF"
-		value = 100
+		value = 50
 	}
 	ai_strategy = {
 		type = ignore
@@ -1286,6 +1370,121 @@ griffon_continent_ignore = {
 		type = ignore
 		id = "HJO"
 		value = 100
+	}
+	ai_strategy = {
+		type = support
+		id = "EQS"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "CRY"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "CHN"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "STG"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "STL"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "NLR"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "CES"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "NMS"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "BAL"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "VAN"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "JUN"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "OLE"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "YAK"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "JAK"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "SCS"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "ROC"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "DRG"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "BUF"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "PLB"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "PNG"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "CER"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "VAV"
+		value = -35
+	}
+	ai_strategy = {
+		type = support
+		id = "HJO"
+		value = -35
 	}
 }
 

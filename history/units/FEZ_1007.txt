@@ -13,6 +13,7 @@
 	support = {
 	}
 }
+
 division_template = {
 	name = "Fezzeriaanse Mariniers"
 	division_names_group = FEZ_Inf_02
@@ -25,6 +26,8 @@ division_template = {
 		marine = { x = 1 y = 2 }
 	}
 	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 	priority = 2
 }

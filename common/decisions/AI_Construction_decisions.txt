@@ -1,0 +1,4044 @@
+Macro_Builder = {
+	
+	GEN_Construction_steel = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@steel > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = steel
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		days_remove = 1
+		
+		
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@steel > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = steel
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+					NOT = { 
+					has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+			
+	
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 30 provinces
+		
+	201 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	
+	302 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}							
+	
+	
+	213 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	195 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	303 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	304 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	290 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	11 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	
+	337 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	336 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	238 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	245 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	332 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	153 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	235 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	64 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	150 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	345 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	73 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	61 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	99 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+
+	66 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	35 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	111 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	74 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	3 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	39 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	
+	75 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	154 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Gryphon Continent(starting in VED) = 60 provinces
+	
+	484 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	575 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	480 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	475 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	566 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	564 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	415 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	453 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	454 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	603 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	492 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	545 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	546 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	520 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	440 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	441 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	382 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	396 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	379 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	381 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	390 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	457 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	523 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	435 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	406 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	407 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	519 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	448 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	672 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	517 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	421 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	487 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	408 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	391 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	398 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	439 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	423 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	547 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	422 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	
+	505 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	633 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	362 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	371 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	530 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	529 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	503 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	549 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	518 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	570 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	445 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}		
+	
+	531 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	488 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	463 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	465 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	651 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	508 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	608 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	611 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	595 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	670 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	# River Federation Starting at lake city and going up = 6 provinces
+	387 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	637 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	647 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	638 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	619 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	645 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	}
+remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+	}
+	
+	
+	
+	
+	GEN_Construction_aluminium = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@aluminium > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = aluminium
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		if = {
+			limit = {
+				is_ai = yes }
+		days_remove = 620
+		
+		else = {
+		days_remove = 0
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@aluminium > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = aluminium
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+					NOT = { 
+						has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_aluminium target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+	
+	
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 9 provinces
+	195 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}						
+	
+	292 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	314 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	268 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	335 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	238 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	153 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	334 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	50 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Gryphon Continent starting VED going east then down = 15
+	601 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	566 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	476 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	407 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	406 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+		
+	448 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}		
+	
+	354 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	357 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	358 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	366 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	371 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	393 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	463 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+		
+	465 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	
+	623 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	#River federation starting lake city = 0 :P
+	195 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}						
+	}
+	
+	remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+	
+	}
+	
+	
+	GEN_Construction_rubber = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@rubber > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = rubber
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		if = {
+			limit = {
+				is_ai = yes }
+		days_remove = 620
+		
+		else = {
+		days_remove = 0
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@rubber > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = rubber
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+					NOT = { 
+						has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_rubber target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+	
+	
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 6 provinces
+	251 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	26 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	25 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	24 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	350 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	36 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Gryphon Continent starting in VED = 8 provinces
+	
+	373 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	375 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	504 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	527 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	513 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	464 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	462 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	512 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#River federation = 0 provinces
+}
+
+remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+	remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+}
+
+	GEN_Construction_tungsten = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@tungsten > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = tungsten
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		if = {
+			limit = {
+				is_ai = yes }
+		days_remove = 620
+		
+		else = {
+		days_remove = 0
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@tungsten> 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = tungsten
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+					NOT = { 
+						has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_tungsten target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 9 provinces
+	202 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	
+		201 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		206 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		303 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		64 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	338 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	57 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	39 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	35 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	#Griffion continent ved start and all that = 15 
+	478 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	568 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	555 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	440 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	441 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	396 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	457 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	407 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	365 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	503 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	606 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	445 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	465 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	506 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	439 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#River republic starting lake city = 2
+	637 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	638 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+}
+
+remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+
+}
+
+GEN_Construction_chromium = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@chromium > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = chromium
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		if = {
+			limit = {
+				is_ai = yes }
+		days_remove = 620
+		
+		else = {
+		days_remove = 0
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@chromium > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = chromium
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+					NOT = { 
+						has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_chromium target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 5 provinces
+	206 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	195 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	302 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	245 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	30 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	#Gryphon continent starting in VED = 12
+	459 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	539 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	545 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	440 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	396 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	517 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	421 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	487 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	408 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	481 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	547 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	624 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#River federation = 2
+	577 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	637 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	}
+	remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}	
+	}
+	
+	GEN_Construction_crystals = {
+		icon = railroad
+
+
+		allowed = {
+				AND = {
+				check_variable = { resource_imported@crystals > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = crystals
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+							}
+							}
+		cost = 0
+		
+		if = {
+			limit = {
+				is_ai = yes }
+		days_remove = 620
+		
+		else = {
+		days_remove = 0
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+				AND = {
+				check_variable = { resource_imported@crystals > 0 }
+	
+				any_owned_state = {
+						AND = {
+							has_resources_amount = {
+								resource = crystals
+								amount > 9
+								}
+								infrastructure < 10				
+							}
+							}
+					NOT = { 
+						has_country_flag = {
+						flag = ai_cooldown
+						days < 620
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_crystals target: [From.GetName]"
+	
+	ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			clr_country_flag = ai_cooldown
+			}
+			}
+	
+	#Equestrian Continent, starting in OLE and doing EQS last = 14 provinces
+	293 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	304 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	283 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	278 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	317 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	77 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	55 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	236 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	141 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	142 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	53 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	237 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	127 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	3 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	#Gryphon continent starting ved = 23 provinces
+	
+	601 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	602 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	480 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	415 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	459 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	476 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	475 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	477 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	568 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	539 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	362 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	361 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	535 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	395 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	394 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	518 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	570 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	446 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	531 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	488 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	624 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	626 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#River federation one last time = 7
+	
+	
+	586 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	635 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	637 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	638 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	647 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	614 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	293 = {	
+		if = {
+			limit = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	}
+	
+	remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_cooldown   
+			}
+			}
+	}
+	}	
+}

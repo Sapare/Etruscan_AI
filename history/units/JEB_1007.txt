@@ -9,7 +9,10 @@
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-
+	
+	support = {
+	artillery = { x = 0 y = 0 }
+	}
 }
 division_template = {
 	name = "Mountaineer Division"
@@ -32,8 +35,9 @@ division_template = {
 		knights = { x = 0 y = 2 }
 		knights = { x = 1 y = 2 }
 	}
+
 	support = {
-		recon = { x = 0 y = 0 }
+	artillery = { x = 0 y = 0 }
 	}
 	priority = 2
 }
@@ -81,11 +85,3 @@ units = {
 		start_equipment_factor = 1.0 
 	}
 }
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 60
-		producer = JEB
-	}
-	}

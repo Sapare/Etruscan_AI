@@ -146,6 +146,7 @@ Tungsten_Infantry_GEN = {
 				check_variable = {resource_produced@tungsten < 1 }	
 		}
 		}
+		
 
 		target_width = 20.0
 		width_weight = 1.3
@@ -235,6 +236,7 @@ Aluminium_Infantry_GEN = {
 				check_variable = {resource_produced@aluminium < 1 }		 
 		}
 		}
+		
 
 		target_width = 20.0
 		width_weight = 1.3
@@ -324,6 +326,7 @@ PFI_GEN = {
 				}								
 				}
 				}
+				
 
 		target_width = 10.0
 		width_weight = 1.3

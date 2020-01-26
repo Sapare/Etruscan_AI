@@ -218,10 +218,7 @@ ideas = {
 					manpower_per_military_factory < 4000
 				}	
 				
-				modifier = {
-					factor = 0
-					has_equipment = { infantry_equipment < 500 }
-					}											
+											
 				}
 
 			cancel_if_invalid = no

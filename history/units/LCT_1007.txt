@@ -10,6 +10,24 @@
 		infantry = { x = 1 y = 2 }
 	}
 
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "New Onhooves Division"			#Infantry Division - kek
+	division_names_group = LCT_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
 
 }
 division_template = {
@@ -23,7 +41,9 @@ division_template = {
 		pegasi = { x = 1 y = 1 }
 		pegasi = { x = 1 y = 2 }
 	}
-
+	support = {
+		recon = { x = 0 y = 0 }
+	}
 
 }
 division_template = {
@@ -150,18 +170,4 @@ instant_effect = {
 	}
 }
 
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 119
-		producer = LCT
-	}
-	
-
-	add_equipment_to_stockpile = {
-		type = artillery_equipment
-		amount = 44
-		producer = LCT
-	}
-	}
 

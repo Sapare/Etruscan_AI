@@ -772,11 +772,6 @@ In_with_new_MT = {
 			has_dlc = "Man the Guns"
 				}
 				}
-		Abort = {
-			OR = {
-				has_dlc = "Man the Guns"
-				}
-				}
 			
 		ai_strategy = {
 			type = unit_ratio
@@ -801,6 +796,7 @@ In_with_new_MT = {
 			id = convoy
 			value = -20
 			}
+			
 		ai_strategy = {
 		type = dockyard_to_military_factory_ratio
 		value = -45	

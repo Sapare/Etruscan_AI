@@ -1,6 +1,23 @@
-﻿
-division_template = {
+﻿division_template = {
 	name = "Griffon Infantry Division"	
+	division_names_group = ANG_Name_07			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+	support = {
+	artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "New Griffon Infantry Division"	
 	division_names_group = ANG_Name_07			#Infantry Division - kek
 
 	regiments = {
@@ -35,6 +52,9 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
 	}
 }
 
@@ -168,18 +188,5 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.2
 		efficiency = 40
-	}
-}
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = artillery_equipment
-		amount = 84
-		producer = ANG
-	}
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 10
-		producer = ANG
 	}
 }
