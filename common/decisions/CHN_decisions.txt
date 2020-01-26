@@ -83,6 +83,7 @@ CHN_form_changelingia = {
 		}
 		cost = 50
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_form_changelingia_decision"
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = CHN_changelingia
 			add_political_power = 150
@@ -125,15 +126,11 @@ CHN_queens_tower = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision STG_palace_construction_effort"
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHN_queens_tower_effort"
 			modify_country_flag = { flag = queens_tower_flag value = 2 }
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_political_power > 160
-				factor = 10
-			}
+			factor = 10
 		}
 	}
 	CHN_queens_tower_finish = {
@@ -831,6 +828,7 @@ CHN_protectorates = {
 			factor = 0
 		}
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_one_jak_protectorate"
 			JAK = {
 				annex_country = { target = YAK transfer_troops = yes }
 				drop_cosmetic_tag = yes
@@ -849,6 +847,7 @@ CHN_protectorates = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CHN_one_yak_protectorate"
 			YAK = { annex_country = { target = JAK transfer_troops = yes } }
 		}
 	}
@@ -874,11 +873,9 @@ operations = {
 			is_subject = no
 			has_government = fascism
 			has_country_flag = flag_CHN_PLB_border_wars
-			PLB = {
-				exists = yes
-				NOT = {
-					is_subject_of = ROOT
-					has_war_with = ROOT
+			289 = {
+				owner = {
+					can_have_border_war_with_ROOT = yes
 				}
 			}
 		}
@@ -891,10 +888,7 @@ operations = {
 		fire_only_once = yes
 
 		highlight_states = {
-			OR = {
-				state = 323
-				state = 289
-			}
+			state = 289
 		}
 
 		complete_effect = {
@@ -972,11 +966,9 @@ operations = {
 			is_subject = no
 			has_government = fascism
 			has_country_flag = flag_CHN_PLB_border_wars
-			PLB = {
-				exists = yes
-				NOT = {
-					is_subject_of = ROOT
-					has_war_with = ROOT
+			263 = {
+				owner = {
+					can_have_border_war_with_ROOT = yes
 				}
 			}
 		}
@@ -989,10 +981,7 @@ operations = {
 		fire_only_once = yes
 
 		highlight_states = {
-			OR = {
-				state = 315
-				state = 263
-			}
+			state = 263
 		}
 
 		complete_effect = {
