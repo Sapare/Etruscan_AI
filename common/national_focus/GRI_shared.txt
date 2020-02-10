@@ -992,29 +992,21 @@ shared_focus = {
 		}
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
-			every_state = {
-				limit = { 
-				    is_core_of = STW 
+			if = {
+			    limit = {
+				    is_ai = yes
 				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = FEA 
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = BRZ 
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = PYT 
-				}
-				add_core_of = ROOT
+				every_state = {
+			        limit = { 
+			          	OR = {
+					        is_core_of = BRZ
+					        is_core_of = STW
+							is_core_of = FEA
+					        is_core_of = PYT
+				        }
+			        }
+			        add_core_of = ROOT
+		        }
 			}
 		}
 	}
@@ -1139,13 +1131,7 @@ shared_focus = {
 			    }
 		    }
 		}
-		486 = {
-			owner = {
-				OR = { tag = ROOT  
-					   is_subject_of = ROOT  
-					   is_in_faction_with = ROOT } 
-			}
-		}
+		owns_state = 486
 	}
 	prerequisite = {
 		focus = GRI_conquer_STW
@@ -1936,29 +1922,21 @@ shared_focus = {
 		}
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 15 random = 720 }#days to hours applied
-		    every_state = {
-				limit = { 
-				    is_core_of = ROU 
+			if = {
+			    limit = {
+				    is_ai = yes
 				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = YAL 
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = ANG 
-				}
-				add_core_of = ROOT
-			}
-			every_state = {
-				limit = { 
-				    is_core_of = KAT 
-				}
-				add_core_of = ROOT
+				every_state = {
+			        limit = { 
+			          	OR = {
+					        is_core_of = ANG
+					        is_core_of = KAT
+							is_core_of = ROU
+					        is_core_of = YAL
+				        }
+			        }
+			        add_core_of = ROOT
+		        }
 			}
 		}
 	}
@@ -2636,9 +2614,13 @@ shared_focus = {
 		}
 	}
 	bypass = {
-	    has_country_leader = { 
-		    ruling_only = yes 
-			name = "Archon Eros VII" 
+	    all_of = {
+			array = ANG.core_states
+			var:v = { is_core_of = ROOT }
+		}
+	    all_of = {
+			array = KAT.core_states
+			var:v = { is_core_of = ROOT }
 		}
 	}
 	prerequisite = {
@@ -2654,13 +2636,10 @@ shared_focus = {
 		add_political_power = -50
 		every_state = {
 			limit = { 
-				is_core_of = ANG 
-			}
-			add_core_of = ROOT
-		}
-		every_state = {
-		    limit = { 
-				is_core_of = KAT 
+				OR = {
+					is_core_of = ANG
+					is_core_of = KAT
+				}
 			}
 			add_core_of = ROOT
 		}
@@ -2690,9 +2669,13 @@ shared_focus = {
 		}
 	}
 	bypass = {
-	    has_country_leader = { 
-		    ruling_only = yes 
-			name = "Archon Eros VII" 
+	    all_of = {
+			array = YAL.core_states
+			var:v = { is_core_of = ROOT }
+		}
+	    all_of = {
+			array = ROU.core_states
+			var:v = { is_core_of = ROOT }
 		}
 	}
 	prerequisite = {
@@ -2709,13 +2692,10 @@ shared_focus = {
 		add_political_power = -50
 		every_state = {
 			limit = { 
-				is_core_of = YAL 
-			}
-			add_core_of = ROOT
-		}
-		every_state = {
-		    limit = { 
-				is_core_of = ROU 
+				OR = {
+					is_core_of = YAL
+					is_core_of = ROU
+				}
 			}
 			add_core_of = ROOT
 		}
@@ -2745,9 +2725,13 @@ shared_focus = {
 		}
 	}
 	bypass = {
-	    has_country_leader = { 
-		    ruling_only = yes 
-			name = "Duchess Gabriela Eagleclaw" 
+	    all_of = {
+			array = FEA.core_states
+			var:v = { is_core_of = ROOT }
+		}
+	    all_of = {
+			array = PYT.core_states
+			var:v = { is_core_of = ROOT }
 		}
 	}
 	prerequisite = {
@@ -2764,13 +2748,10 @@ shared_focus = {
 		add_political_power = -50
 		every_state = {
 			limit = { 
-				is_core_of = FEA 
-			}
-			add_core_of = ROOT
-		}
-		every_state = {
-		    limit = { 
-				is_core_of = PYT 
+				OR = {
+					is_core_of = FEA
+					is_core_of = PYT
+				}
 			}
 			add_core_of = ROOT
 		}
@@ -2801,9 +2782,13 @@ shared_focus = {
 		}
 	}
 	bypass = {
-	    has_country_leader = { 
-		    ruling_only = yes 
-			name = "Duchess Gabriela Eagleclaw" 
+	    all_of = {
+			array = STW.core_states
+			var:v = { is_core_of = ROOT }
+		}
+	    all_of = {
+			array = BRZ.core_states
+			var:v = { is_core_of = ROOT }
 		}
 	}
 	prerequisite = {
@@ -2819,13 +2804,10 @@ shared_focus = {
 		add_political_power = -50
 		every_state = {
 			limit = { 
-				is_core_of = STW 
-			}
-			add_core_of = ROOT
-		}
-		every_state = {
-		    limit = { 
-				is_core_of = BRZ 
+				OR = {
+					is_core_of = STW
+					is_core_of = BRZ
+				}
 			}
 			add_core_of = ROOT
 		}
@@ -2872,6 +2854,12 @@ shared_focus = {
 			        exists = yes 
 			    } 
 			}
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = TRD 
+				}
+			}
 			declare_war_on = { 
 			    type = annex_everything 
 				target = TRD 
@@ -2887,6 +2875,12 @@ shared_focus = {
 				}
 			}
 			ROOT = {
+				hidden_effect = {
+					create_wargoal = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
 				declare_war_on = { type = annex_everything target = PREV }
 			}
 		}
@@ -3008,18 +3002,7 @@ shared_focus = {
 			create_wargoal = { type = annex_everything target = HAU }
 		}
 		create_wargoal = { type = annex_everything target = SRS }
-		if = {
-			limit = {
-				MNC = {
-					OR = {
-						has_completed_focus = MNC_intense_raids
-						has_government = democratic
-						has_government = communism
-					}
-				}
-			}
-			create_wargoal = { type = annex_everything target = MNC }
-		}
+		create_wargoal = { type = annex_everything target = MNC }
 	}
 }
 
@@ -3217,40 +3200,7 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_FAT_SRS_MNC_VED_HAU_tp
-		    FAT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			SRS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			MNC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			VED = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-				    is_in_faction_with = ROOT
-			    }
-		    }
-			HAU = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
+		FAT = { exists = no }
 	}
 	cancel_if_invalid = no
 
@@ -3260,13 +3210,34 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_north"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = FAT } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = SRS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = MNC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = VED } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = HAU } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = FAT
+			decision = generic_core_country
+		}
 		hidden_effect = {
-			every_state = { limit = { is_core_of = FAT } remove_core_of = FAT }
+			activate_targeted_decision = {
+				target = FAW
+				decision = generic_core_country
+			}
+		}
+		activate_targeted_decision = {
+			target = SRS
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = MNC
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = VED
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = HAU
+			decision = generic_core_country
+		}
+		hidden_effect = {
+			every_state = { limit = { OR = { is_core_of = FAT is_core_of = FAW } } remove_core_of = FAT remove_core_of = FAW }
 		}
 	}
 }
@@ -3457,45 +3428,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_AVI_BAN_EYR_ERI_LAK_BOI_tp
-		    AVI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BAN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			EYR = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			ERI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LAK = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BOI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -3505,12 +3437,30 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_center"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = AVI } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BAN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = EYR } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = ERI } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LAK } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BOI } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = AVI
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BAN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = EYR
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = ERI
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = LAK
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BOI
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -3754,75 +3704,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_TRD_FEZ_AET_HEL_POM_FLO_JRR_JER_JEB_JFT_VIN_tp
-		    TRD = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FEZ = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			AET = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			HEL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			POM = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JRR = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JER = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JEB = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JFT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			VIN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FLO = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -3832,17 +3713,50 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_west"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = TRD } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FEZ } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = AET } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = HEL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JRR } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JER } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JEB } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JFT } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = VIN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = POM } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FLO } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = TRD
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FEZ
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = AET
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = HEL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JRR
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JER
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JEB
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JFT
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = VIN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = POM
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FLO
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -4031,51 +3945,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_ARA_FRN_TAL_WNG_FAL_SIC_CYA_tp
-		    ARA = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FRN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			TAL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			WNG = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FAL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			SIC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			CYA = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -4085,13 +3954,34 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_south"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = ARA } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FRN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = TAL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = WNG } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FAL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = SIC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = CYA } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = ARA
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FRN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = TAL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = WNG
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FAL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = SIC
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = CYA
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -4417,63 +4307,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp
-		    HLQ = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LNS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LSM = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LSC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LUS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRW = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BRF = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRY = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRU = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -4483,14 +4316,40 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_frontier"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = HLQ } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LNS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LSM } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LSC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LUS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = GRW } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BRF } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = GRU } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = HLQ
+			decision = generic_core_country_original_cores
+		}
+		activate_targeted_decision = {
+			target = LNS
+			decision = generic_core_country
+		}
+		hidden_effect = {
+			activate_targeted_decision = {
+				target = LSM
+				decision = generic_core_country
+			}
+			activate_targeted_decision = {
+				target = LSC
+				decision = generic_core_country
+			}
+		}
+		activate_targeted_decision = {
+			target = LUS
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = GRW
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BRF
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = GRU
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -7524,34 +7383,82 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_into_the_south"
 		if = {
 			limit = { ROU = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ROU 
+				}
+			}
 			declare_war_on = { type = annex_everything target = ROU }
 		}
 		if = {
 			limit = { YAL = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = YAL 
+				}
+			}
 			declare_war_on = { type = annex_everything target = YAL }
 		}
 		if = {
 			limit = { ANG = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ANG 
+				}
+			}
 			declare_war_on = { type = annex_everything target = ANG }
 		}
 		if = {
 			limit = { KAT = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = KAT 
+				}
+			}
 			declare_war_on = { type = annex_everything target = KAT }
 		}
 		if = {
 			limit = { FEA = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = FEA 
+				}
+			}
 			declare_war_on = { type = annex_everything target = FEA }
 		}
 		if = {
 			limit = { BRZ = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = BRZ 
+				}
+			}
 			declare_war_on = { type = annex_everything target = BRZ }
 		}
 		if = {
 			limit = { PYT = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = PYT 
+				}
+			}
 			declare_war_on = { type = annex_everything target = PYT }
 		}
 		if = {
 			limit = { STW = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = STW 
+				}
+			}
 			declare_war_on = { type = annex_everything target = STW }
 		}
 		every_other_country = {
@@ -7580,6 +7487,12 @@ shared_focus = {
 				}
 			}
 			ROOT = {
+				hidden_effect = {
+					create_wargoal = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
 				declare_war_on = { type = annex_everything target = PREV }
 			}
 		}
@@ -7593,31 +7506,20 @@ shared_focus = {
 	y = 11
 	cost = 7.20
 	prerequisite = { focus = GRI_into_the_south }
-	available = {
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_ROU_YAL_tp
-		    ROU = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			YAL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
-	}
 
 	ai_will_do = {
 		factor = 110
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_universities"
-		every_state = { limit = { is_core_of = ROU } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = YAL } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = ROU
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = YAL
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -7628,31 +7530,20 @@ shared_focus = {
 	y = 11
 	cost = 7.20
 	prerequisite = { focus = GRI_into_the_south }
-	available = {
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_ANG_KAT_tp
-		    ANG = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			KAT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
-	}
 
 	ai_will_do = {
 		factor = 110
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_shit_forest"
-		every_state = { limit = { is_core_of = KAT } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = ANG } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = KAT
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = ANG
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -7901,31 +7792,20 @@ shared_focus = {
 	y = 11
 	cost = 7.20
 	prerequisite = { focus = GRI_into_the_south }
-	available = {
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_FEA_PYT_tp
-		    FEA = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			PYT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
-	}
 
 	ai_will_do = {
 		factor = 110
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_feathisia"
-		every_state = { limit = { is_core_of = FEA } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = PYT } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = FEA
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = PYT
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -7936,32 +7816,20 @@ shared_focus = {
 	y = 11
 	cost = 7.20
 	prerequisite = { focus = GRI_into_the_south }
-	available = {
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_STW_BRZ_tp
-		    STW = {
-			    OR = {
-					tag = ROOT
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BRZ = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
-	}
 
 	ai_will_do = {
 		factor = 110
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_dogs"
-		every_state = { limit = { is_core_of = BRZ } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = STW } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = BRZ
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = STW
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -8416,39 +8284,7 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_FAT_SRS_MNC_VED_HAU_tp
-		    FAT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			SRS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			MNC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			VED = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			HAU = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
+		FAT = { exists = no }
 	}
 	cancel_if_invalid = no
 
@@ -8458,13 +8294,34 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_north"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = FAT } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = SRS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = MNC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = VED } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = HAU } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = FAT
+			decision = generic_core_country
+		}
 		hidden_effect = {
-			every_state = { limit = { is_core_of = FAT } remove_core_of = FAT }
+			activate_targeted_decision = {
+				target = FAW
+				decision = generic_core_country
+			}
+		}
+		activate_targeted_decision = {
+			target = SRS
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = MNC
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = VED
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = HAU
+			decision = generic_core_country
+		}
+		hidden_effect = {
+			every_state = { limit = { OR = { is_core_of = FAT is_core_of = FAW } } remove_core_of = FAT remove_core_of = FAW }
 		}
 	}
 }
@@ -8652,45 +8509,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_AVI_BAN_EYR_ERI_LAK_BOI_tp
-		    AVI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BAN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			EYR = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			ERI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LAK = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BOI = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -8700,12 +8518,30 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_center"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = AVI } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BAN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = EYR } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = ERI } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LAK } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BOI } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = AVI
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BAN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = EYR
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = ERI
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = LAK
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BOI
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -8934,75 +8770,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_TRD_FEZ_AET_HEL_POM_FLO_JRR_JER_JEB_JFT_VIN_tp
-		    TRD = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FEZ = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			AET = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			HEL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			POM = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JRR = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JER = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JEB = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			JFT = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			VIN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FLO = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -9012,17 +8779,50 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_west"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = TRD } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FEZ } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = AET } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = HEL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JRR } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JER } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JEB } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = JFT } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = VIN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = POM } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FLO } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = TRD
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FEZ
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = AET
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = HEL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JRR
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JER
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JEB
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = JFT
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = VIN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = POM
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FLO
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -9185,51 +8985,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_ARA_FRN_TAL_WNG_FAL_SIC_CYA_tp
-		    ARA = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FRN = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			TAL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			WNG = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			FAL = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			SIC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			CYA = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -9239,13 +8994,34 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_south"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = ARA } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FRN } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = TAL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = WNG } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = FAL } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = SIC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = CYA } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = ARA
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FRN
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = TAL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = WNG
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = FAL
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = SIC
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = CYA
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -9434,63 +9210,6 @@ shared_focus = {
 	available = { 
 	    is_subject = no
 		has_political_power > 50
-	    custom_trigger_tooltip = {
-			tooltip = GRI_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp
-		    HLQ = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LNS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LSM = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LSC = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			LUS = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRW = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			BRF = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRY = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-			GRU = {
-			    OR = {
-				    exists = no
-				    is_subject_of = ROOT
-			    }
-		    }
-		}
 	}
 	cancel_if_invalid = no
 
@@ -9500,14 +9219,40 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_frontier"
 		add_political_power = -150
-		every_state = { limit = { is_core_of = HLQ } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LNS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LSM } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LSC } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = LUS } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = GRW } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = BRF } add_core_of = ROOT }
-		every_state = { limit = { is_core_of = GRU } add_core_of = ROOT }
+		activate_targeted_decision = {
+			target = HLQ
+			decision = generic_core_country_original_cores
+		}
+		activate_targeted_decision = {
+			target = LNS
+			decision = generic_core_country
+		}
+		hidden_effect = {
+			activate_targeted_decision = {
+				target = LSM
+				decision = generic_core_country
+			}
+			activate_targeted_decision = {
+				target = LSC
+				decision = generic_core_country
+			}
+		}
+		activate_targeted_decision = {
+			target = LUS
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = GRW
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = BRF
+			decision = generic_core_country
+		}
+		activate_targeted_decision = {
+			target = GRU
+			decision = generic_core_country
+		}
 	}
 }
 
@@ -10399,7 +10144,7 @@ shared_focus = {
 		factor = 140
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_autobahn"
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_securing_the_future"
 		add_ideas = GRI_securing_the_future_idea
 	}
 }
@@ -10418,7 +10163,7 @@ shared_focus = {
 	}
 
 	ai_will_do = {
-		factor = 140
+		factor = 35
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_send_in_the_tanks"
