@@ -495,61 +495,13 @@ Area_prio_FEA = {
 		Abort = {
 			always = no						
 			}
-			
-    	
+	
 	ai_strategy = {
         type = area_priority
-        id = Eastern_Feathisa
-        value = 30
+        id = Rottendedam
+        value = 1000
     }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Western_Feathisa
-        value = 80
-    }
-  	
-   ai_strategy = {
-        type = area_priority
-        id = Strawberry_valley
-        value = 50
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Southern_Heartland
-        value = 30
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Heartland
-        value = 50
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Bronze_Mountain
-        value = 10
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Wald
-        value = 10
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = West_Griffonia
-        value = 20
-    }
-    
-    ai_strategy = {
-        type = area_priority
-        id = Skyfall
-        value = 20
-    }				
+   			
 	}
 	
 Area_prio_STW = {
@@ -562,7 +514,7 @@ Area_prio_STW = {
 			   	
 	ai_strategy = {
         type = area_priority
-        id = Eastern_Feathisa
+        id = Western_Feathisa
         value = 20
     }
     
@@ -680,13 +632,13 @@ Area_prio_STW = {
     
     ai_strategy = {
         type = area_priority
-        id = Western_Feathisa
+        id = Eastern_Feathisa
         value = 70
     }
     
     ai_strategy = {
         type = area_priority
-        id = Eastern_Feathisa
+        id = Western_Feathisa
         value = 30
     }
     
@@ -706,8 +658,7 @@ Area_prio_STW = {
         type = area_priority
         id = Wald
         value = 20
-    }
-	
+    }	
 	}
 	
 	Area_prio_KAT_ANG = {

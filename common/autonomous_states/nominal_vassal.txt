@@ -11,7 +11,6 @@ autonomy_state = {
 	}
 
 	modifier = {
-		autonomy_manpower_share = 0.0
 		extra_trade_to_overlord_factor = 0.05
 		overlord_trade_cost_factor = -0.05
 		autonomy_gain_global_factor = -0.10

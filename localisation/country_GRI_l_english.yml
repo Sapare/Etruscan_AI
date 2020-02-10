@@ -96,39 +96,43 @@ GRI_Status_Quo_desc:0 "The archon, despite his desire to see all reigned by an i
  imperial_reworked.23.d:0 "The deal signed with the Imperial Crown has come to conclusion and our lands have offically been transitioned into their care,"
  imperial_reworked.23.a:0 "I know what I said, but now I am missing that ocean."
  
+ imperial_reworked.24.t: "[FROM.GetName] has broken free from our infulence"
+ imperial_reworked.24.d: "Through years of labor and our subject had somehow managed to convince its people and hours that it is no longer dependent on our protection, and has through legal means achieved independence. How we respond to this event is to be seen."
+ imperial_reworked.24.a: "You win some..."
+ 
  
  GRI_Pressure_Bronzehill_1:0 "Pressure Bronzehill"
- GRI_Pressure_Bronzehill_desc_1:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome."
+ GRI_Pressure_Bronzehill_desc_1:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome. This will reduce autonomy state by 1 level each time, or annex if subject is Subjugated Vassal."
  
  GRI_Pressure_Bronzehill_2:0 "Pressure Bronzehill"
- GRI_Pressure_Bronzehill_desc_2:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome."
+ GRI_Pressure_Bronzehill_desc_2:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome. This will reduce autonomy state by 1 level each time, or annex if subject is Subjugated Vassal."
  
  GRI_Pressure_Bronzehill_3:0 "Pressure Bronzehill"
- GRI_Pressure_Bronzehill_desc_3:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome."
+ GRI_Pressure_Bronzehill_desc_3:0 "Our restraint foreign policy will make direct annexation impossible, but a few nudges here and there might reach the same outcome. This will reduce autonomy state by 1 level each time, or annex if subject is Subjugated Vassal."
  
  GRI_Pressure_Bronzehill_4:0 "Integrate Bronzehill"
  GRI_Pressure_Bronzehill_desc_4:0 "After much work we are finally ready to integrate Bronzehill, dogs have always served better as pets."
  
  GRI_Appeasing_the_nobels:0 "Appeasing the Nobility"
- GRI_Appeasing_the_nobels_desc:0 "To assure the stability of the realm it is wise to play beakservice to the lesser Nobles in the realm, make them valued and they will wish nothing more but your long and prosperous reign."
+ GRI_Appeasing_the_nobels_desc:0 "To assure the stability of the realm it is wise to play beakservice to the lesser Nobles in the realm, make them valued and they will wish nothing more but your long and prosperous reign. Decreases Autonomy of ALL subjects by 1 per day as long as active."
  
  GRI_Requesting_Noble_arms_Industry:0 "Acquire [FROM.Getname]' Military Factories"
- GRI_Requesting_Noble_arms_Industry_desc:0 "We have done everything in our power to uphold the rights of the nobility, in this time of crysis it is their turn to return the favor by handing over all private arms factories to the state, to protect their rights."
+ GRI_Requesting_Noble_arms_Industry_desc:0 "We have done everything in our power to uphold the rights of the nobility, in this time of crysis it is their turn to return the favor by handing over all private arms factories to the state, to protect their rights. Recieve 50% of the Arms-Factories of THIS subject, and increase THEIR autonomy by 2 per day."
  
  GRI_Requesting_Noble_Industry:0 "Ask [FROM.Getname] to give Economic Aid"
- GRI_Requesting_Noble_Industry_desc:0 "We have done everything in our power to uphold the rights of the nobility, it is now time for them to play to their end of the bargain and do everything within their power to ensure the survival of our state. Even if a few concessions will have to be made too enforce our requests."
+ GRI_Requesting_Noble_Industry_desc:0 "We have done everything in our power to uphold the rights of the nobility, it is now time for them to play to their end of the bargain and do everything within their power to ensure the survival of our state. Even if a few concessions will have to be made too enforce our requests. Recieve 50% of the Civilian-Factories of THIS subject, and increase THEIR autonomy by 2 per day."
 
  GRI_Requestion_Administrative_aid:0 "Administrative Oversight"
- GRI_Requestion_Administrative_aid_desc:0 "With the nobility appeased it would be relatively easy to push through a wave of new reforms, though it is likely the nobility will make sure to cut out a piece for themselves during the process."
+ GRI_Requestion_Administrative_aid_desc:0 "With the nobility appeased it would be relatively easy to push through a wave of new reforms, though it is likely the nobility will make sure to cut out a piece for themselves during the process. Recieve discount to law-changes, scales with number of subjects at time of activation."
 
  GRI_Requesting_Manpower:0 "Borrow Troops from [FROM.Getname]"
- GRI_Requesting_Manpower_desc:0 "We have bled for the freedom and peace of our subjects, but now we are dry and have to turn to the stocks of those we protect. Let them pay the price while we recover."
+ GRI_Requesting_Manpower_desc:0 "We have bled for the freedom and peace of our subjects, but now we are dry and have to turn to the stocks of those we protect. Let them pay the price while we recover. Recieve 100% troop control limit, permiting you to take charge of their army through diplomacy in trade for 2 autonomy per day."
 
 GRI_Demanding_Resource_access:0 "Demand [FROM.Getname]'s Resources"
-GRI_Demanding_Resource_access_desc:0 "We have grown dependent on the resources of one of our subjects, but our current treaty requires for us to pay them factories in return for their aid. We could put into action a special law for this subject state, though the special treatment will certainly elevate them in the long term."
+GRI_Demanding_Resource_access_desc:0 "We have grown dependent on the resources of one of our subjects, but our current treaty requires for us to pay them factories in return for their aid. We could put into action a special law for this subject state, though the special treatment will certainly elevate them in the long term. Gain 100% discount on trade costs(free trade) and acess to all their tradable resources, doubles their autonomy gain from ALL effects, cancel at will."
 
 GRI_Ending_Resource_access:0 "Return Resource rights to [FROM.Getname]"
-GRI_Ending_Resource_access_desc:0 "Our industry has become self sufficent, or the agreement no longer benefitial to us, in either case we can always null the treaty without any drawbacks."
+GRI_Ending_Resource_access_desc:0 "Our industry has become self sufficent, or the agreement no longer benefitial to us, in either case we can always null the treaty without any drawbacks. Cancels resource access without side effects."
 
 AID_1:0 "Minor Noble Assistance"
 AID_2:0 "Slight Noble Assistance"

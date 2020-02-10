@@ -7,7 +7,6 @@ foreign_politics = {
 
 		target_trigger = {
 			FROM = {
-				is_ai = yes
 				original_tag = FEA
 			}
 		}
@@ -246,7 +245,7 @@ foreign_politics = {
 			if = {
 				limit = {
 					original_tag = GRI
-				}
+				
 				OR = {
 					has_completed_focus = GRI_Status_Quo
 					has_completed_focus = GRI_Royal_Loyalties
@@ -255,7 +254,7 @@ foreign_politics = {
 			else = {
 				has_completed_focus = YAL_loyal_dogs
 			}
-
+		}
 			NOT = {
 				has_country_flag = GRI_Diplomatically_Active
 				}			
@@ -273,7 +272,7 @@ foreign_politics = {
 				}
 				}
 			}
-		}
+		
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GRI_Pressure_Bronzehill_2 target: [From.GetName]"
@@ -290,6 +289,7 @@ foreign_politics = {
 			}
 			clr_country_flag = GRI_Diplomatically_Active
 		}
+	}
 	}
 		
 	GRI_Pressure_Bronzehill_3 = {
@@ -494,8 +494,7 @@ foreign_politics = {
 			
 			clr_country_flag = GRI_Diplomatically_Active
 			}
-		}
-	
+		}	
 	}
 
 Subject_Interaction = {
@@ -530,6 +529,14 @@ Subject_Interaction = {
 			has_war = yes
 			}
 			
+	modifier = {
+			factor = 5
+			
+		any_allied_country = {
+			compare_autonomy_progress_ratio >  0.50			
+		}			
+		}
+				
 												
 	modifier = {
 			factor = 10
@@ -546,21 +553,26 @@ Subject_Interaction = {
 		modifier = {
 			factor = 2
 			
-		any_allied_country = {
-			
-		AND = {		
-			compare_autonomy_progress_ratio >  0.25
-			compare_autonomy_state > autonomy_autonomous_vassal
-			}			
+		any_allied_country = {	
+			compare_autonomy_progress_ratio <  0.25
+						
 		}			
 		}
 		
 		modifier = {
-			factor = 5
+			factor = 2
 					
 		num_subjects > 2			
 		}			
+		
+	
+	modifier = {
+			factor = 2
+					
+		num_subjects > 3			
+		}	
 		}		
+				
 		
 		
 		visible = {
@@ -825,7 +837,7 @@ GRI_Requesting_Noble_arms_Industry = {
 		}
 		
 		
-		allowed = {
+		available = {
 		AND = {
 			OR = {
 			has_completed_focus = GRI_Status_Quo
@@ -834,9 +846,7 @@ GRI_Requesting_Noble_arms_Industry = {
 			FROM = {
 				is_subject_of = ROOT
 			}
-		}
-		
-		
+		}			
 		}
 
 		cost = 0
@@ -847,7 +857,7 @@ GRI_Requesting_Noble_arms_Industry = {
 		days_remove = 180
 		
 	ai_will_do = {
-			factor = 0.5
+			factor = 1
 			
 		modifier = {
 			factor = 2
@@ -973,7 +983,7 @@ GRI_Requesting_Manpower = {
 		days_remove = 180
 		
 	ai_will_do = {
-			factor = 10
+			factor = 0
 			
 		modifier = {
 			factor = 0
@@ -1085,7 +1095,7 @@ GRI_Requesting_Noble_Industry = {
 
 				
 		modifier = {
-			factor = 0.5
+			factor = 0
 			
 		any_allied_country = {
 			
@@ -1096,22 +1106,58 @@ GRI_Requesting_Noble_Industry = {
 		}			
 		}
 		
-		modifier = {
-			factor = 10
-			num_of_available_civilian_factories < 5
-			}
+	modifier = {
+			factor = 0.5
 			
+		any_allied_country = {
+			
+		AND = {		
+			compare_autonomy_progress_ratio >  0.49
+			}			
+		}			
+		}
+		
 		modifier = {
 			factor = 2
-			num_of_available_civilian_factories < 10
+		FROM = {
+		AND = {
+			num_of_civilian_factories > 15
+			compare_autonomy_progress_ratio < 0.60
 			}
+			}		
+			}	
 			
 		modifier = {
 			factor = 0
-			num_of_available_civilian_factories > 15 
+		FROM = {
+		AND = {
+			num_of_civilian_factories < 10
+			compare_autonomy_progress_ratio > 0.60
+			}
+			}		
+			}
+			
+		modifier = {
+			factor = 3
+		FROM = {
+		AND = {
+			num_of_civilian_factories > 30
+			compare_autonomy_progress_ratio < 0.60
+			}
+			}		
+			}
+			
+		modifier = {
+			factor = 3
+		FROM = {
+		AND = {
+			num_of_civilian_factories > 50
+			compare_autonomy_progress_ratio < 0.60
+			}
+			}		
 			}			
 		}
-
+ 
 		visible = {
 			AND = {
 					original_tag = GRI

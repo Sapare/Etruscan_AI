@@ -843,7 +843,7 @@ shared_focus = {
 			}
 			BRZ = { 
 			    country_event = { 
-				    id = imperial_reworked.10 days = 8 
+				    id = imperial_reworked.10 days = 3 
 				} 
 			}
 		}
@@ -859,7 +859,7 @@ shared_focus = {
 			}
 			BRZ = { 
 			    country_event = { 
-				    id = imperial_reworked.11 days = 8 
+				    id = imperial_reworked.11 days = 3 
 				} 
 			}
 		}

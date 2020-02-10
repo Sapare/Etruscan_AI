@@ -14,7 +14,7 @@ autonomy_state = {
 	}
 
 	modifier = {
-		autonomy_manpower_share = 0.8
+		autonomy_manpower_share = 0.5
 		cic_to_overlord_factor = 0.2
 		mic_to_overlord_factor = 0.2
 		extra_trade_to_overlord_factor = 0.3

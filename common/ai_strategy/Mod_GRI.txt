@@ -1,0 +1,16 @@
+	romau_aint_worthit = {
+		enable = {
+			AND = {
+				original_tag = GRI
+				}
+				}
+		Abort = {
+				date > 1012.6.6 					
+				}
+		
+		ai_strategy = {
+			type = ignore_claim
+			id = ROU
+			value = 1
+		}
+		}	
