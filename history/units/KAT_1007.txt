@@ -1,4 +1,4 @@
-﻿
+
 division_template = {
 	name = "Griffon Infantry Division"
 
@@ -72,13 +72,6 @@ units = {
 		location = 4190
 		division_template = "Knight Chapter"
 		start_experience_factor = 0.2 }
-}
-instant_effect = {
-    add_equipment_to_stockpile = {
-        type = infantry_equipment
-        amount = 1800 #For the 2 Knight Chapters
-        producer = EQS
-    }
 }
 instant_effect = {
 	add_equipment_production = {

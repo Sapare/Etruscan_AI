@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Nova Griffonian Company"			#Infantry Division -
 	division_names_group = GRF_INF_01
 	regiments = {
@@ -187,11 +187,6 @@ air_wings = {
 
 ### Starting Production ###
 instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 1680
-		producer = GRF
-	}
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1

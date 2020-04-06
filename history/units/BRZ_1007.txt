@@ -1,4 +1,4 @@
-﻿
+
 division_template = {
 	name = "Royal Defence Division"
 	division_names_group = BRZ_INF_01
@@ -110,14 +110,4 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 40
 	}
-	add_equipment_to_stockpile = {
-        type = infantry_equipment
-        amount = 720
-        producer = BRZ
-    }
-    	add_equipment_to_stockpile = {
-        type = support_equipment
-        amount = 60
-        producer = BRZ
-    }
 }

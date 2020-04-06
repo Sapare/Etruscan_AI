@@ -12,6 +12,9 @@
 # contain
 # area_priority
 just_hate_EQS = {
+	allowed = {
+		tag = CHN
+	}
 	enable = {
 		tag = CHN
 		has_government = fascism
@@ -31,8 +34,10 @@ just_hate_EQS = {
 		value = 100
 	}
 }
-
 just_hate_NLR = {
+	allowed = {
+		tag = CHN
+	}
 	enable = {
 		tag = CHN
 		has_government = fascism
@@ -59,8 +64,10 @@ just_hate_NLR = {
 		value = 100
 	}
 }
-
 war_cooperation = {
+	allowed = {
+		tag = CHN
+	}
 	enable = {
 		tag = CHN
 		OR = {
@@ -83,8 +90,10 @@ war_cooperation = {
 		value = 200
 	}
 }
-
 CHN_unit_production = {
+	allowed = {
+		OR = { original_tag = CHN original_tag = CCN }
+	}
 	enable = {
 		OR = { original_tag = CHN original_tag = CCN }
 	}
@@ -98,11 +107,11 @@ CHN_unit_production = {
 		value = 3
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = suppression
-		value = 2
-	}
+	#ai_strategy = {
+	#	type = role_ratio
+	#	id = suppression
+	#	value = 2
+	#}
 
 	ai_strategy = {
 		type = role_ratio
@@ -280,6 +289,11 @@ CHN_highered_armored_production = {
 }
 
 CHN_dont_waste_xp_until_medium_armor = {
+
+	allowed = {
+		OR = { original_tag = CHN original_tag = CCN }
+	}
+	
 	enable = {
 		OR = { original_tag = CHN original_tag = CCN }
 	}
@@ -290,7 +304,7 @@ CHN_dont_waste_xp_until_medium_armor = {
 
 	ai_strategy = {
 		type = template_prio
-		id = paratrooper
+		id = paratroopers
 		value = -100
 	}
 
@@ -334,6 +348,9 @@ war_with_olenia = {
 }
 
 dont_invade_equestria = {
+	allowed = {
+		original_tag = CHN
+	}
 	enable = {
 		original_tag = CHN
 		NOT = { has_tech = landing_craft }
@@ -371,6 +388,9 @@ dont_invade_equestria = {
 }
 
 cover_your_rear = {
+	allowed = {
+		tag = CHN
+	}
 	enable = {
 		tag = CHN
 		has_war_with = OLE
@@ -399,8 +419,14 @@ cover_your_rear = {
 }
 
 CHN_naval_role_ratios_ahistorical = {
-	enable = {
+	allowed = {
 		has_dlc = "Man the Guns"
+		OR = {
+			original_tag = CHN
+			original_tag = CCN
+		}
+	}
+	enable = {
 		OR = {
 			original_tag = CHN
 			original_tag = CCN
@@ -462,7 +488,75 @@ CHN_naval_role_ratios_ahistorical = {
 	}
 }
 
+CHN_leave_MAN_be = {
+	allowed = {
+		original_tag = CHN
+	}
+	enable = {
+		original_tag = CHN
+		MAN = {
+			#is_subject_of = CHN 
+			#has_autonomy_state = autonomy_de_jure_puppet
+			#has_country_flag = MAN_has_become_de_jure_puppet
+			#has_country_flag = MAN_has_an_expansionist_war
+			is_in_faction_with = CHN
+			has_completed_focus = MAN_republic_finale
+		}
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAN"
+		value = 300
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = STG
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = DRG
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = EQC
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = HAU
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = FEZ
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = PNG
+		value = 500
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = MAN
+		target_country = VED
+		value = 500
+	}
+}
+
 stick_with_SCS = {
+	allowed = {
+		original_tag = CHN
+	}
 	enable = {
 		original_tag = CHN
 		has_country_flag = agreed_not_to_attack_SCS

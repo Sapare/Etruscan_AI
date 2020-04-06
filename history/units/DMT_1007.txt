@@ -22,7 +22,9 @@ division_template = {
 		ironpaws = { x = 1 y = 1 }
 		ironpaws = { x = 1 y = 2 }
 	}
-
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
 	priority = 2
 }
 division_template = {
@@ -36,7 +38,9 @@ division_template = {
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
 	}
-
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
 }
 division_template = {
 	name = "Warhounds"			#Infantry Division
@@ -49,7 +53,9 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
-
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
 }
 
 instant_effect = {
@@ -187,18 +193,4 @@ units = {
 		start_equipment_factor = 1
 	}
 
-}
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 1440
-		producer = DMT
-	}
-	
-	add_equipment_to_stockpile = {
-		type = support_equipment
-		amount = 30
-		producer = DMT
-	}
 }

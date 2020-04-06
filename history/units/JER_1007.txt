@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Griffon Infantry Division"			#Infantry Division - kek
 	division_names_group = JER_INF_01
 	regiments = {
@@ -142,14 +142,6 @@ units = {
 		division_template = "Knights of the Realm"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0 
-	}
-}
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 900
-		producer = JER
 	}
 }
 

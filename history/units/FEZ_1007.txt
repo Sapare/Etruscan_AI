@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Infanterie Divisie"			#Infantry Division - kek
 	division_names_group = FEZ_Inf_01
 	regiments = {
@@ -61,23 +61,5 @@ units = {
 		division_template = "Fezzeriaanse Mariniers"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
-	}
-}
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 960
-		producer = FEZ
-	}
-	add_equipment_to_stockpile = {
-		type = artillery_equipment
-		amount = 24
-		producer = FEZ
-	}
-	add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 10
-	producer = FEZ
 	}
 }

@@ -1,4 +1,4 @@
-﻿add_namespace = imperial
+add_namespace = imperial
 add_namespace = imperial_news
 #country_event = { #History
 	#	id = imperial.0
@@ -292,10 +292,6 @@ country_event = {
 			leave_faction = yes
 		}
 		hidden_effect = {
-			every_state = {
-				limit = { is_core_of = ROOT }
-				add_core_of = FROM
-			}
 			FROM = {
 				add_ai_strategy = {
 					type = antagonize
@@ -384,10 +380,7 @@ country_event = {
 			}
 			leave_faction = yes
 		}
-		hidden_effect = { every_state = {
-				limit = { is_core_of = ROOT }
-				add_core_of = FROM
-			}
+		hidden_effect = { 
 			country_event = griffonian.2
 		}
 		FROM = {
@@ -780,29 +773,21 @@ country_event = {
 		add_political_power = 50
 		add_stability = 0.10
 		end_puppet_this = yes
-		
 		if = {
 			limit = {
 				is_in_faction_with = FROM
 			}
 			leave_faction = yes
 		}
-		
 		hidden_effect = { 
 			set_country_flag = STW_its_going_down #Just in case
-			every_state = {
-				limit = { is_core_of = ROOT }
-				add_core_of = FROM
-			}
 		}
-		
 		if = {
 			limit = {
 				has_government = communism
 			}
 			set_cosmetic_tag = STW_commies_independant
 		}
-		
 		FROM = {
 			add_ai_strategy = {
 				type = antagonize
@@ -990,11 +975,6 @@ country_event = {
 				is_in_faction_with = FROM
 			}
 			leave_faction = yes
-		}
-		hidden_effect = { every_state = {
-				limit = { is_core_of = ROOT }
-				add_core_of = FROM
-			}
 		}
 		FROM = {
 			add_ai_strategy = {
@@ -2841,7 +2821,7 @@ country_event = { #Kemerskai's Death
 			popularity = -0.05
 		}
 		hidden_effect = {
-			FAT = { kill_country_leader = yes }
+			FAT = { FAT_kill_kemerskai = yes }
 		}
 	}
 }
@@ -3361,7 +3341,7 @@ country_event = { #The Execution of Kemerskai
 			popularity = -0.05
 		}
 		hidden_effect = {
-			FAT = { kill_country_leader = yes }
+			FAT = { FAT_kill_kemerskai = yes }
 		}
 	}
 }
@@ -3788,12 +3768,6 @@ country_event = { #Griffenheim Square
 		        keep_completed = yes 
 		    }
 			complete_national_focus = GRI_griffenheim_square
-		}
-		set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 }
-		every_enemy_country = {
-			ROOT = {
-				white_peace = PREV
-			}
 		}
 	}
 }

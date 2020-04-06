@@ -531,7 +531,9 @@ technologies = {
 
 		# encryption 1
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1009
 
@@ -566,7 +568,9 @@ technologies = {
 
 		# encryption 2
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1011
 
@@ -601,7 +605,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1013
 
@@ -636,7 +642,9 @@ technologies = {
 
 		# decryption 1
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1009
 
@@ -667,7 +675,9 @@ technologies = {
 
 		# decryption 2
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1011
 
@@ -698,7 +708,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 1
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1013
 
@@ -1561,7 +1573,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.5
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1015
 
@@ -1589,7 +1603,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.5
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1015
 
@@ -1616,7 +1632,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.3
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1018
 
@@ -1643,7 +1661,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.3
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1018
 
@@ -1670,7 +1690,9 @@ technologies = {
 
 		# encryption 3
 		encryption = 0.2
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1
 		start_year = 1022
 
@@ -1693,7 +1715,9 @@ technologies = {
 
 		# decryption 3
 		decryption = 0.2
-
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		research_cost = 1.5
 		start_year = 1022
 
@@ -1809,6 +1833,24 @@ technologies = {
 	}
 
 	###------> X <><> <><> <><> <><> <><>
+
+	lar_decryption_bonus_tech = {
+				
+		research_cost = 1.5 #Carrier Variant
+		start_year = 1007
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		decryption_power = 10
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		################
+	}
 
 }
 

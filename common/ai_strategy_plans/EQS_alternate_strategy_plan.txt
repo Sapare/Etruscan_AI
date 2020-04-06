@@ -123,7 +123,7 @@ EQS_alternate_lunar_civil_war_max = {
 	}
 
 	ideas = {
-	flim = 30
+	
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -167,7 +167,7 @@ EQS_alternate_solar_empire = {
 	}
 
 	ideas = {
-	flim = 30	
+	
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
