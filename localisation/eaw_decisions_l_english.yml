@@ -1,5 +1,4 @@
-l_english:
-
+﻿l_english:
 ## Etruscan_AI_Decisions ##
 Macro_Builder:0 "Macro Builder"
 Requesting_civil_aid:0 "Requesting Industrial Assistance"
@@ -22,7 +21,6 @@ GEN_Construction_tungsten_desc:0 "Automatically gives into order construction fo
 
 GEN_Construction_chromium:0 "Exploit Chromium Resources"
 GEN_Construction_chromium_desc:0 "Automatically gives into order construction for Infrastructure on every 10+ Chromium state."
-
 
 military_training_category:0 "Military Actions"
 military_training:0 "Military Training"
