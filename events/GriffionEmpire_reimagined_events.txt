@@ -1,5 +1,5 @@
 add_namespace = imperial_reworked
-
+add_namespace = imperial_test
 
 
 country_event = {
@@ -8,12 +8,18 @@ country_event = {
 	title = imperial_reworked.1.t
 	desc = imperial_reworked.1.d
 	fire_only_once = yes
+	is_triggered_only = yes
+
 	
 	option = { #Stay a loyal Subject
 		name = imperial_reworked.1.a
 		add_political_power = 50
 		add_stability = 0.15
 		add_war_support = 0.10
+		
+		ai_chance = {
+		factor = 100
+			}
 	}
 	
 	option = { #Become your own lord, and fight the GRI
@@ -29,6 +35,10 @@ country_event = {
 			}
 			leave_faction = yes
 		}
+		
+		ai_chance = {
+		factor = 0
+			}
 		
 		hidden_effect = {
 			every_state = {
@@ -51,9 +61,43 @@ country_event = {
 					id = ROOT
 					value = -500
 				}
+		if = {
+			limit = {
+			ROOT = {
+				original_tag = ROU
+				}
+			}
 				country_event = { id = imperial.18 days = 1 }
 			}
+			
+		if = {
+			limit = {
+			ROOT = {
+				original_tag = YAL
+				}
+			}
+				country_event = { id = imperial.19 days = 1 }
+			}
+		if = {
+			limit = {
+			ROOT = {
+				original_tag = KAT
+				}
+			}
+				country_event = { id = imperial.20 days = 1 }
+			}
+		if = {
+			limit = {
+			ROOT = {
+				original_tag = ANG
+				}
+			}
+				country_event = { id = imperial.21 days = 1 }
+			}
+			
+			
 			country_event = griffonian.2
+		}
 		}
 		}
 		}
@@ -85,7 +129,7 @@ country_event = { #STW decision to stay with Gabriella or not
 				    has_government = fascism
 				    has_country_flag = STW_its_going_down 
 				}
-				factor = 0
+				factor = 0.5
 				}
 			modifier = {
 				AND = {
@@ -111,9 +155,53 @@ country_event = { #STW decision to stay with Gabriella or not
 						}
 						add = -100
 						}
-				}			
-																
-
+						
+			modifier = {
+			    OR = {
+				    has_completed_focus = STW_Special_snowflake
+				}
+				factor = 0.75
+			}		
+			
+			modifier = {
+			    OR = {
+				    has_completed_focus = STW_closer_cooperation
+				}
+				factor = 100
+			}
+			
+			modifier = {
+			    OR = {
+				    has_completed_focus = STW_reward_loyalty
+				}
+				factor = 1.5
+			}		
+			modifier = {
+			    OR = {
+				    has_completed_focus = STW_forceful_cooperation
+				}
+				factor = 0.5
+			}
+			
+			modifier = {
+			    OR = {
+				    has_opinion = {
+				    target = GRI
+				    value = 100
+				    }
+				}
+				factor = 2
+			}
+			modifier = {
+			    NOT = {
+				    has_opinion = {
+				    target = GRI
+				    value = 100
+				    }
+				}
+				factor = 0.5
+			}										
+		}																			
 		}		
 		
 		
@@ -121,7 +209,18 @@ country_event = { #STW decision to stay with Gabriella or not
 	option = { #Betray
 	
 		name = imperial_reworked.2.b
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 25 
+		
+		modifier = {
+			    NOT = {
+				    has_opinion = {
+				    target = GRI
+				    value = 50
+				    }
+				}
+				factor = 10
+			}													
+			}
 
 		add_political_power = -50
 		add_stability = -0.15
@@ -284,7 +383,8 @@ country_event = { #Empire Extents offer of vasilization to other gryphon countri
 					
 		ai_chance = {
 			factor = 20
-			modifier = {
+			
+		modifier = {
 				factor = 2
 				NOT = {
 					strength_ratio = {
@@ -303,6 +403,7 @@ country_event = { #Empire Extents offer of vasilization to other gryphon countri
 					}
 					}
 			}
+			
 		modifier = {
 				factor = 10
 				NOT = {
@@ -325,9 +426,8 @@ country_event = { #Empire Extents offer of vasilization to other gryphon countri
 			
 			modifier = {
 				factor = 0
-				is_guaranteed_by = yes
-			}			
-			
+				is_guaranteed_by = any_neighbor_country
+			}						
 		}						
 	}
 	
@@ -384,7 +484,7 @@ country_event = { #GRI gets responds of refusal and gains wargoal
 	}
 	}
 	
-country_event = { #GRI gets responce
+country_event = { #GRI gets response
 	id = imperial_reworked.7
 	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_reworked.7"}
 	title = imperial_reworked.7.t
@@ -397,7 +497,7 @@ country_event = { #GRI gets responce
 	}
 	}
 
-country_event = { #GRI gets responce
+country_event = { #GRI gets response
 	id = imperial_reworked.8
 	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_reworked.8"}
 	title = imperial_reworked.8.t
@@ -410,7 +510,7 @@ country_event = { #GRI gets responce
 	}
 	}
 	
-country_event = { #GRI gets responce
+country_event = { #GRI gets response
 	id = imperial_reworked.9
 	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_reworked.9"}
 	title = imperial_reworked.9.t
@@ -428,7 +528,7 @@ country_event = { #GRI gets responce
 	}
 	
 	
-country_event = { #Heartland Subjects react to Empire betrayel
+country_event = { #Heartland Subjects react to Empire betrayl
 	id = imperial_reworked.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_reworked.10"}
 	title = imperial_reworked.10.t
@@ -563,6 +663,79 @@ country_event = { #Heartland Subjects react to Empire betrayel
 			}		
 	}
 	
+	if = {
+			limit = {
+			NOT = {
+				FEA = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = FEA
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				PYT = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = PYT
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				YAL = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = YAL
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				KAT = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = KAT
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				ANG = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = ANG
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				STW = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = STW
+		}
+		
+		if = {
+			limit = {
+				has_war_with = FEA
+				}
+			white_peace = FEA
+		}
+		
 	declare_war_on = {
     target = FROM
     type = annex_everything
@@ -676,10 +849,88 @@ country_event = { #Heartland Neutrals react to Empire betrayel
 		
 		if = {
 			limit = {
+			NOT = {
+				FEA = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = FEA
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				PYT = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = PYT
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				YAL = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = YAL
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				KAT = {
+				is_in_faction_with = GRI
+				}
+			}
+			}
+			give_military_access = KAT
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				ANG = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = ANG
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				STW = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = STW
+		}
+		
+		if = {
+			limit = {
+			NOT = {
+				BRZ = {
+				is_in_faction_with = GRI
+				}
+				}
+			}
+			give_military_access = BRZ
+		}
+		
+		if = {
+			limit = {
 				is_in_faction_with = FROM
 			}
 			leave_faction = yes
 		}
+		
 
 	declare_war_on = {
     target = FROM
@@ -880,7 +1131,7 @@ country_event = { #GRI demands for us to hand over our port state
 	}
 	}
 	
-	country_event = { #GRI aquires our port state
+country_event = { #GRI aquires our port state
 	id = imperial_reworked.23
 	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_reworked.23"}
 	title = imperial_reworked.23.t
