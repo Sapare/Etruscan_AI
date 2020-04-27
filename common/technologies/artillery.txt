@@ -1775,10 +1775,9 @@ technologies = {
 			factor = 2
 		has_template = "Infantry_default_EQS"
 		}
+		}		
 		}
-		
-		}
-	}
+	
 
 	artillery_e = {
 

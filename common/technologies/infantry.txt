@@ -986,7 +986,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1007 }
+			position = { x = 3 y = @1007 }
 		}
 
 		on_research_complete = {
