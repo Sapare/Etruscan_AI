@@ -1,0 +1,1148 @@
+[01:35:02][dlc.cpp:1692]: Could not find files for mod: /media/500SDD/Steam/steamapps/workshop/content/394360/1826643372
+[01:35:02][dlc.cpp:1692]: Could not find files for mod: /media/500SDD/Steam/steamapps/workshop/content/394360/1348267085
+[01:35:02][dlc.cpp:260]: Invalid supported_version in  file: mod/EAW_Etruscan_Griffionia.mod line: 10
+[01:35:02][dlc.cpp:260]: Invalid supported_version in  file: mod/EAW_Etruscan_Griffionia.mod line: 10
+[01:35:10][pdx_audio.cpp:1323]: Music with name 'Radiarc_Within' already added
+[01:35:10][pdx_audio.cpp:1323]: Music with name 'Radiarc_Within' already added
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_027
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_028
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_029
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_030
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_031
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_032
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_033
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_034
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_035
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_036
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_037
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_038
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_039
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_040
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_041
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_042
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_043
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_044
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_045
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_046
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_047
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_027
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_028
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_029
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_030
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_031
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_032
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_033
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_034
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_035
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_036
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_037
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_038
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_039
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_040
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_041
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_042
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_043
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_044
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_045
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_046
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_047
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_027
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_028
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_029
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_030
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_031
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_032
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_033
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_034
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_035
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_036
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_037
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_038
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_039
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_040
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_041
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_042
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_043
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_044
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_045
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_046
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_047
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_retreat_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: hol_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_027
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_025
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_026
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_idle_027
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_neutral_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_018
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_019
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_020
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_021
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_022
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_023
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_positive_024
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_001
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_002
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_003
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_004
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_005
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_006
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_007
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_008
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_009
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_010
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_011
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_012
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_013
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_014
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_015
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_016
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_017
+[01:35:12][pdx_audio.cpp:349]: Missing sound: rom_retreat_018
+[01:35:20][gfx_dds_loader.cpp:319]: Expected more data in the texture mipmaps than was actually present in file "gfx/interface/goals/buf_strongbuf.dds"
+[01:35:20][gfx_dds_loader.cpp:319]: Expected more data in the texture mipmaps than was actually present in file "gfx/interface/goals/focus_HOL_deal_with_right.dds"
+[01:35:21][gfx_dds_loader.cpp:319]: Expected more data in the texture mipmaps than was actually present in file "gfx/interface/goals/buf_attacking.dds"
+[01:35:21][gfx_dds_loader.cpp:319]: Expected more data in the texture mipmaps than was actually present in file "gfx/interface/goals/buf_smear.dds"
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity YUG_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 4
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity YUG_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 9
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity YUG_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 25
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity YUG_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 47
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 52
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 57
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 73
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 95
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 100
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 105
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 121
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 143
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 148
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 153
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 169
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 191
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 196
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 201
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 217
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 239
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 244
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 249
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 265
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 287
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 292
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 297
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 313
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 335
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 340
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 345
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 361
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 383
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 388
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 393
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 409
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 431
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 436
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 441
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 457
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 479
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 484
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 489
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 505
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 527
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 532
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 537
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 553
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 575
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 580
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 585
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 601
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 623
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_light_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 628
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_medium_plane_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 633
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_motorized_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 649
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity RCT_artillery_entity, in file "gfx/entities/z_eaw_RCT.asset", near line 671
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_heavy_armor_2_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 4
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_heavy_sp_artillery_brigade_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 9
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_light_armor_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 14
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_light_tank_destroyer_brigade_0_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 19
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_light_tank_destroyer_brigade_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 24
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of ITA_mechanized_entity added to entity system
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_armor_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 36
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_sp_anti_air_brigade_2_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 41
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_sp_artillery_brigade_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 46
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_sp_artillery_brigade_2_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 51
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_tank_destroyer_brigade_1_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 56
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_medium_tank_destroyer_brigade_2_entity, in file "gfx/entities/z_eaw_axis_tank_dlc_units.asset", near line 61
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of CAN_motorized_entity added to entity system
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 69
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 74
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 79
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 84
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 89
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 94
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 99
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 104
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 109
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 114
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity USA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 119
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 184
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 189
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 194
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 199
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 204
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 209
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 214
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 219
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 224
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 229
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 234
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of NZL_artillery_entity added to entity system
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 282
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_battleship_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 287
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_destroyer_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 292
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_heavy_cruiser_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 297
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 302
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_amphibious_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 307
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_amphibious_mechanized_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 312
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_amphibious_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 317
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 332
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 337
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 342
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_medium_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 347
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 352
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_heavy_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 357
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 362
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 367
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 372
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_amphibious_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 377
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 392
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 397
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 402
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_medium_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 407
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 412
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_heavy_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 417
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 422
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 427
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity STG_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 432
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 437
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 447
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 452
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 457
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 462
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_heavy_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 467
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 472
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 477
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 482
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 487
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 497
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 502
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 507
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 512
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 517
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 522
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 527
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 532
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 537
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 547
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 552
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 557
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 562
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 567
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 572
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 577
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 582
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 587
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 597
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 602
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 607
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 612
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 617
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 622
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 627
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 632
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 637
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 647
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 652
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 657
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 662
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 667
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 672
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 677
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity JER_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 682
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CZE_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 707
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CZE_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 712
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CZE_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 717
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ROM_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 722
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ROM_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 727
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ROM_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 732
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 737
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 742
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 747
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 752
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 757
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 762
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 767
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 772
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 777
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 782
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 787
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 792
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 797
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 802
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 807
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 812
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 817
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 822
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 827
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 832
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 837
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 842
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 847
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 852
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_light_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 857
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_medium_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 862
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HUN_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 867
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 872
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_light_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 877
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_medium_armor_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 882
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_medium_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 887
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_heavy_armor_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 892
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_heavy_armor_2_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 897
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_super_heavy_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 902
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_modern_armor_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 907
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HOL_light_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 912
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HOL_medium_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 917
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity HOL_heavy_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 922
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 937
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity WNG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 952
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity WNG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 967
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity WNG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 982
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity WNG_heavy_cruiser_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 997
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1004
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity GER_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1009
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity GER_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1013
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity GER_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1017
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1022
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1027
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1031
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1035
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1039
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1043
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1047
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1051
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_scout_plane_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1056
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1062
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ENG_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1066
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity GER_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1071
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity GER_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1075
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CHN_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1079
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CHN_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1083
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CHN_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1087
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity CHN_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1091
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1096
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity SOV_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1100
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1105
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1109
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1113
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1117
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1121
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1125
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1129
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1133
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1137
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1141
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1145
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1149
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1153
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity FRA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1157
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_armored_car_0_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1162
+[01:35:28][assetfactory.cpp:889]: Couldn't find parent clone entity ITA_armored_car_1_entity, in file "gfx/entities/z_eaw_dlc_units.asset", near line 1166
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_2_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_3_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQC_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of CHN_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of CHN_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of CHN_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of CHN_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_infantry_2_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of EQS_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_2_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_3_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_2_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_3_entity added to entity system
+[01:35:28][pdx_entity.cpp:2156]: Duplicate of generic_griffon_infantry_entity added to entity system
+[01:35:33][portraitdatabase.cpp:24]: Missing portrait texture in group NCR > democratic > Male:  "gfx/leaders/Europe/Portrait_Europe_Generic_4.dds".
+[01:35:33][portraitdatabase.cpp:24]: Missing portrait texture in group NCR > democratic > Male:  "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds".
+[01:35:34][nationalfocus.cpp:528]: Error in focus: BRF_operation_violet (common/national_focus/BRF.txt:3412 )
+relative_focus_id: BRF_war_council does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: BRF_war_council (common/national_focus/BRF.txt:3451 )
+relative_focus_id: BRF_ease_conscription does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: BRF_naval_books (common/national_focus/BRF.txt:4806 )
+relative_focus_id: BRF_navy_stuff does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: BRF_analyze_fleets (common/national_focus/BRF.txt:4830 )
+relative_focus_id: BRF_navy_stuff does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: national_resources (common/national_focus/CHN.txt:665 )
+relative_focus_id: pressure_olenia does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CHN_olenian_factories (common/national_focus/CHN.txt:780 )
+relative_focus_id: pressure_olenia does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CHN_study_olenian_magic (common/national_focus/CHN.txt:838 )
+relative_focus_id: pressure_olenia does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CHN_queens_island_facility (common/national_focus/CHN.txt:882 )
+relative_focus_id: pressure_olenia does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CHN_great_war_beginning (common/national_focus/CHN.txt:1215 )
+relative_focus_id: demand_equestria does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: prepare_for_war2 (common/national_focus/CHN.txt:1273 )
+relative_focus_id: demand_equestria does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: prepare_for_war3 (common/national_focus/CHN.txt:1340 )
+relative_focus_id: demand_equestria does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: prepare_for_war (common/national_focus/CHN.txt:1425 )
+relative_focus_id: demand_equestria does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CRY_somtories (common/national_focus/CRY_shared.txt:1239 )
+relative_focus_id: CRY_somindustry does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CRY_somlogistics (common/national_focus/CRY_shared.txt:1323 )
+relative_focus_id: CRY_somindustry does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CRY_sominstitute (common/national_focus/CRY_shared.txt:1403 )
+relative_focus_id: CRY_somindustry does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CRY_somdustrial_concerns (common/national_focus/CRY_shared.txt:1618 )
+relative_focus_id: CRY_somindustry does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CRY_stgadvisory (common/national_focus/CRY_shared.txt:1758 )
+relative_focus_id: CRY_comrevolution does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: CYA_arsenal (common/national_focus/CYA.txt:1053 )
+relative_focus_id: CYA_industrialise_fragrantharbour does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: EQC_war_with_wingbardy (common/national_focus/EQC.txt:4116 )
+relative_focus_id: EQC_full_commie_econ does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: eqs_prevent_the_vote (common/national_focus/EQS_shared.txt:3733 )
+relative_focus_id: eqs_come_to_compromise does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FAL_educate_farmers (common/national_focus/FAL.txt:16 )
+relative_focus_id: FAL_politcal_unrest does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FAT_fortify_imperial_border (common/national_focus/FAT_shared.txt:8879 )
+relative_focus_id: FAT_contingency_plan does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FAT_militarize_the_north (common/national_focus/FAT_shared.txt:8998 )
+relative_focus_id: FAT_contingency_plan does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FEA_rising_star (common/national_focus/FEA_shared.txt:4105 )
+relative_focus_id: FEA_a_new_dawn does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FEA_workshop_of_the_world (common/national_focus/FEA_shared.txt:4546 )
+relative_focus_id: FEA_a_new_dawn does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: FEA_glory_to_feathisia (common/national_focus/FEA_shared.txt:5066 )
+relative_focus_id: FEA_a_new_dawn does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: GRY_minorities_in_army (common/national_focus/GRY.txt:244 )
+relative_focus_id: GRY_placate_clans does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: GRY_business_as_usual (common/national_focus/GRY.txt:3235 )
+relative_focus_id: GRY_betray_black_cloaks does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: GRY_the_emperors_march (common/national_focus/GRY.txt:3643 )
+relative_focus_id: GRY_betray_black_cloaks does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: GRY_further_civvies (common/national_focus/GRY_shared.txt:1217 )
+relative_focus_id: GRY_kaiv_uni does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLQ_tungsten_industry (common/national_focus/HLQ_shared.txt:4040 )
+relative_focus_id: HLQ_fascist_economics does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLQ_oil_autarky (common/national_focus/HLQ_shared.txt:4088 )
+relative_focus_id: HLQ_fascist_economics does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLQ_full_spead_ahead (common/national_focus/HLQ_shared.txt:4146 )
+relative_focus_id: HLQ_fascist_economics does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLQ_luftwaffe (common/national_focus/HLQ_shared.txt:4720 )
+relative_focus_id: HLQ_wehrmacht does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLR_boss_fight (common/national_focus/HLR_shared.txt:1899 )
+relative_focus_id: HLR_New_Economy does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLR_gains_cores (common/national_focus/HLR_shared.txt:2711 )
+relative_focus_id: HLR_finish_north does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLR_finish_north (common/national_focus/HLR_shared.txt:2799 )
+relative_focus_id: HLR_purge_heratics does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: HLR_mech (common/national_focus/HLR_shared.txt:3696 )
+relative_focus_id: HLR_scientific_breakthrough does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: LSP_the_commune (common/national_focus/LSP.txt:1082 )
+relative_focus_id: LSP_debates_over does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: LSP_the_republic_left (common/national_focus/LSP.txt:2271 )
+relative_focus_id: LSP_debates_over does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: LSP_and_planes_too (common/national_focus/LSP_shared.txt:2389 )
+relative_focus_id: LSP_armor_factories does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: RCT_arms_provisioning (common/national_focus/RCT.txt:1038 )
+relative_focus_id: RCT_war_harmony does not exist. Relative focus must be scripted before this.
+[01:35:34][nationalfocus.cpp:528]: Error in focus: RCT_peaceful_beacon (common/national_focus/RCT.txt:2608 )
+relative_focus_id: RCT_rijekan_socialism does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: RCT_rijekan_socialism (common/national_focus/RCT.txt:3935 )
+relative_focus_id: RCT_control_the_unions does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: RCT_military_start (common/national_focus/RCT.txt:4257 )
+relative_focus_id: RCT_industry_start does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: ROU_war_with_empire_fash (common/national_focus/ROU_shared.txt:2849 )
+relative_focus_id: ROU_right_politics does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: SCS_loyal_to_the_queen (common/national_focus/SCS.txt:38 )
+relative_focus_id: SCS_coltlumbia_victory does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: SCS_you_happy_land (common/national_focus/SCS.txt:1385 )
+relative_focus_id: SCS_coltlumbia_victory does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: SCS_rockhoof (common/national_focus/SCS.txt:2766 )
+relative_focus_id: SCS_coltlumbia_victory does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: SCS_for_the_republic (common/national_focus/SCS.txt:4088 )
+relative_focus_id: SCS_coltlumbia_victory does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: TRD_archibalds_knight (common/national_focus/TRD_shared.txt:518 )
+relative_focus_id: TRD_centralised_command does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: TRD_army_training (common/national_focus/TRD_shared.txt:5006 )
+relative_focus_id: TRD_militias does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: YAK_educated_population (common/national_focus/YAK_shared.txt:1377 )
+relative_focus_id: YAK_fully_unify does not exist. Relative focus must be scripted before this.
+[01:35:35][nationalfocus.cpp:528]: Error in focus: YAK_prepare_changeling_war (common/national_focus/YAK_shared.txt:3787 )
+relative_focus_id: YAK_war_preparations does not exist. Relative focus must be scripted before this.
+[01:35:36][musicmanager.cpp:149]: Missing music_station faceplate GUI component containerWindowType with name: eaw_faceplate
+[01:35:36][musicmanager.cpp:149]: Missing music_station faceplate GUI component containerWindowType with name: eaw_faceplate
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named liberty_equality_fraternity
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named imperterrita
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named cloak_and_dagger
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named a_storm_coming
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named claustrophobic_march
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named communist_america
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named confederate_flags
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named democratic_movements
+[01:35:36][musicmanager.cpp:149]: Missing music_station faceplate GUI component containerWindowType with name: sabaton_faceplate
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named hearts_of_iron
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named night_witches
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named primo_victoria
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named stalingrad
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named wolfpack
+[01:35:36][musicmanager.cpp:149]: Missing music_station faceplate GUI component containerWindowType with name: sabaton_faceplate
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named fourty_to_one
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named coat_of_arms
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named ghost_division
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named panzerkampf
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named resist_and_bite
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named screaming_eagles
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named smoking_snakes
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named the_last_battle
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named to_hell_and_back
+[01:35:36][pdx_audio.cpp:1360]: Could not find music named uprising
+[01:35:37][eventmanager.cpp:554]: events/Aquileia Events.txt:1372: aquileia.40: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Changeling.txt:989: changelings.43: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/DreadLeague_Events.txt:1071: deadempire.32: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/DreadLeague_Events.txt:1244: deadempire.36: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Equestria.txt:2086: equestria.70: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Equestria.txt:7138: equestria.171: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestriaInExile.txt:231: eqc_resistence_event.5: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestriaInExile.txt:269: eqc_resistence_event.6: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestrianColony.txt:3: equestriancolony.1: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestrianColony.txt:68: equestriancolony.2: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestrianColony.txt:115: equestriancolony.3: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/EquestrianColony.txt:156: equestriancolony.4: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonContinental Events.txt:178: griffonian.2: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonContinental Events.txt:317: griffonian.6: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonContinental Events.txt:730: griffonian.1001: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonContinental Events.txt:758: griffonian.1002: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonContinental Events.txt:807: griffonian.1003: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonRepublic Events.txt:3387: griffonRepublic.101: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/GriffonRepublic Events.txt:3409: griffonRepublic.102: Event is set to trigger every day.
+[01:35:37][persistent.cpp:52]: Error: "Invalid idea: ELF_special_limited_conscription, near line: 3901" in file: "events/MAN&ELF_2 Events.txt" near line: 3901
+[01:35:37][eventmanager.cpp:554]: events/NewLunarEmpire Events.txt:1993: lunas.906: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/NewLunarEmpire Events.txt:2184: lunas.940: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/NovaGriffonia Events.txt:291: griffons.300: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Olenia.txt:1707: olenia.720: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Prywhen_events.txt:1943: prywhen.34: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/SolarEmpire.txt:3063: solarempire.906: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/SolarEmpire.txt:3092: solarempire.910: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/SolarEmpire.txt:4685: solarempiresparkles.103: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/SolarEmpire.txt:4717: solarempiresparkles.104: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3178: stalliongrad.118: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3204: stalliongrad.119: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3217: stalliongrad.120: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3229: stalliongrad.121: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3258: stalliongrad.122: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3274: stalliongrad.123: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/Stalliongrad.txt:3744: stalliongrad.141: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:544]: events/TestEvents.txt:3: test.1: Event is missing a title.
+[01:35:37][eventmanager.cpp:546]: events/TestEvents.txt:3: test.1: Event is missing a desc.
+[01:35:37][eventmanager.cpp:554]: events/Vedina Events.txt:1353: vedina.76: Event is set to trigger every day.
+[01:35:37][eventmanager.cpp:554]: events/ZecoraResistance.txt:134: zecora.6: Event is set to trigger every day.
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: improved_light_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: improved_light_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: improved_light_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: CA2. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: CA2. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: CA3. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: CA3. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: improved_light_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: improved_light_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: imrpoved_heavy_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: imrpoved_medium_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: imrpoved_heavy_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: imrpoved_medium_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: main_batttle_tank. use var:var_name to explicitly use variables in effects/triggers
+[01:35:37][database_scoped_variables.cpp:312]: invalid database object for effect/trigger: basic_medium_armor. use var:var_name to explicitly use variables in effects/triggers
+[01:35:57][pdxmapborders.cpp:189]: One-pixel province color found at 3189, 770.
+[01:35:57][pdxmapborders.cpp:189]: One-pixel province color found at 3708, 598.
+[01:35:57][pdxmapborders.cpp:189]: One-pixel province color found at 3200, 359.
+[01:35:57][pdxmapborders.cpp:189]: One-pixel province color found at 3202, 359.
+[01:35:59][provincegraphics.cpp:2087]: prov 1095 stack 20 Ship in port moving is too far away from center (dist 1744 1614 prov -1)
+[01:35:59][provincegraphics.cpp:2087]: prov 3645 stack 20 Ship in port moving is too far away from center (dist 1977 1387 prov -1)
+[01:35:59][provincegraphics.cpp:2087]: prov 11025 stack 20 Ship in port moving is too far away from center (dist 2738 1893 prov -1)
+[01:35:59][provincegraphics.cpp:2087]: prov 13157 stack 20 Ship in port moving is too far away from center (dist 1693 1567 prov -1)
+[01:35:59][containerwindow.cpp:965]: interface/frontendmainview.gui (line 404 ): Could not find "privacy_policy_button" in window mainmenu_social_buttons
+[01:35:59][containerwindow.cpp:965]: interface/frontendmainview.gui (line 404 ): Could not find "homepage_button" in window mainmenu_social_buttons
+[01:35:59][containerwindow.cpp:965]: interface/frontendgamesetupview.gui (line 601 ): Could not find "back_button" in window gamesetup_interesting_countries_window
+[01:36:06][equipmentpool.cpp:1289]: Country "EQS" does not have any equipment variant for type "light_cruiser_2" version 0 created by "EQS".
+[01:36:06][equipmentpool.cpp:1289]: Country "SIC" does not have any equipment variant for type "ship_hull_monitor" version 0 created by "SIC".
+[01:36:06][equipmentpool.cpp:1289]: Country "SIC" does not have any equipment variant for type "ship_hull_monitor" version 0 created by "SIC".
+[01:36:06][equipmentpool.cpp:1289]: Country "SIC" does not have any equipment variant for type "ship_hull_monitor" version 0 created by "SIC".
+[01:36:06][equipmentpool.cpp:1289]: Country "SIC" does not have any equipment variant for type "ship_hull_monitor" version 0 created by "SIC".
+[01:36:06][unit.cpp:3162]: 1. Geschwader (Südost) ( CYA ) unit in 7342 has locked equipment requirements: ship_hull_cruiser, 
+[01:36:06][equipmentpool.cpp:1289]: Country "TAL" does not have any equipment variant for type "ship_hull_light_1" version 0 created by "TAL".
+[01:36:06][equipmentpool.cpp:1289]: Country "TAL" does not have any equipment variant for type "ship_hull_light_1" version 0 created by "TAL".
+[01:36:07][triggerimplementation.cpp:19058]: common/ai_strategy/WNG.txt:239: is_ally_with country is not valid
+[01:36:07][triggerimplementation.cpp:19058]: common/ai_strategy/WNG.txt:269: is_ally_with country is not valid
+[01:36:07][triggerimplementation.cpp:19058]: common/ai_strategy/WNG.txt:239: is_ally_with country is not valid
+[01:36:07][triggerimplementation.cpp:19058]: common/ai_strategy/WNG.txt:269: is_ally_with country is not valid
+[01:36:08][containerwindow.cpp:965]: interface/ingamemenu.gui (line 3 ): Could not find "privacy_policy_button" in window ingamemenu
+[01:36:08][containerwindow.cpp:965]: interface/ingamemenu.gui (line 3 ): Could not find "achievements_button" in window ingamemenu
+[01:36:08][gui.cpp:861]: Undefined GUI_TYPE: sabaton_stations_entry - This will most likely crash the game
+[01:36:08][musicplayerview.cpp:62]: Missing music_station_entry GUI component containerWindowType with name: sabaton_stations_entry
