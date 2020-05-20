@@ -72,12 +72,15 @@ leader_traits = {
 
 	grand_admiral = {
 		random = no
-		industrial_capacity_dockyard = 0.05
+		production_speed_naval_base_factor = 0.09
+		production_speed_dockyard_factor = 0.06
+		experience_gain_navy = 0.12
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	
 	military_pioneer = {
 		random = no
 		political_power_gain = -0.25
@@ -556,7 +559,6 @@ leader_traits = {
 	daybreaker_god2 = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
-		stability_factor = 0.1
 		stability_factor = 0.05
 		war_support_factor = 0.05
 		army_attack_factor = 0.05
@@ -601,12 +603,6 @@ leader_traits = {
 	#ESPIONAGE IDEAS#
 	
 	head_of_intelligence = {
-		random = no
-		operative_slot = 1
-		agency_upgrade_time = -0.15
-	}
-
-	head_of_intelligence_pony_f = {
 		random = no
 		operative_slot = 1
 		agency_upgrade_time = -0.15
@@ -668,7 +664,7 @@ leader_traits = {
 
 		stability_factor = -0.1
 		war_support_factor = 0.2
-		political_power_gain = -0.35
+		political_power_gain = -0.25
 		conscription_factor = 0.05
 		conscription = 0.05
 		mobilization_speed = 1.0
@@ -682,7 +678,7 @@ leader_traits = {
 	YAL_grover_trait = { #Grover gets this after retaking Griffenheim
 		random = no
 
-		political_power_gain = -0.15
+		political_power_gain = -0.1
 		conscription_factor = 0.05
 		conscription = 0.01
 		mobilization_speed = 0.2
@@ -1057,7 +1053,7 @@ leader_traits = {
 
 	revolutionary_general = { #Francisco José Mugica
 		random = no
-		partisan_effect = 0.25
+		resistance_growth_on_our_occupied_states = 0.25
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
 		theorist_cost_factor = -0.25
@@ -1336,7 +1332,7 @@ leader_traits = {
 
 	popular_figurehead2 = {
 		stability_factor = 0.05
-		compliance_gain = 0.05
+		compliance_gain = 0.025
 
 		ai_will_do = {
 				factor = 1
@@ -1967,7 +1963,7 @@ leader_traits = {
 	}
 	popular_figurehead = {
 		stability_factor = 0.15
-		compliance_gain = 0.1
+		compliance_gain = 0.05
 
 			ai_will_do = {
 				factor = 2
@@ -2002,7 +1998,7 @@ leader_traits = {
 
 	popular_leader = {
 		stability_factor = 0.2
-		compliance_gain = 0.15
+		compliance_gain = 0.1
 
 			ai_will_do = {
 				factor = 2.5
@@ -2208,12 +2204,12 @@ leader_traits = {
 												
 			modifier = {
 				factor = 1.5
-				num_occupied_states = 5
+				num_occupied_states > 5
 				}
 				
 			modifier = {
 				factor = 2
-				num_occupied_states = 15
+				num_occupied_states > 15
 				}
 		}
 	}
@@ -2222,6 +2218,49 @@ leader_traits = {
 		resistance_damage_to_garrison = -0.25
 		political_power_gain = 0.10
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FAT_suntails_lackey = {
+		resistance_damage_to_garrison = -0.25
+		political_power_gain = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FAT_inoffensive_centrist = {
+		stability_factor = 0.1
+		political_power_gain = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FAT_griffon_of_the_people = {
+		stability_factor = 0.15
+		war_support_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FAT_depressive_businessman = {
+		consumer_goods_factor = -0.05
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FAT_lunatic_workbird = {
+		political_power_factor = 0.15
+		stability_factor = -0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -2284,7 +2323,7 @@ leader_traits = {
 				modifier = { 
 					factor = 5
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 				modifier = { 
@@ -4015,7 +4054,7 @@ leader_traits = {
 			}
 			modifier = {
 					factor = 0
-					rubbber < 3
+					rubber < 3
 			}
 			}
 			}
@@ -4473,7 +4512,7 @@ leader_traits = {
 			}
 			
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 3		
 				}
 					
@@ -4563,11 +4602,11 @@ leader_traits = {
 			}
 			
 			modifier = {
-				value = 3
+				factor = 3
 				amount_research_slots > 4	
 				}
 			modifier = {
-				value = 3
+				factor = 3
 				amount_research_slots > 5	
 				}
 				}
@@ -4625,7 +4664,7 @@ leader_traits = {
 			modifier = { 
 					factor = 2
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -4688,7 +4727,7 @@ leader_traits = {
 			modifier = { 
 					factor = 2
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -4751,7 +4790,7 @@ leader_traits = {
 			modifier = { 
 					factor = 2
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -5151,10 +5190,10 @@ ai_will_do = {
 				factor = 2
 				arms_factory > 50
 			}
-			}
 			modifier = {
 				factor = 2
 				has_war = yes
+			}
 			}
 			}
 
@@ -6064,13 +6103,13 @@ ai_will_do = {
 					set_temp_variable = { type_percentage = num_armies_with_type@knights }
 					divide_temp_variable = { type_percentage = num_armies}
 					check_variable = { type_percentage > 0.15 }
-					}		
-					}
+					}							
 				modifier = {
 				factor = 2
 				has_war = yes
-					}
-					}
+				}
+			}
+		}
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 
@@ -6248,12 +6287,12 @@ ai_will_do = {
 				
 			modifier = {
 				factor = 2
-				has_tech = improved_light_armor
+				has_tech = improved_light_tank
 			}
 						
 			modifier = {
 				factor = 2
-				has_tech = basic_medium_armor
+				has_tech = basic_medium_tank
 			}
 		modifier = {
 				factor = 2
@@ -6298,12 +6337,12 @@ ai_will_do = {
 				
 			modifier = {
 				factor = 2
-				has_tech = improved_light_armor
+				has_tech = improved_light_tank
 			}
 						
 			modifier = {
 				factor = 2
-				has_tech = basic_medium_armor
+				has_tech = basic_medium_tank
 			}
 		modifier = {
 				factor = 2
@@ -6348,12 +6387,12 @@ ai_will_do = {
 				
 			modifier = {
 				factor = 2
-				has_tech = improved_light_armor
+				has_tech = improved_light_tank
 			}
 						
 			modifier = {
 				factor = 2
-				has_tech = basic_medium_armor
+				has_tech = basic_medium_tank
 			}
 		modifier = {
 				factor = 2
@@ -6492,18 +6531,7 @@ ai_will_do = {
 			modifier = {
 				factor = 2.5
 				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2.5
-				is_fighting_in_terrain = Desert
-			}
-			
-		modifier = {
-				factor = 2.5
-			is_fighting_in_terrain = mountain
-			}
-			
+			}							
 			modifier = {
 				factor = 2.5
 				arms_factory > 50
@@ -6534,16 +6562,6 @@ ai_will_do = {
 			modifier = {
 				factor = 2.5
 				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2.5
-				is_fighting_in_terrain = Desert
-			}
-			
-		modifier = {
-				factor = 2.5
-			is_fighting_in_terrain = mountain
 			}
 			
 			modifier = {
@@ -6576,16 +6594,6 @@ ai_will_do = {
 			modifier = {
 				factor = 2.5
 				num_divisions > 50
-			}
-					
-			modifier = {
-				factor = 2.5
-				is_fighting_in_terrain = Desert
-			}
-			
-		modifier = {
-				factor = 2.5
-			is_fighting_in_terrain = mountain
 			}
 			
 			modifier = {
@@ -8975,7 +8983,7 @@ ai_will_do = {
 			modifier = { 
 					factor = 2
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -9421,16 +9429,16 @@ ai_will_do = {
 				factor = 5
 				
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 2	
 				}
 			
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 3	
 				}
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 4	
 				}
 				}
@@ -9518,15 +9526,15 @@ ai_will_do = {
 			ai_will_do = {
 				factor = 100
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 2	
 				}
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 3	
 				}
 			modifier = {
-				value = 5
+				factor = 5
 				amount_research_slots > 4	
 				}
 			}		
@@ -9740,7 +9748,7 @@ ai_will_do = {
 			modifier = { 
 					factor = 2
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -10190,7 +10198,7 @@ ai_will_do = {
 					}	
 				modifier = {
 					factor = 5
-					manpower < 50000
+					has_manpower < 50000
 					}
 					}
 					}
@@ -10655,14 +10663,30 @@ ai_will_do = {
 		enemy_operative_detection_chance_factor = 0.10
 		own_operative_detection_chance_factor = -0.10
 		operative_slot = 1
-		intel_network_gain = 0.2
+		intel_network_gain = 0.05
 		agency_upgrade_time = -0.05
 
 		ai_will_do = {
 			factor = 2
 		}
 	}
-
+	marine_general = {
+		random = no
+		special_forces_cap = 0.15
+		special_forces_attack_factor = 0.1
+		special_forces_defence_factor = 0.1
+		special_forces_training_time_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ambitious_union_boss_2 = {
+		random = no
+		industrial_capacity_factory = 0.08
+		political_power_gain = 0.05
+    }
+    
 	NCR_suspicious_tech_company = {
 		random = no
 		research_speed_factor = 0.05
@@ -10672,4 +10696,32 @@ ai_will_do = {
 			factor = 2
 		}
 	}
+	
+	zebrican_close_combat_expert = { # +8 paratrooper/marine/mountain efficiency
+        random = no
+		special_forces_attack_factor = 0.15
+		special_forces_defence_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	administrative_genius = {
+		random = no
+		production_speed_buildings_factor = 0.02
+		research_speed_factor = 0.01
+		industrial_capacity_factory = 0.02
+    }
+	
+	field_surgeon = { 
+        random = no
+		experience_loss_factor = -0.10
+		army_morale_factor = 0.05
+		supply_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 }

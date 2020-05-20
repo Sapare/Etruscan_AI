@@ -84,7 +84,7 @@ technologies = {
 		}
 	}
 
-	tech_ironpaws2 = { #I am not wasting my time on this till they are fixed in the core code or I fix them.
+	tech_ironpaws2 = {
 
 		ironpaws = {
 			max_organisation = 5
@@ -116,11 +116,39 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			
 		modifier = {
 			factor = 0
-			aluminium < 4
-	}
+			aluminium < 2
+			}
 	}
 	}
 
@@ -158,7 +186,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 1
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				has_tech = support_weapons
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -195,7 +251,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 1
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				has_tech = support_weapons
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -231,7 +315,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 1
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				has_tech = support_weapons
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -262,7 +374,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 1
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				has_tech = support_weapons
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -293,54 +433,95 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 3
+			
+	modifier = {
+		add = 5
+	AND = {
+		has_idea = free_trade
+		check_variable = { resource_exported@rubber > 7 }
+		check_variable = { resource_exported@aluminium > 7 }
+		check_variable = { resource_exported@tungsten > 7 }
+		check_variable = { resource_exported@steel > 7 }
+		check_variable = { resource_exported@chromium > 7 }
+		}
+}	
+			
 
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 15
-					aluminium > 15
-					rubber > 15
-					tungsten > 15
-					steel > 15
-					chromium > 15
-			} 
+	modifier = {
+		factor = 3
+			AND = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_produced@rubber > 10 }
 			}
-			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 30
-					aluminium > 30
-					rubber > 30
-					tungsten > 30
-					steel > 30
-					chromium > 30
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_produced@aluminium > 10 }
 			}
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@chromium > 1 }
+			check_variable = { resource_produced@chromium > 10 }
 			}
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 45
-					aluminium > 45
-					rubber > 45
-					tungsten > 45
-					steel > 45
-					chromium > 45
-			} 
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_produced@steel > 10 }
 			}
-			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 75
-					aluminium > 75
-					rubber > 75
-					tungsten > 75
-					steel > 75
-					chromium > 75
-			} 
-			} 
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_produced@tungsten > 10 }
+			}
+}
+
+	modifier = {
+		factor = 0
+			NOT = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_imported@chromium > 1 }
+			has_idea = free_trade
+	}
+}
+	modifier = {
+		factor = 2				
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 50 }
+				}
+				
+	modifier = {
+		factor = 3
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 100 }
+			}									
 		}
 	}
 
@@ -367,19 +548,15 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 25
 
 		modifier = {
-				factor = 2
-				industrial_complex > 5						
+				factor = 0.5
+				num_of_civilian_factories_available_for_projects < 5						
 			}
 		modifier = {
-				factor = 2
-				industrial_complex > 15						
-			}
-		modifier = {
-				factor = 2
-				industrial_complex > 20						
+				factor = 0
+				num_of_civilian_factories_available_for_projects < 2						
 			}
 		}
 	}
@@ -405,22 +582,39 @@ technologies = {
 		categories = {
 			race_tech
 		}
-
-		ai_will_do = {
-			factor = 2
-
-				modifier = {
-				factor = 10
-				capital_scope = {
+		
+ai_will_do = {
+		factor = 3
+		
+		modifier = {
+				ADD = 25
+				any_owned_state = {
+				AND = {
+				infrastructure > 8
 				free_building_slots = {
-				building = arms_factory 
+				building = arms_factory
 				size < 1
-				included_locked = no							
+				include_locked = no
+				}
+				}
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				any_owned_state = {
+				AND = {
+				infrastructure > 8
+				free_building_slots = {
+				building = arms_factory
+				size > 1
+				include_locked = no
+				}
+				}
+				}
 			}
 			}
-			}
-			}
-			}
+	}
 	
 	#Mining II
 	tech_diamond_dog_misc_a = {
@@ -446,55 +640,96 @@ technologies = {
 
 		ai_will_do = {
 			factor = 3
+			
+	modifier = {
+		add = 5
+	AND = {
+		has_idea = free_trade
+		check_variable = { resource_exported@rubber > 7 }
+		check_variable = { resource_exported@aluminium > 7 }
+		check_variable = { resource_exported@tungsten > 7 }
+		check_variable = { resource_exported@steel > 7 }
+		check_variable = { resource_exported@chromium > 7 }
+		}
+}	
+			
 
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 15
-					aluminium > 15
-					rubber > 15
-					tungsten > 15
-					steel > 15
-					chromium > 15
-			} 
+	modifier = {
+		factor = 3
+			AND = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_produced@rubber > 10 }
 			}
-			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 30
-					aluminium > 30
-					rubber > 30
-					tungsten > 30
-					steel > 30
-					chromium > 30
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_produced@aluminium > 10 }
 			}
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@chromium > 1 }
+			check_variable = { resource_produced@chromium > 10 }
 			}
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 45
-					aluminium > 45
-					rubber > 45
-					tungsten > 45
-					steel > 45
-					chromium > 45
-			} 
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_produced@steel > 10 }
 			}
-			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 75
-					aluminium > 75
-					rubber > 75
-					tungsten > 75
-					steel > 75
-					chromium > 75
-			} 
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_produced@tungsten > 10 }
 			}
+}
+
+	modifier = {
+		factor = 0
+			NOT = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_imported@chromium > 1 }
+			has_idea = free_trade
+}
+}
+	modifier = {
+		factor = 2				
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 50 }
 			}
-			}
+				
+	modifier = {
+		factor = 3
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 100 }
+			}									
+	}
+}
 
 	#Industrial Growth
 	tech_diamond_dog_misc_b = {
@@ -520,28 +755,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
-			modifier = {
-				factor = 2
-				arms_factory > 10						
+			factor = 15
+			
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				is_researching_technology = construction1
+				}
+			NOT = {
+				is_researching_technology = electronic_mechanical_engineering
+				}
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 15						
+			}	
+			
+		modifier = {
+			factor = 0.5
+			num_of_military_factories < 10			
 			}
 			
-			modifier = {
-				factor = 2
-				arms_factory > 25						
+		modifier = {
+			factor = 0
+			num_of_military_factories < 5		
 			}
-			modifier = {
-				factor = 2
-				arms_factory > 35						
-			}			
-			}
-			}
+		}
+	}
 
 	#Mining III
 	tech_diamond_dog_misc_c = {
@@ -561,56 +799,97 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 15
-					aluminium > 15
-					rubber > 15
-					tungsten > 15
-					steel > 15
-					chromium > 15
-			} 
-			}
+	modifier = {
+		add = 5
+	AND = {
+		has_idea = free_trade
+		check_variable = { resource_exported@rubber > 7 }
+		check_variable = { resource_exported@aluminium > 7 }
+		check_variable = { resource_exported@tungsten > 7 }
+		check_variable = { resource_exported@steel > 7 }
+		check_variable = { resource_exported@chromium > 7 }
+		}
+}	
 			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 30
-					aluminium > 30
-					rubber > 30
-					tungsten > 30
-					steel > 30
-					chromium > 30
+
+	modifier = {
+		factor = 3
+			AND = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_produced@rubber > 10 }
 			}
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_produced@aluminium > 10 }
 			}
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 45
-					aluminium > 45
-					rubber > 45
-					tungsten > 45
-					steel > 45
-					chromium > 45
-			} 
+}
+
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@chromium > 1 }
+			check_variable = { resource_produced@chromium > 10 }
 			}
-			
-		modifier = {
-			factor = 1.5
-			OR = {
-					oil > 75
-					aluminium > 75
-					rubber > 75
-					tungsten > 75
-					steel > 75
-					chromium > 75
-			} 
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_produced@steel > 10 }
 			}
+}
+
+	modifier = {
+		factor = 3	
+			AND = {			
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_produced@tungsten > 10 }
 			}
+}
+
+	modifier = {
+		factor = 0
+			NOT = {			
+			check_variable = { resource_imported@rubber > 1 }
+			check_variable = { resource_imported@aluminium > 1 }
+			check_variable = { resource_imported@tungsten > 1 }
+			check_variable = { resource_imported@steel > 1 }
+			check_variable = { resource_imported@chromium > 1 }
+			has_idea = free_trade
+}
+}
+	modifier = {
+		factor = 2				
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 50 }
 			}
+				
+	modifier = {
+		factor = 3
+			set_temp_variable = {resource_pro = resource_produced@steel}
+			add_to_temp_variable = { resource_pro = resource_produced@chromium}
+			add_to_temp_variable = { resource_pro = resource_produced@crystals}
+			add_to_temp_variable = { resource_pro = resource_produced@rubber}
+			add_to_temp_variable = { resource_pro = resource_produced@aluminium}
+			add_to_temp_variable = { resource_pro = resource_produced@tungsten}
+			check_variable = { resource_pro > 100 }
+			}									
+	}
+}
 
 	#Mountain Home
 	tech_diamond_dog_army = {
@@ -645,28 +924,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 20
+			factor = 2
 
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
 				}
 
 	#Mountain Training
@@ -704,25 +991,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
 
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -755,27 +1050,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
+
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+			}
 
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -812,25 +1115,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+			}
 
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -859,21 +1170,32 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
-		modifier = {
-				factor = 2
-				industrial_complex > 15						
+			
+			modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
-		modifier = {
-				factor = 2
-				industrial_complex > 20					
 			}
-		modifier = {
-				factor = 2
-				industrial_complex > 25					
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
 			}
-		modifier = {
-				factor = 2
-				industrial_complex > 35			
+
+			modifier = {
+				has_war = yes
+				factor = 3
 			}
 		}
 	}
@@ -910,25 +1232,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+			}
 
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -953,27 +1283,36 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
+
 			
 			modifier = {
-					factor = 1.5
-					num_divisions > 15
-						}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+			}
 
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 35
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 40
-					}
-	}
+				has_war = yes
+				factor = 3
+			}
+		}
+}
 }
 
 #####-----------------------------------------------------------> End

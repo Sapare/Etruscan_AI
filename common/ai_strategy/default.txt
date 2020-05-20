@@ -1,6 +1,7 @@
 # Written by Henrik "Groogy" Hansson
 # Modified by Daniel "Da9L" Sjöberg
 # IF YOU TOUCH THE AI CODE I WILL STAB YOU REPEATLY -PSODY
+#Explains why this stuff was so borked -Sapare
 
 # befriend
 # conquer
@@ -39,84 +40,69 @@ default_unit_production = {
 	}
 	ai_strategy = {
 		type = role_ratio
-		id = paratroopers
-		value = 0
+		id = infantry
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = mountaineers
-		value = 4
+		id = paratroopers
+		value = 2
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = marines
-		value = 0
+		value = 5
 	}
 
-
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 5
+	}	
+	
 	ai_strategy = {
 		type = role_ratio
 		id = light_armor
 		value = 15
 	}
-
+	
 	ai_strategy = {
 		type = role_ratio
 		id = main_armor
-		value = 5
-		}
-		
+		value = 0
+	}	
+	
 	ai_strategy = {
 		type = role_ratio
 		id = heavy_armor
-		value = 5
+		value = 0
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = infantry
-		value = 65
+		id = motorized
+		value = 0
 	}
-
+	
 	ai_strategy = {
 		type = role_ratio
-		id = magical_infantry
-		value = 15
+		id = mechanized
+		value = 0
 	}
-
-	#Air unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 35
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = 20
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = 10
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = 5
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = 5
-	}
-
 
 	# Naval unit factors
 	ai_strategy = {
@@ -141,24 +127,6 @@ default_unit_production = {
 		type = unit_ratio
 		id = convoy
 		value = 15
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 35
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 40
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = 25
 	}
 	}
 	
@@ -463,7 +431,7 @@ diamond_dog_ironpaws = {
 	ai_strategy = {
 		type = role_ratio
 		id = ironpaws
-		value = 9
+		value = 15
 	}
 }
 
@@ -491,7 +459,7 @@ changelings_jagers = {
 	ai_strategy = {
 		type = role_ratio
 		id = jager
-		value = 4
+		value = 10
 	}
 }
 
@@ -510,7 +478,7 @@ griffon_knights = {
 	ai_strategy = {
 		type = role_ratio
 		id = knights
-		value = 9
+		value = 15
 	}
 }
 
@@ -535,39 +503,10 @@ griffon_knights_more = {
 	ai_strategy = {
 		type = role_ratio
 		id = knights
-		value = 9
+		value = 10
 	}
 }
 
-griffon_knights_midgame = {
-	enable = {
-		has_tech = tech_knights
-		date > 1013.1.1
-	}
-	abort = {
-		always = no
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = knights
-		value = 9
-	}
-}
-
-griffon_knights_lategame = {
-	enable = {
-		has_tech = tech_knights
-		date > 1016.1.1
-	}
-	abort = {
-		always = no
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = knights
-		value = 7
-	}
-}
 
 pegasi_superiority = {
 
@@ -604,40 +543,6 @@ pegasi_superiority = {
 	}
 }
 
-default_garrison_production = {
-
-	allowed = {
-		NOT = {
-			original_tag = CHN
-			original_tag = CCN
-		}
-	}
-	
-	enable = {
-		NOT = {
-			original_tag = CHN
-			original_tag = CCN
-		}
-		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
-		is_major = yes
-	}
-	abort = {
-		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
-		is_major = no
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 3
-	}
-
-	#ai_strategy = {
-	#	type = role_ratio
-	#	id = suppression
-	#	value = 1
-	#}
-}
 
 default_mountaineers_production = {
 
@@ -689,78 +594,9 @@ default_marines_production = {
 }
 
 
-default_armored_production = {
-	enable = {
-		NOT = { original_tag = CHN original_tag = CCN tag = DED }
-		ai_wants_divisions > 49
-	}
-	abort = {
-		ai_wants_divisions < 50
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 5
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 0
-	}
-}
 
-highered_armored_production = {
-
-	allowed = {
-		NOT = {
-			original_tag = CHN
-			original_tag = CCN
-		}
-	}
-	
-	enable = {
-		NOT = { original_tag = CHN original_tag = CCN }
-		num_of_military_factories > 59
-	}
-	abort = {
-		num_of_military_factories < 60
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 10
-	}
-}
-
-highered_armored_production_major = {
-
-	allowed = {
-		NOT = { original_tag = CCN } NOT = { original_tag = CHN } NOT = { original_tag = EQS } NOT = { original_tag = NLR }
-	}
-	
-	enable = {
-		NOT = { original_tag = CCN } NOT = { original_tag = CHN } NOT = { original_tag = EQS } NOT = { original_tag = NLR }
-		OR = {
-			is_major = yes
-			AND = {
-				num_of_military_factories > 30
-				date > 1016.1.1
-			}
-		}
-	}
-	abort = {
-		always = no
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 10
-	}
-}
 
 slightly_naval_focused_nation = {
 
@@ -1627,6 +1463,28 @@ build_intelligence_agency = {
 	}
 	enable = {
 		has_war = no
+		num_of_civilian_factories > 23
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			num_of_civilian_factories < 23
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 3
+	}
+
+}
+
+build_intelligence_agency_2 = {
+	allowed = {
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		has_war = no
 		num_of_civilian_factories > 25
 	}
 	abort = {
@@ -1638,9 +1496,8 @@ build_intelligence_agency = {
 
 	ai_strategy = {
 		type = intelligence_agency_usable_factories
-		value = 5
+		value = 2
 	}
-
 }
 
 upgrade_intelligence_agency = {

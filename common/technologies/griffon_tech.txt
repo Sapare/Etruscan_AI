@@ -85,9 +85,34 @@ technologies = {
 			factor = 10
 			
 			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
 				factor = 0
-				aluminium < 2
-			}		
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}	
+					
+		modifier = {
+				factor = 0
+			NOT = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}				
 			}
 			}
 
@@ -127,9 +152,38 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5		
-		
-		}
+			factor = 10
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}				
+			}
 	}
 
 	tech_knights_magical = {
@@ -171,11 +225,43 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			modifier = {
 				is_major = yes
 				factor = 6
 			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			
+			modifier = {
+				ADD = 10
+				check_variable = { resource_produced@crystals > 10 }
+			}	
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@crystals < 5 }
+			}	
+			
 			modifier = {
 				has_government = communism
 				factor = 0.2
@@ -183,6 +269,15 @@ technologies = {
 			modifier = {
 				NOT = { has_tech = magical_weapons }
 				factor = 0
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
 			}
 		}
 	}
@@ -221,6 +316,60 @@ technologies = {
 
 		ai_will_do = {
 			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 6
+			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			
+			modifier = {
+				ADD = 10
+				check_variable = { resource_produced@crystals > 10 }
+			}	
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@crystals < 5 }
+			}	
+			
+			modifier = {
+				has_government = communism
+				factor = 0.2
+			}
+			modifier = {
+				NOT = { has_tech = magical_weapons }
+				factor = 0
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
 		}
 	}
 
@@ -252,14 +401,52 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 6
+			factor = 5
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			
 			modifier = {
 				has_government = communism
 				factor = 2
 			}
+			
 			modifier = {
-				NOT = { has_tech = magical_weapons }
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
 				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@crystals > 10 }
+			}	
+			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@crystals < 5 }
 			}
 		}
 	}
@@ -331,8 +518,54 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-		}
+			factor = 5
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			
+			modifier = {
+				has_government = communism
+				factor = 2
+			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@crystals > 10 }
+			}	
+			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@crystals < 5 }
+			}
+	}
 	}
 
 	tech_knights_a = {
@@ -368,8 +601,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-		}
+			factor = 5
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			}
 	}
 
 	tech_knights_b = {
@@ -404,8 +658,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-		}
+			factor = 5
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			}
 	}
 
 	tech_knights_c = {
@@ -435,8 +710,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-		}
+			factor = 5
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+			modifier = {
+				factor = 0
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage < 0.05 }
+					}
+			}
 	}
 
 
@@ -469,20 +765,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 5
-			
-		modifier = {
-				factor = 2
-				industrial_complex > 5						
-			}
-		modifier = {
-				factor = 2
-				arms_factory > 5						
-			}
-		modifier = {
-				factor = 2
-				industrial_complex > 10						
-			}
+			factor = 20
 		}
 	}
 
@@ -511,20 +794,34 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				arms_factory < 5					
+			}
 
 		modifier = {
-				factor = 2
+				add = 5
 				arms_factory > 10						
 			}
 			
 			modifier = {
-				factor = 2
+				add = 5
 				arms_factory > 20						
 			}
 			
 			modifier = {
-				factor = 2
+				add = 15
 				arms_factory > 30						
 			}
 	}
@@ -553,18 +850,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
-		modifier = {
-				factor = 10
-				capital_scope = {
+			factor = 5
+			
+			modifier = {
+				ADD = 10
+				any_owned_state = {
+				AND = {
+				infrastructure > 5
 				free_building_slots = {
-				building = arms_factory 
+				building = arms_factory
 				size < 1
-				included_locked = no							
+				include_locked = no
+				}
+				}
+				}
 			}
-		}
-		}
+			
+			modifier = {
+				factor = 0.5
+				any_owned_state = {
+				AND = {
+				infrastructure > 8
+				free_building_slots = {
+				building = arms_factory
+				size > 1
+				include_locked = no
+				}
+				}
+				}
+			}
 		}
 		}
 
@@ -595,7 +909,7 @@ technologies = {
 			factor = 4
 			
 		modifier = {
-				factor = 1.5
+				ADD = 5
 				has_deployed_air_force_size = {
 				size > 50
 				type = fighter
@@ -603,7 +917,7 @@ technologies = {
 				}		
 			
 			modifier = {
-				factor = 1.5
+				ADD = 5
 				has_deployed_air_force_size = {
 				size > 100
 				type = fighter
@@ -611,7 +925,7 @@ technologies = {
 				}
 				
 			modifier = {
-				factor = 1.5
+				ADD = 5
 				has_deployed_air_force_size = {
 				size > 200
 				type = fighter
@@ -644,24 +958,24 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
 			modifier = {
-				factor = 2
+				ADD = 5
 				arms_factory > 15						
 			}
 
 			modifier = {
-				factor = 2
+				add = 5
 				arms_factory > 30						
 			}
 			
 			modifier = {
-				factor = 2
+				add = 5
 				arms_factory > 50						
 			}
 			modifier = {
-				factor = 2
+				ADD = 5
 				arms_factory > 70						
 			}			
 			}
@@ -690,29 +1004,30 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
-			modifier = {
-					factor = 1.5
-					num_divisions > 50
-						}
+		modifier = {
+			ADD = 5
+			has_tech = improved_medium_tank
+			}
 
-			modifier = {
-					factor = 1.5
-					num_divisions > 75
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions > 100
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 125
-					}
-					}
-					}
+		
+		modifier = {
+			ADD = 5
+			has_tech = improved_heavy_tank
+			}
+		
+		modifier = {
+			ADD  = 5
+			OR = {
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3 
+			}
+			}
+		}
+}
 
 	#We can fly!
 	tech_griffon_army = {
@@ -793,26 +1108,31 @@ technologies = {
 		}
 
 		ai_will_do = { #Until I can get AI to use paratroopers the other tree is just bad for them.
-			factor = 2
+			factor = 5
 
 			modifier = {
-				factor 1.5
-				num_divisions > 15
+				factor = 0
+				arms_factory < 10	
+				}
+
+			modifier = {
+				ADD = 5
+				has_tech = basic_medium_tank
 				}
 				
 			modifier = {
-				factor 1.5
-				num_divisions > 25
+				ADD = 5
+				check_variable = { resource_produced@rubber > 5 }
+			}	
+				
+			modifier = {
+				factor = 0
+				NOT = { has_tech = tech_signal_company }
 				}
 				
 			modifier = {
-				factor 1.5
-				num_divisions > 35
-				}
-				
-			modifier = {
-				factor 1.5
-				num_divisions > 50
+				ADD = 5
+				has_tech = improved_light_tank
 				}
 		}
 	}
@@ -851,27 +1171,21 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 
 			modifier = {
-				factor 1.5
-				num_divisions > 15
-				}
-				
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
-				factor 1.5
-				num_divisions > 25
-				}
-				
-			modifier = {
-				factor 1.5
-				num_divisions > 35
-				}
-				
-			modifier = {
-				factor 1.5
-				num_divisions > 50
-				}
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@knights}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
 		}
 	}
 
@@ -901,19 +1215,75 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				not = {
+				OR = {
+				has_tech = improved_light_tank
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				}
+				}
+				}
 
 			modifier = {
-				factor = 3
-				has_tech = improved_light_armor
+				add = 5
+				has_tech = improved_light_tank
 				}
 				
 			modifier = {
-				factor = 3
-				has_tech = basic_medium_armor
+				add = 5
+				has_tech = basic_medium_tank
 				}
 				
-		
+			modifier = {
+				add = 5
+				has_tech = basic_heavy_tank
+				}
+				
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+				modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+				modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}		
 		}
 	}
 
@@ -941,17 +1311,76 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				not = {
+				OR = {
+				has_tech = improved_light_tank
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				}
+				}
+				}
 
 			modifier = {
-				factor = 3
-				has_tech = improved_light_armor
+				add = 5
+				has_tech = improved_light_tank
 				}
 				
 			modifier = {
-				factor = 3
-				has_tech = basic_medium_armor
+				add = 5
+				has_tech = basic_medium_tank
 				}
+				
+			modifier = {
+				add = 5
+				has_tech = basic_heavy_tank
+				}
+				
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+				modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+					
+				modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05 }
+					}
+		
 		}
 	}
 
@@ -983,31 +1412,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				tungsten < 5
-			}
-
-			modifier = {
-				factor 2
-				num_divisions > 30
-				}
-				
-			modifier = {
-				factor 2
-				num_divisions > 50
-				}
-				
-			modifier = {
-				factor 2
-				num_divisions > 75
-				}
-				
-			modifier = {
-				factor 2
-				num_divisions > 100
-				}
+			factor = 15
 		}
 	}
 
@@ -1235,38 +1640,45 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 
 			modifier = {
-				factor = 0.5
-				aluminium < 5
+				factor = 0
+				aluminium < 10
 			}
 			
-			modifier = {
-				factor = 0.5
-			num_of_naval_factories < 5
+		modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
-
-
-			modifier = {
-				factor = 2
-				industrial_complex > 25
-		}
-		
-			modifier = {
-				factor = 3
-				industrial_complex > 50
-		}
+			
+		modifier = {
+			ADD = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
 		
 		modifier = {
-				factor = 2
-				arms_factory > 25
-		}
-		
-			modifier = {
-				factor = 3
-				arms_factory > 50
-		}
+			ADD = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
+			
+		modifier = {
+			ADD = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
+			}
+			}
 		}
 		}
 
@@ -1304,12 +1716,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
-			
-			modifier = {
-			factor = 0.5
-			aluminium < 5
-			}
+			factor = 5
 
 		modifier = {
 			factor = 0.5
@@ -1317,59 +1724,51 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
+			add = 5
 			num_of_naval_factories > 10
 			}
 
 			modifier = {
-			factor = 1.5
+			add = 5
 			num_of_naval_factories > 15
 			}
 			
 		modifier = {
-			factor = 1.5
+			add = 5
 			num_of_naval_factories > 20
 			}
 			
 		modifier = {
-			factor = 1.5
+			add = 5
 			num_of_naval_factories > 25
 			} 
-		
+			
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
-			size > 30
-			type = fighter
+			size > 200
+			type = tactical_bomber
 			}
 			}
-		
+			
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
-			size > 30
-			type = cas
+			size > 100
+			type = tactical_bomber
 			}
 			}
-		
+			
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
-			size > 50
-			type = fighter
+			size > 150
+			type = tactical_bomber
 			}
 			}
 		
 		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = fighter
@@ -1377,14 +1776,46 @@ technologies = {
 			}
 		
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = cas
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 155
+			type = fighter
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = cas
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
+		}
+	}
 
 	#Seeker munitions
 	tech_griffon_navy3 = {
@@ -1412,7 +1843,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
 			modifier = {
 				factor = 0.0
@@ -1422,22 +1853,22 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 10
 			}
 
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 15
 			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 20
 			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 25
 			}
 			}
@@ -1470,47 +1901,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
 			modifier = {
-			factor = 2
+				factor = 0.0
+				any_owned_state = {
+					is_coastal = no
+				}
+			}
+			
+		modifier = {
+			add = 5
 			num_of_naval_factories > 10
 			}
+
+		modifier = {
+			add = 5
+			num_of_naval_factories > 15
+			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 20
 			}
+			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 25
 			}
-			
-			modifier = {
-			factor = 2
-			has_navy_size = {
-			size > 30
-			type = naval_screen
 			}
-			}
-						
-			modifier = {
-			factor = 2
-			has_navy_size = {
-			size > 50
-			type = naval_screen
-			}
-			}
-									
-			modifier = {
-			factor = 2
-			has_navy_size = {
-			size > 75
-			type = naval_screen
-			}
-			}
-			}
-			}
+	}
 
 	#Naval C&C
 	tech_griffon_navy5 = {
@@ -1549,31 +1969,37 @@ technologies = {
 			naval_equipment
 			race_tech
 		}
-
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+			modifier = {
+				factor = 0.0
+				any_owned_state = {
+					is_coastal = no
+				}
+			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 10
 			}
 
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 15
 			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 20
 			}
 			
 		modifier = {
-			factor = 2
+			add = 5
 			num_of_naval_factories > 25
 			}
 			}
-			}
+		}
 
 	#Fighting pilots
 	tech_griffon_air3 = {
@@ -1601,42 +2027,34 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 5
+			
+			modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
+			}
+			}
 			
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
-			size > 30
-			type = fighter
+			size > 100
+			type = tactical_bomber
+			}
+			}
+			
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 150
+			type = tactical_bomber
 			}
 			}
 		
 		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 30
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = fighter
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = fighter
@@ -1644,14 +2062,46 @@ technologies = {
 			}
 		
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = cas
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 155
+			type = fighter
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = cas
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
+			}
+	}
 
 	#Airships
 	tech_griffon_air4 = {
@@ -1687,43 +2137,36 @@ technologies = {
 			naval_equipment
 			race_tech
 		}
-
+		
 		ai_will_do = {
-			factor = 1.5
-		modifier = {
-			factor = 1.5
+			factor = 5
+
+				modifier = {
+			add = 5
 			has_deployed_air_force_size = {
-			size > 30
-			type = fighter
+			size > 200
+			type = tactical_bomber
+			}
+			}
+			
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = tactical_bomber
+			}
+			}
+			
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 150
+			type = tactical_bomber
 			}
 			}
 		
 		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 30
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = fighter
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = fighter
@@ -1731,14 +2174,46 @@ technologies = {
 			}
 		
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = cas
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 155
+			type = fighter
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = cas
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
+			}
+	}
 
 	#Born to fly
 	tech_griffon_air5 = {
@@ -1757,43 +2232,36 @@ technologies = {
 			naval_equipment
 			race_tech
 		}
+		
+	ai_will_do = {
+			factor = 5
 
-		ai_will_do = {
-			factor = 1.5
-		modifier = {
-			factor = 1.5
+				modifier = {
+			add = 5
 			has_deployed_air_force_size = {
-			size > 30
-			type = fighter
+			size > 200
+			type = tactical_bomber
+			}
+			}
+			
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = tactical_bomber
+			}
+			}
+			
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 150
+			type = tactical_bomber
 			}
 			}
 		
 		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 30
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = fighter
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
-			has_deployed_air_force_size = {
-			size > 50
-			type = cas
-			}
-			}
-		
-		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = fighter
@@ -1801,14 +2269,46 @@ technologies = {
 			}
 		
 		modifier = {
-			factor = 1.5
+			add = 5
 			has_deployed_air_force_size = {
 			size > 100
 			type = cas
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 155
+			type = fighter
 			}
 			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 100
+			type = cas
 			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
+		
+		modifier = {
+			add = 5
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
+		}
+	}
+}
 
 #####-----------------------------------------------------------> End

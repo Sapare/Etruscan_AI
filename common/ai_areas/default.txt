@@ -1,0 +1,104 @@
+areas = {
+
+	europe = {
+		continents = {
+			europe
+		}
+	}
+
+	africa = {
+
+		continents = {
+			africa
+		}
+	}
+
+	asia = {
+		continents = {
+			asia
+		}
+	}
+
+	West_Equestrian_lowlands = {
+        strategic_regions = {
+            113
+            112
+            100
+            87
+            88
+            101
+            120
+            84
+            86
+        }
+    }
+    
+    test = {
+        strategic_regions = {
+            121
+        }
+    }
+
+	Central_equestrian_lowlands = {
+		strategic_regions = {
+				53
+				52
+				54
+				60
+				75
+				76
+				61
+				41
+				63
+				74
+				71
+			}
+		}
+		
+	Southern_equestrian_lowlands = {
+		strategic_regions = {
+				51
+				50
+				49
+				36
+				54
+				56
+				58
+				48
+				55
+				57
+				42
+				35
+				32
+				33
+				40
+				39
+			}
+		}
+		
+	Eastern_equestrian_lowlands = {
+		strategic_regions = {
+				45
+				42
+				62
+				69
+				46
+				57
+				65
+				70
+				9
+			}
+		}
+		
+	North_equestrian_lowlands = {
+		strategic_regions = {
+				119
+				103
+				102
+				104
+				115
+				117
+				109
+			}
+		}						
+}

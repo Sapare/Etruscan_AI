@@ -87,7 +87,17 @@ ideas = {
 				NOT = {
 					has_country_flag = demilitarized
 				}
+			OR = {
+			is_ai = no
+			
+			NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+					}
 			}
+		}
 
 			ai_will_do = {
 				factor = 1
@@ -190,6 +200,12 @@ ideas = {
 				NOT = { 
 					has_country_flag = manpower_laws_blocked 
 				}
+				NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+							}
 			}
 
 			modifier = {
@@ -212,7 +228,7 @@ ideas = {
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 100
+					ADD = 100
 					NOT = {
 						has_idea = extensive_conscription
 						has_idea = service_by_requirement
@@ -224,7 +240,7 @@ ideas = {
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 				NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -236,7 +252,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -248,7 +264,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -260,7 +276,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = extensive_conscription
 					has_idea = service_by_requirement
@@ -268,13 +284,42 @@ ideas = {
 					has_idea = scraping_the_barrel
 					}				
 					manpower_per_military_factory < 4000
-				}	
-				
-											
+				}																
 				}
 
 			cancel_if_invalid = no
 				}
+				
+		ELF_special_limited_conscription = {
+			picture = limited_conscription
+
+			cost = 150
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ELF
+			}
+			
+			visible = {
+				has_country_flag = ELF_cannot_change_manpower_law_flag_limited_conscription
+			}
+
+			modifier = {
+				conscription = 0.025
+				minimum_training_level = -0.05
+				training_time_factor = -0.05
+				mobilization_speed = 0.05
+				surrender_limit = 0.05
+			}
+
+            allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = ELF_conscription_law_remove_tt
+					always = no 
+				}
+            }
+		}
+
 
 		extensive_conscription = {
 
@@ -338,14 +383,25 @@ ideas = {
 				NOT = { 
 					has_country_flag = manpower_laws_blocked 
 				}
+				
+				OR = {
+				is_ai = no
+				
+				NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+							}
+							}
 			}
 
 			ai_will_do = {
-				factor = 1.75
+				factor = 2
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 100
+					ADD = 100
 					NOT = {
 						has_idea = service_by_requirement
 						has_idea = all_adults_serve
@@ -356,41 +412,8 @@ ideas = {
 				}
 				
 				modifier = {
-					#delay date because AI tends to double tap
-					factor = 0.5
-					NOT = {
-						has_idea = service_by_requirement
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-					date > 1008.1.1
-				}
-				
-				modifier = {
-					#delay date because AI tends to double tap
-					factor = 0.5
-					NOT = {
-						has_idea = service_by_requirement
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-					date > 1009.1.1
-				}
-				
-				modifier = {
-					#delay date because AI tends to double tap
-					factor = 0.5
-					NOT = {
-						has_idea = service_by_requirement
-						has_idea = all_adults_serve
-						has_idea = scraping_the_barrel
-					}
-					date > 1010.1.1
-				}
-				
-				modifier = {
 					#Prio if low on manpower
-					factor = 100
+					ADD = 100
 					NOT = {
 						has_idea = service_by_requirement
 						has_idea = all_adults_serve
@@ -401,7 +424,7 @@ ideas = {
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 				NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -412,7 +435,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -423,7 +446,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
@@ -434,19 +457,14 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = service_by_requirement
 					has_idea = all_adults_serve
 					has_idea = scraping_the_barrel
 					}				
 					manpower_per_military_factory < 4000
-				}
-				
-				modifier = {
-					factor = 0
-					has_equipment = { infantry_equipment < 700 }
-					}											
+				}										
 			}
 
 			cost = 150
@@ -526,13 +544,23 @@ ideas = {
 				NOT = { 
 					has_country_flag = manpower_laws_blocked 
 				}
+				OR = {
+				is_ai = no
+				
+				NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+							}
+							}
 			}
 
 			ai_will_do = {
 				factor = 1.50
 				modifier = {
 					#Prio if low on manpower
-					add = 2000
+					ADD = 200
 					NOT = {
 						has_idea = all_adults_serve
 						has_idea = scraping_the_barrel
@@ -543,7 +571,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 200
+					ADD = 200
 					NOT = {
 						has_idea = all_adults_serve
 						has_idea = scraping_the_barrel
@@ -553,7 +581,7 @@ ideas = {
 			
 			modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 				NOT = {
 					has_idea = all_adults_serve
 					has_idea = scraping_the_barrel
@@ -563,7 +591,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = all_adults_serve
 					has_idea = scraping_the_barrel
@@ -573,7 +601,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = all_adults_serve
 					has_idea = scraping_the_barrel
@@ -583,7 +611,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = all_adults_serve
 					has_idea = scraping_the_barrel
@@ -598,10 +626,6 @@ ideas = {
 					NOT = { tag = DED }
 				}
 				
-				modifier = {
-					factor = 0
-					has_equipment = { infantry_equipment < 1000 }
-					}
 				
 			}
 
@@ -621,7 +645,6 @@ ideas = {
 		}
 
 		all_adults_serve = {
-
 
 			available = {
 				if = {
@@ -678,21 +701,33 @@ ideas = {
 				NOT = { 
 					has_country_flag = manpower_laws_blocked 
 				}
+				OR = {
+				is_ai = no
+				
+				NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+							}
+							}
 			}
 
 			ai_will_do = {
 				factor = 1.25
+				
 				modifier = {
 					#Prio if low on manpower
-					factor = 200
+					ADD = 200
 					NOT = {
 						has_idea = scraping_the_barrel
 					}
 					has_manpower < 5000
 				}
+				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 				NOT = {
 					has_idea = scraping_the_barrel
 					}
@@ -701,7 +736,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = scraping_the_barrel
 					}
@@ -710,7 +745,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = scraping_the_barrel
 					}				
@@ -719,7 +754,7 @@ ideas = {
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					NOT = {
 					has_idea = scraping_the_barrel
 					}				
@@ -739,7 +774,7 @@ ideas = {
 				}
 				modifier = {
 					#no need to
-					factor = 0
+					factor = 0.5
 					enemies_strength_ratio < 0.8
 					NOT = { tag = DED }
 				}
@@ -752,11 +787,6 @@ ideas = {
 					has_war = yes
 					has_manpower < 2500
 				}
-				
-				modifier = {
-					factor = 0
-					has_equipment = { infantry_equipment < 1200 }
-					}
 			}
 
 			cost = 150
@@ -831,42 +861,52 @@ ideas = {
 				NOT = { 
 					has_country_flag = manpower_laws_blocked 
 				}
+				
+				OR = {
+				is_ai = no
+				NOT = { 
+				has_country_flag = {
+					flag = ai_manpower_cooldown
+					days < 360
+							}
+							}
+							}
 			}
 
 			ai_will_do = {
 				factor = 1
 				modifier = {
 					#Prio if low on manpower
-					factor = 200
+					ADD = 200
 					has_manpower < 5000
 				}
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					manpower_per_military_factory <  500
 				}
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					manpower_per_military_factory < 1000
 				}
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					manpower_per_military_factory < 2000
 				}
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20			
+					ADD = 20			
 					manpower_per_military_factory < 3000
 				}
 				
 				modifier = {
 					#Prio if low on manpower
-					factor = 20
+					ADD = 20
 					manpower_per_military_factory < 4000
 				}
 				
@@ -888,11 +928,6 @@ ideas = {
 					has_war = yes
 					has_manpower < 2500
 				}
-				
-				modifier = {
-					factor = 0
-					has_equipment = { infantry_equipment < 1500 }
-					}
 			}
 
 			cost = 150

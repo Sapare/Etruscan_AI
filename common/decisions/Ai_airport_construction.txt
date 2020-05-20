@@ -1,0 +1,7556 @@
+Macro_Builder = {
+	
+	GEN_Construction_Airport = {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 1
+								
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		visible = {
+		
+			AND = {
+				AND = {
+					has_war = yes	
+					check_variable = { num_deployed_planes > 350 }				
+				NOT = { 
+					has_country_flag = {
+						flag = ai_air_cooldown
+						days < 90
+							}
+							}
+							}
+							}
+							}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+
+ROOT = {
+
+##Air_base Construction for AI across Equestrian continent, 50 states
+if = { 
+	limit = {	
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		49 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		49 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		49 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		49 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		49 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		49 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		49 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		49 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		49 = { air_base < 10 }
+		}	
+			
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 49
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 49
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 49
+	}
+								
+		49 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+
+if = { 
+	limit = {	
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		192 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		192 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		192 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		192 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		192 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		192 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		192 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		192 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		192 = { air_base < 10 }
+		}	
+			
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 192
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 192
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 192
+	}
+								
+		192 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		194 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		194 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		194 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		194 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		194 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		194 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		194 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		194 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		194 = { air_base < 10 }
+		}
+			
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 194
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 194
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 194	
+	}							
+		194 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		293 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		293 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		293 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		293 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		293 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		293 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		293 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		293 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		293 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 293
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 293
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 293	
+	}							
+		293 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		215 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		215 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		215 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		215 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		215 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		215 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		215 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		215 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		215 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 215
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 215
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 215	
+	}							
+		215 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		319 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		319 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		319 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		319 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		319 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		319 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		319 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		319 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		319 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 319
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 319
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 319		
+	}							
+		319 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		246 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		246 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		246 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		246 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		246 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		246 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		246 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		246 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		246 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 246
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 246
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 246		
+	}							
+		246 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		323 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		323 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		323 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		323 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		323 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		323 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		323 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		323 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		323 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 323
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 323
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 323
+	}							
+		323 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		308 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		308 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		308 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		308 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		308 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		308 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		308 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		308 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		308 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 308
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 308
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 308	
+	}							
+		308 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+	
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		252 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		252 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		252 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		252 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		252 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		252 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		252 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		252 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		252 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 252
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 252
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 252		
+	}							
+		252 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		311 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		311 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		311 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		311 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		311 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		311 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		311 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		311 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		311 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 311
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 311
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 311		
+	}							
+		311 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		290 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		290 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		290 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		290 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		290 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		290 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		290 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		290 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		290 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 290
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 290
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 290			
+	}							
+		290 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		272 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		272 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		272 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		272 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		272 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		272 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		272 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		272 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		272 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 272
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 272
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 272	
+	}							
+		272 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		254 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		254 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		254 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		254 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		254 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		254 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		254 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		254 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		254 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 254
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 254
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 254		
+	}							
+		254 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		267 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		267 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		267 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		267 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		267 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		267 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		267 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		267 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		267 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 267
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 267
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 267		
+	}							
+		267 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		341 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		341 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		341 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		341 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		341 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		341 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		341 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		341 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		341 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 341
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 341
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 341		
+	}							
+		341 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		281 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		281 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		281 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		281 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		281 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		281 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		281 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		281 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		281 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 281
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 281
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 281		
+	}							
+		281 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		266 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		266 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		266 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		266 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		266 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		266 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		266 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		266 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		266 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 266
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 266
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 266		
+	}							
+		266 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		279 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		279 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		279 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		279 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		279 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		279 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		279 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		279 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		279 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 279
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 279
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 279		
+	}							
+		279 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		222 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		222 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		222 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		222 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		222 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		222 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		222 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		222 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		222 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 222
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 222
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 222
+	}							
+		222 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		243 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		243 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		243 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		243 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		243 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		243 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		243 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		243 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		243 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 243
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 243
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 243	
+	}							
+		243 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		153 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		153 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		153 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		153 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		153 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		153 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		153 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		153 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		153 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 153
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 153
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 153		
+	}							
+		153 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		166 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		166 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		166 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		166 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		166 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		166 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		166 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		166 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		166 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 166
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 166
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+		has_full_control_of_state = 166		
+	}							
+		166 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		53 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		53 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		53 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		53 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		53 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		53 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		53 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		53 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		53 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 53
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 53
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 53		
+	}							
+		53 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		140 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		140 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		140 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		140 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		140 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		140 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		140 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		140 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		140 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 140
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 140
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 140		
+	}							
+		140 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		137 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		137 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		137 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		137 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		137 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		137 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		137 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		137 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		137 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 137
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 137
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 137		
+	}							
+		137 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		45 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		45 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		45 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		45 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		45 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		45 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		45 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		45 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		45 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 45
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 45
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 45		
+	}							
+		45 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		132 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		132 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		132 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		132 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		132 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		132 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		132 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		132 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		132 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 132
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 132
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 132		
+	}							
+		132 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		51 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		51 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		51 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		51 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		51 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		51 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		51 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		51 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		51 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 51
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 51
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 51		
+	}							
+		51 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		66 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		66 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		66 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		66 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		66 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		66 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		66 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		66 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		66 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 66
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 66
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 66		
+	}							
+		66 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		131 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		131 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		131 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		131 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		131 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		131 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		131 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		131 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		131 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 131
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 131
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 131		
+	}							
+		131 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		83 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		83 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		83 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		83 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		83 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		83 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		83 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		83 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		83 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 83
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 83
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 83		
+	}							
+		83 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		179 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		179 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		179 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		179 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		179 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		179 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		179 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		179 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		179 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 179
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 179
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 179		
+	}							
+		179 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		99 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		99 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		99 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		99 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		99 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		99 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		99 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		99 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		99 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 99
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 99
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 99		
+	}							
+		99 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		70 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		70 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		70 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		70 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		70 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		70 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		70 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		70 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		70 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 70
+				value < 750
+				}
+			}
+			
+	NOT = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 70
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 70		
+	}							
+		70 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		38 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		38 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		38 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		38 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		38 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		38 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		38 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		38 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		38 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 38
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 38
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 38		
+	}							
+		38 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		36 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		36 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		36 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		36 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		36 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		36 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		36 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		36 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		36 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 36
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 36
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 36		
+	}							
+		36 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		43 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		43 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		43 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		43 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		43 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		43 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		43 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		43 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		43 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 43
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 43
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 43		
+	}							
+		43 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		116 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		116 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		116 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		116 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		116 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		116 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		116 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		116 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		116 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 116
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 116
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 116		
+	}							
+		116 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		12 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		12 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		12 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		12 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		12 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		12 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		12 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		12 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		12 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 12
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 12
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 12		
+	}							
+		12 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		223 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		223 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		223 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		223 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		223 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		223 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		223 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		223 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		223 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 223
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 223
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 223		
+	}							
+		223 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		69 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		69 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		69 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		69 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		69 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		69 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		69 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		69 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		69 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 69
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 69
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 69		
+	}							
+		69 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		661 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		661 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		661 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		661 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		661 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		661 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		661 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		661 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		661 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 661
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 661
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 661		
+	}							
+		661 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		157 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		157 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		157 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		157 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		157 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		157 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		157 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		157 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		157 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 157
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 157
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 157		
+	}							
+		157 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		15 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		15 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		15 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		15 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		15 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		15 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		15 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		15 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		15 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 15
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 15
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 15
+	}							
+		15 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		24 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		24 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		24 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		24 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		24 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		24 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		24 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		24 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		24 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 24
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 24
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 24		
+	}							
+		24 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		31 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		31 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		31 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		31 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		31 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		31 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		31 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		31 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		31 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 31
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 31
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 31		
+	}							
+		31 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		7 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		7 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		7 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		7 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		7 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		7 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		7 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		7 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		7 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 7
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 7
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 7		
+	}							
+		7 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+	
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		659 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		659 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		659 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		659 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		659 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		659 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		659 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		659 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		659 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 659
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 659
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 659		
+	}							
+		659 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+		
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		248 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		248 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		248 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		248 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		248 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		248 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		248 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		248 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		248 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 248
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 248
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 248		
+	}							
+		248 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}																		
+
+######Griffon Contient = 
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		361 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		361 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		361 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		361 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		361 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		361 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		361 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		361 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		361 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 361
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 361
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 361		
+	}							
+		361 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		356 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		356 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		356 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		356 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		356 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		356 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		356 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		356 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		356 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 356
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 356
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 356		
+	}							
+		356 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		366 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		366 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		366 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		366 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		366 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		366 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		366 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		366 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		366 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 366
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 366
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 366		
+	}							
+		366 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		371 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		371 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		371 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		371 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		371 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		371 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		371 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		371 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		371 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 371
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 371
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 371		
+	}							
+		371 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		529 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		529 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		529 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		529 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		529 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		529 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		529 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		529 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		529 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 529
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 529
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 529		
+	}							
+		529 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		481 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		481 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		481 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		481 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		481 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		481 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		481 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		481 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		481 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 481
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 481
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 481		
+	}							
+		481 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		473 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		473 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		473 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		473 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		473 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		473 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		473 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		473 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		473 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 473
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 473
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 473		
+	}							
+		473 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		448 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		448 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		448 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		448 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		448 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		448 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		448 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		448 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		448 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 448
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 448
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 448		
+	}							
+		448 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		531 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		531 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		531 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		531 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		531 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		531 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		531 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		531 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		531 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 531
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 531
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 531		
+	}							
+		531 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		520 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		520 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		520 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		520 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		520 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		520 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		520 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		520 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		520 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 520
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 520
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 520		
+	}							
+		520 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		382 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		382 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		382 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		382 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		382 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		382 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		382 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		382 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		382 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 382
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 382
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 382		
+	}							
+		382 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		389 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		389 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		389 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		389 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		389 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		389 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		389 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		389 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		389 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 389
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 389
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 389		
+	}							
+		389 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		527 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		527 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		527 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		527 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		527 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		527 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		527 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		527 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		527 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 527
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 527
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 527		
+	}							
+		527 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		445 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		445 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		445 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		445 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		445 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		445 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		445 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		445 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		445 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 445
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 445
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 445		
+	}							
+		445 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		386 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		386 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		386 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		386 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		386 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		386 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		386 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		386 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		386 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 386
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 386
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 386		
+	}							
+		386 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		511 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		511 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		511 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		511 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		511 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		511 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		511 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		511 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		511 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 511
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 511
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 511		
+	}							
+		511 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		414 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		414 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		414 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		414 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		414 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		414 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		414 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		414 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		414 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 414
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 414
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 414		
+	}							
+		414 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		599 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		599 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		599 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		599 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		599 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		599 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		599 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		599 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		599 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 599
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 599
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 599		
+	}							
+		599 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		598 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		598 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		598 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		598 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		598 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		598 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		598 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		598 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		598 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 598
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 598
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 598		
+	}							
+		598 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		626 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		626 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		626 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		626 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		626 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		626 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		626 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		626 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		626 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 626
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 626
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 626		
+	}							
+		626 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		619 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		619 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		619 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		619 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		619 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		619 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		619 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		619 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		619 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 619
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 619
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 619		
+	}							
+		619 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		387 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		387 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		387 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		387 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		387 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		387 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		387 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		387 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		387 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 387
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 387
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 387		
+	}							
+		387 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		637 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		637 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		637 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		637 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		637 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		637 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		637 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		637 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		637 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 637
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 637
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 637		
+	}							
+		637 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		438 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		438 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		438 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		438 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		438 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		438 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		438 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		438 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		438 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 438
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 438
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 438		
+	}							
+		438 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		670 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		670 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		670 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		670 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		670 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		670 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		670 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		670 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		670 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 670
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 670
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 670		
+	}							
+		670 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		454 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		454 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		454 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		454 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		454 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		454 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		454 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		454 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		454 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 454
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 454
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 454		
+	}							
+		454 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		571 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		571 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		571 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		571 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		571 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		571 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		571 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		571 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		571 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 571
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 571
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 571		
+	}							
+		571 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		485 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		485 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		485 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		485 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		485 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		485 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		485 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		485 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		485 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 485
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 485
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 485		
+	}							
+		485 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		537 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		537 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		537 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		537 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		537 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		537 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		537 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		537 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		537 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 537
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 537
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 537		
+	}							
+		537 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		429 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		429 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		429 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		429 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		429 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		429 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		429 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		429 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		429 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 429
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 429
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 429		
+	}							
+		429 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		561 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		561 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		561 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		561 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		561 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		561 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		561 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		561 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		561 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 561
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 561
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 561		
+	}							
+		561 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		563 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		563 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		563 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		563 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		563 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		563 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		563 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		563 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		563 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 563
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 563
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 563		
+	}							
+		563 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		427 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		427 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		427 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		427 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		427 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		427 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		427 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		427 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		427 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 427
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 427
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 427		
+	}							
+		427 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		401 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		401 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		401 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		401 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		401 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		401 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		401 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		401 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		401 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 401
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 401
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 401		
+	}							
+		401 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		645 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		645 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		645 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		645 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		645 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		645 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		645 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		645 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		645 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 645
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 645
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 645		
+	
+	original_tag = NIM
+	}							
+		645 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		608 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		608 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		608 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		608 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		608 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		608 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		608 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		608 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		608 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 608
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 608
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 608		
+	
+	original_tag = LUS
+	}							
+		608 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}
+		
+if = { 
+	limit = {
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		489 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		489 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		489 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		489 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		489 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		489 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		489 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		489 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		489 = { air_base < 10 }
+		}	
+		
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 489
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 489
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 489		
+	
+	original_tag = BAN
+	}							
+		489 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+		}		
+}
+}
+			
+	remove_effect = {
+		ROOT = {
+		if = {
+			limit = {
+					is_ai = yes
+					}
+			set_country_flag = ai_air_cooldown   
+			}
+			}
+	}	
+	}
+	}

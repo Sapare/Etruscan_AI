@@ -34,7 +34,7 @@ technologies = {
 			factor = 30
 
 		modifier = {
-		value = 10
+		factor = 10
 		amount_research_slots > 2		
 		}
 		
@@ -71,28 +71,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 
 			modifier = {
-				factor = 3
+				factor = 2
 				has_war = yes
-			}
-			modifier = {
-				factor = 2
-				oil > 15
-			}
-			modifier = {
-				factor = 2
-				rubber > 10
 			}
 			
 			modifier = {
-				factor = 5
+				add = 5
 				has_tech = basic_medium_tank
 			}
 		modifier = {
-				factor = 5
+				add = 5
 				has_tech = basic_heavy_tank
+			}
+		modifier = {
+				add = 5
+				has_tech = basic_light_tank
+			}
+			
+		modifier = {
+				has_intelligence_agency = yes
+				factor = 1.5
 			}
 		}
 
@@ -338,15 +339,20 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 15
+			factor = 30
 
-		modifier = {
-		value = 5
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		add = 10
 		amount_research_slots > 3		
 		}
 		
-				modifier = {
-		value = 5
+	modifier = {
+		add = 10
 		amount_research_slots > 4		
 		}
 		}
@@ -376,6 +382,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
+			leads_to_tech = basic_encryption_lar
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_decryption_lar
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
 		}
@@ -388,18 +402,18 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 6
+			factor = 25
 
 		modifier = {
-		value = 5
+		add = 10
 		date > 1011.1.1		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
 		
@@ -430,7 +444,14 @@ technologies = {
 			leads_to_tech = improved_decryption
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = improved_encryption_lar
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_decryption_lar
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = advanced_fire_control_system
 			research_cost_coeff = 1
@@ -444,19 +465,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 25
 
 		modifier = {
-		value = 5
-		date > 1013.1.1		
+		add = 10
+		date > 1011.1.1		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		
-				modifier = {
-		value = 5
+	modifier = {
+		add = 10
 		amount_research_slots > 4		
 		}
 		
@@ -489,6 +510,14 @@ technologies = {
 			leads_to_tech = future_computing_machine
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = advanced_encryption_lar
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_decryption_lar
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		start_year = 1013
@@ -499,19 +528,19 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 25
 
 		modifier = {
-		value = 5
-		date > 1015.1.1		
+		add = 10
+		date > 1013.1.1		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		
-		modifier = {
-		value = 5
+	modifier = {
+		add = 10
 		amount_research_slots > 4		
 		}
 		
@@ -543,19 +572,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
+			factor = 10
+			
+		modifier = {
 				has_war = yes
 				factor = 3
 			}
+			
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
+		
+		modifier = {
+		factor = 0.5
+		not = { has_tech = basic_decryption }		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
 		}
 
 		categories = {
@@ -580,19 +626,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.75
-			modifier = {
+			factor = 10
+			
+	modifier = {
+		factor = 0.5
+		not = { has_tech = improved_decryption }		
+		}
+			
+		modifier = {
 				has_war = yes
 				factor = 3
 			}
+			
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
 		}
 
 		categories = {
@@ -617,19 +680,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.75
-			modifier = {
+			factor = 10
+		
+		modifier = {
+		factor = 0.5
+		not = { has_tech = advanced_decryption }		
+		}
+			
+		modifier = {
 				has_war = yes
 				factor = 3
 			}
+			
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
 		}
 
 		categories = {
@@ -654,15 +734,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 10
+			
 		modifier = {
-		value = 5
+				has_war = yes
+				factor = 3
+			}	
+			
+		modifier = {
+		add = 10
 		amount_research_slots > 3		
 		}
+		
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
 		}
 
 		categories = {
@@ -687,15 +784,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 10
+			
 		modifier = {
-		value = 5
+				has_war = yes
+				factor = 3
+			}	
+			
+		modifier = {
+		add = 10
 		amount_research_slots > 3		
 		}
+		
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
 		}
 
 		categories = {
@@ -720,17 +834,30 @@ technologies = {
 		}
 
 		ai_will_do = {
-				factor = 1.5
-			modifier = {
+			factor = 10
+			
+		modifier = {
 				has_war = yes
 				factor = 3
-			}
+			}	
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 3		
+		}
+		
+	modifier = {
+		factor = 0.5
+		amount_research_slots < 2		
+		}		
+			
+			
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 3		
 		}
+		
 		modifier = {
-		value = 5
+		add = 10
 		amount_research_slots > 4		
 		}
 		}
@@ -1172,7 +1299,7 @@ technologies = {
 				original_tag = EQS
 			}
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1208,7 +1335,7 @@ technologies = {
 				original_tag = EQS
 			}
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1238,7 +1365,7 @@ technologies = {
 		ai_will_do = {
 			factor = 10
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1411,6 +1538,15 @@ technologies = {
 			leads_to_tech = future_computing_machine_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = future_encryption_lar
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = future_decryption_lar
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		start_year = 1015
@@ -1423,7 +1559,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1456,6 +1592,16 @@ technologies = {
 			leads_to_tech = future_computing_machine_3
 			research_cost_coeff = 1
 		}
+		
+		path = {
+			leads_to_tech = future_encryption_2_lar
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = future_decryption_2_lar
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.5
 		start_year = 1018
@@ -1468,7 +1614,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1501,6 +1647,15 @@ technologies = {
 			leads_to_tech = future_computing_machine_4
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = future_encryption_3_lar
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = future_decryption_3_lar
+			research_cost_coeff = 1
+		}
 
 		dependencies = {
 			streamlined_line_b = 1
@@ -1517,7 +1672,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1551,7 +1706,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1587,7 +1742,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		
@@ -1617,7 +1772,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}		
 		}
@@ -1646,7 +1801,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.5
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}		
 		}
@@ -1675,7 +1830,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1729,7 +1884,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1.25
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1777,7 +1932,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1822,7 +1977,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 		modifier = {
-		value = 2
+		factor = 2
 		amount_research_slots > 4		
 		}
 		}
@@ -1851,7 +2006,379 @@ technologies = {
 		}
 		################
 	}
+	
+	
+	basic_encryption_lar = {
 
+		# encryption 1
+		crypto_strength = 2
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1009
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+	
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	improved_encryption_lar = {
+	
+		# encryption 2
+		crypto_strength = 2
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1011
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+	
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	advanced_encryption_lar = {
+	
+		# encryption 3
+		crypto_strength = 2
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1013
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+	
+		ai_will_do = {
+			factor = 1.75
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	basic_decryption_lar = {
+	
+		# decryption 1
+		decryption_power = 25
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1
+		start_year = 1009
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 6 }
+		}
+	
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	improved_decryption_lar = {
+	
+		# decryption 2
+		decryption_power = 15
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1
+		start_year = 1011
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 10 }
+		}
+	
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	advanced_decryption_lar = {
+	
+		# decryption 3
+		decryption_power = 10
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1
+		start_year = 1013
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+	
+		ai_will_do = {
+				factor = 1.5
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				is_major = no
+				factor = 1.5 # not a major
+			}
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	future_encryption_lar = {
+	
+		# encryption 3
+		crypto_strength = 1
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1015
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 18 }
+		}
+	
+		ai_will_do = {
+			factor = 1.5
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	future_decryption_lar = {
+	
+		# decryption 3
+		decryption_power = 10
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1
+		start_year = 1015
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 18 }
+		}
+	
+		ai_will_do = {
+			factor = 1.25
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	future_encryption_2_lar = {
+	
+		# encryption 3
+		crypto_strength = 1
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1018
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 22 }
+		}
+	
+		ai_will_do = {
+			factor = 1.5
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	future_decryption_2_lar = {
+	
+		# decryption 3
+		decryption_power = 10
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1
+		start_year = 1018
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 22 }
+		}
+	
+		ai_will_do = {
+			factor = 1.25
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
+	
+	future_encryption_3_lar = {
+	
+		# encryption 3
+		crypto_strength = 1
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 2
+		start_year = 1022
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 26 }
+		}
+	
+		ai_will_do = {
+			factor = 1.5
+		}
+	
+		categories = {
+			electronics
+			encryption_tech
+		}
+	}
+	
+	future_decryption_3_lar = {
+	
+		# decryption 3
+		decryption_power = 10
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		research_cost = 1.5
+		start_year = 1022
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 26 }
+		}
+	
+		ai_will_do = {
+			factor = 1.25
+			modifier = {
+				NOT = { has_done_agency_upgrade = upgrade_form_department }
+				factor = 0
+			}
+		}
+	
+		categories = {
+			electronics
+			decryption_tech
+		}
+	}
 }
 
 #####-----------------------------------------------------------> End

@@ -1,201 +1,5 @@
 															
 	#Construction scripts:
-	
-	Prep_for_great_war = {
-		enable = {
-			AND = {
-				original_tag = CHN
-				date > 1010.1.1
-				}
-				}
-		Abort = {
-			OR = {
-				has_war = yes
-				date > 1014.1.1								
-				}
-				}
-		
-		ai_strategy = {
-			type = building_target
-			id = arms_factory
-			value = 85
-		}
-		}	
-
-
-		Infrastructure = {
-	Enable = {
-		AND = {
-			original_tag = CHN
-			}
-			}
-	Abort = {
-		Or = {
-			304 =  {infrastructure > 9}
-			}
-			}
-				
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		value = 1
-		target = 304	
-		}
-		}
-
-
-	 Infrastructure2 = {
-	Enable = {
-		AND = {
-			original_tag = CHN
-			date > 1009.9.9
-			}
-			}
-	Abort = {
-		Or = {
-			316 =  {infrastructure > 9}
-			}
-			}
-				
-	ai_strategy = {
-		type = build_building
-		id = infrastructure
-		value = 1
-		target = 316	
-		}
-		}
-		
-	Infrastructure3 = {
-		Enable = {
-			AND = {
-			original_tag = CHN
-			date > 1011.1.1
-			CHN =  { has_full_control_of_state = 201 }
-			}
-			}
-	Abort = {
-		Or = {
-		201 =  {infrastructure > 1}
-		}
-		}
-		
-	ai_strategy = {
-	type = build_building
-	id = infrastructure
-	value = 1
-	target = 201	
-	}
-	}
-		
-	Infrastructure4 = {
-		Enable = {
-			AND = {
-			original_tag = CHN
-			date > 1012.1.1
-			chn = { has_full_control_of_state = 302 }
-			}
-			}
-	Abort = {
-		Or = {
-		302 = { infrastructure > 1}
-			}
-		}
-		
-		 ai_strategy = {
-	type = build_building
-	id = infrastructure
-	value = 1
-	target = 302	
-	}
-	}
-		
-		Military_factories = {
-		Enable = {
-			AND = {
-				original_tag = CHN
-				304 =  {infrastructure > 9 }				
-				}
-				}
-			Abort_when_not_enabled = yes
-			
-		ai_strategy = {
-			type = factory_build_score_factor
-			target = 304
-			value = 200
-			}
-			}	
-			
-					Military_factories2 = {
-		Enable = {
-			AND = {
-				original_tag = CHN
-				201 = {
-				free_building_slots = {
-				building = arms_factory
-				Size > 0
-				include_locked = no				
-				}
-				has_full_control_of_state = 201
-				}
-				}
-				}
-				
-		abort_when_not_enabled = yes
-			
-		ai_strategy = {
-			type = factory_build_score_factor
-			target = 201
-			value = 20
-			}
-			}
-		
-	
-		 Airfield1 = {
-	Enable = {
-		AND = {
-			original_tag = CHN
-			316 = { infrastructure > 7 }
-			}
-			}
-	Abort = {
-		Or = {
-			316 = {air_base > 4 }
-			}
-			}
-				
-	ai_strategy = {
-		type = build_building
-		id = air_base
-		value = 5
-		target = 316	
-		}
-		}
-		
-
-		
-	
-	
-	Gime_rubber = {
-	Enable = {
-	AND = {
-		original_tag = CHN
-			304 = { 
-			infrastructure > 9		
-			}									
-			}
-			}
-		abort = {
-		OR = {
-			always = no
-			}
-			}
-			ai_strategy = {
-			type = building_target
-			id = synthetic_refinery
-			value = 4
-			}	
-			}
-
 												
 	The_Great_Landwar_CHN = {
 	enable = {
@@ -210,7 +14,7 @@
 				has_war = no
 				}
 				}
-						ai_strategy = {
+		ai_strategy = {
 			type = unit_ratio
 			id = capital_ship
 			value = -100
@@ -241,9 +45,8 @@
 		ai_strategy = {
 		type = equipment_variant_production_factor
 		id = cv_fighter_equipment
-		value -1000 
-		}
-		
+		value = -1000 
+		}		
 		}
 
 
@@ -252,10 +55,10 @@
 			AND = {
 				original_tag = CHN
 				date > 1010.1.1
-				}
-				}
+				}				
 			Or = {
 				has_war = yes
+				}
 				}
 		Abort = {
 			OR = {

@@ -1,24 +1,8 @@
 Macro_Builder = {
-	
-	GEN_Construction_steel = {
+
+	GEN_Construction_steel = {	
 		icon = railroad
 
-
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@steel > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = steel
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
 		
 		days_remove = 1
@@ -54,14 +38,6 @@ Macro_Builder = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
 	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
 			
 	
 	
@@ -1681,7 +1657,1026 @@ Macro_Builder = {
 				}
 		}
 	}
+	
+	#Provinces with resources due to Focus-Trees = 33 provinces
+	437 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
 	}
+	
+	259 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	300 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	292 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	284 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	281 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9			
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	283 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	255 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	256 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	238 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	245 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	166 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	89 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	78 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	15 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	157 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	660 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	474 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	454 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	568 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	497 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	422 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	399 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	436 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	524 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	470 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	384 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	359 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	529 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	446 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	606 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	671 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	490 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	588 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	593 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	633 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	558 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	598 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	681 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	550 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	580 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Randomized provinces Focus tree implemented = 7
+	
+		
+	417 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	613 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	354 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	551 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	455 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	636 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+		
+	62 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = steel
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	}
+	
 remove_effect = {
 		ROOT = {
 		if = {
@@ -1701,32 +2696,8 @@ remove_effect = {
 		icon = railroad
 
 
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@aluminium > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = aluminium
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
 		
-		if = {
-			limit = {
-				is_ai = yes }
-		days_remove = 620
-		
-		else = {
-		days_remove = 0
-		}
-		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -1757,14 +2728,7 @@ remove_effect = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_aluminium target: [From.GetName]"
 	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
+
 	
 	
 	
@@ -1903,7 +2867,7 @@ remove_effect = {
 				}
 		}
 	}
-	#Gryphon Continent starting VED going east then down = 15
+	#Gryphon Continent starting VED going east then down = 16
 	601 = {	
 		if = {
 			limit = {
@@ -1933,6 +2897,23 @@ remove_effect = {
 				}
 		}
 	}	
+	
+	475 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+				}
+			}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
 	
 	476 = {	
 		if = {
@@ -2128,13 +3109,22 @@ remove_effect = {
 				}
 		}
 	}	
-	#River federation starting lake city = 0 :P
-	195 = {	
+	#River federation starting lake city = 0 :P						
+	
+	#Provinces added through Focus-Trees = 9
+	
+	238 = {	
 		if = {
 			limit = {
+				AND = {
 				is_owned_by = ROOT
 				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
 			}
+		}
 			
 			add_building_construction = {
 				type = infrastructure
@@ -2142,7 +3132,197 @@ remove_effect = {
 				instant_build = no
 				}
 		}
-	}						
+	}
+		
+	139 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	16 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	665 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	392 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	671 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	638 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	682 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	645 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Randomized province fixed loaction = 1
+	499 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = aluminium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
 	}
 	
 	remove_effect = {
@@ -2163,32 +3343,7 @@ remove_effect = {
 		icon = railroad
 
 
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@rubber > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = rubber
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
-		
-		if = {
-			limit = {
-				is_ai = yes }
-		days_remove = 620
-		
-		else = {
-		days_remove = 0
-		}
-		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -2219,14 +3374,7 @@ remove_effect = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_rubber target: [From.GetName]"
 	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
+
 	
 	
 	
@@ -2442,6 +3590,91 @@ remove_effect = {
 		}
 	}
 	#River federation = 0 provinces
+	
+	#Provinces added through Focus-Trees = 	4	
+	371 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = rubber
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	536 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = rubber
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	490 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = rubber
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	593 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = rubber
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
 }
 
 remove_effect = {
@@ -2470,32 +3703,8 @@ remove_effect = {
 		icon = railroad
 
 
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@tungsten > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = tungsten
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
 		
-		if = {
-			limit = {
-				is_ai = yes }
-		days_remove = 620
-		
-		else = {
-		days_remove = 0
-		}
-		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -2525,15 +3734,7 @@ remove_effect = {
 					
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_tungsten target: [From.GetName]"
-	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
+
 	
 	#Equestrian Continent, starting in OLE and doing EQS last = 9 provinces
 	202 = {	
@@ -2927,6 +4128,302 @@ remove_effect = {
 				}
 		}
 	}	
+	#Provinces added through Focus-Trees = 13
+	
+	255 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
+	166 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	575 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	506 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	402 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	435 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	503 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	446 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	606 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	489 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	651 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	553 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+		
+	622 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
+	#Randomized province fixed location = 1
+		564 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = tungsten
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	
 }
 
 remove_effect = {
@@ -2946,32 +4443,8 @@ GEN_Construction_chromium = {
 		icon = railroad
 
 
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@chromium > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = chromium
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
 		
-		if = {
-			limit = {
-				is_ai = yes }
-		days_remove = 620
-		
-		else = {
-		days_remove = 0
-		}
-		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -3001,15 +4474,7 @@ GEN_Construction_chromium = {
 					
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_chromium target: [From.GetName]"
-	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
+
 	
 	#Equestrian Continent, starting in OLE and doing EQS last = 5 provinces
 	206 = {	
@@ -3297,7 +4762,220 @@ GEN_Construction_chromium = {
 				}
 		}
 	}
+	
+	#Provinces added through Focus-Trees = 9 	
+		
+	256 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
 	}
+			
+	245 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	339 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	659 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	658 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	480 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	546 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	570 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+				
+	671 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+	#Randomized province fixed location = 1
+	474 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = chromium
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}						
+	}
+	
 	remove_effect = {
 		ROOT = {
 		if = {
@@ -3313,33 +4991,8 @@ GEN_Construction_chromium = {
 	GEN_Construction_crystals = {
 		icon = railroad
 
-
-		allowed = {
-				AND = {
-				check_variable = { resource_imported@crystals > 0 }
-	
-				any_owned_state = {
-						AND = {
-							has_resources_amount = {
-								resource = crystals
-								amount > 9
-								}
-								infrastructure < 10				
-							}
-							}
-							}
-							}
 		cost = 0
 		
-		if = {
-			limit = {
-				is_ai = yes }
-		days_remove = 620
-		
-		else = {
-		days_remove = 0
-		}
-		}
 		
 		ai_will_do = {
 			factor = 1000
@@ -3370,14 +5023,7 @@ GEN_Construction_chromium = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_crystals target: [From.GetName]"
 	
-	ROOT = {
-		if = {
-			limit = {
-					is_ai = yes
-					}
-			clr_country_flag = ai_cooldown
-			}
-			}
+
 	
 	#Equestrian Continent, starting in OLE and doing EQS last = 14 provinces
 	293 = {	
@@ -4028,6 +5674,323 @@ GEN_Construction_chromium = {
 				}
 		}
 	}
+	
+	#Provinces added through Focus-Trees = 15			
+		
+	262 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	284 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	454 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	6 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	7 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	8 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	9 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	547 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	411 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	606 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	511 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	580 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	681 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	621 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}
+			
+	607 = {	
+		if = {
+			limit = {
+				AND = {
+				is_owned_by = ROOT
+				infrastructure < 10
+			has_resources_amount = {
+				resource = crystals
+				amount > 9				
+				}
+			}
+		}
+			
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = no
+				}
+		}
+	}	
 	}
 	
 	remove_effect = {
@@ -4041,4 +6004,526 @@ GEN_Construction_chromium = {
 			}
 	}
 	}	
+	
+	
+#AI only visible decisions to help with laws#	
+
+	##TRADE##
+	
+AI_delay_trade_change_1= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+	visible = {
+	
+		is_ai = yes
+		
+	OR = { 
+		has_idea = free_trade
+	}
+	
+	NOT = {
+		has_country_flag = once_freetrade
+	}
+}
+					
+
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_trade_cooldown
+		
+		clr_country_flag = once_closedeco
+		clr_country_flag = once_exportfocus
+		clr_country_flag = once_limitedexport
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_freetrade  
+			}
+		}		
+}
+
+
+AI_delay_trade_change_2= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+	is_ai = yes
+	
+	OR = { 
+	has_idea = export_focus
+	}
+	
+	NOT = {
+	has_country_flag = once_exportfocus
+	}
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_trade_cooldown
+		
+		clr_country_flag = once_closedeco
+		clr_country_flag = once_freetrade
+		clr_country_flag = once_limitedexport
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_exportfocus  
+			}
+		}		
+}
+
+
+AI_delay_trade_change_3= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {		
+	is_ai = yes
+	
+	OR = { 	
+	has_idea = limited_exports	
+	}
+	
+	NOT = {	
+	has_country_flag = once_limitedexport	
+	}	
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_trade_cooldown
+		
+		clr_country_flag = once_closedeco
+		clr_country_flag = once_exportfocus
+		clr_country_flag = once_freetrade
+			}
+			}
+			
+remove_effect = {
+	ROOT = {
+		set_country_flag = once_limitedexport  
+		}
+		}		
+}
+
+AI_delay_trade_change_4= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+	visible = {
+		
+	is_ai = yes
+		
+	OR = { 
+	has_idea = closed_economy
+	}
+	NOT = {
+	has_country_flag = once_closedeco
+	}
+	}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_trade_cooldown
+		
+		clr_country_flag = once_freetrade
+		clr_country_flag = once_exportfocus
+		clr_country_flag = once_limitedexport
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_closedeco  
+			}
+			}
+	}
+	
+	
+	##ECONOMIC##
+		
+AI_delay_eco_change_1= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+	is_ai = yes
+	
+OR = { 
+	has_idea = civilian_economy
+	}
+	
+NOT = {
+	has_country_flag = once_civilian_economy
+	}
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_economic_cooldown
+		
+		clr_country_flag = once_low_economic_mobilisation
+		clr_country_flag = once_partial_economic_mobilisation
+		clr_country_flag = once_war_economy
+			}
+	}
+			
+remove_effect = {
+	ROOT = {
+		set_country_flag = once_civilian_economy
+		}
+	}		
+}
+		
+
+AI_delay_eco_change_2= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+	is_ai = yes
+	
+OR = { 
+	has_idea = low_economic_mobilisation
+	}
+	
+NOT = {
+	has_country_flag = once_low_economic_mobilisation
+	}
+	}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_economic_cooldown
+		
+		clr_country_flag = once_partial_economic_mobilisation
+		clr_country_flag = once_civilian_economy
+		clr_country_flag = once_war_economy
+			}
+			}
+			
+remove_effect = {
+	ROOT = {
+	set_country_flag = once_low_economic_mobilisation  
+		}
+	}		
+}
+
+AI_delay_eco_change_3= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+		
+	is_ai = yes
+	
+OR = { 
+	has_idea = partial_economic_mobilisation
+	}
+NOT = {
+	has_country_flag = once_partial_economic_mobilisation
+	}
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_economic_cooldown
+		
+		clr_country_flag = once_civilian_economy
+		clr_country_flag = once_low_economic_mobilisation
+		clr_country_flag = once_war_economy
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_partial_economic_mobilisation 
+			}
+			}		
+}
+
+AI_delay_eco_change_4= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+	visible = {
+		
+	is_ai = yes
+		
+	OR = { 
+	has_idea = war_economy
+	}
+	NOT = {
+	has_country_flag = once_war_economy
+	}
+	}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+
+		set_country_flag = ai_economic_cooldown
+		
+		clr_country_flag = once_civilian_economy
+		clr_country_flag = once_partial_economic_mobilisation
+		clr_country_flag = once_low_economic_mobilisation
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_war_economy 
+			}
+			}
+	}
+	
+		##MANPOWER##
+		
+AI_delay_man_change_1= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+	is_ai = yes
+	
+OR = { 
+	has_idea = volunteer_only
+	}
+	
+NOT = {
+	has_country_flag = once_volunteer_only
+	}
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_manpower_cooldown
+		
+		clr_country_flag = once_limited_conscription
+		clr_country_flag = once_partial_economic_mobilisation
+		clr_country_flag = once_service_by_requirement
+			}
+	}
+			
+remove_effect = {
+	ROOT = {
+		set_country_flag = once_volunteer_only
+		}
+	}		
+}
+		
+
+AI_delay_man_change_2= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+	is_ai = yes
+	
+OR = { 
+	has_idea = limited_conscription
+	}
+	
+NOT = {
+	has_country_flag = once_limited_conscription
+	}
+	}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_manpower_cooldown
+		
+		clr_country_flag = once_volunteer_only
+		clr_country_flag = once_civilian_economy
+		clr_country_flag = once_service_by_requirement
+			}
+			}
+			
+remove_effect = {
+	ROOT = {
+	set_country_flag = once_limited_conscription
+		}
+	}		
+}
+
+AI_delay_man_change_3= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+visible = {
+		
+	is_ai = yes
+	
+OR = { 
+	has_idea = extensive_conscription
+	}
+NOT = {
+	has_country_flag = once_extensive_conscription
+	}
+}
+					
+complete_effect = {
+log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+		set_country_flag = ai_manpower_cooldown
+		
+		clr_country_flag = once_volunteer_only
+		clr_country_flag = once_limited_conscription
+		clr_country_flag = once_service_by_requirement
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_extensive_conscription
+			}
+			}		
+}
+
+AI_delay_man_change_4= {	
+		icon = railroad
+
+		cost = 0
+		
+		days_remove = 360
+						
+		ai_will_do = {
+			factor = 1000
+		}
+		
+	visible = {
+		
+	is_ai = yes
+		
+	OR = { 
+	has_idea = service_by_requirement
+	}
+	NOT = {
+	has_country_flag = once_service_by_requirement
+	}
+	}
+					
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GEN_Construction_steel target: [From.GetName]"
+	
+	ROOT = {
+
+		set_country_flag = ai_manpower_cooldown
+		
+		clr_country_flag = once_volunteer_only
+		clr_country_flag = once_limited_conscription
+		clr_country_flag = once_extensive_conscription
+			}
+			}
+			
+	remove_effect = {
+		ROOT = {
+			set_country_flag = once_service_by_requirement
+			}
+			}
+	}		
 }

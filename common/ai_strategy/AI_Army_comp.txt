@@ -1,0 +1,572 @@
+#Armor introduction ratio's
+
+Medium_better_than_light = {
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				num_of_military_factories > 10
+				check_variable = { resource_produced@tungsten > 3 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 5
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -5
+		}		
+		}
+
+Medium_armor_ratio_low = {
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				num_of_military_factories > 10
+				check_variable = { resource_produced@tungsten > 3 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 10
+		}
+		}
+
+Medium_armor_ratio_med = {
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				num_of_military_factories > 25
+				check_variable = { resource_produced@tungsten > 3 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 15
+		}
+		}
+		
+Medium_armor_ratio_high = {
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				num_of_military_factories > 50
+				check_variable = { resource_produced@tungsten > 3 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 20
+		}
+		}	
+
+Heavy_armor_ratio_verlow = {
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				num_of_military_factories > 5
+				check_variable = { resource_produced@chromium > 5 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		}
+		
+Heavy_armor_ratio_low = {
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				num_of_military_factories > 10
+				check_variable = { resource_produced@chromium > 6 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 10
+		}
+		}
+		
+Heavy_armor_ratio_med = {
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				num_of_military_factories > 25
+				check_variable = { resource_produced@chromium > 18 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 15
+		}
+		}
+		
+Heavy_armor_ratio_high = {
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				num_of_military_factories > 50
+				check_variable = { resource_produced@chromium > 24 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 20
+		}
+		}
+		
+Main_armor_takes_over = {
+		enable = {
+			AND = {
+				has_tech = main_battle_tank
+				num_of_military_factories > 50
+				check_variable = { resource_produced@chromium > 30 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = -20
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 20
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -10
+		}
+		}
+				
+		
+#Armor specialized ratios
+		
+light_armor_ratio_reduction = {
+		enable = {
+	AND = {
+		check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -12
+		}
+		}
+		
+Heavy_armor_focus = {
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				num_of_military_factories > 10
+				check_variable = { resource_produced@chromium > 5 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		}
+		
+High_industry_Heavy = {		
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				arms_factory > 50
+				check_variable = { resource_produced@chromium > 5 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		}
+		
+High_industry_Medium = {		
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				arms_factory > 50
+				check_variable = { resource_produced@chromium < 5 }
+				check_variable = { resource_produced@rubber > 5 }
+				check_variable = { resource_produced@tungsten > 5 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 7
+		}
+		}		
+		
+High_industry_Light = {		
+		enable = {
+			AND = {
+				arms_factory > 50
+				check_variable = { resource_produced@chromium < 5 }
+				check_variable = { resource_produced@rubber > 5 }
+				check_variable = { resource_produced@tungsten < 5 }
+				}
+				}
+	abort_when_not_enabled = yes
+	
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = 7
+		}
+		}
+		
+High_industry_GEN = {		
+		enable = {
+			AND = {
+				arms_factory > 50
+				check_variable = { resource_produced@chromium > 5 }
+				check_variable = { resource_produced@rubber > 3 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 5
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = 5
+		}
+		}
+
+
+
+VERY_industry_Heavy = {		
+		enable = {
+			AND = {
+				has_tech = basic_heavy_tank
+				arms_factory > 100
+				check_variable = { resource_produced@chromium > 20 }
+				check_variable = { resource_produced@rubber < 12 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		}
+		
+VERY_industry_Medium = {		
+		enable = {
+			AND = {
+				has_tech = basic_medium_tank
+				arms_factory > 100
+				check_variable = { resource_produced@chromium < 20 }
+				check_variable = { resource_produced@rubber > 20 }
+				check_variable = { resource_produced@tungsten > 20 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 7
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = 5
+		}
+		}		
+		
+VERY_industry_Light = {		
+		enable = {
+			AND = {
+				arms_factory > 100
+				check_variable = { resource_produced@chromium < 20 }
+				check_variable = { resource_produced@rubber > 20 }
+				check_variable = { resource_produced@tungsten < 20 }
+				}
+				}
+	abort_when_not_enabled = yes
+
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = 9
+		}
+		}
+		
+VERY_industry_GEN = {		
+		enable = {
+			AND = {
+				arms_factory > 100
+				check_variable = { resource_produced@chromium > 20 }
+				check_variable = { resource_produced@rubber > 12 }
+				}
+				}
+	abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = 5
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = 5
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = 5
+		}
+		}
+		
+		
+###nontankones##
+Ammo_over_corpses = {
+		enable = {
+				tag = EQS				
+			}
+			
+		abort_when_not_enabled = yes
+
+		ai_strategy = {
+			type = role_ratio
+			id = artillery
+			value = 15
+		}	
+		
+		ai_strategy = {
+			type = role_ratio
+			id = infantry
+			value = -15
+		}
+		}
+
+
+	
+Artillery_instead = {
+		enable = {
+			AND = {
+				check_variable = { resource_produced@rubber < 2 }				
+			NOT = {
+			AND = {
+				has_tech = basic_heavy_tank
+				check_variable = { resource_produced@chromium > 12 }
+			}
+			}
+			check_variable = { resource_produced@tungsten > 2 }
+			}
+			}
+			
+		abort_when_not_enabled = yes
+		
+		ai_strategy = {
+			type = role_ratio
+			id = heavy_armor
+			value = -15
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = light_armor
+			value = -15
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = main_armor
+			value = -15
+		}
+		ai_strategy = {
+			type = role_ratio
+			id = artillery
+			value = 20
+		}
+		
+		ai_strategy = {
+			type = role_ratio
+			id = anti_tank
+			value = 10
+		}		
+		}
+		
+	bring_in_antitank = {
+		enable = {
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}
+			}
+			
+		abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = role_ratio
+		id = anti_tank
+		value = 5
+	}
+	}
+	
+add_some_HTD = {
+		enable = {
+		AND = {
+		OR = {
+		has_tech = basic_heavy_td
+		has_tech = improved_heavy_td
+		has_tech = advanced_heavy_td
+		}
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}
+			}
+			}
+			
+		abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = role_ratio
+		id = HTDinfantry
+		value = 15
+	}
+	}
+	
+Support = {
+enable = {
+	OR = {
+		AND = {
+		has_tech = basic_medium_art
+		has_tech = basic_medium_spaa					
+			}
+		AND = {
+		has_tech = improved_medium_art
+		has_tech = improved_medium_spaa					
+			}
+		AND = {
+		has_tech = advanced_medium_art
+		has_tech = advanced_medium_spaa					
+			}		
+		AND = {
+		has_tech = basic_heavy_art
+		has_tech = basic_heavy_spaa					
+			}
+		AND = {
+		has_tech = improved_heavy_art
+		has_tech = improved_heavy_spaa					
+			}
+		AND = {
+		has_tech = advanced_heavy_art
+		has_tech = advanced_heavy_spaa					
+			}
+			}
+			}
+			
+			
+		abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = role_ratio
+		id = support
+		value = 10
+	}
+	}
+	
+Magical_infantry = {
+enable = {
+		has_tech = magical_weapons
+			}
+						
+		abort_when_not_enabled = yes
+		
+	ai_strategy = {
+		type = role_ratio
+		id = magical_infantry
+		value = 10
+	}
+	}

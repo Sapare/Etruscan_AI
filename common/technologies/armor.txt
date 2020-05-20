@@ -70,8 +70,9 @@ technologies = {
 				factor = 0
 				steel < 10
 		}
+		
 		modifier = {
-				factor = 0.5
+				factor = 0
 				arms_factory < 5
 		}
 		
@@ -159,43 +160,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 
 			modifier = {
-				factor = 2
-				arms_factory > 10
-		}
-		
-		modifier = {
 				factor = 2
 				arms_factory > 25
 		}
 		
 		modifier = {
-				factor = 1.5
-				arms_factory > 50
-		}
+			factor = 0
+			arms_factory < 10
+			}
 		
 		modifier = {
-				factor = 1.5
-				arms_factory > 35
-		}
+			ADD = 25
+			check_variable = { resource_produced@steel > 16 }
+			check_variable = { resource_produced@rubber > 4 }
+			}
 		
 		modifier = {
-				factor = 1.5
-				arms_factory > 45
-		}
-		
-		modifier = {
-				factor = 2
-				steel > 50
-		}
-		
-		modifier = {
-				factor = 1.5
-				steel > 75
-		}
-		
+			factor = 0
+			check_variable = { resource_produced@rubber < 2 }
+			}
+			
 		modifier = {
 				factor = 0
 				arms_factory < 10
@@ -353,15 +340,28 @@ technologies = {
 			improved_light_art
 			improved_light_spaa
 		}
-
+		
 		ai_will_do = {
-			factor = 3
-
-
-			modifier = {
+			factor = 10
+			
+		modifier = {
+				factor = 0.5
+				OR = {
+					is_researching_technology = basic_heavy_tank
+					has_tech = basic_heavy_tank
+				}
+			}	
+			
+		modifier = {
+				factor = 0
+				NOT = { has_tech = motorised_infantry }
+			}
+			
+		modifier = {
 				factor = 3
 				tag = STG
 			}
+			
 			modifier = {
 				factor = 2
 				arms_factory > 10
@@ -373,34 +373,32 @@ technologies = {
 		}
 		
 		modifier = {
-				factor = 1.5
-				arms_factory > 50
-		}
+			factor = 0
+			arms_factory < 10
+			}
+
 		
 		modifier = {
-				factor = 1.5
-				arms_factory > 35
-		}
-		
-		modifier = {
-				factor = 1.5
-				arms_factory > 45
-		}
-		
-		modifier = {
-				factor = 2
-				steel > 50
-		}
-		
-		modifier = {
-				factor = 1.5
-				steel > 75
+				add = 25
+			AND = {
+				check_variable = { resource_produced@steel > 35 } 
+				check_variable = { resource_produced@rubber > 4 }
+				}
 		}
 		
 		modifier = {
 				factor = 0
-				arms_factory < 10
+			AND = {
+				check_variable = { resource_produced@steel < 20 } 
+				check_variable = { resource_produced@rubber < 2 }
+				}
 		}
+		
+		modifier = {
+				factor = 0
+				arms_factory < 5
+		}
+		
 		modifier = {
 				factor = 0.5
 				NOT = { has_tech = motorised_infantry }
@@ -423,12 +421,51 @@ technologies = {
 		start_year = 1007
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
-				has_template_containing_unit = light_tank_destroyer_brigade
-				factor = 2
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
 			}
+				
+					
+			modifier = {
+				ADD = 15
+			AND = {
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 40
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 40
+					}
+					}
+				}
+			}
+			NOT = { 
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank				
+				}
+				}
+			}
+
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+			
 			modifier = {
 				factor = 0
 				OR = {
@@ -454,11 +491,17 @@ technologies = {
 		start_year = 1007
 
 		ai_will_do = {
-			factor = 0
-
+			factor = 1
+			
+			
+			modifier = {
+				has_tech = improved_light_spaa
+				add = 25
+			}
+			
 			modifier = {
 				has_template_containing_unit = light_sp_artillery_brigade
-				add = 2
+				add = 10
 			}
 
 			modifier = {
@@ -487,8 +530,33 @@ technologies = {
 		start_year = 1007
 
 		ai_will_do = {
-			factor = 0
-
+			factor = 5
+			
+		modifier = {
+				ADD = 5
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = advanced_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank				
+				is_researching_technology = advanced_light_tank
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+			
+		modifier = {
+				factor = 2
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -619,61 +687,47 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
-		modifier = {
-					has_tech = advanced_medium_tank
-					factor = 5
+			modifier = {
+				factor = 0
+				NOT = { has_tech = motorised_infantry }
 			}
 
 		modifier = {
-				has_tech = large_front_operations
-				factor = 10
-		}
-		
-		modifier = {
-				factor = 3
-				tungsten < 10 
+				factor = 0
+				arms_factory < 15
 		}
 
-		modifier = {
-				factor = 2
-				arms_factory > 10
-		}
-		
-		modifier = {
-				factor = 1.5
-				arms_factory > 25
-		}
-		
-		modifier = {
-				factor = 1.2
-				arms_factory > 50
-		}
-		
-		modifier = {
-				factor = 1.2
-				arms_factory > 35
-		}
-		
-		modifier = {
-				factor = 1.2
-				arms_factory > 45
-		}
-		
-		modifier = {
-				factor = 1.5
-				steel > 50
-		}
-		
-	modifier = {
-				factor = 1.2
-				steel > 75
-		}
 		
 	modifier = {
 				factor = 0
 				arms_factory < 10
+		}
+		
+		modifier = {
+				factor = 0.5
+			NOT = {
+				check_variable = { resource_produced@rubber > 2 }
+				}
+		}
+		
+		modifier = {
+				add = 10
+			AND = {
+				check_variable = { resource_produced@steel > 50 } 
+				check_variable = { resource_produced@rubber > 5 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
+		}
+		
+		modifier = {
+				add = 10
+			AND = {
+				check_variable = { resource_produced@steel > 70 } 
+				check_variable = { resource_produced@rubber > 5 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
 		}
 		}
 		
@@ -695,7 +749,50 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			}
+			NOT = { 
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				is_researching_technology = improved_medium_tank
+				is_researching_technology = improved_heavy_tank				
+				}
+				}
+			}
+
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -721,7 +818,13 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			
+			modifier = {
+				has_tech = advanced_light_spaa
+				add = 25
+			}
+			
 			modifier = {
 				factor = 0
 				OR = {
@@ -748,9 +851,35 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			
+		modifier = {
+				ADD = 5
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = advanced_medium_tank
+				has_tech = advanced_heavy_tank
+				has_tech = advanced_light_tank_a
+				is_researching_technology = advanced_medium_tank
+				is_researching_technology = advanced_heavy_tank				
+				is_researching_technology = advanced_light_tank_a
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
-				factor = 0
+				factor = 0		
 				OR = {
 					has_tech = advanced_light_tank_spaa_a
 					can_research = advanced_light_tank_spaa_a
@@ -801,18 +930,13 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 
-			modifier = {
-				factor = 0.5
+		modifier = {
+				factor = 0
 				NOT = { has_tech = motorised_infantry }
-			}
+			}			
 			
-			modifier = {
-				factor = 0.5
-				has_tech = 		has_tech = mass_assault
-				}
-
 			modifier = {
 				factor = 0
 				OR = {
@@ -820,38 +944,31 @@ technologies = {
 					has_tech = improved_heavy_tank
 				}
 			}
+			
+		modifier = {
+			factor = 0
+			arms_factory < 10
+			}
+			
+		modifier = {
+			factor = 2
+			arms_factory > 20 
+			}
+			
+		modifier = {
+			add = 25
+			check_variable = { resource_produced@tungsten > 16 }
+			check_variable = { resource_produced@rubber > 4 }
+			}	
 
 		modifier = {
-			factor = 1.5
-			arms_factory > 35 
+			factor = 0
+			check_variable = { resource_produced@tungsten < 4 }
 			}
+			
 		modifier = {
-			factor = 1.5
-			arms_factory > 50
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75		
-			}
-		modifier = {
-			factor = 0.5
-			tungsten < 10
-			}
-		modifier = {
-			factor = 0.5
-			tungsten < 5
-			}
-		modifier = {
-			factor = 1.5
-			tungsten > 15
-			}
-		modifier = {
-			factor = 1.5
-			tungsten > 30
-			}
-		modifier = {
-			factor = 1.5
-			tungsten > 40
+			factor = 2
+			has_tech = mobile_warfare
 			}
 			}
 			
@@ -875,30 +992,57 @@ technologies = {
 
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			}
+			
+			NOT = { 
+				has_tech = improved_heavy_tank
+				is_researching_technology = improved_heavy_tank				
+				}
+				}
+			}
+
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
 					has_tech = improved_medium_td
 					can_research = improved_medium_td
-					is_researching_technology = improved_medium_tank
+					is_researching_technology = improved_medium_td
 				}
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1011.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1012.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
 			}
 		}
 
@@ -933,18 +1077,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.2
-				date > "1011.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1012.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
+				has_tech = basic_medium_spaa
+				add = 25
 			}
 		}
 
@@ -968,10 +1102,38 @@ technologies = {
 		start_year = 1010
 
 		ai_will_do = {
+			factor = 5
+			
+		modifier = {
 			factor = 0
-
+			NOT = {
+			has_tech = mechanised_infantry			
+			}
+			}
+			
+		modifier = {
+				ADD = 5
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = improved_medium_tank
+				is_researching_technology = improved_medium_tank
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+			
+		modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
-				factor = 0
+				factor = 0		
 				OR = {
 					has_tech = improved_medium_spaa
 					can_research = improved_medium_spaa
@@ -1015,18 +1177,13 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 10
 
 			modifier = {
-				factor = 0.5
+				factor = 0
 				NOT = { has_tech = motorised_infantry }
 			}
 			
-			modifier = {
-				factor = 0.5
-				has_tech = 		has_tech = mass_assault
-				}
-				
 			modifier = {
 				factor = 0
 				OR = {
@@ -1034,39 +1191,48 @@ technologies = {
 					has_tech = advanced_heavy_tank
 				}
 			}
+		modifier = {
+			factor = 0
+			arms_factory < 10
+			}
+		
+		modifier = {
+			factor = 2
+			arms_factory > 25
+			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
 
 		modifier = {
-			factor = 1.5
-			arms_factory > 35 
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 50
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75		
-			}
-		modifier = {
 			factor = 0.5
-			tungsten < 10
+			check_variable = { resource_produced@tungsten < 8 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
+			
 		modifier = {
-			factor = 0.5
-			tungsten < 5
+			factor = 0
+			check_variable = { resource_produced@tungsten < 4 }
+			check_variable = { resource_produced@rubber < 1 }
 			}
+			
+			modifier = {
+				add = 15
+			AND = {
+				check_variable = { resource_produced@rubber > 4 }
+				check_variable = { resource_produced@tungsten > 12 }
+				}
+		}	
+			
 		modifier = {
-			factor = 1.5
-			tungsten > 15
+			add = 10
+			has_tech = mobile_warfare
 			}
-		modifier = {
-			factor = 1.5
-			tungsten > 30
-			}
-		modifier = {
-			factor = 1.5
-			tungsten > 40
-			}
+			
 		}
 
 		categories = {
@@ -1085,35 +1251,56 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
-				has_template_containing_unit = medium_tank_destroyer_brigade
-				factor = 3
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 55
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 55
+					}
+					}
+				}
+			}
+			NOT = { 
+				has_tech = improved_heavy_tank
+				is_researching_technology = improved_heavy_tank				
+				}
+				}
 			}
 
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
 					has_tech = advanced_medium_td
 					can_research = advanced_medium_td
-					is_researching_technology = advanced_medium_tank
+					is_researching_technology = advanced_medium_td
 				}
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
 			}
 		}
 
@@ -1132,7 +1319,7 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -1148,18 +1335,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.2
-				date > "1013.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
+				has_tech = improved_medium_spaa
+				add = 25
 			}
 		}
 
@@ -1179,8 +1356,36 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
+			factor = 5
+			
+		modifier = {
+				ADD = 5
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = advanced_medium_tank
+				is_researching_technology = advanced_medium_tank
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+		modifier = {
 			factor = 0
-
+			NOT = {
+			has_tech = mechanised_infantry			
+			}
+			}
+			
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -1190,7 +1395,6 @@ technologies = {
 				}
 			}
 		}
-
 		categories = {
 			armor
 		}
@@ -1227,52 +1431,41 @@ technologies = {
 
 
 		ai_will_do = {
-			factor = 3
-
-				modifier = {
-				factor = 0.5
-				has_tech = has_tech = mass_assault
-				}
+			factor = 10
+	
 		modifier = {
-			factor = 1.5
-			arms_factory > 35 
+			factor = 2
+			arms_factory > 25
 			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 50
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75		
-			}
-	modifier = {
-			factor = 1.5
-			arms_factory > 100	
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 150	
-			}
-		modifier = {
-			factor = 0.5
-			tungsten < 10
-			}
-		modifier = {
-			factor = 0.5
-			tungsten < 5
-			}
+			
 		modifier = {
 			factor = 0
-			tungsten < 10
-			}
-		
+			arms_factory < 10
+			}	
+			
 		modifier = {
-			factor = 1.5
-			tungsten > 30
-			}
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+					
+					
 		modifier = {
-			factor = 1.5
-			tungsten > 40
+			factor = 0.5
+			check_variable = { resource_produced@tungsten < 8 }
+			check_variable = { resource_produced@rubber < 3 }
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@tungsten < 4 }
+			check_variable = { resource_produced@rubber < 1 }
+			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
 			}
 			
 		modifier = {
@@ -1282,7 +1475,6 @@ technologies = {
 					has_tech = main_battle_tank
 				}
 			}
-
 		}
 
 		categories = {
@@ -1301,35 +1493,48 @@ technologies = {
 		start_year = 1014
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 
 			modifier = {
 				factor = 0
-				OR = {
-					has_tech = modern_td
-					can_research = modern_td
-					is_researching_technology = main_battle_tank
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
 				}
 			}
+			NOT = { 
+				has_tech = improved_heavy_tank
+				is_researching_technology = improved_heavy_tank				
+				}
+				}
+			}
+
 			modifier = {
-				has_template_containing_unit = medium_tank_destroyer_brigade
 				factor = 3
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1016.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1017.1.1"
-			}
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.15 }
+					}
 		}
 
 		categories = {
@@ -1347,7 +1552,7 @@ technologies = {
 		start_year = 1014
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
 				factor = 0
@@ -1363,18 +1568,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.2
-				date > "1015.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1016.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1017.1.1"
+				has_tech = advanced_medium_spaa
+				add = 25
 			}
 		}
 
@@ -1394,8 +1589,36 @@ technologies = {
 		start_year = 1014
 
 		ai_will_do = {
+			factor = 5
+									
+		modifier = {
+				ADD = 5
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = improved_medium_tank
+				is_researching_technology = improved_medium_tank
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+		modifier = {
 			factor = 0
-
+			NOT = {
+			has_tech = mechanised_infantry			
+			}
+			}
+			
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -1405,7 +1628,7 @@ technologies = {
 				}
 			}
 		}
-
+					
 		categories = {
 			armor
 		}
@@ -1455,13 +1678,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 20
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -1478,21 +1696,22 @@ technologies = {
 			factor = 1.5
 			arms_factory > 150		
 			}
+			
 		modifier = {
 			factor = 0.5
-			chromium < 20
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 10
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 5
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
+			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
 			}
 		}
 
@@ -1677,7 +1896,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 0
@@ -1695,50 +1914,43 @@ technologies = {
 				}
 			}
 			
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}			
-		modifier = {
-			factor = 1.5
-			arms_factory > 50 
+			modifier = {
+				factor = 0
+				OR = {
+					is_researching_technology = improved_light_tank
+					has_tech = improved_light_tank
+				}
 			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 100		
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 150		
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 10
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 5
+			arms_factory < 10
 			}
+			
 		modifier = {
 			factor = 2
-			tungsten < 5
-			}
-		modifier = {
-			factor = 2
-			rubber < 5
-			}
+			arms_factory > 15 
+			}		
+			
 		modifier = {
 			factor = 0.5
-			rubber > 5
+			check_variable = { resource_produced@rubber > 4 }
+			}
+			
+		modifier = {
+			ADD = 25
+			check_variable = { resource_produced@chromium > 18 }
+			}
+		
+		modifier = {
+			ADD = 15
+			check_variable = { resource_produced@chromium > 11 }
+			check_variable = { resource_produced@rubber < 4 }
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium < 8 }
 			}			
 		}
 		
@@ -1763,16 +1975,76 @@ technologies = {
 		start_year = 1005
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 10 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}
+				}
+			}
+			
+		modifier = {
+				ADD = 15
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}
+			}
+		}
+		
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = improved_heavy_td
 					can_research = improved_heavy_td
 					is_researching_technology = improved_heavy_tank
 				}
-			}
+			}			
 		}
 
 		categories = {
@@ -1792,18 +2064,39 @@ technologies = {
 
 		research_cost = 0.5
 		start_year = 1005
-
-		ai_will_do = {
-			factor = 0
+		
+	ai_will_do = {
+			factor = 10
 
 			modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium > 30 }
+			}
+			
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 25 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 25
+			}
+			
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = improved_heavy_art
 					can_research = improved_heavy_art
 					is_researching_technology = improved_heavy_tank
 				}
-			}
+			}			
 		}
 
 		categories = {
@@ -1827,8 +2120,36 @@ technologies = {
 		start_year = 1005
 
 		ai_will_do = {
-			factor = 0
-
+			factor = 10
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium > 30 }
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 25 }
+			}
+			
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 25
+			}
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -1838,6 +2159,7 @@ technologies = {
 				}
 			}
 		}
+
 
 		categories = {
 			armor
@@ -1879,7 +2201,23 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+
+		modifier = {
+				factor = 0.5
+				OR = {
+					is_researching_technology = improved_medium_tank
+					has_tech = improved_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				OR = {
+					is_researching_technology = improved_light_tank
+					has_tech = improved_light_tank
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -1896,50 +2234,38 @@ technologies = {
 					has_tech = advanced_medium_tank
 				}
 			}
-
-			modifier = {
-			factor = 0.5
-			has_tech = 	has_tech = mass_assault
-				}			
-		modifier = {
-			factor = 1.5
-			arms_factory > 50 
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 100		
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 150		
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 10
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 5
-			}
+			arms_factory < 10	
+			}	
+
 		modifier = {
 			factor = 2
-			tungsten < 5
+			arms_factory > 25	
 			}
+			
 		modifier = {
-			factor = 2
-			rubber < 5
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			
+		modifier = {
+			ADD = 25
+			check_variable = { resource_produced@chromium > 18 }
 			}
+		
 		modifier = {
-			factor = 0.5
-			rubber > 5
+			add = 15
+			check_variable = { resource_produced@chromium > 12 }
+			check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium  < 6 }
 			}
 		}
 
@@ -1959,17 +2285,84 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 
 			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 10 }
+			}
+			
+			modifier = {
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_tank_destroyer_brigade}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.001}
+					}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			}
+				}
+			}
+			
+		modifier = {
+				ADD = 15
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			}
+			}
+		}
+		
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = advanced_heavy_td
 					can_research = advanced_heavy_td
 					is_researching_technology = advanced_heavy_tank
 				}
-			}
-		}
+			}			
+		}							
 
 		categories = {
 			armor
@@ -1986,9 +2379,29 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium > 30 }
+			}
 
 			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 25 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 25
+			}
+			
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = advanced_heavy_art
@@ -1996,6 +2409,14 @@ technologies = {
 					is_researching_technology = advanced_heavy_tank
 				}
 			}
+			
+		modifier = {
+				ADD = 10
+		NOT = {
+		has_tech = basic_medium_tank
+		is_researching_technology = basic_medium_tank
+			}
+			}			
 		}
 
 		categories = {
@@ -2015,8 +2436,43 @@ technologies = {
 		start_year = 1012
 
 		ai_will_do = {
-			factor = 0
-
+			factor = 10
+			
+		modifier = {
+				ADD = 10
+		NOT = {
+		has_tech = basic_medium_tank
+		is_researching_technology = basic_medium_tank
+			}
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium > 30 }
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 25 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 25
+			}
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -2062,7 +2518,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 10
 
 			modifier = {
 				factor = 0
@@ -2073,49 +2529,37 @@ technologies = {
 				}
 			}
 
-			modifier = {
-			factor = 0.5
-			has_tech = 	has_tech = mass_assault
-				}			
 		modifier = {
-			factor = 1.5
-			arms_factory > 50 
+			factor = 2
+			arms_factory > 25
 			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 75
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 100		
-			}
-		modifier = {
-			factor = 1.5
-			arms_factory > 150		
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 10
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 5
-			}
+			arms_factory < 10
+			}	
+			
 		modifier = {
-			factor = 2
-			tungsten < 5
-			}
+				add = 15
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			
 		modifier = {
-			factor = 2
-			rubber < 5
+			ADD = 25
+			check_variable = { resource_produced@chromium > 18 }
 			}
+		
 		modifier = {
-			factor = 0.5
-			rubber > 5
+			add = 15
+			check_variable = { resource_produced@chromium > 12 }
+			check_variable = { resource_produced@rubber < 4 }
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium  < 12 }
 			}
 		}
 
@@ -2134,10 +2578,78 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1014
 
-		ai_will_do = {
-			factor = 0
+			ai_will_do = {
+			factor = 1
 
 			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_tank_destroyer_brigade}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.001}
+					}
+
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 10 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			}
+			}
+			}
+			
+		modifier = {
+				ADD = 15
+			AND = {
+			
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			}
+			}
+		}
+		
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = modern_td
@@ -2160,11 +2672,35 @@ technologies = {
 
 		research_cost = 0.5
 		start_year = 1014
-
-		ai_will_do = {
-			factor = 0
+		
+		
+	ai_will_do = {
+			factor = 5
 
 			modifier = {
+				factor = 0
+				check_variable = { resource_produced@chromium < 25 }
+			}
+			
+			modifier = {
+				factor = 0
+				num_of_military_factories < 15
+			}
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 25
+			}
+		
+		modifier = {
+				ADD = 10
+		NOT = {
+		has_tech = improved_medium_tank
+		is_researching_technology = improved_medium_tank
+			}
+			}
+			
+		modifier = {
 				factor = 0
 				OR = {
 					has_tech = modern_art
@@ -2190,8 +2726,24 @@ technologies = {
 		start_year = 1014
 
 		ai_will_do = {
-			factor = 0
-
+			factor = 10
+			
+		modifier = {
+				ADD = 10
+		NOT = {
+		has_tech = improved_medium_tank
+		is_researching_technology = improved_medium_tank
+			}
+			}
+			
+			
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
 			modifier = {
 				factor = 0
 				OR = {
@@ -2201,6 +2753,7 @@ technologies = {
 				}
 			}
 		}
+
 
 		categories = {
 			armor
@@ -2536,17 +3089,23 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
 		modifier = {
-			factor = 2
+			ADD = 5
 			NOT = {
-			has_tech = {
-			basic_medium_tank 
+			has_tech = basic_medium_tank 
 			}
 			}
+			
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = advanced_medium_tank 
+			has_tech = advanced_heavy_tank
 			}
-
+			}
+			
 		modifier = {
 			factor = 1.5
 			arms_factory > 25
@@ -2559,23 +3118,25 @@ technologies = {
 			factor = 1.5
 			arms_factory > 50		
 			}
+
+
 		modifier = {
-			factor = 0.5
-			tungsten < 10
-			}
+				add = 5
+			AND = {
+				check_variable = { resource_produced@steel > 50 } 
+				check_variable = { resource_produced@rubber > 2 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
+		}
+		
 		modifier = {
-			factor = 0.5
-			tungsten < 8
-			}
-		modifier = {
-			factor = 0.5
-			tungsten < 5
-			}
-		modifier = {
-			factor = 0
-			tungsten < 3
-			}
-			
+				add = 5
+			AND = {
+				check_variable = { resource_produced@steel > 70 } 
+				check_variable = { resource_produced@rubber > 2 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
+		}
 		}
 
 		categories = {
@@ -2594,7 +3155,58 @@ technologies = {
 		start_year = 1016
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 60
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 60
+					}
+					}
+				}
+			}
+			NOT = { 
+				has_tech = advanced_medium_tank
+				has_tech = improved_heavy_tank
+				is_researching_technology = advanced_medium_tank
+				is_researching_technology = improved_heavy_tank				
+				}
+				}
+			}
+
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_light_tank_td_b
+					can_research = advanced_light_tank_td_b
+					is_researching_technology = advanced_light_tank_td_b
+				}
+			}
 		}
 
 		categories = {
@@ -2631,7 +3243,41 @@ technologies = {
 		start_year = 1016
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+		modifier = {
+				ADD = 100
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = advanced_medium_tank
+				has_tech = advanced_heavy_tank
+				has_tech = advanced_light_tank_a
+				is_researching_technology = advanced_medium_tank
+				is_researching_technology = advanced_heavy_tank				
+				is_researching_technology = advanced_light_tank_a
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				factor = 0		
+				OR = {
+					has_tech = advanced_light_tank_spaa_b
+					can_research = advanced_light_tank_spaa_b
+					is_researching_technology = advanced_light_tank_b
+				}
+			}
 		}
 
 		categories = {
@@ -2665,38 +3311,54 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = basic_medium_tank 
+			}
+			}
+			
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = advanced_medium_tank 
+			has_tech = advanced_heavy_tank
+			}
+			}
+			
+		modifier = {
+			factor = 1.5
+			arms_factory > 25
+			}
 		modifier = {
 			factor = 1.5
 			arms_factory > 35
 			}
 		modifier = {
 			factor = 1.5
-			arms_factory > 45
+			arms_factory > 50		
 			}
+
+
 		modifier = {
-			factor = 1.5
-			arms_factory > 60		
-			}
+				add = 5
+			AND = {
+				check_variable = { resource_produced@steel > 50 } 
+				check_variable = { resource_produced@rubber > 2 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
+		}
+		
 		modifier = {
-			factor = 0.5
-			chromium < 10
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 8
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 5
-			}
-		modifier = {
-			factor = 0
-			chromium < 3
-			}
-			
-			
+				add = 5
+			AND = {
+				check_variable = { resource_produced@steel > 70 } 
+				check_variable = { resource_produced@rubber > 2 }
+				check_variable = { resource_produced@tungsten < 10 }
+				}
+		}			
 		}
 
 		categories = {
@@ -2715,7 +3377,56 @@ technologies = {
 		start_year = 1020
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 2 }
+			}
+						
+			modifier = {
+				ADD = 10
+			AND = {
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
+				}
+			}
+			NOT = { 
+				has_tech = main_battle_tank
+				is_researching_technology = main_battle_tank
+				}
+				}
+			}
+
+			modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
+					
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_light_tank_td_b
+					can_research = advanced_light_tank_td_b
+					is_researching_technology = advanced_light_tank_td_b
+				}
+			}
 		}
 
 		categories = {
@@ -2752,7 +3463,32 @@ technologies = {
 		start_year = 1020
 
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			
+		modifier = {
+				ADD = 100
+		AND = {
+		has_tech = mobile_warfare		
+			NOT = { 
+				has_tech = advanced_medium_tank
+				has_tech = advanced_heavy_tank
+				has_tech = advanced_light_tank_a
+				is_researching_technology = advanced_medium_tank
+				is_researching_technology = advanced_heavy_tank				
+				is_researching_technology = advanced_light_tank_a
+				check_variable = { resource_produced@aluminium > 15 }
+				check_variable = { resource_produced@rubber < 3 }
+				}
+				}
+			}
+			
+			
+		modifier = {
+				factor = 3
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09 }
+					}
 		}
 
 		categories = {
@@ -2905,13 +3641,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 100
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -2930,28 +3661,21 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
-			chromium < 30
-			}
-		modifier = {
 			factor = 0.5
-			chromium < 25
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
-		modifier = {
-			factor = 0.5
-			chromium < 18
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 13
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 8
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
 			}
 			
-			
-			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
+			}
 		}
 
 		categories = {
@@ -3041,13 +3765,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 100
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -3066,26 +3785,21 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
-			chromium < 30
-			}
-		modifier = {
 			factor = 0.5
-			chromium < 25
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 20
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
-		modifier = {
-			factor = 0
-			chromium < 10
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
 			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
+			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
+			}
 		}
 
 		categories = {
@@ -3175,13 +3889,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 100
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -3200,24 +3909,20 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
-			chromium < 30
-			}
-		modifier = {
 			factor = 0.5
-			chromium < 25
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
-		modifier = {
-			factor = 0.5
-			chromium < 20
-			}
-		modifier = {
-			factor = 0.5
-			chromium < 15
-			}
+			
 		modifier = {
 			factor = 0
-			chromium < 10
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
+			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
 			}
 		}
 
@@ -3308,13 +4013,8 @@ technologies = {
 		}
 
 	ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 100
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -3333,8 +4033,20 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
-			chromium < 30
+			factor = 0.5
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
+			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
 			}
 		}
 
@@ -3423,13 +4135,8 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3.5
-
-
-		modifier = {
-			factor = 0.5
-			has_tech = 		has_tech = mass_assault
-				}
+			factor = 100
+				
 		modifier = {
 			factor = 1.5
 			arms_factory > 50 
@@ -3448,10 +4155,22 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 1.5
-			chromium < 30
+			factor = 0.5
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 3 }
 			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@chromium < 16 }
+			check_variable = { resource_produced@rubber < 1 }
 			}
+			
+		modifier = {
+			factor = 2
+			has_tech = mobile_warfare
+			}
+		}
 
 		categories = {
 			armor

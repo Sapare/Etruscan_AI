@@ -107,12 +107,47 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 
 			modifier = {
 				factor = 2
 				num_divisions > 25
 			}
+		
+		modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+		
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				ADD = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 2 }
+			}			
 
 			modifier = {
 				factor = 2
@@ -127,10 +162,10 @@ technologies = {
 				factor = 2
 				num_divisions > 40
 			}
-		}
 		modifier = {
 			factor = 2
 		has_template = "Infantry_default_EQS"
+		}
 		}
 	}
 
@@ -159,29 +194,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
 		modifier = {
-				factor = 2
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
+			
+		modifier = {
+				add = 5
 				num_divisions > 25
-			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 15
-			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 35
-			}
-		modifier = {
-				factor = 2
-				num_divisions > 40
-			}
-		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}						
+			}					
 		}
 	}
 
@@ -221,30 +260,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 5
+			
 			modifier = {
-				factor = 2
-				num_divisions > 40
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				check_variable = { resource_produced@tungsten > 10 }
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 60
-			}
+			
 		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
+			
+		modifier = {
+				add = 5
+				num_divisions > 25
+			}					
 		}
 	}
 
@@ -279,30 +321,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
 			modifier = {
-				factor = 2
-				num_divisions > 40
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				check_variable = { resource_produced@tungsten > 10 }
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 60
-			}
+			
 		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
+			
+		modifier = {
+				add = 5
+				num_divisions > 25
+			}					
 		}
 	}
 
@@ -331,30 +376,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 5
+			
 			modifier = {
-				factor = 2
-				num_divisions > 60
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 50
+				add = 10
+				check_variable = { resource_produced@tungsten > 10 }
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 85
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 100
-			}
+			
 		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
+			
+		modifier = {
+				add = 5
+				num_divisions > 25
+			}					
 		}
 	}
 
@@ -391,30 +439,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 5
+			
 			modifier = {
-				factor = 2
-				num_divisions > 40
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				check_variable = { resource_produced@tungsten > 10 }
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 60
-			}
+			
 		modifier = {
-			factor = 2
-		has_template = "Infantry_default_EQS"
-		}
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				check_variable = { resource_produced@chromium < 2 }
+			}
+			
+		modifier = {
+				add = 5
+				num_divisions > 25
+			}
 		}
 	}
 
@@ -715,22 +765,97 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 
-			modifier = {
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+		
+		modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+	
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
 				factor = 2
-				date > "1008.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1009.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1010.1.1"
-			}
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -771,7 +896,83 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
+
+
+		modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -808,7 +1009,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -849,7 +1125,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+	
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -890,7 +1241,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -928,7 +1354,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+	
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -960,27 +1461,87 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
+
+		modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
 
 			modifier = {
-				factor = 2
-				num_divisions > 10
+				add = 5
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 15
+				add = 5
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 30
-			}
-		}
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
+		}	
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1019,27 +1580,73 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-				factor = 2
-				num_divisions > 10
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 15
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 20
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 30
-			}
+			
+	modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+		
+		
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 30
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1068,27 +1675,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-				factor = 2
-				num_divisions > 20
+				add = `0
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			
+	modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+		
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 35
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 35
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1127,38 +1779,73 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-				factor = 2
-				num_divisions > 20
-			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
 			
 			modifier = {
-				factor = 0.5
-				arms_factory > 80
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-		
-			modifier = {
-				factor = 0
-				arms_factory > 150
-			}
-			
+	
+	modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+			
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 50
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1197,27 +1884,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-				factor = 2
-				num_divisions > 20
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-
-			modifier = {
-				factor = 2
-				arms_factory > 30
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-		}
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
+		}	
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 55
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 55
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1246,29 +1978,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				
-			modifier = {
-				factor = 2
-				num_divisions > 20
-			}
+			factor = 3
 
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 60
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 60
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1308,29 +2083,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		
-			modifier = {
-				factor = 2
-				num_divisions > 20
-			}
+			factor = 3
 
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-		
-		
-		}
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
+		}	
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 65
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1368,29 +2186,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		
-		
-			modifier = {
-				factor = 2
-				num_divisions > 20
-			}
+			factor = 3
 
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-		
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 70
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1419,28 +2280,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		
-		modifier = {
-				factor = 2
-				num_divisions > 20
-			}
+			factor = 3
 
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-		
+			
+	modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+				
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 75
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 75
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1478,8 +2383,72 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
+
+			modifier = {
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
+			}
+			
+			modifier = {
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
+			}
+			
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			}		
 		}
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 80
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 80
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1510,30 +2479,72 @@ technologies = {
 			name = artillery_folder
 			position = { x = 7 y = 22 }
 		}
-
 		ai_will_do = {
-			factor = 1
-		
-		
-			modifier = {
-				factor = 2
-				num_divisions > 20
-			}
+			factor = 3
 
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				AND = {
+				check_variable = { resource_produced@chromium < 2 }
+				check_variable = { resource_produced@rubber < 2 }
+				}
 			}
-
+			
 			modifier = {
-				factor = 2
-				arms_factory > 30
+				add = 10
+				NOT = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+				has_tech = improved_light_tank
+				is_researching_technology = basic_medium_tank
+				is_researching_technology = basic_heavy_tank
+				is_researching_technology = improved_light_tank
+				}
 			}
-			modifier = {
-				factor = 2
-				num_divisions > 50
+		modifier = {
+		factor = 0
+			NOT = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 10
+					}
+					}
+				}
 			}		
-		}
+		}	
+			
+		modifier = {
+		factor = 3
+			OR = {
+			any_enemy_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 90
+					}
+					}
+				}
+			any_neighbor_country = {
+				ROOT = {
+					estimated_intel_max_armor = {
+					tag = PREV
+					value > 90
+					}
+					}
+				}
+			}		
+		}				
+	}
 
 		categories = {
 			artillery
@@ -1576,8 +2587,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		
+			factor = 5
+			
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@chromium < 2 }
+			}			
 
 			modifier = {
 				factor = 2
@@ -1629,9 +2659,28 @@ technologies = {
 			artillery
 		}
 				ai_will_do = {
-			factor = 1
+			factor = 5
 		
-
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
 			modifier = {
 				factor = 2
 				arms_factory > 60
@@ -1689,9 +2738,28 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		
-
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
 			modifier = {
 				factor = 2
 				arms_factory > 60
@@ -1749,9 +2817,28 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		
-
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+			modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
 			modifier = {
 				factor = 2
 				arms_factory > 60
@@ -1805,9 +2892,28 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		
-
+		modifier = {
+				factor = 0
+				check_variable = { resource_produced@tungsten < 2 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber < 2 }
+			}
+			
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+		modifier = {
+				add = 15
+				check_variable = { resource_produced@chromium < 2 }
+			}			
+			
 			modifier = {
 				factor = 2
 				arms_factory > 60
@@ -2101,7 +3207,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+	
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -2142,7 +3323,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
+modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -2176,7 +3432,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -2217,7 +3548,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {
@@ -2253,7 +3659,82 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
+	modifier = {
+	factor = 0	
+		NOT = {
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = cas
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = fighter
+				}
+				}
+				
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = tactical_bomber
+				}
+				}
+			any_enemy_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			any_neighbor_country = {
+				has_deployed_air_force_size = {
+				size > 50
+				type = strategic_bomber
+				}
+				}
+			}
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@rubber < 2 }
+		}
+
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 15 }
+		}
+		
+		modifier = {
+				factor = 2
+				check_variable = { resource_produced@chromium < 15 }
+		}
+		
+		modifier = {
+				ADD = 5
+				check_variable = { resource_produced@aluminium < 10 }
+		}
 		}
 
 		categories = {

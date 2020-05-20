@@ -39,40 +39,25 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-
+			factor = 5
+								
 		modifier = {
-			factor = 3
+			add = 25
+			has_army_experience > 200
+			}				
+						
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}			 
-		
-		modifier = {
-			factor = 5
-		date > 1009.1.1
-		}
-		
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
 			
 		modifier = {
 			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
-			
-		modifier = {
-			factor = 2
-			check_variable = { resource_produced@tungsten > 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@rubber < 3}
+			check_variable = { resource_produced@rubber < 5}
 			}
 			
 		modifier = {
@@ -80,45 +65,66 @@ technologies = {
 			check_variable = { resource_produced@rubber < 2}
 			}
 			
-			modifier = {
-				factor = 20
-				has_tech_bonus = {
-			category = land_doctrine
-				}
-				}
+		modifier = {
+			ADD = 10
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
+			}
+			}
 			
 		modifier = {
 			factor = 0
 			NOT = { has_tech = basic_light_tank}
 			}
+			
 		modifier = {
-			factor = 2
+			ADD = 5
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 5
 			has_tech = advanced_light_tank
 			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
 		
 		modifier = {
-				factor = 2
-				arms_factory > 25
-		}
+			ADD = 5
+			has_tech = basic_medium_tank
+			}
 		
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = mobile_warfare_expert
+			}
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
 			}
 			
 			modifier = {
-				factor = 0.4
-				has_army_experience < 120
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -161,19 +167,43 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
 		
 		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 			
 		modifier = {
@@ -182,12 +212,12 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = advanced_light_tank
 			}
 		
@@ -201,38 +231,19 @@ technologies = {
 			amount_research_slots < 4
 			}
 			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 			modifier = {
-				factor = 20
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
-				modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
-			
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber > 10}
+			arms_factory > 10
+			}
 			}
 			
 		modifier = {
@@ -249,11 +260,13 @@ technologies = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			}
+
+			
+		modifier = {
+			ADD = 5
+			has_tech = basic_medium_tank
+			}			
+		}
 		
 		ai_research_weights = {
 			armor = 3.0
@@ -304,79 +317,61 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
+
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
 			}
 			
 		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = advanced_light_tank
 			}
 		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-			
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
 
+			
 		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
+			factor = 2
+			amount_research_slots > 4
+			}
+			
 			modifier = {
-				factor = 20
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
 			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
 			}
 			
 		modifier = {
@@ -388,15 +383,17 @@ technologies = {
 			factor = 0
 			check_variable = { resource_produced@rubber < 2}
 			}
-		
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
+			
+		modifier = {
+			ADD = 5
+			has_tech = basic_medium_tank
+			}			
 		}
 		
 		ai_research_weights = {
@@ -462,33 +459,87 @@ technologies = {
 			position = { x = -2 y = 6 }
 		}
 		
-		ai_will_do = {#AI doesnt use motor/mecha well atm
-			factor = 0
+		ai_will_do = {
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-
 			modifier = {
-				tag = CHN
-				factor = 2
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
 			}
 			
-		}
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten  < 20}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
+			}
+			}
+			
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@rubber < 3}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@rubber < 2}
+			}
+			
+		modifier = {
+			factor = 3
+			has_idea_with_trait = mobile_warfare_expert
+			}
+
+			
+		modifier = {
+			ADD = 5
+			has_tech = mechanised_infantry
+			}
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = basic_medium_tank
+			}
+		}				
+	}
 		
 		ai_research_weights = {
 			armor = 1.0
@@ -527,26 +578,90 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten  < 20}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
+			}
+			}
+			
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@rubber < 3}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@rubber < 2}
+			}
+			
+		modifier = {
+			factor = 3
+			has_idea_with_trait = mobile_warfare_expert
+			}
+			
+
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@motorized}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@mechanized}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
+	}
 		
 		ai_research_weights = {
 			armor = 2.0
@@ -601,26 +716,90 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten  < 20}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
+			}
+			}
+			
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@rubber < 3}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@rubber < 2}
+			}
+			
+		modifier = {
+			factor = 3
+			has_idea_with_trait = mobile_warfare_expert
+			}
+			
+
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@motorized}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@mechanized}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
+	}
 		
 		ai_research_weights = {
 			armor = 2.0
@@ -668,85 +847,49 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 			modifier = {
-				factor = 20
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten > 20}
+			arms_factory > 25
 			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
+			}		
 			
 		modifier = {
 			factor = 0.5
@@ -757,16 +900,28 @@ technologies = {
 			factor = 0
 			check_variable = { resource_produced@rubber < 2}
 			}
-		
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-		}
+			
+
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
+	}
 		
 		ai_research_weights = {
 			armor = 16.0
@@ -808,80 +963,50 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 			modifier = {
-				factor = 20
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten > 20}
+			arms_factory > 25
 			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
+			}		
 			
 		modifier = {
 			factor = 0.5
@@ -892,16 +1017,28 @@ technologies = {
 			factor = 0
 			check_variable = { resource_produced@rubber < 2}
 			}
-		
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-		}
+			
+
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
+	}
 		
 		ai_research_weights = {
 			armor = 2.5
@@ -962,81 +1099,50 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 			modifier = {
-				factor = 20
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten > 20}
+			arms_factory > 25
 			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
+			}		
 			
 		modifier = {
 			factor = 0.5
@@ -1047,15 +1153,28 @@ technologies = {
 			factor = 0
 			check_variable = { resource_produced@rubber < 2}
 			}
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-		}
+			
+
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
+	}
 		
 		ai_research_weights = {
 			armor = 2.5
@@ -1100,81 +1219,63 @@ technologies = {
 			position = { x = 0 y = 12 }
 		}
 		
-		ai_will_do = {
+				ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
+
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
 			}
 			
 		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 3
 			has_tech = advanced_light_tank
 			}
 		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
 
+			
 		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
+			factor = 2
+			amount_research_slots > 4
+			}
+			
 			modifier = {
-				factor = 20
+				ADD =  10
 				has_tech_bonus = {
 			category = land_doctrine
 				}
 				}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
 			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
 			}
 			
 		modifier = {
@@ -1186,15 +1287,22 @@ technologies = {
 			factor = 0
 			check_variable = { resource_produced@rubber < 2}
 			}
-		
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
+
+			
+		modifier = {
+			ADD = 5
+			has_tech = improved_medium_tank
 			}
+			
+		modifier = {
+			ADD = 5
+			has_tech = advanced_light_tank
+			}						
 		}
 		
 		ai_research_weights = {
@@ -1239,9 +1347,60 @@ technologies = {
 			name = land_doctrine_folder
 			position = { x = 2 y = 14 }
 		}
-		
+
 	ai_will_do = {
-			factor = 2
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			factor = 0.5
+			any_enemy_country = {
+				ROOT = {
+					ic_ratio = {
+					tag = PREV
+					ratio < 1
+					}
+					}
+				}
+			}
+			
+		modifier = {
+			factor = 0
+			any_enemy_country = {
+				ROOT = {
+					ic_ratio = {
+					tag = PREV
+					ratio < 2
+					}
+					}
+				}
+			}
+			
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+		
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 
 			modifier = {
 			factor = 3
@@ -1251,90 +1410,21 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
-			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
+			}		
 
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@rubber < 3}
-			}
-			
-		modifier = {
-			factor = 0
-			check_variable = { resource_produced@rubber < 2}
-			}
+		
 		
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 		}
 		
 		ai_research_weights = {
@@ -1371,7 +1461,35 @@ technologies = {
 		
 	
 	ai_will_do = {
-			factor = 1
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+					
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+		
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 
 			modifier = {
 			factor = 3
@@ -1381,90 +1499,21 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
-			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
+			}		
 
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@rubber < 3}
-			}
-			
-		modifier = {
-			factor = 0
-			check_variable = { resource_produced@rubber < 2}
-			}
+		
 		
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 		}
 		
 		ai_research_weights = {
@@ -1505,7 +1554,34 @@ technologies = {
 		
 	
 	ai_will_do = {
-			factor = 1
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+					
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+		
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 
 			modifier = {
 			factor = 3
@@ -1515,57 +1591,8 @@ technologies = {
 			modifier = {
 			factor = 3
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
-			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
+			}		
 
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
-		
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
@@ -1573,34 +1600,12 @@ technologies = {
 				}
 				}
 		
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@rubber < 3}
-			}
-			
-		modifier = {
-			factor = 0
-			check_variable = { resource_produced@rubber < 2}
-			}
-			
+		
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 		}
 				
 		ai_research_weights = {
@@ -1632,7 +1637,6 @@ technologies = {
 			land_doctrine
 			cat_mobile_warfare
 		}
-
 		
 		folder = {
 			name = land_doctrine_folder
@@ -1640,44 +1644,38 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
+			factor = 5
 			
+											
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-				facto = 0
-				manpower_per_military_factory  < 2000
+				factor = 0
+				manpower_per_military_factory  > 10000
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes
-				manpower_per_military_factory  < 500
+				manpower_per_military_factory  < 5000
+			OR = {
+				has_idea = all_adults_serve
+				has_idea = scraping_the_barrel
+				}
 				}
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes			
 				has_idea = scraping_the_barrel
 				}
 				}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 			
 			modifier = {
 			factor = 3
@@ -1699,11 +1697,7 @@ technologies = {
 				category = land_doctrine
 				}
 				}
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-		
+
 		}
 		
 		ai_research_weights = {
@@ -1738,44 +1732,38 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
+			factor = 5
+											
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 			
 		modifier = {
-				facto = 0
-				manpower_per_military_factory  < 2000
+				factor = 0
+				manpower_per_military_factory  > 10000
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes
-				manpower_per_military_factory  < 500
+				manpower_per_military_factory  < 5000
+			OR = {
+				has_idea = all_adults_serve
+				has_idea = scraping_the_barrel
+				}
 				}
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes			
 				has_idea = scraping_the_barrel
 				}
 				}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 			
 			modifier = {
 			factor = 3
@@ -1786,22 +1774,18 @@ technologies = {
 			factor = 3
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-					modifier = {
+		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
 			}
-		
+					
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-			
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+	
 		}
 		
 		ai_research_weights = {
@@ -1834,7 +1818,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
+											
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 			modifier = {
 			factor = 3
@@ -1842,14 +1831,29 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 3
+			ADD = 5
 			surrender_progress > 0.1
 			}
 			
 		modifier = {
-			factor = 3
+			ADD = 10
 			surrender_progress > 0.2
 			}
+			
+		modifier = {
+			ADD = 10
+			strength_ratio = {
+			ratio < 0.5
+			}
+			}
+			
+		modifier = {
+			ADD = 5
+			strength_ratio = {
+			ratio < 1
+			}
+			}		
+			
 		modifier = {
 			factor = 3
 			has_idea_with_trait = blitzkrieg_theorist
@@ -1862,25 +1866,6 @@ technologies = {
 				}
 				}
 				
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 		modifier = {
 			factor = 3
 			has_idea_with_trait = mobile_warfare_expert
@@ -1930,75 +1915,78 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 2
-			date > 1009.1.1
-			}
-			
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_superior_firepower }
-			}
-			
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
-			
+			}			 
+
 		modifier = {
-			factor = 0.5
-			check_variable = { arms_factory < 5}
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
 			}
 			
+			modifier = {
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_superior_firepower }
+			}
+
+
 		modifier = {
-			factor = 2
+			add = 10
 			check_variable = { resource_produced@tungsten > 10}
 			}
 		
 		modifier = {
-			factor = 2
+			ADD = 10
 			check_variable = { resource_produced@aluminium > 10}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 5}
+			factor = 0
+			check_variable = { resource_produced@tungsten < 10}
 			}
-						
+		
 		modifier = {
-			factor = 2
-			check_variable = { resource_produced@tungsten > 20}
+			factor = 0
+			check_variable = { resource_produced@aluminium < 10}
 			}
 			
 		modifier = {
-			factor = 2
-			manpower_per_military_factory < 5000
+			add = 0.5
+			check_variable = { resource_produced@rubber > 10}
 			}
 			
-			modifier = {
+		modifier = {
 			factor = 0
 			NOT = { has_tech = tech_engineers}
 			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			
+		
 		}
 		
 		ai_research_weights = {
@@ -2035,70 +2023,104 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
-			has_idea_with_trait = military_theorist
-			}
-			modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
-			}
-			
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 2
-			has_tech = tech_engineers2
+			ADD = 5
+			has_idea_with_trait = military_theorist
+			}
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0.5
+		OR {
+			NOT = {
+				has_tech = construction2
+				}
+			NOT = {
+				has_tech = mechanical_computing
+				}
+			NOT = {
+				has_tech = dispersed_industry
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_superior_firepower }
+			}
+
+
+		modifier = {
+			add = 10
+			check_variable = { resource_produced@tungsten > 10}
+			}
+		
+		modifier = {
+			ADD = 10
+			check_variable = { resource_produced@aluminium > 10}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@tungsten < 10}
 			}
 		
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
 			check_variable = { resource_produced@aluminium < 10}
 			}
 			
 		modifier = {
-				factor = 0.4
-				has_army_experience < 120
+			factor = 0.5
+			check_variable = { resource_produced@rubber > 10}
 			}
+			
+		modifier = {
+			factor = 0
+			NOT = { has_tech = tech_engineers}
 			}
+			
+
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction2
+				has_tech = dispersed_industry2
+				}
+			}			
+		}
 			
 		
 		ai_research_weights = {
@@ -2142,70 +2164,104 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-
-			modifier = {
-			factor = 3
-			has_idea_with_trait = military_theorist
-			}
-			modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
-			}
-			
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
+			ADD = 5
+			has_idea_with_trait = military_theorist
+			}
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0.5
+		OR {
+			NOT = {
+				has_tech = construction2
+				}
+			NOT = {
+				has_tech = mechanical_computing
+				}
+			NOT = {
+				has_tech = dispersed_industry
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				factor = 2
+				amount_research_slots > 3
+			}
+
+		
+		modifier = {
 			factor = 2
-			has_tech = tech_engineers2
+			has_war = yes
+			}
+
+		modifier = {
+			add = 10
+			check_variable = { resource_produced@tungsten > 10}
+			}
+		
+		modifier = {
+			ADD = 10
+			check_variable = { resource_produced@aluminium > 10}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@tungsten < 10}
 			}
 		
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
-
-		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
 			check_variable = { resource_produced@aluminium < 10}
 			}
 			
 		modifier = {
-				factor = 0.4
-				has_army_experience < 120
+			factor = 0
+			NOT = { has_tech = tech_engineers}
 			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction2
+				has_tech = dispersed_industry2
+				}
 			}
+			
+	
+		}
 		
 		ai_research_weights = {
 			artillery = 2.0
@@ -2247,75 +2303,72 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
+			}	
+			
 		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+				factor = 0.5
+				amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
-			amount_research_slots > 3
+				factor = 2
+				amount_research_slots > 3
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
 		
+					
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-			
+				
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
+			}
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
+			add = 5
+			has_template_containing_unit = recon
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = field_hospital
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = signal_company
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = maintenance_company
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
+			add = 5
+			has_template_containing_unit = engineer
 			}
 			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -2354,70 +2407,72 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-		
+			}	
+			
 		modifier = {
-			factor = 0
-			amount_research_slots < 3
+				factor = 0.5
+				amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
-			amount_research_slots > 3
+				factor = 2
+				amount_research_slots > 3
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
 		
+					
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
+				
+		modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
+			}
+				
+		modifier = {
+			add = 5
+			has_template_containing_unit = recon
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = field_hospital
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = signal_company
+			}
+		modifier = {
+			add = 5
+			has_template_containing_unit = maintenance_company
+			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
+			add = 5
+			has_template_containing_unit = engineer
 			}
 			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -2458,87 +2513,95 @@ technologies = {
 		}
 		
 	ai_will_do = {
-			factor = 1.5
-
+			factor = 5
+											
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
+			}
+
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}
-			
-
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
+			}	
 			
 		modifier = {
 				factor = 0.5
-				arms_factory < 5
-		}
-
+				amount_research_slots < 3
+			}
+			
 		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
+				factor = 2
+				amount_research_slots > 3
+			}
 		
+					
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-			
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-		
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 20}
+			ADD = 10
+			check_variable = { resource_produced@tungsten > 10}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 35}
+			ADD = 10
+			check_variable = { resource_produced@aluminium < 10}
+			}	
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@tungsten < 10}
+			}
+				
+		modifier = {
+			add = 5
+			has_template_containing_unit = recon
 			}
 			
 		modifier = {
-			factor = 5 
-			has_template = Infantry_default_EQS
+			add = 5
+			not = {
+			has_template_containing_unit = field_hospital
+			}
+			}
+		modifier = {
+			add = 5
+			not = {
+			has_template_containing_unit = signal_company
+			}
+			}
+		modifier = {
+			add = 5
+			not = {
+			has_template_containing_unit = maintenance_company
+			}
 			}
 			
 		modifier = {
-			factor = 0 
-			NOT = {
-			has_template = Infantry_default_EQS
+			add = 5
+			not = {
+			has_template_containing_unit = engineer
 			}
 			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -2577,87 +2640,95 @@ technologies = {
 		}
 		
 	ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}
+			}	
 			
-
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 			
 		modifier = {
 				factor = 0.5
-				arms_factory < 5
-		}
-
+				amount_research_slots < 3
+			}
+			
 		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
+				factor = 2
+				amount_research_slots > 3
+			}
 		
+					
 		modifier = {
 				factor = 20
 				has_tech_bonus = {
 				category = land_doctrine
 				}
 				}
-			
+				
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-		
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 20}
+			ADD = 10
+			check_variable = { resource_produced@tungsten > 10}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 35}
+			ADD = 10
+			check_variable = { resource_produced@aluminium < 10}
+			}	
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@tungsten < 10}
+			}
+				
+		modifier = {
+			add = 5
+			has_template_containing_unit = recon
 			}
 			
 		modifier = {
-			factor = 5 
-			has_template = Infantry_default_EQS
+			add = 5
+			not = {
+			has_template_containing_unit = field_hospital
+			}
+			}
+		modifier = {
+			add = 5
+			not = {
+			has_template_containing_unit = signal_company
+			}
+			}
+		modifier = {
+			add = 5
+			not = {
+			has_template_containing_unit = maintenance_company
+			}
 			}
 			
 		modifier = {
-			factor = 0 
-			NOT = {
-			has_template = Infantry_default_EQS
+			add = 5
+			not = {
+			has_template_containing_unit = engineer
 			}
 			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -2704,103 +2775,80 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-			
-		modifier = {
-			factor = 2
-			has_tech = improved_light_tank
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 			
 		modifier = {
 			factor = 2
-			has_tech = advanced_light_tank
+			amount_research_slots > 4
 			}
-		
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+
+			
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
+		NOT = {
+		OR = {
+			check_variable = { resource_produced@rubber > 5}
+			check_variable = { resource_produced@chromium > 5}
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			}
 			}
 			
 		modifier = {
 			factor = 3
-			amount_research_slots > 3
+			has_idea_with_trait = mobile_warfare_expert
 			}
-			
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-		modifier = {
-				factor = 0.5
-				arms_factory < 5
-		}
 
+			
 		modifier = {
-				factor = 0.5
-				arms_factory < 10
-		}
-		modifier = {
-				factor = 0.5
-				arms_factory < 15
-		}
-	
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-					}
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
 					}
 		
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+					
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@rubber < 3}
-			}
-			
-		modifier = {
-			factor = 0
-			check_variable = { resource_produced@rubber < 2}
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			}	
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}										
+	}	
 		
 		ai_research_weights = {
 			artillery = 1.0
@@ -2841,112 +2889,104 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
-		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-					
-					
-		modifier = {
-			factor = 2
-			has_tech = imrpoved_heavy_tank
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 			
 		modifier = {
 			factor = 2
-			has_tech = imrpoved_medium_tank
+			amount_research_slots > 4
 			}
 			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+
+			
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
+		NOT = {
+		OR = {
+			check_variable = { resource_produced@rubber > 5}
+			check_variable = { resource_produced@chromium > 5}
+			}
+			}
 			}
 			
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 		modifier = {
 			factor = 3
-			amount_research_slots > 3
+			has_idea_with_trait = mobile_warfare_expert
 			}
-	
-				
+
+			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
 			}
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-					}
-					}
+			}
 		
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
 			}
+			}	
 			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+		
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
 					}
 					
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-					
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-					
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			}
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}										
+	}	
 		
 		ai_research_weights = {
 			artillery = 1.0
@@ -2987,107 +3027,103 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
-			modifier = {
-			factor = 3
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-			
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
-		modifier = {
-			factor = 0
-			NOT = { has_tech = basic_light_tank}
-			}
 			
 		modifier = {
-			factor = 0
-			NOT = { has_tech = motorised_infantry}
-			}
-					
-					
-		modifier = {
-			factor = 2
-			has_tech = imrpoved_heavy_tank
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 			
 		modifier = {
 			factor = 2
-			has_tech = imrpoved_medium_tank
+			amount_research_slots > 4
 			}
 			
-		modifier = {
-			factor = 2
-			has_tech = advanced_light_tank
-			}
-		
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+			
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
+		NOT = {
+		OR = {
+			check_variable = { resource_produced@rubber > 5}
+			check_variable = { resource_produced@chromium > 5}
+			}
+			}
 			}
 			
 		modifier = {
 			factor = 3
-			amount_research_slots > 3
+			has_idea_with_trait = mobile_warfare_expert
 			}
-						
+
+			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
 			}
-	
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-					}
-					}
+			}
 		
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 5}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 10}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
 			}
+			}	
 			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+		
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
 					}
 					
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-					
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-					
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			}
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}										
+	}
 		
 		ai_research_weights = {
 			artillery = 1.0
@@ -3124,66 +3160,104 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+
+			
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
+		NOT = {
+		OR = {
+			check_variable = { resource_produced@rubber > 5}
+			check_variable = { resource_produced@chromium > 5}
+			}
+			}
 			}
 			
 		modifier = {
 			factor = 3
-			amount_research_slots > 3
+			has_idea_with_trait = mobile_warfare_expert
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
+
 			
 		modifier = {
-			factor = 2
-			num_divisions > 50
-		}
-				modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-				modifier = {
-			factor = 2
-			num_divisions > 100
-		}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = fighter
+			}
+			}
 		
 		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
 			}
 			
 		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
 			}
+			}	
 			
 		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-			}
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+		
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+					
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}										
+	}	
 		
 		ai_research_weights = {
 			artillery = 1.0
@@ -3215,82 +3289,106 @@ technologies = {
 			position = { x = -2 y = 18 }
 		}
 		
-		ai_will_do = {
+	ai_will_do = {
 			factor = 2
-
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+
+			
 		modifier = {
 			factor = 0
-			amount_research_slots < 3
+		NOT = {
+		OR = {
+			check_variable = { resource_produced@rubber > 5}
+			check_variable = { resource_produced@chromium > 5}
+			}
+			}
 			}
 			
 		modifier = {
 			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			has_idea_with_trait = mobile_warfare_expert
 			}
 			
+
 		modifier = {
-			factor = 2
-			num_divisions > 50
-		}
-				modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-				modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-			}
-		modifier = {
-				factor = 3
-			has_deployed_air_force_size  = {
-			size > 500
-			type = CAS
-			}
-			}
-		modifier = {
-				factor = 3
-			has_deployed_air_force_size  = {
-			size > 500
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
 			type = fighter
 			}
+			}
+		
+		modifier = {
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = cas
+			}
+			}
 			
 		modifier = {
-				factor = 0.4
-				has_army_experience < 120
+			ADD = 3
+			has_deployed_air_force_size = {
+			size > 200
+			type = tactical_bomber
 			}
-			}
+			}	
+			
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+		
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}
+					
+		modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.025}
+					}										
+	}	
 		
 		ai_research_weights = {
 			artillery = 1.0
@@ -3330,70 +3428,41 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+				modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 		
 		modifier = {
-			factor = 0
+			factor = 0.5
 			amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
+			factor = 2
 			amount_research_slots > 3
 			}
-			
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -3432,70 +3501,41 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 15
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+				modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 		
 		modifier = {
-			factor = 0
+			factor = 0.5
 			amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
+			factor = 2
 			amount_research_slots > 3
 			}
-			
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 			
 		
@@ -3546,70 +3586,41 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 15
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+				modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 		
 		modifier = {
-			factor = 0
+			factor = 0.5
 			amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
+			factor = 2
 			amount_research_slots > 3
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -3649,70 +3660,42 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-
-			modifier = {
-			factor = 3
+			factor = 15
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+				modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = improved_computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry3
+				}
 			}
 		
 		modifier = {
-			factor = 0
+			factor = 0.5
 			amount_research_slots < 3
 			}
 			
 		modifier = {
-			factor = 3
+			factor = 2
 			amount_research_slots > 3
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 			
-		
-		modifier = {
-				factor = 20
-				has_tech_bonus = {
-				category = land_doctrine
-				}
-				}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@tungsten < 15}
-			}
-			
-		modifier = {
-			factor = 0.5
-			check_variable = { resource_produced@aluminium < 10}
-			}
-		modifier = {
-			factor = 2
-			has_tech = tech_recon
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_field_hospital
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_signal_company
-			}
-					modifier = {
-			factor = 2
-			has_tech = tech_maintenance_company
-			}
-			
-		modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
+
 			}
 		
 		ai_research_weights = {
@@ -3756,67 +3739,71 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 			modifier = {
-			factor = 0
-			Not = { has_tech = tech_engineers }
-			}
-						
-			modifier = {
-				factor = 3
-				date > 1009.1.1
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-			
-						
-			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.8 }
-					}	
-					
-			modifier = {
-				factor = 0.2
-				rubber > 5
-			}
-			
-			modifier = {
-				factor = 0.2
-				tungsten > 20
-			}
-			
-			
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@infantry}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.70}
+					}
 
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 
+						
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@rubber  > 10}
 			}
 			
 		modifier = {
-				factor = 0.4
-				has_army_experience < 120
+			add = 5
+			check_variable = { resource_produced@tungsten > 10}
+			}
+			
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@chromium > 10}
+			}		
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -3855,55 +3842,66 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -3944,78 +3942,74 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.8
-				has_army_experience < 120
-			}
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@infantry}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.70}
+					}
 					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
-		
+			}
 			
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_added_tension_amount = 1
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					is_justifying_wargoal_against = ROOT
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_wargoal_against  = ROOT
-					}
-					}
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
 		}
 		
 		ai_research_weights = {
@@ -4059,63 +4053,75 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.8
-				has_army_experience < 120
-			}
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@infantry}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.70}
+					}
 					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
-		
+			}
 			
-				modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -4168,30 +4174,81 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.35
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.65
-			}
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-		modifier = {
-			factor = 3
+			modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		}
+			
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+			modifier = {
+				ADD =  10
+				has_tech_bonus = {
+			category = land_doctrine
+				}
+				}
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@tungsten  < 20}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 10
+			}
+			}
+			
+		modifier = {
+			factor = 0.5
+			check_variable = { resource_produced@rubber < 3}
+			}
+			
+		modifier = {
+			factor = 0
+			check_variable = { resource_produced@rubber < 2}
+			}
+
+			
+		modifier = {
+			ADD = 5
+			has_tech = mechanised_infantry
+			}
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = basic_medium_tank
+			}
+		}				
+	}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -4228,28 +4285,60 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.8
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.3
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.6
-			}
-			modifier = {
-			factor = 3
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -4293,28 +4382,60 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.25
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.55
-			}
-			modifier = {
-			factor = 3
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -4355,28 +4476,60 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.2
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-			factor = 3
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -4415,28 +4568,60 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.45
-			}
-			modifier = {
-			factor = 3
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -4475,28 +4660,60 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.1
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.4
-			}
-			modifier = {
-			factor = 3
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
 			}
 		}
 		
@@ -4540,63 +4757,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
+			factor = 2
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
-			
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-		modifier = {
-			factor = 3
+			modifier = {
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
 			}
-		
 			
-				modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			modifier = {
+				factor = 0
+			NOT = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+			
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@chromium  < 10}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  < 10}
+			arms_factory > 15
+			}
+			}
+
+			
+			
+		modifier = {
+			ADD = 5
+			NOT = {
+			has_tech = basic_medium_tank
+			}
+		}				
+	}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -4643,29 +4859,45 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-								
+																
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 3
-			amount_research_slots > 3
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@chromium  > 10}
+			arms_factory > 15
+			}
+			}		
+				
+		modifier = {
+			ADD = 5
+			AND = {
+			check_variable = { resource_produced@rubber  > 10}
+			arms_factory > 15
+			}
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
 			}
 						
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
+			factor = 2
+			amount_research_slots > 4
 			}
 				
+
 			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
+				add = 10
 				has_tech_bonus = { category = cat_grand_battle_plan }
 			}
 
@@ -4679,31 +4911,25 @@ technologies = {
 			}
 		
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@light_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@light_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+		
+			modifier = {
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
 					}
 					
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@medium_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
-					
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@heavy_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.05 }
-					}
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@modern_armor }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.10 }
-					}
+				add = 5
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}										
 					}
 		
 		ai_research_weights = {
@@ -4739,61 +4965,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}					
-		modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -4831,61 +5058,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}			
-				modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+				}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -4926,61 +5154,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}			
-				modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -5013,61 +5242,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_grand_battle_plan }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}			
-				modifier = { 
-					factor = 2
-					has_war = yes
-					}
-					}
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
@@ -5108,54 +5338,74 @@ technologies = {
 			position = { x = 0 y = 0 }
 		}
 		
-		ai_will_do = {
-			factor = 3
-			
-		modifier = {
-			factor = 2
-			date > 1009.1.1
-			}
 		
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
 
-			modifier = {
-				factor = 3
-				tag = DED
-			}
-			
-			modifier = {
-				factor = 5
-				AND = {
-				check_variable = { resource_produced@Tungsten < 10   }
-				check_variable = { resource_produced@Rubber < 5 }
-				check_variable = { resource_produced@chromium < 5 }
-				check_variable = { resource_produced@aluminium < 10 }
-			}
-			}
-			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.85 }
-					}							
-			modifier = {
-				factor = 0
-				OR = {
-					tag = EQS
-				}
-			}
+		ai_will_do = {
+			factor = 5
+								
 		modifier = {
-			factor = 3
+			add = 25
+			has_army_experience > 200
+			}				
+			
+		modifier = {
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-		modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
+			
+					
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-		}
+			
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 
+
+			
+		modifier = {
+			factor = 0
+			NOT = { has_tech = basic_light_tank}
+			}
+
+		
+		modifier = {
+			ADD =  10
+			has_tech = basic_heavy_tank
+			}
+			
+		modifier = {
+			ADD =  10
+			check_variable = { resource_produced@chromium > 10}
+			}
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
+			
+			modifier = {
+				ADD = 10
+				amount_research_slots > 3
+			}
+			
+			modifier = {
+				factor = 0.5
+				amount_research_slots < 3
+			}
+			}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5191,77 +5441,71 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
-
-		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
-			}	
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_added_tension_amount = 1
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					is_justifying_wargoal_against = ROOT
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_wargoal_against  = ROOT
-					}
-					}
+			}			 	
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
+			}
+			
+			modifier = {
+				add = 10
+				amount_research_slots > 3
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+					
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
+			}
+		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5303,75 +5547,71 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 15
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 50
-			}
+			factor = 5
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-				
-							
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
 			}
-				
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_added_tension_amount = 1
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					is_justifying_wargoal_against = ROOT
-					}
-					}
-					
-				modifier = { 
-					factor = 2
-					any_neighbor_country = {
-					has_wargoal_against  = ROOT
-					}
-					}
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
 			}
+			}
+			
+			modifier = {
+				add = 10
+				amount_research_slots > 3
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+					
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
+			}
+		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5412,31 +5652,67 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0 #I should give this weight, but i really dont want to do this anymore, sorry. -Sap
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
 			}
+			
 			modifier = {
-				factor = 2
-				tag = STG
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
+				}
+			}
+			
+		modifier = {
+			factor = 0
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			ADD = 10
+			amount_research_slots > 3
 			}
 
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5476,26 +5752,68 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
 				}
-				factor = 0.4
 			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+			
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5531,26 +5849,67 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
 				}
-				factor = 0.4
 			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.35
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.65
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5592,26 +5951,67 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
 				}
-				factor = 0.4
 			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.35
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.65
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-		}
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+
+		modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.05}
+					}
+			}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5656,31 +6056,66 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
 				}
-				factor = 0.4
 			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.25
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-			
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 		modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
 			}
-		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5734,30 +6169,67 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				not = {
-					has_army_experience > 120
-				}
-				factor = 0.4
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.15
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.5
-			}
+			factor = 5
+														
 		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
+				}
+			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+
+					
+			modifier = {
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
+			}
+
+			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 		modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
 			}
-		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5789,31 +6261,67 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5
+														
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
+			
 			modifier = {
-				not = {
-					has_army_experience > 120
+				add = 2
+				check_variable = { resource_produced@tungsten > 10 }
+			}
+			
+			modifier = {
+				add = 2
+				check_variable = { resource_produced@chromium > 10 }
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
 				}
-				factor = 0.4
 			}
+			
+		modifier = {
+			factor = 0.5
+			amount_research_slots < 3
+			}
+			
+		modifier = {
+			factor = 2
+			amount_research_slots > 4
+			}
+
+
+					
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.1
+				add = 10
+				has_tech_bonus = { category = cat_mass_assault }
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.35
-			}
+
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
 			}
-			
+			modifier = {
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@heavy_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
+
 		modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
+				add = 10
+					set_temp_variable = { type_percentage = num_battalions_with_type@medium_armor}
+					divide_temp_variable = { type_percentage = num_battalions}
+					check_variable = { type_percentage > 0.09}
+					}
 			}
-		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -5858,21 +6366,30 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 65
-			}
+			factor = 5						
+								
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 			modifier = {
-				factor = 2
-				num_divisions > 75
+				add = 15
+				AND = {
+				check_variable = { resource_produced@tungsten < 10 }
+				check_variable = { resource_produced@chromium < 10 }
+				check_variable = { resource_produced@rubber < 10 }				
+				}
+			}
+
+		
+			modifier = {
+				add = 5
+			NOT = {
+				has_tech = improved_medium_tank
+				has_tech = improved_heavy_tank
+				has_tech = advanced_heavy_tank
+				}
 			}
 			
 		modifier = {
@@ -5881,27 +6398,12 @@ technologies = {
 			}
 			
 		modifier = {
-			factor = 3
-			amount_research_slots > 3
+			factor = 2
+			amount_research_slots > 4
 			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			has_war = yes
-			}
-				
+		
 			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
+				add = 10
 				has_tech_bonus = { category = cat_mass_assault }
 			}
 
@@ -5912,22 +6414,17 @@ technologies = {
 			
 			modifier = {
 					factor = 5
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
+					set_temp_variable = { type_percentage = num_battalions_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_battalions}
 					check_variable = { type_percentage > 0.85 }
 					}
 					
 				modifier = {
 					factor = 0.3
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
+					set_temp_variable = { type_percentage = num_battalions_with_type@infantry }
+					divide_temp_variable = { type_percentage = num_battalions}
 					check_variable = { type_percentage < 0.70 }
-					}
-					
-		modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
-			}				
+					}				
 			}
 		
 		ai_research_weights = {
@@ -5967,76 +6464,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-					
-
-			modifier = {
-				factor = 2
-				num_divisions > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 65
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 75
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			has_war = yes
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
-			}	
+			}
+			
 		modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
 			}
 			
 			modifier = {
-					factor = 5
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.85 }
-					}
-					
-				modifier = {
-					factor = 0.3
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.70 }
-					}				
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
 			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -6077,76 +6560,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1.5
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 65
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 75
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			has_war = yes
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
-			}	
+			}
+			
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
 			
 			modifier = {
-					factor = 5
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.85 }
-					}
-					
-				modifier = {
-					factor = 0.3
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.70 }
-					}	
-								modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
-			}			
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
 			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 		
 		ai_research_weights = {
 			industry = 2.0
@@ -6187,45 +6656,39 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 5
 			
+											
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-				facto = 0
-				manpower_per_military_factory  < 2000
+				factor = 0
+				manpower_per_military_factory  > 10000
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes
-				manpower_per_military_factory  < 500
+				manpower_per_military_factory  < 5000
+			OR = {
+				has_idea = all_adults_serve
+				has_idea = scraping_the_barrel
+				}
 				}
 			}
 			
 			modifier = {
-				factor = 10
+				ADD = 10
 				AND = {
 				has_war = yes			
 				has_idea = scraping_the_barrel
 				}
 				}
-		
-		modifier = {
-			factor = 0
-			amount_research_slots < 3
-			}
 			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-			
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
 			modifier = {
 			factor = 3
 			has_idea_with_trait = military_theorist
@@ -6242,11 +6705,6 @@ technologies = {
 				category = land_doctrine
 				}
 				}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
 		
 		}
 		
@@ -6283,76 +6741,62 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-						
-
-			modifier = {
-				factor = 2
-				num_divisions > 55
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 65
-			}
-			
-			modifier = {
-				factor = 2
-				num_divisions > 75
-			}
+			factor = 5
+													
+		modifier = {
+			add = 25
+			has_army_experience > 200
+			}				
 			
 		modifier = {
-			factor = 0.5
-			amount_research_slots < 3
-			}
-			
-		modifier = {
-			factor = 3
-			amount_research_slots > 3
-			}
-						
-		modifier = {
-			factor = 0.5
-			amount_research_slots < 4
-			}
-			
-		modifier = {
-			factor = 3
-			has_war = yes
-			}
-				
-			modifier = {
-				factor = 0.4
-				has_army_experience < 120
-			}
-					
-			modifier = {
-				factor = 10
-				has_tech_bonus = { category = cat_mass_assault }
-			}
-
-			modifier = {
-			factor = 3
+			ADD = 5
 			has_idea_with_trait = military_theorist
-			}	
+			}
+			
+		modifier = {
+			ADD = 5
+			has_idea_with_trait = blitzkrieg_theorist
+			}			 	
+
 			
 			modifier = {
-					factor = 5
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.85 }
-					}
-					
-				modifier = {
-					factor = 0.3
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.70 }
-					}	
-								modifier = {
-			factor = 3
-			has_idea_with_trait = blitzkrieg_theorist
-			}			
+				add = 5
+			NOt = {
+				amount_research_slots > 3
+				}
 			}
+			
+			modifier = {
+				add = 5
+			NOt = {
+				amount_research_slots > 4
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				amount_research_slots < 3
+			}
+			
+			modifier = {
+				add = 10
+			AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			Not = {
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+				}
+			}
+		}
 				
 		ai_research_weights = {
 			industry = 2.0

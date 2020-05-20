@@ -22,6 +22,16 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
+			
+			OR = {
+				is_ai = no
+			 NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+						}
+					}
 			}
 			removal_cost = -1
 
@@ -71,6 +81,17 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
+				
+			OR = {
+				is_ai = no
+				NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+					}
+		
 			}
 			
 			removal_cost = -1
@@ -177,6 +198,16 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
+					
+			OR = {
+				is_ai = no
+				NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -233,6 +264,16 @@ ideas = {
 				NOT = {
 					has_country_flag = demilitarized
 				}
+				 				
+			OR = {
+				is_ai = no
+				NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -272,7 +313,7 @@ ideas = {
 				modifier = { 
 					factor = 5
 					any_neighbor_country = {
-					has_added_tension_amount = 1
+					has_added_tension_amount > 1
 					}
 					}
 					
@@ -366,6 +407,18 @@ ideas = {
 					has_country_flag = demilitarized
 				}
 				NOT = { has_country_flag = economic_laws_blocked }
+			
+		
+			
+			OR = {
+				is_ai = no
+			NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+						}
 			}
 
 			cost = 150
@@ -412,7 +465,7 @@ ideas = {
 				modifier = { 
 					factor = 10
 					any_neighbor_country = {
-					has_added_tension_amount = 5
+					has_added_tension_amount > 5
 					}					
 					}
 								
@@ -472,6 +525,17 @@ ideas = {
 				NOT = {
 					has_country_flag = BAL_anarchy_laws
 				}
+				
+				
+			OR = {
+				is_ai = no
+				NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+					}				
 			}
 
 			cost = 150
@@ -543,7 +607,7 @@ ideas = {
 					
 				modifier = {
 					factor = 0
-					manpower < 10000
+					has_manpower < 10000
 					}
 
 				modifier = {
@@ -599,6 +663,17 @@ ideas = {
 				NOT = {
 					has_country_flag = BAL_anarchy_laws
 				}
+				
+				
+			OR = {
+				is_ai = no
+				NOT = {
+				has_country_flag = {
+					flag = ai_economic_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -733,6 +808,17 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_state_controlled_economy }
 				}
+			
+			
+			OR = {
+				is_ai = no
+			NOT = {
+				has_country_flag = {
+					flag = ai_trade_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -746,7 +832,8 @@ ideas = {
 				research_speed_factor = 0.10
 				trade_opinion_factor = 0.3
 			}
-
+			
+			
 			cancel_if_invalid = no
 			
 			ai_will_do = {
@@ -808,13 +895,13 @@ ideas = {
 				add_to_temp_variable = { resource_pro = resource_produced@aluminium}
 				add_to_temp_variable = { resource_pro = resource_produced@tungsten}
 				
-				set_temp_variable = { type_percentage =  resource_produced@rystals }	
+				set_temp_variable = { type_percentage =  resource_produced@crystals }	
 				divide_temp_variable = { type_percentage = resource_pro}				
 				check_variable = { type_percentage > 0.20 }
 				
 				
-				set_temp_variable = { type_percentageb =  resource_consumed@rystals }
-				divide_temp_variable = { type_percentageb = resource_produced@rystals}
+				set_temp_variable = { type_percentageb =  resource_consumed@crystals }
+				divide_temp_variable = { type_percentageb = resource_produced@crystals}
 				check_variable = { type_percentageb > 0.33 }
 				}
 				}
@@ -925,6 +1012,17 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_state_controlled_economy }
 				}
+			
+			
+			OR = {
+				is_ai = no
+			NOT = {
+				has_country_flag = {
+					flag = ai_trade_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -1383,6 +1481,17 @@ ideas = {
 					limit = { has_completed_focus = GRI_griffenheim_square }
 					NOT = { has_completed_focus = GRI_ensure_free_trade }
 				}
+			 
+			
+			OR = {
+				is_ai = no
+			NOT = {
+				has_country_flag = {
+					flag = ai_trade_cooldown
+					days < 360
+							}
+							}
+					}
 			}
 
 			cost = 150
@@ -1705,6 +1814,16 @@ ideas = {
 					limit = { has_completed_focus = GRI_griffenheim_square }
 					NOT = { has_completed_focus = GRI_ensure_free_trade }
 				}
+			OR = {
+				is_ai = no
+			
+				NOT = { 				
+				has_country_flag = {
+					flag = ai_trade_cooldown
+					days < 360
+							}
+					}
+			}
 			}
 
 			cost = 150

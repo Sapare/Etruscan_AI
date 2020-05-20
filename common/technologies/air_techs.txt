@@ -41,11 +41,41 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 20
+			
 			modifier = {
 				factor = 2
-				is_major = yes
+				arms_factory > 15
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
 			}
 		}
 	}
@@ -121,52 +151,68 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 25
+			
+			modifier = {
+				factor = 0
+				arms_factory < 6
+			}
 
 			modifier = {
-				factor = 3
+				add = 5
+			OR = {
 				has_tech = CAS1
+				is_researching_technology = CAS1
+				}
 			}
 
 			modifier = {
-				factor = 3
-				has_tech = tactical_bomber1
-			}
-
-			modifier = {
-				factor = 1.5
+				factor = 2
 				arms_factory > 15
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 10
+				add = 10
+				check_variable = { resource_produced@aluminium > 15 }
 			}
 			
 			modifier = {
-				factor = 2
-				rubber > 7
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
 			}
 			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 7
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 8 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 3
-			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
-			modifier = {
-				factor = 0
-				rubber < 1
+				check_variable = { resource_produced@rubber < 4 }
 			}
 		}
 	}
@@ -248,51 +294,69 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 25
 
 			modifier = {
-				factor = 3
-				has_tech = CAS2
+				factor = 0
+				arms_factory < 6
 			}
-
+			
 			modifier = {
-				factor = 3
-				has_tech = tactical_bomber2
+				add = 5
+			OR = {
+				has_tech = CAS2
+				is_researching_technology = CAS2
+				}
 			}
 
 			modifier = {
 				factor = 1.5
-				arms_factory > 25
+				arms_factory > 15
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 7
+				add = 10
+				check_variable = { resource_produced@aluminium > 15 }
 			}
 			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
+			}
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 7
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 8 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 3
-			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
-			modifier = {
-				factor = 0
-				rubber < 1
+				check_variable = { resource_produced@rubber < 4 }
 			}
 		}
 	}
@@ -374,52 +438,77 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 25
 
 			modifier = {
-				factor = 3
+				add = 5
+			OR = {
 				has_tech = CAS3
+				is_researching_technology = CAS3
+				}
 			}
-
+			
 			modifier = {
-				factor = 3
-				has_tech = tactical_bomber3
+				factor = 0
+				arms_factory < 6
 			}
 
 			modifier = {
 				factor = 1.5
-				arms_factory > 40
+				arms_factory > 15
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 7
+				add = 10
+				check_variable = { resource_produced@aluminium > 17 }
 			}
 			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
+			}
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 15
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 10 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 8
+				check_variable = { resource_produced@rubber < 4 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 5
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -500,12 +589,81 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
+
 
 			modifier = {
-				factor = 4
-				is_major = yes
+				factor = 1.5
+				arms_factory > 15
 			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@tungsten}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@tungsten}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 20
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -538,12 +696,73 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
+			
+			modifier = {
+				factor = 1.5
+				arms_factory > 15
+			}
 
 			modifier = {
-				factor = 4
-				is_major = yes
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
 			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -579,62 +798,112 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 
 			modifier = {
-				factor = 2.5
+				add = 5
 				has_tech = formation_flying
-			}
-		
-					modifier = {
-				factor = 3
-				has_tech = fighter1
-			}
-
-			modifier = {
-				factor = 0.2
-				has_tech = tactical_bomber1
 			}
 			
 			modifier = {
-				factor = 0.2
+				factor = 0
+				arms_factory < 8
+			}
+			
+		
+			modifier = {
+				add = 10
+			OR = {
+				has_tech = fighter1
+				is_researching_technology = fighter1
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+			OR = {
+				has_tech = tactical_bomber1
+				is_researching_technology = tactical_bomber1
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = tactical_bomber1
+				check_variable = { num_deployed_planes_with_type@tactical_bomber < 150 }
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
 				is_researching_technology = tactical_bomber1
 			}
 
 			modifier = {
-				factor = 1.5
-				arms_factory > 15
+				factor = 2
+				arms_factory > 25
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 7
+				add = 10
+				check_variable = { resource_produced@aluminium > 18 }
 			}
 			
+			modifier = {
+				add = 10
+				check_variable = { resource_produced@rubber > 12 }
+			}
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 7
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 15
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 15
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 15
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}			
+			
+			modifier = {
+				add = 15
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 1000
+				}
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 3
-			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
+				check_variable = { resource_produced@aluminium < 12 }
 			}
 
 			modifier = {
 				factor = 0
-				rubber < 1
-			}		
+				check_variable = { resource_produced@rubber < 6 }
+			}	
 		}
 	}
 
@@ -712,68 +981,141 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+
 		modifier = {
-				factor = 2.5
+				factor = 2
+				arms_factory > 25
+			}
+
+			modifier = {
+				factor = 0
+				arms_factory < 8
+			}
+			
+			
+			modifier = {
+				add = 5
 				has_tech = formation_flying
 			}
 		
-					modifier = {
-				factor = 3
-				has_tech = fighter1
+			modifier = {
+				add = 5
+				OR = {
+				has_tech = fighter2
+				is_researching_technology = fighter2
+				}
 			}
 
 			modifier = {
 				factor = 0.5
+			OR = {
 				has_tech = tactical_bomber2
-			}
-			
-			modifier = {
-				factor = 0.5
 				is_researching_technology = tactical_bomber2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = tactical_bomber2
+				check_variable = { num_deployed_planes_with_type@tactical_bomber < 150 }
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+				is_researching_technology = tactical_bomber1
 			}
 
 			modifier = {
-				factor = 1.5
-				arms_factory > 15
+				add = 10
+				check_variable = { resource_produced@aluminium > 20 }
 			}
-
+			
 			modifier = {
-				factor = 2
-				aluminium > 10
-			}
-			modifier = {
-				factor = 2
-				rubber > 7
+				add = 10
+				check_variable = { resource_produced@rubber > 12 }
 			}
 			
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 7
+				factor = 0
+				has_deployed_air_force_size = {
+				type = CAS
+				size < 250  
+				}
 			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 750
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+
 
 			modifier = {
 				factor = 0
-				aluminium < 3
+				check_variable = { resource_produced@rubber < 6 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 1
-			}
-
-
-
-			modifier = {
-				factor = 2.5
-				has_tech = formation_flying
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}		
 		}
 	}
 
@@ -850,20 +1192,40 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-		modifier = {
-				factor = 2.5
+			factor = 5
+
+			modifier = {
+				add = 5
 				has_tech = formation_flying
 			}
+			
+			modifier = {
+				factor = 0
+				arms_factory < 8
+			}
 		
-					modifier = {
-				factor = 3
-				has_tech = fighter1
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = fighter3
+				is_researching_technology = fighter3
+				}
 			}
 
 			modifier = {
 				factor = 0.5
+			OR = {
 				has_tech = tactical_bomber3
+				is_researching_technology = tactical_bomber3
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = tactical_bomber3
+				check_variable = { num_deployed_planes_with_type@tactical_bomber < 150 }
+				}
 			}
 			
 			modifier = {
@@ -873,43 +1235,90 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				arms_factory > 25
+				arms_factory > 15
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 10
+				add = 5
+				check_variable = { resource_produced@aluminium > 22 }
 			}
+
+
+			
 			modifier = {
-				factor = 2
-				rubber > 7
+				factor = 0
+				has_deployed_air_force_size = {
+				type = CAS
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = CAS
+				size > 750
+				}
 			}
 			
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 7
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+		
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 16 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 3
-			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
-			modifier = {
-				factor = 0
-				rubber < 1
-			}
-
-
-			modifier = {
-				factor = 2.5
-				has_tech = formation_flying
+				check_variable = { resource_produced@rubber < 6 }
 			}
 		}
 	}
@@ -1321,8 +1730,48 @@ technologies = {
 			air_equipment
 		}
 
-		ai_will_do = {
-			factor = 4
+	ai_will_do = {
+			factor = 15
+			
+			modifier = {
+				factor = 2
+				arms_factory > 15
+			}
+			
+			modifier = {
+				factor = 0
+				arms_factory < 10
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
 		}
 	}
 
@@ -1351,25 +1800,45 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
 			modifier = {
-				factor = 3
+				factor = 0
+				arms_factory < 5
+			}
+			
+			modifier = {
+				add = 3
 				has_tech = air_superiority
+			}
+			
+			modifier = {
+				add = 3
+				has_tech = force_rotation
 			}
 	
 			modifier = {
-				factor = 3
+				add = 5
+			OR = {
 				has_tech = strategic_bomber1
+				is_researching_technology = strategic_bomber1
+				}
+			}
+			
+			modifier = {
+				add = 5
+			OR = {	
+				has_tech = tactical_bomber1
+				is_researching_technology = tactical_bomber1 
+				}
 			}
 			
 			modifier = {
 				factor = 0.5
+			OR = {
 				has_tech = fighter1
-			}
-			
-			modifier = {
-				factor = 0.5
 				is_researching_technology = fighter1
+				}
 			}
 
 			modifier = {
@@ -1377,39 +1846,88 @@ technologies = {
 				arms_factory > 25
 			}
 
-			modifier = {
-				factor = 2
-				aluminium > 15
+		modifier = {
+				add = 10
+				check_variable = { resource_produced@aluminium > 12 }
 			}
 			
 			modifier = {
-				factor = 2
-				rubber > 10
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size < 1
+				}
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 1
+				}					
+			}
+			}
+
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 250
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 10
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 500
+				}
 			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 750
+				}
+			}
+				
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 6 }
+			}
+
 
 			modifier = {
 				factor = 0
-				aluminium < 5
+				check_variable = { resource_produced@rubber < 4 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
-			modifier = {
-				factor = 0
-				rubber < 5
-			}
-			
-			
-			
-			
 		}
 	}
 
@@ -1437,61 +1955,144 @@ technologies = {
 			cat_heavy_fighter
 		}
 
+		
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
+			
 			modifier = {
-				factor = 3
+				factor = 0
+				arms_factory < 5
+			}
+			
+			modifier = {
+				add = 3
 				has_tech = air_superiority
 			}
+			
 			modifier = {
-				factor = 3
-				has_tech = strategic_bomber2
+				add = 3
+				has_tech = force_rotation
 			}
-					modifier = {
-				factor = 0.5
-				has_tech = fighter2
+	
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = strategic_bomber2
+				is_researching_technology = strategic_bomber2
+				}
+			}
+			
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = tactical_bomber2
+				is_researching_technology = tactical_bomber2
+				}
 			}
 			
 			modifier = {
 				factor = 0.5
+			OR = {
+				has_tech = fighter2
 				is_researching_technology = fighter2
-			}			
+				}
+			}
 
 			modifier = {
 				factor = 1.5
 				arms_factory > 25
 			}
 
-			modifier = {
-				factor = 2
-				aluminium > 15
+		modifier = {
+				add = 10
+				check_variable = { resource_produced@aluminium > 15 }
+			}
+			
+		modifier = {
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
 			}
 			
 			modifier = {
-				factor = 2
-				rubber > 10
+				factor = 0
+			AND = {
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size < 1
+				}
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 1
+				}					
+			}
+			}		
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 250
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 10
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 750
+				}
+			}
+				
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 8 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 5
+				check_variable = { resource_produced@rubber < 4 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 5
-			}						
-		}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
+			}
 	}
 
 	heavy_fighter3 = {
@@ -1519,59 +2120,143 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
+			
 			modifier = {
-				factor = 3
+				factor = 0
+				arms_factory < 5
+			}
+			
+			modifier = {
+				add = 3
 				has_tech = air_superiority
 			}
+			
 			modifier = {
-				factor = 3
-				has_tech = strategic_bomber3
+				add = 3
+				has_tech = force_rotation
 			}
+	
 			modifier = {
-				factor = 0.5
-				has_tech = fighter3
+				add = 5
+			OR = {
+				has_tech = strategic_bomber3
+				is_researching_technology = strategic_bomber3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = tactical_bomber3
+				is_researching_technology = tactical_bomber3
+				}
 			}
 			
 			modifier = {
 				factor = 0.5
+			OR = {
+				has_tech = fighter3
 				is_researching_technology = fighter3
+				}
 			}
+
 
 			modifier = {
 				factor = 1.5
 				arms_factory > 25
 			}
 
+		modifier = {
+				add = 10
+				check_variable = { resource_produced@aluminium > 18 }
+			}
+		
 			modifier = {
-				factor = 2
-				aluminium > 25
+				add = 10
+				check_variable = { resource_produced@rubber > 8 }
 			}
 			
 			modifier = {
-				factor = 2
-				rubber > 10
+				factor = 0
+			AND = {
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size < 1
+				}
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 1
+				}					
+			}
+			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 250
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 15
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 500
+				}
 			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 750
+				}
+			}
+				
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 10
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 10 }
+			}
+
 
 			modifier = {
 				factor = 0
-				aluminium < 10
+				check_variable = { resource_produced@rubber < 4 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 5
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -1601,25 +2286,53 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-	modifier = {
-				factor = 2.5
-				has_tech = formation_flying
-			}
-		
-					modifier = {
-				factor = 3
-				has_tech = fighter1
-			}
-
+			factor = 5
+			
 			modifier = {
-				factor = 0.2
-				has_tech = CAS1
+				factor = 0
+				arms_factory < 10
 			}
 			
 			modifier = {
-				factor = 0.2
+				factor = 2
+				arms_factory > 25
+			}
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 3
+			OR = {
+				has_tech = fighter1
+				is_researching_technology = fighter1
+				}
+			}
+			
+			modifier = {
+				add = 3
+			Or = {
+				has_tech = heavy_fighter1
+				is_researching_technology = heavy_fighter1
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+			OR = {
+				has_tech = CAS1
 				is_researching_technology = CAS1
+			}
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = CAS1
+				check_variable = { num_deployed_planes_with_type@cas < 150 }
+				}
 			}
 
 			modifier = {
@@ -1628,34 +2341,89 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 15
+				add = 10
+				check_variable = { resource_produced@aluminium > 30 }
 			}
+
 			modifier = {
-				factor = 2
-				rubber > 10
+				add = 10
+				check_variable = { resource_produced@rubber > 14 }
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
 			}
 			
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 10
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 15 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 8
+				check_variable = { resource_produced@rubber < 7 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 3
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -1684,58 +2452,149 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-					modifier = {
-				factor = 3
-				has_tech = fighter1
-			}
-
+			factor = 5
+			
 			modifier = {
-				factor = 0.5
-				has_tech = CA2
+				factor = 0
+				arms_factory < 10
+			}
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 3
+			OR = {
+				has_tech = fighter2
+				is_researching_technology = fighter2
+				}
 			}
 			
 			modifier = {
-				factor = 0.5
-				is_researching_technology = CA2
+				add = 3
+			OR = {
+				has_tech = heavy_fighter2
+				is_researching_technology = heavy_fighter2
+				}
 			}
 
 			modifier = {
-				factor = 1.5
+				factor = 0.5
+			OR = {
+				has_tech = CAS2
+				is_researching_technology = CAS2
+				}
+			}
+			
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = CAS2
+				check_variable = { num_deployed_planes_with_type@cas < 150 }
+				}
+			}
+			
+
+
+			modifier = {
+				factor = 2
 				arms_factory > 20
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 20
+				add = 10
+				check_variable = { resource_produced@aluminium > 36 }
 			}
 			
 			modifier = {
-				factor = 2
-				rubber > 10
+				add = 10
+				check_variable = { resource_produced@rubber > 14 }
+			}
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
 			}
 			
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 15
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 17 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 10
-			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 5
-			}
-
+				check_variable = { resource_produced@rubber < 7 }
+			}			
+		
 			modifier = {
 				factor = 0
-				rubber < 3
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -1764,57 +2623,149 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-						modifier = {
-				factor = 3
-				has_tech = fighter1
-			}
-
+			factor = 5
+			
 			modifier = {
-				factor = 0.5
-				has_tech = CA3
+				factor = 0
+				arms_factory < 10
+			}
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 3
+			OR = {
+				has_tech = fighter3
+				is_researching_technology = fighter3
+				}
 			}
 			
 			modifier = {
-				factor = 0.5
-				is_researching_technology = CA3
+				add = 3
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
 			}
 
+			modifier = {
+				factor = 0.5
+				OR = {
+				has_tech = CAS3
+				is_researching_technology = CAS3
+				}
+			}
+
+
+			modifier = {
+				factor = 0
+			AND = {
+				has_tech = CAS3
+				check_variable = { num_deployed_planes_with_type@cas < 150 }
+				}
+			}
+			
 			modifier = {
 				factor = 1.5
-				arms_factory > 30
+				arms_factory > 20
 			}
 
 			modifier = {
-				factor = 2
-				aluminium > 30
+				add = 10
+				check_variable = { resource_produced@aluminium > 42 }
 			}
+			
 			modifier = {
-				factor = 2
-				rubber > 10
+				add = 10
+				check_variable = { resource_produced@rubber > 14 }
 			}
 			
 			
 			modifier = {
-				factor = 0.5
-				aluminium < 20
+				factor = 0
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 19 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 15
+				check_variable = { resource_produced@rubber < 7 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 7
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 3
-			}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -1850,7 +2801,151 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = fighter3
+				is_researching_technology = fighter3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+			OR = {
+				has_tech = CAS3
+				is_researching_technology = CAS3
+				}
+			}
+			
+			modifier = {
+				factor = 1.5
+				arms_factory > 20
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@tungsten}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@tungsten}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 10
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -1879,7 +2974,137 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 3
+			OR = {
+				has_tech = fighter3
+				is_researching_technology = fighter3
+				}
+			}
+			
+			modifier = {
+				add = 3
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+			OR = {
+				has_tech = CAS3
+				is_researching_technology = CAS3
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				arms_factory > 20
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+
+			
+		modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 750
+				}
+			}
+			
+			
+			modifier = {
+				factor = 0
+				has_deployed_air_force_size = {
+				type = fighter
+				size < 250  
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 8
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
 		}
 	}
 
@@ -1912,56 +3137,103 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 
 			modifier = {
-				factor = 20
+				factor = 0
+				arms_factory < 12
+			}
+
+
+			modifier = {
+				ADD = 20
 				has_tech = nukes
 			}
 
 			modifier = {
-				factor = 3
+				add = 5
 				has_tech = air_superiority
 			}
 		
 			modifier = {
-				factor = 3
+				add = 5
+			OR = {
 				has_tech = heavy_fighter1
+				is_researching_technology = heavy_fighter1
+				}
+			}
+			
+			modifier = {
+				factor = 0.5
+			NOT = {
+				has_tech = heavy_fighter1
+				is_researching_technology = heavy_fighter1
+				}
 			}
 
 			modifier = {
-				factor = 1.5
+				factor = 2
 				arms_factory > 30
 			}
+			
+			modifier = {
+				add = 15
+				check_variable = { resource_produced@aluminium > 36 }
+			}
+			
+			modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber > 24 }
+			}
 
 			modifier = {
-				factor = 2
-				aluminium > 20
-			}
-			modifier = {
-				factor = 2
-				rubber > 15
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 15
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+								
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 18 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 10
+				check_variable = { resource_produced@rubber < 12 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+									
 			modifier = {
 				factor = 0
-				rubber < 5
-			}						
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@rubber}
+				check_variable = { resource_pro < 1 }
+				}					
 		}
 	}
 
@@ -1990,52 +3262,113 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 
 			modifier = {
-				factor = 3
+				ADD = 20
+				has_tech = nukes
+			}
+			
+			modifier = {
+				factor = 0
+				arms_factory < 12
+			}
+
+			modifier = {
+				add = 5
 				has_tech = air_superiority
 			}
-				modifier = {
-				factor = 3
+		
+			modifier = {
+				add = 5
+			OR = {
 				has_tech = heavy_fighter2
+				is_researching_technology = heavy_fighter2
+				}
 			}
 
 			modifier = {
-				factor = 1.5
+				factor = 2
 				arms_factory > 30
 			}
-
+			
 			modifier = {
-				factor = 2
-				aluminium > 25
+				add = 15
+				check_variable = { resource_produced@aluminium > 44 }
 			}
+			
 			modifier = {
-				factor = 2
-				rubber > 15
+				add = 15
+				check_variable = { resource_produced@rubber > 24 }
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 100
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 20
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+				
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 22 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 15
+				check_variable = { resource_produced@rubber < 12 }
 			}
-
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+								
 			modifier = {
 				factor = 0
-				rubber < 5
-			}						
-		}
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}				
 	}
+}
 
 	strategic_bomber3 = {
 
@@ -2062,51 +3395,112 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 
 			modifier = {
-				factor = 3
-				has_tech = air_superiority
+				ADD = 20
+				has_tech = nukes
 			}
 			
-							modifier = {
-				factor = 3
+			modifier = {
+				factor = 0
+				arms_factory < 12
+			}
+
+			modifier = {
+				add = 5
+				has_tech = air_superiority
+			}
+		
+			modifier = {
+				add = 5
+			Or = {
 				has_tech = heavy_fighter3
-			}
-
-			modifier = {
-				factor = 1.5
-				arms_factory > 35
+				is_researching_technology = heavy_fighter3
+				}
 			}
 
 			modifier = {
 				factor = 2
-				aluminium > 35
+				arms_factory > 30
 			}
+			
 			modifier = {
-				factor = 2
-				rubber > 15
+				add = 15
+				check_variable = { resource_produced@aluminium > 52 }
+			}
+			
+			modifier = {
+				add = 15
+				check_variable = { resource_produced@rubber > 24 }
+			}
+
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 100
+				}
 			}
 						
 			modifier = {
-				factor = 0.5
-				aluminium < 25
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 26 }
 			}
 
 			modifier = {
 				factor = 0
-				aluminium < 15
+				check_variable = { resource_produced@rubber < 12 }
 			}
+			
 
-			modifier = {
-				factor = 0.5
-				rubber < 10
-			}
-
+			
 			modifier = {
 				factor = 0
-				rubber < 5
-			}						
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}				
 		}
 	}
 
@@ -2142,11 +3536,121 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
 			modifier = {
-				factor = 3
+				ADD = 20
+				has_tech = nukes
+			}
+
+			modifier = {
+				add = 10
 				has_tech = air_superiority
 			}
+		
+			modifier = {
+				add = 15
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 100
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 15 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 12 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 10 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 6 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 5 }
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 15 }
+			}					
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@tungsten}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@tungsten}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 10
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2203,7 +3707,113 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
+
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = CAS1
+				is_researching_technology = CAS1
+				}
+			}
+
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = tactical_bomber1
+				is_researching_technology = tactical_bomber1
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				arms_factory > 15
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 100
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+				}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2332,7 +3942,134 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+			
+		modifier = {
+				add = 5
+				has_tech = force_rotation
+			}
+		
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = fighter3
+				is_researching_technology = fighter3
+				}
+			}
+			
+			modifier = {
+				add = 5
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
+			}
+
+			modifier = {
+				factor = 0.5
+			OR = {
+				has_tech = CAS3
+				is_researching_technology = CAS3
+				}
+			}
+
+			modifier = {
+				factor = 1.5
+				arms_factory > 20
+			}
+
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 10 }
+			}
+
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 100
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = tactical_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 10 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 7 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 3 }
+			}
+
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 5 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 1 }
+			}
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@tungsten}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@tungsten}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 10
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
+		
 		}
 	}
 
@@ -2361,11 +4098,114 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+
 			modifier = {
-				factor = 4
+				ADD = 20
+				has_tech = nukes
+			}
+
+			modifier = {
+				add = 10
 				has_tech = air_superiority
 			}
+		
+			modifier = {
+				add = 15
+			OR = {
+				has_tech = heavy_fighter3
+				is_researching_technology = heavy_fighter3
+				}
+			}
+
+			modifier = {
+				factor = 2
+				arms_factory > 30
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 100
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 200
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = strategic_bomber
+				size > 300
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 250
+				}
+			}
+						
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 500
+				}
+			}
+			
+			modifier = {
+				add = 5
+				has_deployed_air_force_size = {
+				type = fighter
+				size > 750
+				}				
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@rubber > 15 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@aluminium < 12 }
+			}
+			
+			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 10 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@aluminium < 6 }
+			}
+
+			modifier = {
+				factor = 0
+				check_variable = { resource_produced@rubber < 5 }
+			}
+			
+			modifier = {
+				add = 5
+				check_variable = { resource_produced@aluminium > 15 }
+			}					
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@aluminium}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@aluminium}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 

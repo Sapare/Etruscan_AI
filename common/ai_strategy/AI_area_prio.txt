@@ -1,0 +1,57 @@
+CHN_area_priority = {
+	enable = {
+		original_tag = CHN
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 110 
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = West_Equestrian_lowlands
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = Central_equestrian_lowlands
+		value = 85
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = Southern_equestrian_lowlands
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = Eastern_equestrian_lowlands
+		value = 65
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = North_equestrian_lowlands
+		value = 35
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 10
+	}
+	ai_strategy = {
+        type = area_priority
+        id = asia
+        value = 10
+    }
+    ai_strategy = {
+        type = area_priority
+        id = test
+        value = -10000
+    }
+}

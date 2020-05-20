@@ -1,0 +1,192 @@
+	
+No_Naval_Fighters = {
+
+	enable = {
+		always = yes
+		}
+		
+	abort_when_not_enabled = yes	
+	
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_CAS_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = nav_bomber_equipment
+			value = -100
+			}
+			
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_fighter_equipment
+			value = -100
+			} 				
+
+		ai_strategy = {
+			type = equipment_variant_production_factor
+			id = cv_nav_bomber_equipment
+			value = -100
+			}	
+	}
+	
+Default_Fighter_ratio = {
+
+	enable = {
+		has_tech = early_fighter 		
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 15
+	}	
+	}
+	
+Default_TACBomber_ratio = {
+
+	enable = {
+		has_tech = early_bomber 
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}
+	}
+
+Default_CAS_ratio = {
+
+	enable = {
+		has_tech = CAS1 
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10
+	}	
+	}
+	
+Default_STBomber_ratio = {
+
+	enable = {
+		has_tech = strategic_bomber1 
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 10
+	}
+	}
+	
+Fighters_without_bombers = {
+
+	enable = {
+	NOT = {
+		has_tech = CAS1
+		has_tech = strategic_bomber1
+		has_tech = tactical_bomber1 		
+		}		
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+			type = air_factory_balance
+			value = -50 
+			}	
+	}	
+
+Strat_Doctrine = {
+
+	enable = {
+		has_tech = air_superiority 		
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 10
+	}	
+		
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -5
+	}	
+	}
+
+CAS_doctrine = {
+
+	enable = {
+		has_tech = formation_flying 		
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 10
+	}	
+		
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -5
+	}	
+	}
+
+Tactical_Doctrine = {
+
+	enable = {
+		has_tech = force_rotation 		
+		}
+		
+	abort_when_not_enabled = yes	
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 10
+	}	
+		
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -5
+	}	
+	}

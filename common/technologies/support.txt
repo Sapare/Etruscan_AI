@@ -135,49 +135,44 @@ technologies = {
 			factor = 5
 		
 		modifier = {
-				factor = 3
-				has_defensive_war = yes 
-				}
-			
-			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}									
+				ADD = 10
+				has_war = yes 
+				}								
 					
 
 			modifier = {
-				factor = 1000
+				ADD = 100
 				has_completed_focus = CRY_SOL_military_of_the_inquisition
 			}
+			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
 		
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}
 					
 			modifier = {
 				factor = 0
 				aluminium < 2
 						}				
 					}
-					}
+			}
 
 	tech_engineers2 = {
 
@@ -209,45 +204,43 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1.5
+			factor = 5
+		
+		modifier = {
+				ADD = 10
+				has_war = yes 
+				}								
+		
+		modifier = {
+				factor = 0
+				date < 1010.1.1
+				}	
 			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+		
+		modifier = {
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
 			modifier = {
 				factor = 0
 				aluminium < 2
-						}				
-						
-			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-				
-		modifier = {
-			factor = 2
-			has_defensive_war = yes 
-				}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}										
-		
+			}				
 		}
 	}
 
@@ -278,40 +271,44 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		
+		modifier = {
+				ADD = 10
+				has_war = yes 
+				}								
+		
+		modifier = {
+				factor = 0
+				date < 1013.1.1
+				}	
 			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-				
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+		
 		modifier = {
-			factor = 3
-			has_defensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
-					}
+				factor = 0
+				aluminium < 2
+			}				
+		}
 					}				
 
 	###------> Old Engineers <><> <><> <><> <><> <><>
@@ -343,41 +340,45 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
+		
+		modifier = {
+				ADD = 10
+				has_war = yes 
+				}								
+		
+		modifier = {
+				factor = 0
+				date < 1016.1.1
+				}	
 			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-				
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+		
 		modifier = {
-			factor = 1.5
-			has_defensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
-					}
-					}
+				factor = 0
+				aluminium < 2
+			}				
+		}
+	}
 
 	###------> X <><> <><> <><> <><> <><>
 
@@ -385,6 +386,9 @@ technologies = {
 
 		enable_subunits = {
 			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 		}
 
 		path = {
@@ -405,46 +409,45 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-
+			factor = 5							
+			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-				
+				ADD = 15
+				has_tech = mobile_warfare
+			}
+			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+		
 		modifier = {
-			factor = 3
-			has_offensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
+				factor = 0
+				aluminium < 2
+			}				
 
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
-
-			modifier = {
-				factor = 1000
+				ADD = 100
 				has_completed_focus = CRY_SOL_military_of_the_inquisition
 			}
 			}
-			}
+	}
 
 	tech_recon2 = {
 
@@ -470,42 +473,42 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-			
+			factor = 5							
 			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
+				ADD = 15
+				has_tech = mobile_warfare
+			}
+			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+			
+		modifier = {
+				factor = 0
+				date < 1010.1.1
+				}	
+				
 				
 		modifier = {
-			factor = 2
-			has_offensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
-					}
-					}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
+				}
+		}
 
 	tech_recon3 = {
 
@@ -530,41 +533,42 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 5							
+			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
+				ADD = 15
+				has_tech = mobile_warfare
+			}
+			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+			
+		modifier = {
+				factor = 0
+				date < 1013.1.1
+				}	
+				
 				
 		modifier = {
-			factor = 2
-			has_offensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}
-					}
-					}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
+				}
+		}
 
 	###------> Old Recon <><> <><> <><> <><> <><>
 
@@ -592,41 +596,42 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
-
+			factor = 5							
+			
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
+				ADD = 15
+				has_tech = mobile_warfare
+			}
+			
+			modifier = {
+				ADD = 10
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+			
+		modifier = {
+				factor = 0
+				date < 1016.1.1
+				}	
+				
 				
 		modifier = {
-			factor = 2
-			has_offensive_war = yes 
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
 				}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions > 100
-					}
-					}
-					}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
+			}					
+				}
+		}
 
 	###------> X <><> <><> <><> <><> <><>
 
@@ -862,56 +867,33 @@ technologies = {
 			factor = 2
 			
 			modifier = {
-			factor  = 2
+			ADD  = 10
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 10
 			has_tech = basic_medium_tank
 			}
-		modifier = {
-			factor = 3
-			has_template_containing_unit = medium_armor
-			}
-			
-		modifier = {
-			factor = 3
-			has_template_containing_unit = magical_infantry
-			}
+
 		
 		modifier = {
-			factor = 2
+			ADD = 10
 			has_tech = basic_heavy_tank
 			}
 		
-		modifier = {
-			factor  = 2
-			has_tech = improved_medium_tank
-			}
-		
 		
 		modifier = {
-			factor  = 1.5
-			has_tech = advanced_light_tank
-			}
-			
-		modifier = {
-			factor  = 1.5
-			has_tech = advanced_medium_tank
-			}
-			
-		modifier = {
-			factor  = 3
-			has_tech = main_batttle_tank
-			}
-
-		modifier = {
-			factor  = 3
-			has_tech = advanced_light_tank_a
-			}						
+			ADD  = 5
+			OR = {
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3 
 			}
 			}
+			}
+}
 			
 			
 	tech_maintenance_company2 = {
@@ -942,57 +924,38 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			
-modifier = {
-			factor  = 1.5
+			modifier = {
+			ADD  = 10
 			has_tech = improved_light_tank
 			}
 			
 		modifier = {
-			factor = 2
+			ADD = 10
 			has_tech = basic_medium_tank
 			}
-		
-		
-		modifier = {
-			factor = 2
-			has_tech = basic_heavy_tank
-			}
-		modifier = {
-			factor = 3
-			has_template_containing_unit = medium_armor
-			}
-			
-		modifier = {
-			factor = 3
-			has_template_containing_unit = magical_infantry
-			}
-		modifier = {
-			factor  = 2
-			has_tech = improved_medium_tank
-			}
-		
-		
-		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank
-			}
-			
-		modifier = {
-			factor  = 2
-			has_tech = advanced_medium_tank
-			}
-			
-		modifier = {
-			factor  = 2
-			has_tech = main_batttle_tank
-			}
 
+		
 		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank_a
+			ADD = 10
+			has_tech = improved_heavy_tank
+			}
+		
+		modifier = {
+		factor = 0
+		date < 1010.1.1
+		}
+		
+		modifier = {
+			ADD  = 5
+			OR = {
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3 
 			}
 			}
 			}
+	}
 
 	tech_maintenance_company3 = {
 
@@ -1018,59 +981,35 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
-	modifier = {
-			factor  = 1.5
-			has_tech = improved_light_tank
-			}
+			factor = 5
 			
 		modifier = {
-			factor = 2
-			has_tech = basic_medium_tank
-			}
-		
-		modifier = {
-			factor = 3
-			has_template_containing_unit = medium_armor
-			}
-			
-		modifier = {
-			factor = 3
-			has_template_containing_unit = magical_infantry
-			}
-		modifier = {
-			factor = 2
-			has_tech = basic_heavy_tank
-			}
-		
-		modifier = {
-			factor  = 2
+			ADD = 10
 			has_tech = improved_medium_tank
 			}
-		
-		
-		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank
-			}
-			
-		modifier = {
-			factor  = 2
-			has_tech = advanced_medium_tank
-			}
-			
-		modifier = {
-			factor  = 2
-			has_tech = main_batttle_tank
-			}
 
+		
 		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank_a
+			ADD = 10
+			has_tech = improved_heavy_tank
+			}
+		
+		modifier = {
+		factor = 0
+		date < 1013.1.1
+		}
+		
+		modifier = {
+			ADD  = 5
+			OR = {
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3 
 			}
 			}
-			}
+		}
+	}
 
 	###------> Old Maintenance Company <><> <><> <><> <><> <><>
 
@@ -1099,61 +1038,35 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 5
 
-	modifier = {
-			factor  = 2
-			has_tech = improved_light_tank
-			}
 		modifier = {
-			factor = 3
-			has_template_containing_unit = medium_armor
-			}
-			
-		modifier = {
-			factor = 3
-			has_template_containing_unit = magical_infantry
-			}	
-			
-			
-		modifier = {
-			factor = 3
-			has_tech = basic_medium_tank
-			}
-		
-		
-		modifier = {
-			factor = 2
-			has_tech = basic_heavy_tank
-			}
-		
-		modifier = {
-			factor  = 2
-			has_tech = improved_medium_tank
-			}
-		
-		
-		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank
-			}
-			
-		modifier = {
-			factor  = 2
+			ADD = 10
 			has_tech = advanced_medium_tank
 			}
-			
-		modifier = {
-			factor  = 2
-			has_tech = main_batttle_tank
-			}
 
+		
 		modifier = {
-			factor  = 2
-			has_tech = advanced_light_tank_a
+			ADD = 10
+			has_tech = advanced_heavy_tank
+			}
+		
+		modifier = {
+		factor = 0
+		date < 1016.1.1
+		}
+		
+		modifier = {
+			ADD  = 5
+			OR = {
+			has_tech = magical_weapons
+			has_tech = magical_weapons1
+			has_tech = magical_weapons2
+			has_tech = magical_weapons3 
 			}
 			}
 			}
+	}
 			
 	###------> X <><> <><> <><> <><> <><>
 
@@ -1185,71 +1098,27 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0.25
-				ruber < 3
-				}
+			factor = 5
 			
 			modifier = {
 				factor = 0.5
-				ruber < 7
+				rubber < 1
 				}
 			
 			modifier = {
-				factor = 0.75
-				ruber < 8
-				}
-			
-			modifier = {
-				factor = 1.5
-				num_divisions > 25
+				ADD = 10
+				rubber > 3
 				}
 				
 			modifier = {
-				factor = 1.5
-				num_divisions > 35
+				ADD = 10
+				manpower_per_military_factory < 10000
 				}
 				
-			modifier = {
-				factor = 1.5
-				num_divisions > 45
+		modifier = {
+				ADD = 15
+				manpower_per_military_factory < 5000
 				}
-							
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 50
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 60
-				}
-			
-			modifier = {
-				factor = 1.5
-				num_divisions > 70
-				}	
-				
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 85
-				}	
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 100
-				}
-				
-			modifier = {
-				factor = 0
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.5 }
-					}
 		}
 		}
 	tech_field_hospital2 = {
@@ -1277,55 +1146,31 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
 			modifier = {
-				factor = 1.5
-				num_divisions > 25
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 35
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 45
-				}
-							
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 50
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 60
+				factor = 0.5
+				rubber < 1
 				}
 			
 			modifier = {
-				factor = 1.5
-				num_divisions > 70
-				}	
-				
+				ADD = 10
+				rubber > 3
+				}
+			modifier = {
+			factor = 0
+			date < 1010.1.1
+			}
 				
 			modifier = {
-				factor = 1.5
-				num_divisions > 85
-				}	
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 100
+				ADD = 10
+				manpower_per_military_factory < 10000
 				}
 				
-				modifier = {
-				factor = 0
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.5 }
-					}
+		modifier = {
+				ADD = 15
+				manpower_per_military_factory < 5000
+				}
 		}
 		}
 	tech_field_hospital3 = {
@@ -1352,55 +1197,31 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			
 			modifier = {
-				factor = 2
-				num_divisions > 25
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 35
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 45
-				}
-							
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 50
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 60
+				factor = 0.5
+				rubber < 1
 				}
 			
 			modifier = {
-				factor = 1.5
-				num_divisions > 70
-				}	
-				
+				ADD = 10
+				rubber > 3
+				}
+			modifier = {
+			factor = 0
+			date < 1013.1.1
+			}
 				
 			modifier = {
-				factor = 1.5
-				num_divisions > 85
-				}	
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 100
+				ADD = 10
+				manpower_per_military_factory < 10000
 				}
 				
-				modifier = {
-				factor = 0
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.5 }
-					}
+		modifier = {
+				ADD = 15
+				manpower_per_military_factory < 5000
+				}
 		}
 		}
 	###------> Old Field Hospital <><> <><> <><> <><> <><>
@@ -1430,57 +1251,34 @@ modifier = {
 		}
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 1.5
-				num_divisions > 25
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 35
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 45
-				}
-							
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 50
-				}
-				
-			modifier = {
-				factor = 1.5
-				num_divisions > 60
-				}
+			factor = 5
 			
 			modifier = {
-				factor = 1.5
-				num_divisions > 70
-				}	
-				
+				factor = 0.5
+				rubber < 1
+				}
+			
+		modifier = {
+				ADD = 10
+				rubber > 3
+				}
 				
 			modifier = {
-				factor = 1.5
-				num_divisions > 85
-				}	
+			factor = 0
+			date < 1016.1.1
+			}
 				
 			modifier = {
-				factor = 1.5
-				num_divisions > 100
+				ADD = 10
+				manpower_per_military_factory < 10000
 				}
 				
-				modifier = {
-				factor = 0
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage < 0.5 }
-					}
+		modifier = {
+				ADD = 15
+				manpower_per_military_factory < 5000
 				}
-				}
+		}
+	}
 	###------> X <><> <><> <><> <><> <><>
 
 	tech_logistics_company = {
@@ -1699,44 +1497,23 @@ modifier = {
 
 		ai_will_do = {
 			factor = 2
-		
-		
-			modifier = {
-			value = 2
-				has_template_containing_unit = medium_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = light_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = heavy_armor
-				
-			}
-			modifier = {
-			value = 2
-			num_divisions > 50 
 			
+			modifier = {
+			ADD  = 5
+			has_tech = improved_light_tank
 			}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = light_armor
-				}
-				}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = medium_armor
-				}
-				}												
-				}
-				}
+			
+		modifier = {
+			ADD = 10
+			has_tech = basic_medium_tank
+			}
+		
+		modifier = {
+			ADD = 10
+			has_tech = basic_heavy_tank
+			}
+			}
+		}
 				
 				
 	tech_signal_company2 = {
@@ -1765,41 +1542,26 @@ modifier = {
 
 		ai_will_do = {
 			factor = 2
-					modifier = {
-			value = 2
-				has_template_containing_unit = medium_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = light_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = heavy_armor
-				
-			}
-			modifier = {
-			value = 2
-			num_divisions > 50 
 			
+			modifier = {
+			ADD  = 5
+			has_tech = improved_light_tank
 			}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = light_armor
-				}
-				}
-			modifier = {
-			value = 5
-			has_army_size = {
-			size  > 5
-			type = medium_armor
-				}
-				}
-				}
+			
+		modifier = {
+			ADD = 10
+			has_tech = basic_medium_tank
+			}
+		
+		modifier = {
+			ADD = 10
+			has_tech = basic_heavy_tank
+			}
+		modifier = {
+		factor = 0
+		date < 1010.1.1
+		}			
+	}
 				}
 
 	tech_signal_company3 = {
@@ -1828,41 +1590,26 @@ modifier = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-			value = 8
-				has_template_containing_unit = medium_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = light_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = heavy_armor
-				
-			}
-			modifier = {
-			value = 2
-			num_divisions > 50 
 			
+			modifier = {
+			ADD  = 5
+			has_tech = improved_light_tank
 			}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = light_armor
-				}
-				}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = medium_armor
-				}
-				}
-				}
+			
+		modifier = {
+			ADD = 10
+			has_tech = basic_medium_tank
+			}
+		
+		modifier = {
+			ADD = 10
+			has_tech = basic_heavy_tank
+			}
+		modifier = {
+		factor = 0
+		date < 1013.1.1
+		}			
+	}
 				}
 
 	###------> Old Signal Company <><> <><> <><> <><> <><>
@@ -1895,42 +1642,26 @@ modifier = {
 			factor = 2
 			
 			modifier = {
-			value = 2
-				has_template_containing_unit = medium_armor
-				
+			ADD  = 5
+			has_tech = improved_light_tank
 			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = light_armor
-				
-			}
-			modifier = {
-			value = 2
-				has_template_containing_unit = heavy_armor
-				
-			}
-			modifier = {
-			value = 2
-			num_divisions > 50 
 			
+		modifier = {
+			ADD = 10
+			has_tech = basic_medium_tank
 			}
-			modifier = {
-			value = 2
-			has_army_size = {
-			size  > 5
-			type = light_armor
-				}
-				}
-			modifier = {
-			value = 8
-			has_army_size = {
-			size  > 5
-			type = medium_armor
-				}
-				}
-				}
-				}
-
+		
+		modifier = {
+			ADD = 10
+			has_tech = basic_heavy_tank
+			}
+		modifier = {
+		factor = 0
+		date < 1016.1.1
+		}			
+	}
+}
+				
 	###------> X <><> <><> <><> <><> <><>
 
 	###------> New Signal Company <><> <><> <><> <><> <><>
@@ -1964,37 +1695,37 @@ modifier = {
 		
 		
 		modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 3
+			factor = 3
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 		}
@@ -2028,37 +1759,37 @@ modifier = {
 			factor = 1
 		
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 3
+			factor = 3
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}
 				}
@@ -2091,37 +1822,37 @@ modifier = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = medium_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = light_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 				has_template_containing_unit = heavy_armor
 				
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			num_divisions > 50 
 			
 			}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = light_armor
+			size  > 10
+			type = armor
 				}
 				}
 			modifier = {
-			value = 2
+			factor = 2
 			has_army_size = {
-			size  > 5
-			type = medium_armor
+			size  > 20
+			type = armor
 				}
 				}		
 				}
@@ -2669,7 +2400,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -2740,7 +2471,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {
@@ -2810,7 +2541,7 @@ modifier = {
 			
 		modifier = {
 			factor  = 3
-			has_tech = main_batttle_tank
+			has_tech = main_battle_tank
 			}
 
 		modifier = {

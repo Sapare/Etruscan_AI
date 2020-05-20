@@ -10,6 +10,139 @@
 # protect
 # influence
 
+EQS_unit_production = {
+	enable = {
+		is_pony_race = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 45
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = pegasi
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 8
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 15
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 0
+	}	
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 0
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 0
+	}
+
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 45
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}		
+	}
+
+
+
 EQS_template_design_1 = {
 	enable = {
 		is_pony_race = yes
@@ -151,159 +284,15 @@ EQS_template_design_2 = {
 		id = mechanized
 		value = 10
 	}
-	}
-
-EQS_unit_production = {
-	enable = {
-		is_pony_race = yes
-	}
-	abort = {
-		always = no
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = pegasi
-		value = 6
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 6
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = marines
-		value = 1
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = light_armor
-		value = 10
-	}
-	
-	ai_strategy = {
-		type = role_ratio
-		id = main_armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = magical_infantry
-		value = 13
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 80
-	}
-
-	#Air unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 40
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = 15
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = tactical_bomber
-		value = 10
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = strategic_bomber
-		value = 15
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = naval_bomber
-		value = 2
-	}
-
-
-	# Naval unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = 5
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = submarine
-		value = 5
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 45
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = convoy
-		value = 25
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 30
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 30
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = 30
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 10
-	}
 	}		
 
 Early_EQS_armor = {
 	enable = {
 		 original_tag = EQS 
-		has_tech = improved_light_armor
+		has_tech = improved_light_tank
 	}
 	abort = {
-		has_tech = basic_medium_armor
+		has_tech = basic_medium_tank
 	}
 
 	ai_strategy = {
@@ -866,11 +855,10 @@ EQS_sombra_cry_fix2 = {
 
 
 CRY_dont_care_about_yaks = {
-	enable = {
 	allowed = {
 		original_tag = CRY
 	}
-	
+	enable = {	
 		original_tag = CRY
 		NOT = { has_government = democratic }
 		is_subject = no
@@ -1509,5 +1497,43 @@ ELF_no_conquer_EQC = {
 		type = alliance
 		id = "EQC"
 		value = 200
+	}
+}
+
+EQS_dont_push_CHN = {
+	allowed = {
+		OR = {
+			original_tag = EQS
+			original_tag = CRY
+		}
+	}
+	enable = {
+		has_government = democratic
+		has_defensive_war_with = CHN
+		alliance_strength_ratio < 1.2
+		date < 1012.1.1
+		CHN = {
+			has_government = fascism
+			NOT = {
+				any_occupied_country = {
+					OR = {
+						tag = ROOT
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = CHN
+
+		priority = 100
+		
+		ordertype = front
+		execution_type = careful
 	}
 }

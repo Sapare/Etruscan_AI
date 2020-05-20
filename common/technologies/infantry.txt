@@ -84,7 +84,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 100
 		}
 	}
 
@@ -130,7 +130,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 100
 		}
 	}
 
@@ -163,7 +163,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1000000
+			factor = 100
 		}
 	}
 
@@ -217,34 +217,39 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
-				modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
+			factor = 3
 
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					factor = 2
+					has_tech = support_weapons
+					}
+			modifier = {
+			factor = 2
+			has_war = yes
+			}				
+
+				modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+															
 		}
 	}
 
@@ -280,31 +285,43 @@ technologies = {
 			factor = 3
 
 			modifier = {
-				factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}	
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 50
+					factor = 2
+					has_tech = support_weapons
 					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+				
+				modifier = {
+					factor = 0
+			OR = {
+				NOT = {
+					has_tech = basic_machine_tools					
+					}
+				NOT = {
+					has_tech = construction1					
+					}
+				NOT = {
+					has_tech = electronic_mechanical_engineering					
+					}
+					}
+				}
+				
+				modifier = {
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 	
@@ -355,36 +372,26 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+			
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
+					add = 5
+					has_war = yes
+					}
+			
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
+					add = 5
+					has_tech = support_weapons2
 					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
-					}
-				
-			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
-					}
-					}
+		}
+		}
 
 	magical_weapons = {
 
@@ -479,39 +486,16 @@ technologies = {
 
 
 			modifier = {
-				factor = 1000
+				ADD = 15
 				has_completed_focus = CRY_SOL_military_of_the_inquisition
 			}
 			
 		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				}
 		}
 		}
 		
@@ -555,43 +539,51 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
 			
 		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				} 
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				factor = 0.5	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -631,33 +623,41 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 2
+
 			modifier = {
-				factor = 0.6
-				is_major = no
-			}
-			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
-		modifier = {
-			factor = 2
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 50
-		}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
+			
+				
+			modifier = {
+				factor = 0.5	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -691,47 +691,48 @@ technologies = {
 			magical_tech
 		}
 
-		ai_will_do = {
+	ai_will_do = {
 			factor = 2
 
 			modifier = {
-				factor = 2
+				factor = 3
 				OR = {
 					original_tag = EQS
 					original_tag = NLR
 					original_tag = CRY
 				}
 			}
+
+
+			modifier = {
+				ADD = 15
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
 			
-		modifier = {
-			factor = 1.5
-			crystals > 15
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 25
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 50
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 35
-		}
-		
-		modifier = {
-			factor = 1.5
-			crystals > 75
-		}
-		
-		modifier = {
-			factor = 2
-			crystals > 100
-		}
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro > 10 }
+				} 
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@crystals}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@crystals}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 1000 }
+				}
+			modifier = {
+				ADD = 15
+				set_temp_variable = {temp_equip = num_equipment_in_armies@magical_equipment}
+				check_variable = { temp_equip > 10000 }
+				}
 		}
 		}
 
@@ -865,36 +866,33 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 
 			modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
-
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					add = 5
+					has_tech = support_weapons3
 					}
-					}
+			}
+	}
 
 	###------> Old Infantry Equipment   <><> <><> <><> <><> <><>
 
@@ -933,36 +931,28 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-		modifier = {
-					factor = 2
-					set_temp_variable = { type_percentage = num_armies_with_type@infantry }
-					divide_temp_variable = { type_percentage = num_armies}
-					check_variable = { type_percentage > 0.5 }
-					}
-	
-			modifier = {
-					factor = 1.5
-					num_divisions > 25
-						}
+			factor = 3
 
 			modifier = {
-					factor = 1.5
-					num_divisions	> 50
-					}
-
-			modifier = {
-					factor = 1.5
-					num_divisions	> 75
+					add = 5
+					has_war = yes
 					}
 				
 			modifier = {
-					factor = 1.5
-					num_divisions	> 100
-					}	
+					add = 5
+					has_tech = support_weapons4
 					}
+			modifier = {
+					factor = 0.5
+					date < 1019.1.1
 					}
+							
+			modifier = {
+					add = 5
+					date > 1019.1.1
+					}
+			}
+		}
 
 	###------> X <><> <><> <><> <><> <><>
 
@@ -1284,7 +1274,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1.2
-		}
 		modifier = {
 				factor = 0
 				original_tag = CHN
@@ -1308,10 +1297,9 @@ technologies = {
 			modifier = {
 					factor = 1.5
 					num_divisions	> 100
-					}	
-		
-		
-	}
+					}
+					}					
+				}
 
 	tech_mountaineers2 = {
 
@@ -1745,28 +1733,13 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
-
+			factor = 1
+			
 			modifier = {
-				factor = 2
-				date > "1013.1.9"
+				ADD = 15
+				date > "1015.1.1"
 			}
-
-			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1014.1.6"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1017.1.1"
-			}
-			}
+		}
 			}
 
 	#Jumps Out of Order to SWB
@@ -1791,21 +1764,11 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 4
-
+			factor = 1
+			
 			modifier = {
-				factor = 2
-				date > "1016.1.9"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1017.1.1"
-			}
-
-			modifier = {
-				factor = 5
-				date > "1017.1.6"
+				ADD = 15
+				date > "1019.1.1"
 			}
 		}
 	}
@@ -1852,14 +1815,27 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 
+			
 			modifier = {
-				factor = 2
-				num_divisions > 25
+				factor = 0
+		OR {
+			NOT = {
+				has_tech = construction1
+				}
+			NOT = {
+				has_tech = electronic_mechanical_engineering
+				}
+			NOT = {
+				has_tech = basic_machine_tools
+				}
+			}
 			}
 			
 			modifier = {
-				factor = 2
-				has_tech > infantry_weapons
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
 			}
 
 			modifier = {
@@ -1868,12 +1844,8 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2
-				date > "1010.1.1"
-			}
-			modifier = {
 				has_war = yes
-				factor = 2
+				factor = 3
 			}
 		}
 	}
@@ -1916,42 +1888,25 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1009.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1010.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1011.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1012.1.1"
-			}
+			factor = 2
 			
+			modifier = {
+				ADD = 5
+				has_tech = mechanical_computing
+				has_tech = construction2
+				has_tech = dispersed_industry
+			}
+
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+
 			modifier = {
 				has_war = yes
-				factor = 2
+				factor = 3
 			}
-						modifier = {
-				factor = 2
-				num_divisions > 35
-			}
-			
-			modifier = {
-				factor = 2
-				has_tech > infantry_weapons1
-			}						
-			}
+		}
 			}
 
 	support_weapons3 = {
@@ -1992,41 +1947,25 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1011.1.6"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1012.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1013.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-					modifier = {
-				factor = 2
-				num_divisions > 25
-			}
+			factor = 2
 			
 			modifier = {
-				factor = 2
-				has_tech > improved_infantry_weapons
-			}				
+				ADD = 5
+				has_tech = computing_machine
+				has_tech = construction3
+				has_tech = dispersed_industry2
 			}
+
+			modifier = {
+				factor = 2
+				date > "1011.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
 			}
 	
 	###------> Old Support Weapons   <><> <><> <><> <><> <><>
@@ -2069,39 +2008,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-
-
-
+			factor = 2
+			
 			modifier = {
-				factor = 2
-				date > "1014.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1015.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1016.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				factor = 2
-				num_divisions > 75
+				ADD = 5
+				AND = {
+				has_tech = improved_computing_machine
+				has_tech = construction4
+				has_tech = dispersed_industry3
+				}
 			}
 			
 			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = advanced_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+
+			modifier = {
+				has_war = yes
 				factor = 3
-				has_tech > advanced_infantry_weapons
-			}						
 			}
-			}
+		}
+	}
 
 	motorised_infantry = {
 
@@ -2169,21 +2105,31 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 
 			modifier = {
-				factor = 2
+				add = 2
 				has_tech = gwtank
 			}
 
 			modifier = {
-				factor = 100
+				ADD = 5
 				has_tech = basic_light_tank
+			}
+			
+			modifier = {
+				ADD = 15
+				has_tech = improved_light_tank
 			}
 
 			modifier = {
+				factor = 0.5
+				check_variable = { resource_produced@rubber < 4 }
+			}
+			
+			modifier = {
 				factor = 0
-				rubber < 1 
+				check_variable = { resource_produced@rubber < 1 }
 			}
 			}
 			}
@@ -2201,7 +2147,7 @@ technologies = {
 		start_year = 1010
 
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 
 		categories = {
@@ -2442,17 +2388,27 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 2
-
+			factor = 1
+		
+		modifier = {
+				factor = 0
+				date < 1011.6.6
+			}
+		
 			modifier = {
-				factor = 20
+				ADD = 20
 				has_tech = basic_medium_tank
 			}
 			
+		modifier = {
+				ADD = 10
+				can_research = improved_medium_tank
+			}
+			
 			modifier = {
-				factor = 0
-				rubber < 2
-		}
+				ADD = 10
+				is_researching_technology = improved_medium_tank
+			}
 		}
 		}
 
@@ -2570,6 +2526,26 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2606,6 +2582,25 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2642,6 +2637,26 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0.5
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2671,6 +2686,26 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+
+		
+			modifier = {
+				ADD = 5	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 250 }
+				}
+			
+			modifier = {
+				ADD = 15	
+				set_temp_variable = {temp_equip = num_equipment_in_armies@mechanized_equipment}
+				check_variable = { temp_equip > 100 }
+				}	
+			
+			modifier = {
+				factor = 0
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
 		}
 	}
 
@@ -2846,8 +2881,35 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons4
+					}
+			modifier = {
+					factor = 0.5
+					date < 1019.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1019.1.1
+					}
+			}
 	}
 
 	advanced_infantry_weapons_b = {
@@ -2873,8 +2935,32 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons_a
+					}
+			}
 	}
 
 	advanced_infantry_weapons_c = {
@@ -2910,8 +2996,29 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = night_vision2
+					}
+			}
 	}
 
 	advanced_infantry_weapons_d = {
@@ -2951,8 +3058,36 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = support_weapons_b
+					}
+			}
 	}
 
 	advanced_infantry_weapons_e = {
@@ -2973,8 +3108,43 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 3
+
+			modifier = {
+				ADD = 10	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro > 10 }
+				}
+				
+			modifier = {
+				factor = 0	
+				set_temp_variable = {resource_pro = resource_produced@steel}
+				subtract_from_temp_variable = { resource_pro = resource_consumed@steel}
+				check_variable = { resource_pro < 1 }
+				}
+			
+			modifier = {
+					factor = 0.5
+					date < 1025.1.1
+					}
+							
+			modifier = {
+					add = 5
+					date > 1025.1.1
+					}
+					
+				
+			modifier = {
+					add = 5
+					has_war = yes
+					}
+				
+			modifier = {
+					add = 5
+					has_tech = night_vision
+					}
+			}
 	}
 
 	###------> New Infantry Anti-Tank   <><> <><> <><> <><> <><>
@@ -3003,7 +3173,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
 	}
 
@@ -3031,7 +3201,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -3054,7 +3224,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -3419,30 +3589,33 @@ technologies = {
 		ai_will_do = {
 			factor = 2
 			
-			
-		modifier = {
-			factor = 5
-			has_tech = advanced_infantry_weapons_a
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
 			}
-		modifier = {
-			factor = 2
-			num_divisions > 50
+			
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				factor = 2
+				date > "1017.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
-		modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 120
-		}
-	}
 	}
 
 	support_weapons_b = {
@@ -3484,15 +3657,33 @@ technologies = {
 
 		ai_will_do = {
 			factor = 2
-		}
-		
-		modifier = {
-			factor = 2
-			has_tech = advanced_infantry_weapons_b
+			
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
 			}
-		modifier = {
-			factor = 2
-			num_divisions > 50
+			
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				ADD = 10
+				date > "2021.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 
@@ -3516,32 +3707,13 @@ technologies = {
 			night_vision
 		}
 
-		ai_will_do = {
-			factor = 4
+	ai_will_do = {
+			factor = 1
 			
-		modifier = {
-			factor = 5
-			has_tech = advanced_infantry_weapons_b
+			modifier = {
+				ADD = 15
+				date > "1023.1.1"
 			}
-			
-		modifier = {
-			factor = 2
-			num_divisions > 50
-		}
-		modifier = {
-			factor = 2
-			num_divisions > 75
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 100
-		}
-		
-		modifier = {
-			factor = 2
-			num_divisions > 120
-		}
 		}
 	}
 
@@ -3578,7 +3750,34 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
+			
+			modifier = {
+				ADD = 5
+				AND = {
+				has_tech = future_computing_machine
+				has_tech = construction5
+				has_tech = dispersed_industry5
+				}
+			}
+			
+			modifier = {
+				ADD = 5
+			AND = {
+				has_tech = future_computing_machine
+				has_tech = atomic_research
+				}
+			}
+
+			modifier = {
+				ADD = 10
+				date > "1025.1.1"
+			}
+
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
 		}
 	}
 

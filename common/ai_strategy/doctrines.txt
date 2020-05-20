@@ -25,41 +25,158 @@ mobile_warfare_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = light_armor
+		value = 8
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
 		value = 3 
 	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = heavy_armor
-		value = 5 
-	}
 	
 	ai_strategy = {
-		type = unit_ratio
-		id = main_armor
-		value = 5 
-	}
-	
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = motorized
-		value = 20 # 
+		value = 1
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = mechanized
-		value = 40 
+		value = 3
+	}
+}
+
+mobile_infantry_ratios = {
+	enable = {
+		has_tech = mobile_infantry
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 2
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = artillery
+		type = role_ratio
+		id = mechanized
+		value = 3
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = mechanarty
+		value = 5
+	}
+}
+
+armored_spearhead_ratios = {
+	enable = {
+		has_tech = armored_spearhead
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 3
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 4
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3 
+	}
+}
+
+armored_spearhead_ratios = {
+	enable = {
+		has_tech = armored_spearhead
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 3
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 4
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 3 
+	}
+}
+
+volkssturm_ratios = {
+	enable = {
+		has_tech = volkssturm
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
 		value = 10
 	}
 
+}
+
+firebrigades_ratios = {
+	enable = {
+		has_tech = firebrigades
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 2
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 6
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 2 
+	}
 }
 
 superior_firepower_ratios = {
@@ -67,48 +184,99 @@ superior_firepower_ratios = {
 		has_tech = superior_firepower
 	}
 	abort = {
-		has_tech = concentrated_fire_plans
+		always = no
 	}
-
+	
 	ai_strategy = {
-		type = unit_ratio
-		id = infantry
-		value = 20
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = light_armor
-		value = 2 
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = main_armor
-		value = 2
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = heavy_armor
-		value = 2
-	}
-
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = artillery
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = anti_tank
 		value = 10
 	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = magical_infantry
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = anti_tank
+		value = 5
+	}
 }
 
-## Later in superior_firepower tree
+intergrated_support_ratios = {
+	enable = {
+		has_tech = intergrated_support
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 10
+	}
+}
+
+dispersed_support_ratios = {
+	enable = {
+		has_tech = dispersed_support
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 10
+	}
+}
+
+centralized_fire_control_ratios = {
+	enable = {
+		has_tech = centralized_fire_control
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = light_armor
+		value = 2
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 2
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 2 
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 2
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 2
+	}
+	
+
+}
+
 concentrated_fire_plans_ratios = {
 	enable = {
 		has_tech = concentrated_fire_plans
@@ -116,44 +284,29 @@ concentrated_fire_plans_ratios = {
 	abort = {
 		always = no
 	}
-
 	ai_strategy = {
-		type = unit_ratio
-		id = infantry
-		value = -20
-	}
-
-
-	ai_strategy = {
-		type = unit_ratio
-		id = artillery
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = light_armor
-		value = 4 
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = main_armor
-		value = 4
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = heavy_armor
-		value = 3 
+		value = 3
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
-		id = cas
-		value = 20
+		type = role_ratio
+		id = main_armor
+		value = 3
 	}
-
+	
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_armor
+		value = 2 
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 2
+	}
 }
 
 
@@ -166,56 +319,89 @@ grand_battle_plan_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 20
+		value = 10
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 20
+		type = role_ratio
+		id = anti_tank
+		value = 5
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 25
+		type = role_ratio
+		id = artillery
+		value = 10
+	}
+}
+
+infantry_offensive_ratios = {
+	enable = {
+		has_tech = infantry_offensive
+	}
+	abort = {
+		always = no
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = light_armor
-		value = 1 
+		type = role_ratio
+		id = infantry
+		value = 4
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
+		id = main_armor
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = heavy_armor
-		value = 1
+		value = 3
+	}
+}
+
+grand_mechanized_offensive_ratios = {
+	enable = {
+		has_tech = grand_mechanized_offensive
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 4
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 3
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
+		id = light_armor
+		value = 1
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = main_armor
-		value = 1 
+		value = 1
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = anti_tank
-		value = 15
+		type = role_ratio
+		id = heavy_armor
+		value = 1
 	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = artillery
-		value = 15
-	}
-
-
 }
-
 
 mass_assault_ratios = {
 	enable = {
@@ -226,31 +412,18 @@ mass_assault_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 50
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = anti_tank
 		value = 15
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = artillery
-		value = 20
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = light_armor
-		value = 5 
+		type = role_ratio
+		id = anti_tank
+		value = 10
 	}
 }
 
-#Later in  mass_assault tree
 large_front_operations_ratios = {
 	enable = {
 		has_tech = large_front_operations
@@ -258,42 +431,43 @@ large_front_operations_ratios = {
 	abort = {
 		always = no
 	}
+	ai_strategy = {
+		type = role_ratio
+		id = main_armor
+		value = 5
+	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
+		id = heavy_armor
+		value = 5
+	}
+}
+
+peoples_army_ratios = {
+	enable = {
+		has_tech = peoples_army
+	}
+	abort = {
+		always = no
+	}
+		
+	ai_strategy = {
+		type = role_ratio
 		id = infantry
-		value = -30
+		value = 6
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 30
+		type = role_ratio
+		id = main_armor
+		value = 2
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 40
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = artillery
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = light_armor
-		value = 10 
-	}
-
-
-	ai_strategy = {
-		type = unit_ratio
-		id = anti_tank
-		value = 10
+		type = role_ratio
+		id = heavy_armor
+		value = 2
 	}
 }
 
@@ -319,7 +493,7 @@ fleet_in_being_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = capital_ship
 		value = 5
 	}
@@ -335,7 +509,7 @@ trade_interdiction_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = submarine
 		value = 200
 	}
@@ -352,13 +526,13 @@ base_strike_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = carrier
 		value = 50
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = naval_bomber
 		value = 20
 	}
@@ -385,7 +559,7 @@ air_superiority_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = fighter
 		value = 50
 	}
@@ -403,7 +577,7 @@ air_night_day_bombing_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = strategic_bomber
 		value = 100
 	}
@@ -420,25 +594,25 @@ formation_flying = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = fighter
 		value = 50
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = cas
 		value = 25
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = tactical_bomber
 		value = 25
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = strategic_bomber
 		value = -100
 	}
@@ -455,13 +629,13 @@ force_rotation = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = fighter
 		value = 50
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = tactical_bomber
 		value = 50
 	}
