@@ -229,6 +229,12 @@ Macro_Builder = {
 	}
 }
 
+Subject_interactions = {
+	icon = generic_political_actions
+	allowed = {
+	}
+}
+
 Requesting_civil_aid = {
 	icon = generic_political_actions
 	allowed = {
@@ -241,11 +247,6 @@ Requesting_Military_aid = {
 	}
 }
 
-Subject_Interaction = {
-	icon = generic_political_actions
-	allowed = {		
-	}
-}
 
 Requesting_Troops = {
 	icon = generic_political_actions
@@ -254,6 +255,12 @@ Requesting_Troops = {
 }
 
 Demanding_Resources = {
+	icon = generic_political_actions
+	allowed = {		
+	}
+}
+
+Overlord_Actions = {
 	icon = generic_political_actions
 	allowed = {		
 	}

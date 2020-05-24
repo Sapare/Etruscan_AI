@@ -1,0 +1,2464 @@
+Ignore_EQS = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = EQS
+has_wargoal_against = EQS
+is_justifying_wargoal_against = EQS
+original_tag = EQS
+}
+}
+EQS = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = EQS  
+value = -100	
+	}	
+}
+
+Ignore_CRY = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = CRY
+has_wargoal_against = CRY
+is_justifying_wargoal_against = CRY
+original_tag = CRY
+}
+}
+CRY = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = CRY  
+value = -100	
+	}	
+}
+
+Ignore_YAK = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = YAK
+has_wargoal_against = YAK
+is_justifying_wargoal_against = YAK
+original_tag = YAK
+}
+}
+YAK = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = YAK  
+value = -100	
+	}	
+}
+
+Ignore_JAK = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = JAK
+has_wargoal_against = JAK
+is_justifying_wargoal_against = JAK
+original_tag = JAK
+}
+}
+JAK = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = JAK  
+value = -100	
+	}	
+}
+
+Ignore_GRF = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = GRF
+has_wargoal_against = GRF
+is_justifying_wargoal_against = GRF
+original_tag = GRF
+}
+}
+GRF = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = GRF  
+value = -100	
+	}	
+}
+
+Ignore_PLB = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = PLB
+has_wargoal_against = PLB
+is_justifying_wargoal_against = PLB
+original_tag = PLB
+}
+}
+PLB = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = PLB  
+value = -100	
+	}	
+}
+
+Ignore_PNG = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = PNG
+has_wargoal_against = PNG
+is_justifying_wargoal_against = PNG
+original_tag = PNG
+}
+}
+PNG = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = PNG  
+value = -100	
+	}	
+}
+
+Ignore_GFF = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = GFF
+has_wargoal_against = GFF
+is_justifying_wargoal_against = GFF
+original_tag = GFF
+}
+}
+GFF = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = GFF  
+value = -100	
+	}	
+}
+
+Ignore_STG = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = STG
+has_wargoal_against = STG
+is_justifying_wargoal_against = STG
+original_tag = STG
+}
+}
+STG = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = STG  
+value = -100	
+	}	
+}
+
+Ignore_CRY = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = CRY
+has_wargoal_against = CRY
+is_justifying_wargoal_against = CRY
+original_tag = CRY
+}
+}
+CRY = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = CRY  
+value = -100	
+	}	
+}
+
+Ignore_EQS = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = EQS
+has_wargoal_against = EQS
+is_justifying_wargoal_against = EQS
+original_tag = EQS
+}
+}
+EQS = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = EQS  
+value = -100	
+	}	
+}
+
+Ignore_DRG = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = DRG
+has_wargoal_against = DRG
+is_justifying_wargoal_against = DRG
+original_tag = DRG
+}
+}
+DRG = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = DRG  
+value = -100	
+	}	
+}
+
+Ignore_BUF = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BUF
+has_wargoal_against = BUF
+is_justifying_wargoal_against = BUF
+original_tag = BUF
+}
+}
+BUF = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BUF  
+value = -100	
+	}	
+}
+
+Ignore_HAU = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = HAU
+has_wargoal_against = HAU
+is_justifying_wargoal_against = HAU
+original_tag = HAU
+}
+}
+HAU = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = HAU  
+value = -100	
+	}	
+}
+
+Ignore_VED = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = VED
+has_wargoal_against = VED
+is_justifying_wargoal_against = VED
+original_tag = VED
+}
+}
+VED = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = VED  
+value = -100	
+	}	
+}
+###########
+Ignore_OLE = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = OLE
+has_wargoal_against = OLE
+is_justifying_wargoal_against = OLE
+original_tag = OLE
+}
+}
+OLE = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = OLE  
+value = -100	
+	}	
+}
+
+Ignore_SRS = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = SRS
+has_wargoal_against = SRS
+is_justifying_wargoal_against = SRS
+original_tag = SRS
+}
+}
+SRS = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = SRS  
+value = -100	
+	}	
+}
+
+Ignore_NTR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = NTR
+has_wargoal_against = NTR
+is_justifying_wargoal_against = NTR
+original_tag = NTR
+}
+}
+NTR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = NTR  
+value = -100	
+	}	
+}
+
+Ignore_HLR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = HLR
+has_wargoal_against = HLR
+is_justifying_wargoal_against = HLR
+original_tag = HLR
+}
+}
+HLR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = HLR  
+value = -100	
+	}	
+}
+
+Ignore_DED = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = DED
+has_wargoal_against = DED
+is_justifying_wargoal_against = DED
+original_tag = DED
+}
+}
+DED = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = DED  
+value = -100	
+	}	
+}
+
+Ignore_WAT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = WAT
+has_wargoal_against = WAT
+is_justifying_wargoal_against = WAT
+original_tag = WAT
+}
+}
+WAT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = WAT  
+value = -100	
+	}	
+}
+
+Ignore_FBK = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FBK
+has_wargoal_against = FBK
+is_justifying_wargoal_against = FBK
+original_tag = FBK
+}
+}
+FBK = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FBK  
+value = -100	
+	}	
+}
+
+Ignore_FIR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FIR
+has_wargoal_against = FIR
+is_justifying_wargoal_against = FIR
+original_tag = FIR
+}
+}
+FIR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FIR  
+value = -100	
+	}	
+}
+
+Ignore_MNC = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = MNC
+has_wargoal_against = MNC
+is_justifying_wargoal_against = MNC
+original_tag = MNC
+}
+}
+MNC = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = MNC  
+value = -100	
+	}	
+}
+
+Ignore_FAT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FAT
+has_wargoal_against = FAT
+is_justifying_wargoal_against = FAT
+original_tag = FAT
+}
+}
+FAT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FAT  
+value = -100	
+	}	
+}
+
+Ignore_FEA = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FEA
+has_wargoal_against = FEA
+is_justifying_wargoal_against = FEA
+original_tag = FEA
+}
+}
+FEA = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FEA  
+value = -100	
+	}	
+}
+
+Ignore_STW = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = STW
+has_wargoal_against = STW
+is_justifying_wargoal_against = STW
+original_tag = STW
+}
+}
+STW = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = STW  
+value = -100	
+	}	
+}
+
+Ignore_BRZ = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BRZ
+has_wargoal_against = BRZ
+is_justifying_wargoal_against = BRZ
+original_tag = BRZ
+}
+}
+BRZ = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BRZ  
+value = -100	
+	}	
+}
+
+Ignore_KAT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = KAT
+has_wargoal_against = KAT
+is_justifying_wargoal_against = KAT
+original_tag = KAT
+}
+}
+KAT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = KAT  
+value = -100	
+	}	
+}
+
+Ignore_YAL = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = YAL
+has_wargoal_against = YAL
+is_justifying_wargoal_against = YAL
+original_tag = YAL
+}
+}
+YAL = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = YAL  
+value = -100	
+	}	
+}
+
+Ignore_ANG = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = ANG
+has_wargoal_against = ANG
+is_justifying_wargoal_against = ANG
+original_tag = ANG
+}
+}
+ANG = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = ANG  
+value = -100	
+	}	
+}
+
+Ignore_PYT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = PYT
+has_wargoal_against = PYT
+is_justifying_wargoal_against = PYT
+original_tag = PYT
+}
+}
+PYT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = PYT  
+value = -100	
+	}	
+}
+
+Ignore_TRD = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = TRD
+has_wargoal_against = TRD
+is_justifying_wargoal_against = TRD
+original_tag = TRD
+}
+}
+TRD = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = TRD  
+value = -100	
+	}	
+}
+
+Ignore_FEZ = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FEZ
+has_wargoal_against = FEZ
+is_justifying_wargoal_against = FEZ
+original_tag = FEZ
+}
+}
+FEZ = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FEZ  
+value = -100	
+	}	
+}
+
+Ignore_AET = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = AET
+has_wargoal_against = AET
+is_justifying_wargoal_against = AET
+original_tag = AET
+}
+}
+AET = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = AET  
+value = -100	
+	}	
+}
+
+Ignore_HEL = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = HEL
+has_wargoal_against = HEL
+is_justifying_wargoal_against = HEL
+original_tag = HEL
+}
+}
+HEL = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = HEL  
+value = -100	
+	}	
+}
+
+Ignore_POM = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = POM
+has_wargoal_against = POM
+is_justifying_wargoal_against = POM
+original_tag = POM
+}
+}
+POM = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = POM  
+value = -100	
+	}	
+}
+
+Ignore_FLO = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FLO
+has_wargoal_against = FLO
+is_justifying_wargoal_against = FLO
+original_tag = FLO
+}
+}
+FLO = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FLO  
+value = -100	
+	}	
+}
+
+Ignore_ERI = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = ERI
+has_wargoal_against = ERI
+is_justifying_wargoal_against = ERI
+original_tag = ERI
+}
+}
+ERI = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = ERI  
+value = -100	
+	}	
+}
+
+Ignore_EYR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = EYR
+has_wargoal_against = EYR
+is_justifying_wargoal_against = EYR
+original_tag = EYR
+}
+}
+EYR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = EYR  
+value = -100	
+	}	
+}
+
+Ignore_LAK = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = LAK
+has_wargoal_against = LAK
+is_justifying_wargoal_against = LAK
+original_tag = LAK
+}
+}
+LAK = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = LAK  
+value = -100	
+	}	
+}
+
+Ignore_BOI = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BOI
+has_wargoal_against = BOI
+is_justifying_wargoal_against = BOI
+original_tag = BOI
+}
+}
+BOI = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BOI  
+value = -100	
+	}	
+}
+
+Ignore_ARA = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = ARA
+has_wargoal_against = ARA
+is_justifying_wargoal_against = ARA
+original_tag = ARA
+}
+}
+ARA = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = ARA  
+value = -100	
+	}	
+}
+
+Ignore_FRN = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FRN
+has_wargoal_against = FRN
+is_justifying_wargoal_against = FRN
+original_tag = FRN
+}
+}
+FRN = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FRN  
+value = -100	
+	}	
+}
+
+Ignore_TAL = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = TAL
+has_wargoal_against = TAL
+is_justifying_wargoal_against = TAL
+original_tag = TAL
+}
+}
+TAL = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = TAL  
+value = -100	
+	}	
+}
+
+Ignore_EQC = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = EQC
+has_wargoal_against = EQC
+is_justifying_wargoal_against = EQC
+original_tag = EQC
+}
+}
+EQC = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = EQC  
+value = -100	
+	}	
+}
+
+Ignore_JER = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = JER
+has_wargoal_against = JER
+is_justifying_wargoal_against = JER
+original_tag = JER
+}
+}
+JER = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = JER  
+value = -100	
+	}	
+}
+
+Ignore_JEB = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = JEB
+has_wargoal_against = JEB
+is_justifying_wargoal_against = JEB
+original_tag = JEB
+}
+}
+JEB = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = JEB  
+value = -100	
+	}	
+}
+
+Ignore_JRR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = JRR
+has_wargoal_against = JRR
+is_justifying_wargoal_against = JRR
+original_tag = JRR
+}
+}
+JRR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = JRR  
+value = -100	
+	}	
+}
+
+Ignore_VIN = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = VIN
+has_wargoal_against = VIN
+is_justifying_wargoal_against = VIN
+original_tag = VIN
+}
+}
+VIN = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = VIN  
+value = -100	
+	}	
+}
+
+Ignore_ROU = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = ROU
+has_wargoal_against = ROU
+is_justifying_wargoal_against = ROU
+original_tag = ROU
+}
+}
+ROU = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = ROU  
+value = -100	
+	}	
+}
+
+Ignore_JFT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = JFT
+has_wargoal_against = JFT
+is_justifying_wargoal_against = JFT
+original_tag = JFT
+}
+}
+JFT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = JFT  
+value = -100	
+	}	
+}
+
+Ignore_WNG = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = WNG
+has_wargoal_against = WNG
+is_justifying_wargoal_against = WNG
+original_tag = WNG
+}
+}
+WNG = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = WNG  
+value = -100	
+	}	
+}
+
+Ignore_FAL = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FAL
+has_wargoal_against = FAL
+is_justifying_wargoal_against = FAL
+original_tag = FAL
+}
+}
+FAL = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FAL  
+value = -100	
+	}	
+}
+
+Ignore_SIC = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = SIC
+has_wargoal_against = SIC
+is_justifying_wargoal_against = SIC
+original_tag = SIC
+}
+}
+SIC = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = SIC  
+value = -100	
+	}	
+}
+
+Ignore_CYA = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = CYA
+has_wargoal_against = CYA
+is_justifying_wargoal_against = CYA
+original_tag = CYA
+}
+}
+CYA = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = CYA  
+value = -100	
+	}	
+}
+
+Ignore_MIT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = MIT
+has_wargoal_against = MIT
+is_justifying_wargoal_against = MIT
+original_tag = MIT
+}
+}
+MIT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = MIT  
+value = -100	
+	}	
+}
+
+Ignore_BAN = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BAN
+has_wargoal_against = BAN
+is_justifying_wargoal_against = BAN
+original_tag = BAN
+}
+}
+BAN = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BAN  
+value = -100	
+	}	
+}
+
+Ignore_GRW = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = GRW
+has_wargoal_against = GRW
+is_justifying_wargoal_against = GRW
+original_tag = GRW
+}
+}
+GRW = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = GRW  
+value = -100	
+	}	
+}
+
+Ignore_BRF = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BRF
+has_wargoal_against = BRF
+is_justifying_wargoal_against = BRF
+original_tag = BRF
+}
+}
+BRF = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BRF  
+value = -100	
+	}	
+}
+
+Ignore_LUS = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = LUS
+has_wargoal_against = LUS
+is_justifying_wargoal_against = LUS
+original_tag = LUS
+}
+}
+LUS = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = LUS  
+value = -100	
+	}	
+}
+
+Ignore_LNS = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = LNS
+has_wargoal_against = LNS
+is_justifying_wargoal_against = LNS
+original_tag = LNS
+}
+}
+LNS = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = LNS  
+value = -100	
+	}	
+}
+
+Ignore_HLQ = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = HLQ
+has_wargoal_against = HLQ
+is_justifying_wargoal_against = HLQ
+original_tag = HLQ
+}
+}
+HLQ = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = HLQ  
+value = -100	
+	}	
+}
+
+Ignore_GRY = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = GRY
+has_wargoal_against = GRY
+is_justifying_wargoal_against = GRY
+original_tag = GRY
+}
+}
+GRY = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = GRY  
+value = -100	
+	}	
+}
+
+Ignore_GRU = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = GRU
+has_wargoal_against = GRU
+is_justifying_wargoal_against = GRU
+original_tag = GRU
+}
+}
+GRU = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = GRU  
+value = -100	
+	}	
+}
+
+Ignore_ZES = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = ZES
+has_wargoal_against = ZES
+is_justifying_wargoal_against = ZES
+original_tag = ZES
+}
+}
+ZES = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = ZES  
+value = -100	
+	}	
+}
+
+Ignore_OLV = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = OLV
+has_wargoal_against = OLV
+is_justifying_wargoal_against = OLV
+original_tag = OLV
+}
+}
+OLV = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = OLV  
+value = -100	
+	}	
+}
+
+Ignore_BAR = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BAR
+has_wargoal_against = BAR
+is_justifying_wargoal_against = BAR
+original_tag = BAR
+}
+}
+BAR = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BAR  
+value = -100	
+	}	
+}
+
+Ignore_NCH = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = NCH
+has_wargoal_against = NCH
+is_justifying_wargoal_against = NCH
+original_tag = NCH
+}
+}
+NCH = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = NCH  
+value = -100	
+	}	
+}
+
+Ignore_BAK = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = BAK
+has_wargoal_against = BAK
+is_justifying_wargoal_against = BAK
+original_tag = BAK
+}
+}
+BAK = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = BAK  
+value = -100	
+	}	
+}
+
+Ignore_DMT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = DMT
+has_wargoal_against = DMT
+is_justifying_wargoal_against = DMT
+original_tag = DMT
+}
+}
+DMT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = DMT  
+value = -100	
+	}	
+}
+
+Ignore_DEP = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = DEP
+has_wargoal_against = DEP
+is_justifying_wargoal_against = DEP
+original_tag = DEP
+}
+}
+DEP = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = DEP  
+value = -100	
+	}	
+}
+
+Ignore_LCT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = LCT
+has_wargoal_against = LCT
+is_justifying_wargoal_against = LCT
+original_tag = LCT
+}
+}
+LCT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = LCT  
+value = -100	
+	}	
+}
+
+Ignore_RCT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = RCT
+has_wargoal_against = RCT
+is_justifying_wargoal_against = RCT
+original_tag = RCT
+}
+}
+RCT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = RCT  
+value = -100	
+	}	
+}
+
+Ignore_WIT = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = WIT
+has_wargoal_against = WIT
+is_justifying_wargoal_against = WIT
+original_tag = WIT
+}
+}
+WIT = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = WIT  
+value = -100	
+	}	
+}
+
+Ignore_NIM = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = NIM
+has_wargoal_against = NIM
+is_justifying_wargoal_against = NIM
+original_tag = NIM
+}
+}
+NIM = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = NIM  
+value = -100	
+	}	
+}
+
+Ignore_FRE = {
+
+enable = {
+has_war = yes
+enemies_strength_ratio > 0.5
+ROOT = {
+NOT = {
+has_war_with = FRE
+has_wargoal_against = FRE
+is_justifying_wargoal_against = FRE
+original_tag = FRE
+}
+}
+FRE = {
+NOT = {
+has_war_with = ROOT
+has_wargoal_against = ROOT
+is_justifying_wargoal_against = ROOT
+}
+}
+}
+
+
+abort_when_not_enabled = yes
+
+ai_strategy = {
+	type = front_unit_request
+	tag = FRE  
+value = -100	
+	}	
+}
+

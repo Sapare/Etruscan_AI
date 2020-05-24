@@ -32,7 +32,7 @@ Macro_Builder = {
 
 ROOT = {
 
-##Air_base Construction for AI across Equestrian continent, 50 states
+##Air_base Construction for AI across Equestrian continent, 51 states
 if = { 
 	limit = {	
 	if = { 
@@ -113,6 +113,93 @@ AND = {
 	}
 								
 		49 = { add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = no
+				}
+			}
+			}
+
+if = { 
+	limit = {	
+	if = { 
+		limit = {
+		check_variable = { num_deployed_planes < 400 }
+		}
+		175 = { air_base < 2 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 600 }
+			}
+		175 = {air_base < 3 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 900 }
+			}
+		175 = { air_base < 4 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1000 }
+			}
+		175 = { air_base < 5 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1200 }
+			}
+		175 = { air_base < 6 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1400 }
+			}
+		175 = { air_base < 7 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1600 }
+			}
+		175 = { air_base < 8 }
+		}	
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 1800 }
+			}
+		175 = { air_base < 9 }
+		}
+	else_if = {
+			limit = {
+			check_variable = { num_deployed_planes < 2000 }
+			}
+		175 = { air_base < 10 }
+		}	
+			
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 175
+				value < 750
+				}
+			}
+			
+	NOT = {
+	any_controlled_state = {
+			distance_to = {
+				target = 175
+				value < 350
+				}			
+			}							
+			}
+			}
+		}
+	has_full_control_of_state = 175
+	}
+								
+		175 = { add_building_construction = {
 				type = air_base
 				level = 1
 				instant_build = no

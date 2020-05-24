@@ -1,100 +1,4 @@
-Ignore_neutrals = {
-enable = {
-always= no
-}
-abort = {
-always= no
-}
-
-ai_strategy = {
-		type = front_control
-	
-		state = 28 # close up maginot line
-		
-		ratio = 0.6
-		
-		priority = 100
-		ordertype = front
-		execution_type = rush
-		execute_order = yes
-	}
-}
-# example unit buffer strategy. this strategy will make ai buffer/garrison some units in a target area  which can be used in orders that is in target areas
-# 
-# ai_strategy = {
-# 	type = put_unit_buffers
-# 	
-#	# ratio of total armeis in country to be buffered
-# 	ratio = 0.4
-#
-#	# you can specify an order id. ratio of same orders ids will be share same ratio
-# 	order_id = 2
-# 	
-# 	# states to put garrison orders (if no state is friendly, strat is invalid)
-# 	states = { 
-# 		125
-# 		126
-# 		127
-# 		128
-# 		129
-# 		338
-# 		123
-# 		122 
-# 	}
-# 	
-#	# ai areas that the orders will use these buffers in
-# 	area = europe
-# 	area = asia
-# 	
-# 	# by default if you have orders in target areas, the buffer will request less units. 
-#	# you can override this to disable the feature
-# 	subtract_invasions_from_need = yes
-# 	subtract_fronts_from_need = yes
-# }
-
-
-#used for controlling invasion or regular fronts
-#ai_strategy = {
-# 	type = front_control
-#
-#	#you can define a target in following ways. you can define more than one
-#
-#	tag = GER 				# target against a specific country
-#	state = 42 				# target on a state
-#	strategic_region = 65	# target on a strategic region
-#	area = europe			# target on a specific ai area
-#	country_trigger = { always = no } 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
-#	state_trigger = { always = no } 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
-#
-#	ratio = 0.0 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
-#
-#	priority = 0 # default 0, higher prio strats will override lower
-#	ordertype = front # front or invasion. if set this strategy will only apply to that specific order type
-#	execution_type = careful # one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
-#	execute_order = yes # yes or no. if set will override execute or not decision of front
-#	manual_attack = yes # default yes. if no ai will not do manual pokes at enemy (only for front orders)
-#}
-
-#used for increasing/decreasing unit requests for invasions or fronts
-#ai_strategy = {
-#	# use one of them
-# 	type = front_unit_request
-# 	type = invasion_unit_request
-#
-#	#invasions will check invasion target, fronts will check provinces at front
-#
-#	tag = GER 				# province of a specific country
-#	state = 42 				# province on a state
-#	strategic_region = 65	# province on a strategic region
-#	area = europe			# province on a specific ai area
-#	country_trigger = { always = no } 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
-#	state_trigger = { always = no } 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
-#
-#	value = 40				# will be added as a factor over regular requests
-#}
-
-	
-	#Adjust military focus of countries based on their military industrial scale.:		
+#Adjust military focus of countries based on their military industrial scale.:		
 	
 	Long_term_industry = {
 		enable = {
@@ -118,11 +22,18 @@ ai_strategy = {
 		enable = {
 			AND = {
 				has_tech = synth_oil_experiments
-				check_variable = { resource_imported@rubber > 5 }
 				synthetic_refinery < 2
 				num_of_civilian_factories_available_for_projects > 10
 				NOT = {				
 				synthetic_refinery > 2
+				}
+				
+			OR = {	
+			check_variable = { resource_imported@rubber > 5 }
+			AND = {
+			check_variable = { resource_produced@rubber < 1 }
+			check_variable = { resource_produced@chromium < 8 }
+			}
 				}
 				}
 				}
@@ -139,12 +50,20 @@ ai_strategy = {
 		enable = {
 			AND = {
 				has_tech = synth_oil_experiments
-				check_variable = { resource_imported@rubber > 5 }
+
 				synthetic_refinery < 3
-				num_of_civilian_factories_available_for_projects > 10
+				num_of_civilian_factories_available_for_projects > 15
 				NOT = {				
 				synthetic_refinery > 2
 				}
+				OR = {	
+					check_variable = { resource_imported@rubber > 5 }
+				AND = {
+					check_variable = { resource_produced@rubber < 1 }
+					check_variable = { resource_produced@chromium < 8 }
+				}
+				}
+				
 				}
 				}
 		abort_when_not_enabled = yes

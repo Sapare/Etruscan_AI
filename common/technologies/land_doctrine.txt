@@ -1823,7 +1823,7 @@ technologies = {
 		modifier = {
 			add = 25
 			has_army_experience > 200
-			}				
+			}
 			
 			modifier = {
 			factor = 3
@@ -1832,26 +1832,28 @@ technologies = {
 			
 		modifier = {
 			ADD = 5
+			if = {
+			limit = { has_war = yes }
 			surrender_progress > 0.1
 			}
+			}
 			
 		modifier = {
 			ADD = 10
+		if = {
+			limit = { has_war = yes }
 			surrender_progress > 0.2
 			}
+			}
 			
 		modifier = {
 			ADD = 10
-			strength_ratio = {
-			ratio < 0.5
-			}
+			alliance_strength_ratio < 0.5
 			}
 			
 		modifier = {
 			ADD = 5
-			strength_ratio = {
-			ratio < 1
-			}
+			alliance_strength_ratio < 1		
 			}		
 			
 		modifier = {

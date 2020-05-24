@@ -1,0 +1,36 @@
+Broad changes included:
+- Complete reweight of technology desire for the AI, it should now prioritise technologies it can take advantage of rather than researching everything equally. This includes unlocking some of the technologies that were effectively barred to the AI.(though some remain barred till I can assure the AI makes use of them)
+-Completely new set of templates for all three primary template types(Changelings, Ponies, Other) with various split-offs based on the nations current industrial position. This includes 40 width templates for massive powerhouses in the late game.
+-Many scripts that guide the AI down smarter production paths, de-emphasising things it either has too much off or can not efficiently produce, small countries will prefer a standing army of infantry to 100 light tanks.
+-Re-weighting of army composition in the strategic scale. Tanks will be more common IF the country can field them.
+-The ability for AI to field light and medium tanks in an army together, and a smother transition to modern tanks.
+-Larger focus on arms-factories during wartime.
+
+1.5
+-Rework to goverment AI decisions, including trade, conscription, economic stance and advisors.
+-Techno weights for land doctrines and various other technologies got adjusted.
+-Various fixes and adjustments to changes done in 1.0, primarly to templates and AI unit preferences.
+-I unlocked heavy tanks though the scenario in which the AI would choose to tech and build them is so rare it might never happen, to really get into that would require more time.
+
+What the mod does not do:
+-The tactical AI is currently unchanged, I can't take fault if it decides to garrison its tanks in the mountains on a neutral border. However, the AI is more aggressive when feeling confident and the industrial changes will make it more powerful, and in turn confident.
+-Construction AI could use more work but there is currently no easy solution for it.
+-I am not entirely happy with the AI's habit of forgoing tanks even when it has the resource and desire for them(primarly in mid/late game), this includes a reluctance to use modern tanks. My Ai still handles this much better than default EAW AI but its far from smooth sometimes.
+
+Note:
+My mod is almost 100% AI-logic based and I do not give it any form of cheats. I attempted to avoid touching any physical balance in the game BUT:
+-I buffed and debuffed two technologies in a really small way, (The two "Delay" tech in doctrine), mostly to as an easy check of version.
+
+1.5.5:
+-Fix for the Man the Guns DLC, ship production SHOULD be back to normal now.(I have no way to test, but others confirmed it for me)
+-Added AI ability to build infrastructure when it is in need of raw resources and currently not exploiting them. This is done through a "Macro Builder" in the decision tab and usuable for the player. Could use some refinement but primarly I wish to know if it impacts preformance on slower computers(it does not on mine), so please leave angry feedback if this mod brings your PC to a crawl!
+
+1.6 :
+A host of fixes to my code, further implementation of the macrobuilder so it can now detect provinces that had their resource output increased due to National Focus Trees.
+Here is my github, if I get back to the mod you'll see updates here first:(often out of date/unstable version)
+https://github.com/Sapare/Etruscan_AI
+
+Disclaimer: No Etrusca included.
+
+
+(I am currently working a complete rewrite of this mod, it will likely still be a while till it releases but keep an eye open)

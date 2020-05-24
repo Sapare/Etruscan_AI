@@ -22,16 +22,6 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
-			
-			OR = {
-				is_ai = no
-			 NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-						}
-					}
 			}
 			removal_cost = -1
 
@@ -81,17 +71,6 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
-				
-			OR = {
-				is_ai = no
-				NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-					}
-		
 			}
 			
 			removal_cost = -1
@@ -198,16 +177,6 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_full_economic_mobilisation }
 				}
-					
-			OR = {
-				is_ai = no
-				NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -264,16 +233,6 @@ ideas = {
 				NOT = {
 					has_country_flag = demilitarized
 				}
-				 				
-			OR = {
-				is_ai = no
-				NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -356,11 +315,7 @@ ideas = {
 				has_tech = mechanical_computing
 				}
 				}
-				
-				modifier = {
-					factor = 0.5
-				check_variable = { resource_imported@steel > 0 }
-			}
+
 		}
 		}
 
@@ -407,18 +362,6 @@ ideas = {
 					has_country_flag = demilitarized
 				}
 				NOT = { has_country_flag = economic_laws_blocked }
-			
-		
-			
-			OR = {
-				is_ai = no
-			NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-						}
 			}
 
 			cost = 150
@@ -437,37 +380,36 @@ ideas = {
 			ai_will_do = {
 				factor = 5
 
-				modifier = {
-					factor = 2.5
-					industrial_complex > 15
-					}
-					
-				modifier = {
-					factor = 2.5
-					industrial_complex > 30
-					}
+				
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 0.5				
+				}
+				
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 0.5			
+				}
+				
 				
 				modifier = {
-					factor = 2.5
-					num_of_factories > 65
+					factor = 0
+					enemies_strength_ratio < 0.5
 					}
 					
 				modifier = {
-					factor = 0.5
-					industrial_complex < 10
-					}
-					
-				modifier = {
-					factor = 10
+					ADD = 15
 					threat > 0.25
 					}
 					
 				modifier = { 
-					factor = 10
+					ADD = 20
 					any_neighbor_country = {
 					has_added_tension_amount > 5
 					}					
-					}
+					}	
 								
 				modifier = {
 					factor = 0.5
@@ -481,12 +423,7 @@ ideas = {
 					NOT = {
 					has_tech = construction2
 					}
-					}
-				
-				modifier = {
-					factor = 0.3
-					check_variable = { resource_imported@steel > 0 }
-					}			
+					}						
 					}
 					}
 	
@@ -525,17 +462,6 @@ ideas = {
 				NOT = {
 					has_country_flag = BAL_anarchy_laws
 				}
-				
-				
-			OR = {
-				is_ai = no
-				NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-					}				
 			}
 
 			cost = 150
@@ -556,63 +482,41 @@ ideas = {
 
 				modifier = {
 					#High prio on production
-					factor = 5
-					manpower_per_military_factory >  1000
+					add = 25
+					manpower_per_military_factory >  5000
 				}
-								
-				modifier = {
-					factor = 2
-					industrial_complex > 30
-					}
-					
-				modifier = {
-					factor = 2
-					industrial_complex > 45
-					}
+
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 0.7				
+				}
 				
-				modifier = {
-					factor = 2
-					num_of_factories > 65
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex > 10
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 20
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 30
-					}
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 0.7			
+				}
+				
 				
 				modifier = {
 					factor = 0
-					enemies_strength_ratio > 0.5
+					enemies_strength_ratio < 0.5
 					}
 				
 				modifier = {
-					factor = 2
-					enemies_strength_ratio > 0.8
+					ADD = 10
+					enemies_strength_ratio > 1.0
 					}
 					
 				modifier = {
-					factor = 5
-					enemies_strength_ratio > 1.0
+					ADD = 20
+					enemies_strength_ratio > 1.5
 					}
 					
 				modifier = {
 					factor = 0
 					has_manpower < 10000
-					}
-
-				modifier = {
-					factor = 0.2
-					check_variable = { resource_imported@steel > 0 }
 					}			
 			}
 		}
@@ -663,17 +567,6 @@ ideas = {
 				NOT = {
 					has_country_flag = BAL_anarchy_laws
 				}
-				
-				
-			OR = {
-				is_ai = no
-				NOT = {
-				has_country_flag = {
-					flag = ai_economic_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -690,64 +583,42 @@ ideas = {
 
 			cancel_if_invalid = no
 			
-						ai_will_do = {
+			ai_will_do = {
 				factor = 10
 					
-				modifier = {
-					factor = 0.5
-					industrial_complex > 10
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 20
-					}
-					
-				modifier = {
-					factor = 0.5
-					industrial_complex < 30
-					}
 				
+			modifier = {
+				add = 50
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.01 }
+				enemies_strength_ratio > 1			
+				}
+				
+			modifier = {
+				add = 15
+				stockpile_ratio  = { archetype = infantry_equipment ratio < 0.05 }	
+				enemies_strength_ratio > 1	
+				}
+
 				modifier = {
 					factor = 0
-					enemies_strength_ratio > 0.5
-					}
-				
-				modifier = {
-					factor = 0
-					enemies_strength_ratio > 0.8
+					enemies_strength_ratio < 0.8
 					}
 					
 				modifier = {
 					factor = 0.5
-					enemies_strength_ratio > 1.0
+					enemies_strength_ratio < 1.0
 					}
-				
+							
 				modifier = {
-					factor = 5
-					enemies_strength_ratio > 1.25
-					}
-				
-				modifier = {
-					factor = 5
-					enemies_strength_ratio > 1.5
+					ADD = 15
+					enemies_strength_ratio > 1.8
 					}
 					
 				modifier = {
-					factor = 5
+					ADD = 25
 					enemies_strength_ratio > 2.0
 					}
 					
-				modifier = {
-					factor = 0
-					check_variable = { resource_imported@steel > 0 }
-					}	
-					
-				modifier = {
-					factor = 100
-					has_equipment = { infantry_equipment < 100 }
-					}
-				
 				modifier = {
 					factor = 0
 					has_equipment = { infantry_equipment > 1000 }
@@ -808,17 +679,6 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_state_controlled_economy }
 				}
-			
-			
-			OR = {
-				is_ai = no
-			NOT = {
-				has_country_flag = {
-					flag = ai_trade_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -832,8 +692,7 @@ ideas = {
 				research_speed_factor = 0.10
 				trade_opinion_factor = 0.3
 			}
-			
-			
+
 			cancel_if_invalid = no
 			
 			ai_will_do = {
@@ -1012,17 +871,6 @@ ideas = {
 					limit = { has_completed_focus = FEA_rozenkamp_strasserists }
 					NOT = { has_completed_focus = FEA_state_controlled_economy }
 				}
-			
-			
-			OR = {
-				is_ai = no
-			NOT = {
-				has_country_flag = {
-					flag = ai_trade_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -1481,17 +1329,6 @@ ideas = {
 					limit = { has_completed_focus = GRI_griffenheim_square }
 					NOT = { has_completed_focus = GRI_ensure_free_trade }
 				}
-			 
-			
-			OR = {
-				is_ai = no
-			NOT = {
-				has_country_flag = {
-					flag = ai_trade_cooldown
-					days < 360
-							}
-							}
-					}
 			}
 
 			cost = 150
@@ -1814,16 +1651,6 @@ ideas = {
 					limit = { has_completed_focus = GRI_griffenheim_square }
 					NOT = { has_completed_focus = GRI_ensure_free_trade }
 				}
-			OR = {
-				is_ai = no
-			
-				NOT = { 				
-				has_country_flag = {
-					flag = ai_trade_cooldown
-					days < 360
-							}
-					}
-			}
 			}
 
 			cost = 150

@@ -2176,14 +2176,7 @@ heavy_armor_EQS = {
 			check_variable = { num_equipment@heavy_tank_equipment < 160 }	
 			}		
 		}
-	}
-
-	match_to_count = 0.8
-
-		upgrade_prio = {
-			factor = 3
-			
-			modifier = {
+		modifier = {
 			factor = 0
 			NOT = {
 			has_tech = basic_heavy_tank 
@@ -2191,7 +2184,9 @@ heavy_armor_EQS = {
 			has_tech = advanced_heavy_tank 
 			}
 			}
-		}
+	}
+
+	match_to_count = 0.8
 		
 	heavy_armor_basic_EQS = {
 

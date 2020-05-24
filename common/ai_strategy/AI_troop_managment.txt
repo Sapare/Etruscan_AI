@@ -1,0 +1,12463 @@
+Garrison2_Hortland = {
+enable = {
+has_war = yes 
+76 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 76
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	76
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cervus = {
+enable = {
+has_war = yes 
+ 191 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 191
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	191
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison2_Peuramaa = {
+enable = {
+has_war = yes 
+ 192 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 192
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	192
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison2_Porola = {
+enable = {
+has_war = yes 
+ 194 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 194
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	194
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison2_Vaverfront = {
+enable = {
+has_war = yes 
+ 69 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 69
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	69
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison2_Vanhoover = {
+enable = {
+has_war = yes 
+ 14 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 14
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	14
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Tall_Tail  = {
+enable = {
+has_war = yes 
+ 59 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 59
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	59
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Ancorage = {
+enable = {
+has_war = yes 
+ 136 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 136
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	136
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Whinnyopolis = {
+enable = {
+has_war = yes 
+ 70 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 70
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	70
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Bales = {
+enable = {
+has_war = yes 
+ 74 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 74
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	74
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Albion = {
+enable = {
+has_war = yes 
+ 525 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 525
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	525
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Manehatten = {
+enable = {
+has_war = yes 
+ 75 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 75
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	75
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Fillydelphia = {
+enable = {
+has_war = yes 
+ 12 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 12
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	12
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Baltimare = {
+enable = {
+has_war = yes 
+ 13 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 13
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	13
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Technochitilan = {
+enable = {
+has_war = yes 
+ 16 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 16
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	16
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_East_Yucoltan = {
+enable = {
+has_war = yes 
+ 24 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 24
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	24
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Hoof_City = {
+enable = {
+has_war = yes 
+ 19 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 19
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	19
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Dodge_Junction = {
+enable = {
+has_war = yes 
+ 22 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 22
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	22
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Las_Pegasus = {
+enable = {
+has_war = yes 
+ 66 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 66
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	66
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rockville = {
+enable = {
+has_war = yes 
+ 38 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 38
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	38
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cloudsdale = {
+enable = {
+has_war = yes 
+ 68 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 68
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	68
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Ponyville = {
+enable = {
+has_war = yes 
+ 15 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 15
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	15
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Canterlot = {
+enable = {
+has_war = yes 
+ 3 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 3
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	3
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Alicorn_Sister = {
+enable = {
+has_war = yes 
+ 103 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 103
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	103
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison2_Swarm = {
+enable = {
+has_war = yes 
+ 316 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 316
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	316
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Vraks = {
+enable = {
+has_war = yes 
+ 259 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 259
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	259
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Vesalopolis = {
+enable = {
+has_war = yes 
+ 251 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 251
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	251
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Dytrisium = {
+enable = {
+has_war = yes 
+ 252 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 252
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	252
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Lycitda = {
+enable = {
+has_war = yes 
+ 309 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 309
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	309
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Soryth = {
+enable = {
+has_war = yes 
+ 262 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 262
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	262
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Den = {
+enable = {
+has_war = yes 
+ 323 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 323
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	323
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Mathair_Fearainn = {
+enable = {
+has_war = yes 
+ 290 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 290
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	290
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Dachaigh = {
+enable = {
+has_war = yes 
+ 325 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 325
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	325
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Vot = {
+enable = {
+has_war = yes 
+ 281 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 281
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	281
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Novuea_Aquila = {
+enable = {
+has_war = yes 
+ 239 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 239
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	239
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Weter= {
+enable = {
+has_war = yes 
+ 243 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 243
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	243
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Broken_Skull = {
+enable = {
+has_war = yes 
+ 242 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 242
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	242
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Taihan_Tolgod = {
+enable = {
+has_war = yes 
+ 274 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 274
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	274
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Baradur = {
+enable = {
+has_war = yes 
+ 347 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 347
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	347
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Yakistan_Valley = {
+enable = {
+has_war = yes 
+ 11 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 11
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	11
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Crystal_City = {
+enable = {
+has_war = yes 
+ 345 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 345
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	345
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Central_Crystal_City = {
+enable = {
+has_war = yes 
+ 344 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 344
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	344
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rainbow_Falls = {
+enable = {
+has_war = yes 
+ 98 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 98
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	98
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_St_Petershoof = {
+enable = {
+has_war = yes 
+ 166 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 166
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	166
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Majestic_Garden = {
+enable = {
+has_war = yes 
+ 233 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 233
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	233
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Caramel_Marks = {
+enable = {
+has_war = yes 
+ 235 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 235
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	235
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Marshmallow = {
+enable = {
+has_war = yes 
+ 225 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 225
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	225
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Stalliongrad = {
+enable = {
+has_war = yes 
+ 153 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 153
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	153
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Lightway_Collective  = {
+enable = {
+has_war = yes 
+ 165 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 165
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	165
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Starlight's_Town = {
+enable = {
+has_war = yes 
+ 57 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 57
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	57
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Stronghearts_Tribe = {
+enable = {
+has_war = yes 
+ 89 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 89
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	89
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_The_Mountain = {
+enable = {
+has_war = yes 
+ 7 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 7
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	7
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Haukland = {
+enable = {
+has_war = yes 
+ 659 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 659
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	659
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Winterhold = {
+enable = {
+has_war = yes 
+ 658 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 658
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	658
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kungland = {
+enable = {
+has_war = yes 
+ 429 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 429
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	429
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Skynavia = {
+enable = {
+has_war = yes 
+ 522 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 522
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	522
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Liftauf = {
+enable = {
+has_war = yes 
+ 562 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 562
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	562
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Elf_Lake = {
+enable = {
+has_war = yes 
+ 574 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 574
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	574
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_The_Tarpian_Rock = {
+enable = {
+has_war = yes 
+ 425 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 425
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	425
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Magehold = {
+enable = {
+has_war = yes 
+ 415 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 415
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	415
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Watertown = {
+enable = {
+has_war = yes 
+ 642 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 642
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	642
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Farbrook = {
+enable = {
+has_war = yes 
+ 455 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 455
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	455
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Moonshine = {
+enable = {
+has_war = yes 
+ 603 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 603
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	603
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Bonedrift = {
+enable = {
+has_war = yes 
+ 454 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 454
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	454
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Siverfalls = {
+enable = {
+has_war = yes 
+ 453 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 453
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	453
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Brantbeak = {
+enable = {
+has_war = yes 
+ 581 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 581
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	581
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Winghagen = {
+enable = {
+has_war = yes 
+ 432 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 432
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	432
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cloudbury = {
+enable = {
+has_war = yes 
+ 485 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 485
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	485
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cavegrove = { ######################### Maybe set so only after losing the two above
+enable = {
+has_war = yes 
+ 450 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 450
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	450
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_De_Vleugels  = {
+enable = {
+has_war = yes 
+ 520 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 520
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	520
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rottendestad = {
+enable = {
+has_war = yes 
+ 433 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 433
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	433
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Mirabelle = {
+enable = {
+has_war = yes 
+ 538 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 538
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	538
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Readewetter = {
+enable = {
+has_war = yes 
+ 486 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 486
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	486
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Winterbell = {
+enable = {
+has_war = yes 
+ 458 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 458
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	458
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Starclaw = {
+enable = {
+has_war = yes 
+ 546 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 546
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	546
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Raven_Lakes = {
+enable = {
+has_war = yes 
+ 424 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 424
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	424
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Bronekreuz= {
+enable = {
+has_war = yes 
+ 492 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 492
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	492
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Katerin = {
+enable = {
+has_war = yes 
+ 423 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 423
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	423
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Strassmark = {
+enable = {
+has_war = yes 
+ 554 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 554
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	554
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Griffenheim = {
+enable = {
+has_war = yes 
+ 382 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 382
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	382
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Greenback = {
+enable = {
+has_war = yes 
+ 398 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 398
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	398
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Griffing = {
+enable = {
+has_war = yes 
+ 411 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 411
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	411
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Oldwingburg = {
+enable = {
+has_war = yes 
+ 378 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 378
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	378
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Romau = {
+enable = {
+has_war = yes 
+ 674 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 674
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	674
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Grifftonia = {
+enable = {
+has_war = yes 
+ 380 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 380
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	380
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Skyfall = {
+enable = {
+has_war = yes 
+ 381 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 381
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	381
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Fezera = {
+enable = {
+has_war = yes 
+ 390 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 390
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	390
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Falcontown = {
+enable = {
+has_war = yes 
+ 495 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 495
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	495
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cloudguard = {
+enable = {
+has_war = yes 
+ 457 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 457
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	457
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Eagleton = {
+enable = {
+has_war = yes 
+ 494 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 494
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	494
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Pomovarra = {
+enable = {
+has_war = yes 
+ 501 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 501
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	501
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Flowena = {
+enable = {
+has_war = yes 
+ 442 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 442
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	442
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Avian = {
+enable = {
+has_war = yes 
+ 470 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 470
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	470
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Erie = {
+enable = {
+has_war = yes 
+ 401 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 401
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	401
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Verenia = {
+enable = {
+has_war = yes  
+391 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 391
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	391
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rumare = {
+enable = {
+has_war = yes 
+ 383 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 383
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	383
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Griffonstone = {
+enable = {
+has_war = yes 
+ 389 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 389
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	389
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Sparleto = {
+enable = {
+has_war = yes 
+ 408 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 408
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	408
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Eatela = {
+enable = {
+has_war = yes 
+ 526 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 526
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	526
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Tarrin = {
+enable = {
+has_war = yes 
+ 487 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 487
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	487
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Francistria = {
+enable = {
+has_war = yes 
+ 515 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 515
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	515
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Talononte = {
+enable = {
+has_war = yes 
+ 366 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 366
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	366
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Sunset = {
+enable = {
+has_war = yes 
+ 356 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 356
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	356
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_New_Hoffington  = {
+enable = {
+has_war = yes 
+ 359 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 359
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	359
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_New_Manhatten = {
+enable = {
+has_war = yes 
+ 362 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 362
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	362
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Orvalilio = {
+enable = {
+has_war = yes 
+ 407 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 407
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	407
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Aquila = {
+enable = {
+has_war = yes 
+ 377 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 377
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	377
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Pelis = {
+enable = {
+has_war = yes 
+ 472 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 472
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	472
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rila = {
+enable = {
+has_war = yes 
+ 435 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 435
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	435
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Flowerino = {
+enable = {
+has_war = yes 
+ 523 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 523
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	523
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Westkeep = {
+enable = {
+has_war = yes 
+ 448 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 448
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	448
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Vinovia = {
+enable = {
+has_war = yes 
+ 517 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 517
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	517
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Pridea = {
+enable = {
+has_war = yes 
+ 376 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 376
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	376
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Wrobert = {
+enable = {
+has_war = yes 
+ 369 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 369
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	369
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Lowing_Gap = { #5 victory but 2 factories
+enable = {
+has_war = yes 
+ 370 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 370
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	370
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Libarisa = {
+enable = {
+has_war = yes 
+ 372 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 372
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	372
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kathrin = {
+enable = {
+has_war = yes 
+ 371 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 371
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	371
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Falcor = {
+enable = {
+has_war = yes 
+ 530 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 530
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	530
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Sudfolc = {
+enable = {
+has_war = yes 
+ 504 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 504
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	504
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Matton = {
+enable = {
+has_war = yes 
+ 529 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 529
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	529
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_South_Scarlet = {
+enable = {
+has_war = yes 
+ 394 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 394
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	394
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Querusscos = {
+enable = {
+has_war = yes 
+ 444 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 444
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	444
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Keowoen = {
+enable = {
+has_war = yes 
+ 528 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 528
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	528
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Midoria = {
+enable = {
+has_war = yes 
+ 445 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 445
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	445
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Thymiaushafen = {
+enable = {
+has_war = yes 
+ 671 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 671
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	671
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Auropallatia = {
+enable = {
+has_war = yes 
+ 510 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 510
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	510
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Cannabia = {
+enable = {
+has_war = yes 
+ 511 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 511
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	511
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Salmarkt = {
+enable = {
+has_war = yes 
+ 507 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 507
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	507
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Phoceptera = {
+enable = {
+has_war = yes 
+ 462 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 462
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	462
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Ketta = {
+enable = {
+has_war = yes 
+ 463 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 463
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	463
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Asters_Landing = {
+enable = {
+has_war = yes 
+ 386 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 386
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	386
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Murbeak = {
+enable = {
+has_war = yes 
+ 532 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 532
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	532
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Griffonwill = {
+enable = {
+has_war = yes 
+ 414 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 414
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	414
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kivessin = {
+enable = {
+has_war = yes 
+ 508 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 508
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	508
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Sydia = {
+enable = {
+has_war = yes 
+ 385 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 385
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	385
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Lushland = {
+enable = {
+has_war = yes 
+ 608 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 608
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	608
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Swordsson = {
+enable = {
+has_war = yes 
+ 552 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 552
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	552
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Hellquill = {
+enable = {
+has_war = yes 
+ 537 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 537
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	537
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kiav = {
+enable = {
+has_war = yes 
+ 598 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 598
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	598
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Phthagorea = {
+enable = {
+has_war = yes 
+512 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 512
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	512
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Ecole = {
+enable = {
+has_war = yes 
+595 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 595
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	595
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Nyumbampya = {
+enable = {
+has_war = yes 
+413 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 413
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	413
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Uusi_Peuramaa  = {
+enable = {
+has_war = yes 
+412 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 412
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	412
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Elisay = {
+enable = {
+has_war = yes 
+626 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 626
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	626
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Barrad = { ##5 victory points, 2 factories
+enable = {
+has_war = yes 
+625 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 625
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	625
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Roughers = {  #5 victory points, 2 factories
+enable = {
+has_war = yes 
+624 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 624
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	624
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Blosmport = {
+enable = {
+has_war = yes 
+670 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 670
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	670
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Bakara = {
+enable = {
+has_war = yes 
+649 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 649
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	649
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Diamound_Mountain = {
+enable = {
+has_war = yes 
+637 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 637
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	637
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Deponya = {
+enable = {
+has_war = yes 
+544 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 544
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	544
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Shayrmia = {
+enable = {
+has_war = yes 
+551 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 551
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	551
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Bucka = {
+enable = {
+has_war = yes 
+499 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 499
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	499
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Blessedzemja = {
+enable = {
+has_war = yes 
+550 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 550
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	550
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Jezeragrad = {
+enable = {
+has_war = yes 
+387 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 387
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	387
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Coltonia = {
+enable = {
+has_war = yes 
+620 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 620
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	620
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Neighretva = {
+enable = {
+has_war = yes 
+577 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 577
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	577
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Rijekograd = {
+enable = {
+has_war = yes 
+619 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 619
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	619
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kurai = {
+enable = {
+has_war = yes 
+615 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 615
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	615
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Wittenland= {
+enable = {
+has_war = yes 
+617 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 617
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	617
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Nimbusia = {
+enable = {
+has_war = yes 
+645 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 645
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	645
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Kataigida = {
+enable = {
+has_war = yes 
+622 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 622
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	622
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison2_Dail_Mhor  = { #####3 but the capital of the country
+enable = {
+original_tag = FRE
+has_war = yes 
+580 = { is_capital = yes }
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 580
+				value < 500
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 1.0
+
+	order_id = 1
+	
+ 	# states to put Garrison2 orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	580
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+#####Non capital ones
+Garrison_Hortland = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 76
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	76
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison_Cervus = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 191
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	191
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Peuramaa = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 192
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	192
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison_Porola = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 194
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	194
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison_Vaverfront = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 69
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	69
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison_Vanhoover = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 14
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	14
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Tall_Tail  = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 59
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	59
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Ancorage = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 136
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	136
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Whinnyopolis = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 70
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	70
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Bales = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 74
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	74
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Albion = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 525
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	525
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Manehatten = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 75
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	75
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Fillydelphia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 12
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	12
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Baltimare = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 13
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	13
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Technochitilan = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 16
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	16
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_East_Yucoltan = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 24
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	24
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Hoof_City = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 19
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	19
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Dodge_Junction = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 22
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	22
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Las_Pegasus = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 66
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	66
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rockville = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 38
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	38
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Cloudsdale = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 68
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	68
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Ponyville = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 15
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	15
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Canterlot = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 3
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	3
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Alicorn_Sister = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 103
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	103
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+Garrison_Swarm = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 316
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	316
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Vraks = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 259
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	259
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Vesalopolis = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 251
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	251
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Dytrisium = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 252
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	252
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Lycitda = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 309
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	309
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Soryth = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 262
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	262
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Den = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 323
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	323
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Mathair_Fearainn = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 290
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	290
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Dachaigh = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 325
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	325
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Vot = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 281
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	281
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Novuea_Aquila = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 239
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	239
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Weter= {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 243
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	243
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Broken_Skull = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 242
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	242
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Taihan_Tolgod = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 274
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	274
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Baradur = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 347
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	347
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Yakistan_Valley = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 11
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	11
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Crystal_City = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 345
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	345
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Central_Crystal_City = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 344
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	344
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rainbow_Falls = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 98
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	98
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_St_Petershoof = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 166
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	166
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Majestic_Garden = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 233
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	233
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Caramel_Marks = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 235
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	235
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Marshmallow = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 225
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	225
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Stalliongrad = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 153
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	153
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Lightway_Collective  = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 165
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	165
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Starlight's_Town = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 57
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	57
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Stronghearts_Tribe = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 89
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	89
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_The_Mountain = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 7
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	7
+ 	}
+	
+ 	area = europe
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Haukland = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 659
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	659
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Winterhold = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 658
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	658
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kungland = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 429
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	429
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Skynavia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 522
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	522
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Liftauf = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 562
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	562
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Elf_Lake = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 574
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	574
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_The_Tarpian_Rock = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 425
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	425
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Magehold = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 415
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	415
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Watertown = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 642
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	642
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Farbrook = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 455
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	455
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Moonshine = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 603
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	603
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Bonedrift = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 454
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	454
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Siverfalls = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 453
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	453
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Brantbeak = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 581
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	581
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Winghagen = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 432
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	432
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Cloudbury = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 485
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	485
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Cavegrove = { ######################### Maybe set so only after losing the two above
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 450
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	450
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_De_Vleugels  = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 520
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	520
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rottendestad = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 433
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	433
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Mirabelle = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 538
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	538
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Readewetter = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 486
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	486
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Winterbell = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 458
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	458
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Starclaw = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 546
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	546
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Raven_Lakes = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 424
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	424
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Bronzekreuggg = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 492
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	492
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Katerin = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 423
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	423
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Strassmark = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 554
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	554
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Griffenheim = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 382
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	382
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Greenback = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 398
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	398
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Griffing = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 411
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	411
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Oldwingburg = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 378
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	378
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Romau = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 674
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	674
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Grifftonia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 380
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	380
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Skyfall = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 381
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	381
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Fezera = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 390
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	390
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Falcontown = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 495
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	495
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Cloudguard = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 457
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	457
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Eagleton = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 494
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	494
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Pomovarra = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 501
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	501
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Flowena = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 442
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	442
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Avian = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 470
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	470
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Erie = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 401
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	401
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Verenia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 391
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	391
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rumare = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 383
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	383
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Griffonstone = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 389
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	389
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Sparleto = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 408
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	408
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Eatela = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 526
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	526
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Tarrin = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 487
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	487
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Francistria = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 515
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	515
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Talononte = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 366
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	366
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Sunset = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 356
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	356
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_New_Hoffington  = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 359
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	359
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_New_Manhatten = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 362
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	362
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Orvalilio = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 407
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	407
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Aquila = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 377
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	377
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Pelis = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 472
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	472
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rila = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 435
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	435
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Flowerino = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 523
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	523
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Westkeep = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 448
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	448
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Vinovia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 517
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	517
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Pridea = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 376
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	376
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Wrobert = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 369
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	369
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Lowing_Gap = { #5 victory but 2 factories
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 370
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	370
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Libarisa = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 372
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	372
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kathrin = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 371
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	371
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Falcor = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 530
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	530
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Sudfolc = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 504
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	504
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Matton = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 529
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	529
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_South_Scarlet = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 394
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	394
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Querusscos = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 444
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	444
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Keowoen = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 528
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	528
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Midoria = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 445
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	445
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Thymiaushafen = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 671
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	671
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Auropallatia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 510
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	510
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Cannabia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 511
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	511
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Salmarkt = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 507
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	507
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Phoceptera = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 462
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	462
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Ketta = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 463
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	463
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Asters_Landing = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 386
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	386
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Murbeak = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 532
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	532
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Griffonwill = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 414
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	414
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kivessin = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 508
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	508
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Sydia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 385
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	385
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Lushland = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 608
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	608
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Swordsson = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 552
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	552
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Hellquill = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 537
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	537
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kiav = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 598
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	598
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Phthagorea = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 512
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	512
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Ecole = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 595
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	595
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Nyumbampya = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 413
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	413
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Uusi_Peuramaa  = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 412
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	412
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Elisay = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 626
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	626
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Barrad = { ##5 victory points, 2 factories
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 625
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	625
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Roughers = {  #5 victory points, 2 factories
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 624
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	624
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Blosmport = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 670
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	670
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Bakara = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 649
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	649
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Diamound_Mountain = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 637
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	637
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Deponya = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 544
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	544
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Shayrmia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 551
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	551
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Bucka = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 499
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	499
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Blessedzemja = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 550
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	550
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Jeggeragrad = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 387
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	387
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Coltonia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 620
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	620
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Neighretva = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 577
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	577
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Rijekograd = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 619
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	619
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kurai = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 615
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	615
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Wittenland= {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 617
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	617
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Nimbusia = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 645
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	645
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Kataigida = {
+enable = {
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 622
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	622
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}
+
+
+Garrison_Dail_Mhor  = { #####3 but the capital of the country
+enable = {
+original_tag = FRE
+has_war = yes 
+enemies_strength_ratio > 0.25
+any_enemy_country = {
+AND = {	
+	any_controlled_state = {
+			distance_to = {
+				target = 580
+				value < 750
+				}
+			}
+			}
+		}
+		}
+
+abort_when_not_enabled = yes 
+ ai_strategy = {
+	type = put_unit_buffers
+	
+
+ 	ratio = 0.50
+
+	order_id = 1
+	
+ 	# states to put garrison orders (if no state is friendly, strat is invalid)
+ 	states = {  		
+ 	580
+ 	}
+	
+ 	area = asia
+
+ 	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+ }
+}

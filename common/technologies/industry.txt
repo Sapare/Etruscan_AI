@@ -1503,7 +1503,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0
-				num_of_civilian_factories_available_for_projects < 5
+				num_of_civilian_factories_available_for_projects < 10
 			}	
 			
 			modifier = {
@@ -1513,7 +1513,7 @@ technologies = {
 			
 			modifier = {
 				add = 15
-				num_of_civilian_factories_available_for_projects > 15
+				num_of_civilian_factories_available_for_projects > 20
 			}	
 
 			modifier = {
